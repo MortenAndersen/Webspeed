@@ -1,0 +1,145 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: web\n"
+"POT-Creation-Date: 2021-08-09 15:32+0200\n"
+"PO-Revision-Date: 2021-10-04 11:12+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: da_DK\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: functions.php:73
+msgid "Main Menu"
+msgstr ""
+
+#: inc/web-functions.php:22
+msgid "Go Back"
+msgstr "Tilbage"
+
+#: inc/web-functions.php:32
+msgid "Read More"
+msgstr "Læs mere"
+
+#: inc/web-functions.php:39
+msgid "edit"
+msgstr ""
+
+#. Template Name of the plugin/theme
+#: inc/widgets.php:8
+msgid "Aside left"
+msgstr ""
+
+#: inc/widgets.php:10
+msgid "Venstre sidebar"
+msgstr ""
+
+#. Template Name of the plugin/theme
+#: inc/widgets.php:20
+msgid "Aside right"
+msgstr ""
+
+#: inc/widgets.php:22
+msgid "Højre sidebar"
+msgstr ""
+
+#: inc/widgets.php:33
+msgid "Pre content"
+msgstr ""
+
+#: inc/widgets.php:35
+msgid "Widget før indhold"
+msgstr ""
+
+#: inc/widgets.php:46
+msgid "Post content"
+msgstr ""
+
+#: inc/widgets.php:48
+msgid "Widget efter indhold"
+msgstr ""
+
+#: inc/widgets.php:59
+msgid "Footer"
+msgstr ""
+
+#: inc/widgets.php:61
+msgid "Sidefod"
+msgstr ""
+
+#: inc/widgets.php:72
+msgid "Post Footer"
+msgstr ""
+
+#: inc/widgets.php:74
+msgid "Efter sidefod"
+msgstr ""
+
+#: inc/widgets.php:85
+msgid "Menu widget"
+msgstr ""
+
+#: inc/widgets.php:87
+msgid "Vises KUN i mobilmenu!"
+msgstr ""
+
+#: inc/widgets.php:98
+msgid "404"
+msgstr ""
+
+#: inc/widgets.php:100
+msgid "404 siden"
+msgstr ""
+
+#: template-parts/content/page-search.php:5
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Søgeresultat for: %s"
+
+#: template-parts/content/page-search.php:7
+msgid "Nothing Found"
+msgstr "UPS her er ikke noget"
+
+#. Theme Name of the plugin/theme
+msgid "web"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://www.hjemmesider.dk"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Base / Starter theme"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Morten Andersen - www.hjemmesider.dk"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.hjemmesider.dk/morten-andersen"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Article NO wrap"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "NO wrap * Template Post Type: post*/"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Aside left and right"
+msgstr ""

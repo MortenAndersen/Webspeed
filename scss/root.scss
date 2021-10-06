@@ -1,0 +1,75 @@
+:root {
+  --page-width: 1100px;
+  --body-bg: #f6f6f6;
+  --body-font: rgb(59, 67, 67);
+  --body-font-size: 1rem;
+  --body-line-height: 1.4;
+  --header-phone: #fff;
+  --header-tablet: #fff;
+  --header-desktop: #fff;
+  --main-bg: #fff;
+  --page-footer-bg: transparent;
+  --page-footer-font: #333;
+  --logo-text: #fff;
+  --link: #0073e5;
+  --link-hover: #111;
+  --article-font-size: 1.06rem;
+  --article-line-height: 1.6rem;
+  --border: #eee;
+  --blockquote: rgba(0,0,0,.1);
+  --menu-desktop-pad: .5rem .5rem 1rem .5rem;
+  --menu-desktop-bg: #fff;
+  --menu-desktop-font: #222;
+  --menu-desktop-divider: #999;
+  --menu-desktop-current-bg: transparent;
+  --menu-desktop-current-font: #000;
+  --menu-desktop-sub-pad: .5rem;
+  --menu-desktop-sub-font: #444;
+  --menu-desktop-sub-bg: #fff;
+  --menu-desktop-sub-pad-side: 1rem;
+  --menu-desktop-sub-hover-bg: #f2f2f2;
+  --menu-desktop-sub-border: #eee;
+  --menu-desktop-sub-current-bg: rgba(0,0,0,.2);
+  --menu-desktop-sub-current-font: #444;
+  --menu-mobile-bg: #262626;
+  --menu-mobile-sub-bg: rgba(0,0,0,.2);
+  --menu-mobile-border: #b2b2b2;
+  --menu-mobile-trigger-bg: transparent;
+  --menu-mobile-trigger-active-bg: #b88a0852;
+  --menu-mobile-trigger-font: #fff;
+  --menu-mobile-trigger-active-font: #fff;
+  --menu-icon: #111;
+  --menu-icon-hover: #555;
+  --menu-icon-close: #fff;
+  --bg-color-1: #AD0909;
+  --bg-color-font-1: #fff;
+  --bg-color-2: #DB6102;
+  --bg-color-font-2: #fff;
+  --bg-color-3: #F2C10F;
+  --bg-color-font-3: #333;
+  --bg-color-4: #9ADB02;
+  --bg-color-font-4: #333;
+  --bg-color-5: #02F948;
+  --bg-color-font-5: #333;
+  --parallax-font: #222;
+  --mobile-search-border: #b2b2b2;
+  --mobile-search-text-bg: #444;
+  --mobile-search-text-font: #fff;
+  --mobile-search-text-focus-bg: #666;
+  --mobile-search-submit-bg: #999;
+  --mobile-search-submit-font: #222;
+
+
+
+  --font-xl: 2rem;
+  --font-l: 1.8rem;
+  --xxl: 1.8rem;
+  --xl: 1.1rem
+}
+
+@media (min-width: 700px) {
+  :root {
+    --xxl: 3rem;
+    --xl: 2rem
+  }
+}

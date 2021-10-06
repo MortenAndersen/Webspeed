@@ -1,0 +1,129 @@
+@use 'elements/size'as s;
+
+.web-chunk-img {
+    margin-bottom: s.$gap-s;
+}
+
+.web-chunk-fakta {
+    margin: 0;
+    padding: 0;
+
+    li {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        &.facebook-icon:before,
+        &.twitter-icon:before,
+        &.youtube-icon:before,
+        &.email-icon:before,
+        &.phone-icon:before,
+        &.linkedin-icon:before {
+            content: '';
+            width: 18px;
+            height: 15px;
+            display: inline-block;
+            margin-right: 1ch;
+            background-repeat: no-repeat;
+            background-position: left bottom;
+            background-image: url(img/facebook.svg);        }
+        &.twitter-icon:before {
+            background-image: url(img/twitter.svg);
+        }
+        &.youtube-icon:before {
+            background-image: url(img/youtube.svg);
+        }
+        &.linkedin-icon:before {
+            background-image: url(img/linkedin.svg);
+        }
+        &.phone-icon:before {
+            background-image: url(img/phone.svg);
+        }
+        &.email-icon:before {
+            background-image: url(img/mail.svg);
+        }
+
+    }
+    .strong {
+        font-weight: bold;
+        padding-bottom: .5rem
+    }
+    a {
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.web-chunk-label {
+    margin-right: 1ch;
+}
+
+.chunk-item {
+    .shadow & {
+        box-shadow: 0px 30px 40px -20px #a3a5ae;
+    }
+    .widget-title {
+    	margin-bottom: s.$gap-s;
+    }
+
+    figure {
+        margin: 0 0 s.$gap-n 0;
+    }
+
+    a:not(.post-edit-link) {
+        color: inherit;
+
+        &:hover {
+            color: inherit;
+        }
+    }
+}
+.web-chunk-txt {
+    p:not(.read-more) {
+        margin: 0;
+    }
+}
+.chunk-item-bg-image {
+    padding: s.$gap-n;
+    background-position: center;
+    background-size: cover;
+    .shadow & {
+    	padding: 0;
+    }
+}
+
+.chunk-banner {
+    .chunk-item {
+        min-height: 400px;
+        display: flex !important;
+        align-items: center;
+    }
+
+    .chunk-item-content {
+        max-width: var(--page-width);
+        width: 100%;
+        margin: 0 auto;
+        padding-left: s.$gap-n;
+        padding-right: s.$gap-n;
+    }
+    &.zoombanner {
+        .chunk-item {
+            animation-name: zoomin;
+            animation-duration: 10s;
+            animation-fill-mode: forwards;
+            background-attachment: inherit;
+        }
+    }
+}
+
+.chunk-item-content {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    line-height: 1.4;
+    font-size: 1rem;
+    .shadow & {
+    	padding: s.$gap-n;
+    }
+}

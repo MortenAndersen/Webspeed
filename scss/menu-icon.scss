@@ -1,0 +1,41 @@
+@use 'elements/breakpoints'as b;
+@use 'elements/size'as s;
+
+.menu-icon {
+    margin-top: s.$gap-n;
+    margin-bottom: -3px;
+    width: 40px;
+    cursor: pointer;
+    .a-center & {
+        margin: 0 0 0 auto;
+    }
+
+    svg {
+        fill: var(--menu-icon);
+        transition: .5s all;
+
+        &:hover {
+            fill: var(--menu-icon-hover);
+        }
+    }
+
+    margin-left: auto;
+}
+
+.menu-close {
+    width: 60px;
+    height: 60px;
+    display: none;
+    cursor: pointer;
+    fill: var(--menu-icon-close);
+
+    .open-mobile-menu & {
+        display: block;
+    }
+}
+
+@media(min-width: b.$menu-break) {
+    .menu-icon {
+        display: none;
+    }
+}

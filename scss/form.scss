@@ -1,0 +1,78 @@
+@use 'elements/size'as s;
+
+.go-back-con {
+    margin: s.$gap-n 0;
+}
+
+.go-back {
+    border: 1px solid #f2f2f2;
+    background: #fff;
+    border-radius: 3px;
+    padding: .25em 2em;
+    box-shadow: 0 0 10px rgb(51 51 51 / 25%);
+    transition: 1s all;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: none;
+    }
+}
+
+form[role=search],
+form[role=search].wp-block-search {
+    >div {
+        display: grid;
+        grid-template-columns: 1fr 80px;
+        max-width: 400px;
+    }
+
+    input,
+    button {
+        padding: .5rem;
+        outline: none;
+
+        &[type=text] {
+            border-radius: 3px 0 0 3px;
+        }
+
+        &[type=submit] {
+            border-radius: 0 3px 3px 0;
+            border-left: none;
+        }
+    }
+}
+
+.menu-widget {
+    form[role=search] {
+    >div {
+        max-width: none;
+        input[type=text] {
+            background: var(--mobile-search-text-bg);
+            color: var(--mobile-search-text-font);
+            border-color: var(--mobile-search-border);
+            transition: 1s background;
+            height: 3rem;
+            &:focus {
+                background: var(--mobile-search-text-focus-bg);
+            }
+        }
+        input[type=submit]{
+            background: var(--mobile-search-submit-bg);;
+            color: var(--mobile-search-submit-font);;
+            border-color: var(--mobile-search-border);
+            height: 3rem;
+        }
+    }
+    }
+}
+textarea {
+    min-height: 80px;
+    padding: 1rem .5rem;
+}
+label {
+    display: block;
+    margin-bottom: .25rem;
+}
+#commentform {
+    max-width: 500px;
+}

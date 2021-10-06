@@ -1,0 +1,110 @@
+@use 'elements/size'as s;
+@use 'elements/breakpoints'as b;
+
+.f-xxs {
+    font-size: s.$xxs;
+}
+
+.f-xs {
+    font-size: s.$xs;
+}
+
+.f-s {
+    font-size: s.$s;
+}
+
+.f-m {
+    font-size: s.$m;
+}
+
+.f-l {
+    font-size: s.$l;
+}
+
+.f-xl {
+    font-size: s.$xl;
+}
+
+.f-xxl {
+    font-size: s.$xxl;
+}
+
+.f-xxxl {
+    font-size: s.$xxxl;
+}
+
+@media (min-width: b.$phone) {
+
+    .f-xxs-tab {
+        font-size: s.$xxs;
+    }
+
+    .f-xs-tab {
+        font-size: s.$xs;
+    }
+
+    .f-s-tab {
+        font-size: s.$s;
+    }
+
+    .f-m-tab {
+        font-size: s.$m;
+    }
+
+    .f-l-tab {
+        font-size: s.$l;
+    }
+
+    .f-xl-tab {
+        font-size: s.$xl;
+    }
+
+    .f-xxl-tab {
+        font-size: s.$xxl;
+    }
+
+    .f-xxxl-tab {
+        font-size: s.$xxxl;
+    }
+
+}
+
+@media (min-width: b.$menu-break) {
+
+    .f-xxs-desk {
+        font-size: s.$xxs;
+    }
+
+    .f-xs-desk {
+        font-size: s.$xs;
+    }
+
+    .f-s-desk {
+        font-size: s.$s;
+    }
+
+    .f-m-desk {
+        font-size: s.$m;
+    }
+
+    .f-l-desk {
+        font-size: s.$l;
+    }
+
+    .f-xl-desk {
+        font-size: s.$xl;
+    }
+
+    .f-xxl-desk {
+        font-size: s.$xxl;
+    }
+
+    .f-xxxl-desk {
+        font-size: s.$xxxl;
+    }
+
+}
+
+.pad-top-2 {
+    padding-top: s.$gap-n;
+}
