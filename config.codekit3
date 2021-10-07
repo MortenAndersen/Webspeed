@@ -513,7 +513,7 @@
 		"rq": 75
 		},
 	"/scss/bx-slider.scss": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"ec": 1,
@@ -526,7 +526,7 @@
 		"sct": 0
 		},
 	"/scss/elements.scss": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"ec": 1,
@@ -539,7 +539,7 @@
 		"sct": 0
 		},
 	"/scss/elements/breakpoints.scss": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"ec": 1,
@@ -552,7 +552,7 @@
 		"sct": 0
 		},
 	"/scss/elements/size.scss": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"ec": 1,
@@ -565,7 +565,7 @@
 		"sct": 0
 		},
 	"/scss/flex.scss": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"ec": 1,
@@ -578,7 +578,7 @@
 		"sct": 0
 		},
 	"/scss/fonts.scss": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"ec": 1,
@@ -591,7 +591,7 @@
 		"sct": 0
 		},
 	"/scss/footer.scss": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"ec": 1,
@@ -604,7 +604,7 @@
 		"sct": 0
 		},
 	"/scss/form.scss": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"ec": 1,
@@ -617,7 +617,7 @@
 		"sct": 0
 		},
 	"/scss/grid.scss": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"ec": 1,
@@ -630,7 +630,7 @@
 		"sct": 0
 		},
 	"/scss/keyframe.scss": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"ec": 1,
@@ -643,7 +643,7 @@
 		"sct": 0
 		},
 	"/scss/layout.scss": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"ec": 1,
@@ -656,7 +656,7 @@
 		"sct": 0
 		},
 	"/scss/lightbox.scss": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"ec": 1,
@@ -669,7 +669,7 @@
 		"sct": 0
 		},
 	"/scss/menu-desktop.scss": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"ec": 1,
@@ -682,7 +682,7 @@
 		"sct": 0
 		},
 	"/scss/menu-icon.scss": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"ec": 1,
@@ -695,7 +695,7 @@
 		"sct": 0
 		},
 	"/scss/menu-mobile.scss": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"ec": 1,
@@ -708,7 +708,7 @@
 		"sct": 0
 		},
 	"/scss/normalize.scss": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"ec": 1,
@@ -721,7 +721,7 @@
 		"sct": 0
 		},
 	"/scss/posttypes.scss": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"ec": 1,
@@ -734,7 +734,7 @@
 		"sct": 0
 		},
 	"/scss/reset.scss": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"ec": 1,
@@ -747,7 +747,7 @@
 		"sct": 0
 		},
 	"/scss/root.scss": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"ec": 1,
@@ -760,7 +760,7 @@
 		"sct": 0
 		},
 	"/scss/size.scss": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"ec": 1,
@@ -773,7 +773,7 @@
 		"sct": 0
 		},
 	"/scss/social.scss": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"ec": 1,
@@ -786,7 +786,7 @@
 		"sct": 0
 		},
 	"/scss/style.scss": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"ec": 1,
@@ -799,7 +799,7 @@
 		"sct": 0
 		},
 	"/scss/table.scss": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"ec": 1,
@@ -812,7 +812,7 @@
 		"sct": 0
 		},
 	"/scss/wp-plugins.scss": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"ec": 1,
@@ -825,7 +825,7 @@
 		"sct": 0
 		},
 	"/scss/wp.scss": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"ec": 1,
@@ -2948,7 +2948,7 @@
 		"decimalPrecision": 10,
 		"emitCharset": 1,
 		"outputStyle": 3,
-		"shouldRunAutoprefixer": 0,
+		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0
 		},
 	"languageDefaultsSLIM": {
