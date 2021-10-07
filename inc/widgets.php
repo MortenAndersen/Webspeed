@@ -5,9 +5,9 @@ function mother_widgets_init()
     // Aside
     register_sidebar(
         array(
-            'name'          => __('Aside left', 'web-doamin'),
+            'name'          => __('Aside left', 'webspeed-domain'),
             'id'            => 'aside-left',
-            'description'   => __('Venstre sidebar', 'web-doamin'),
+            'description'   => __('Venstre sidebar', 'webspeed-domain'),
             'before_widget' => '<div id="%1$s" class="widget aside-widget aside-left-widget %2$s">',
             'after_widget'  => '</div>',
             'before_title'  => '<h4 class="widget-title widget-title-aside">',
@@ -17,9 +17,9 @@ function mother_widgets_init()
 
      register_sidebar(
         array(
-            'name'          => __('Aside right', 'web-doamin'),
+            'name'          => __('Aside right', 'webspeed-domain'),
             'id'            => 'aside-right',
-            'description'   => __('Højre sidebar', 'web-doamin'),
+            'description'   => __('Højre sidebar', 'webspeed-domain'),
             'before_widget' => '<div id="%1$s" class="widget aside-widget aside-right-widget %2$s">',
             'after_widget'  => '</div>',
             'before_title'  => '<h4 class="widget-title widget-title-aside">',
@@ -30,9 +30,9 @@ function mother_widgets_init()
     // Pre content
     register_sidebar(
         array(
-            'name'          => __('Pre content', 'web-doamin'),
+            'name'          => __('Pre content', 'webspeed-domain'),
             'id'            => 'pre-content',
-            'description'   => __('Widget før indhold', 'web-doamin'),
+            'description'   => __('Widget før indhold', 'webspeed-domain'),
             'before_widget' => '<div id="%1$s" class="widget pre-content-col %2$s">',
             'after_widget'  => '</div>',
             'before_title'  => '<h4 class="widget-title widget-title-pre-content">',
@@ -43,9 +43,9 @@ function mother_widgets_init()
     // Post content
     register_sidebar(
         array(
-            'name'          => __('Post content', 'web-doamin'),
+            'name'          => __('Post content', 'webspeed-domain'),
             'id'            => 'post-content',
-            'description'   => __('Widget efter indhold', 'web-doamin'),
+            'description'   => __('Widget efter indhold', 'webspeed-domain'),
             'before_widget' => '<div id="%1$s" class="widget post-content-col %2$s">',
             'after_widget'  => '</div>',
             'before_title'  => '<h4 class="widget-title widget-title-post-content">',
@@ -56,9 +56,9 @@ function mother_widgets_init()
     // Post content Frontpage
     register_sidebar(
         array(
-            'name'          => __('Post content Frontpage', 'web-doamin'),
+            'name'          => __('Post content Frontpage', 'webspeed-domain'),
             'id'            => 'post-content-frontpage',
-            'description'   => __('Widget efter indhold på forsiden', 'web-doamin'),
+            'description'   => __('Widget efter indhold på forsiden', 'webspeed-domain'),
             'before_widget' => '<div id="%1$s" class="widget post-content-col %2$s">',
             'after_widget'  => '</div>',
             'before_title'  => '<h4 class="widget-title widget-title-post-content">',
@@ -69,9 +69,9 @@ function mother_widgets_init()
     // Footer
     register_sidebar(
         array(
-            'name'          => __('Footer', 'web-doamin'),
+            'name'          => __('Footer', 'webspeed-domain'),
             'id'            => 'footer',
-            'description'   => __('Sidefod', 'web-doamin'),
+            'description'   => __('Sidefod', 'webspeed-domain'),
             'before_widget' => '<div id="%1$s" class="widget footer-col %2$s">',
             'after_widget'  => '</div>',
             'before_title'  => '<h4 class="widget-title widget-title-footer">',
@@ -82,9 +82,9 @@ function mother_widgets_init()
     // Post Footer
     register_sidebar(
         array(
-            'name'          => __('Post Footer', 'web-doamin'),
+            'name'          => __('Post Footer', 'webspeed-domain'),
             'id'            => 'post-footer',
-            'description'   => __('Efter sidefod', 'web-doamin'),
+            'description'   => __('Efter sidefod', 'webspeed-domain'),
             'before_widget' => '<div id="%1$s" class="widget widget-post-footer %2$s">',
             'after_widget'  => '</div>',
             'before_title'  => '<h5 class="widget-title widget-title-post-footer">',
@@ -95,9 +95,9 @@ function mother_widgets_init()
     // Menubar widget
     register_sidebar(
         array(
-            'name'          => __('Menu widget', 'web-doamin'),
+            'name'          => __('Menu widget', 'webspeed-domain'),
             'id'            => 'menu-widget',
-            'description'   => __('Vises KUN i mobilmenu!', 'web-doamin'),
+            'description'   => __('Vises KUN i mobilmenu!', 'webspeed-domain'),
             'before_widget' => '<div id="%1$s" class="widget widget-pmenu %2$s">',
             'after_widget'  => '</div>',
             'before_title'  => '<h5 class="widget-title widget-title-menu-widget">',
@@ -108,9 +108,9 @@ function mother_widgets_init()
     // 404 widget
     register_sidebar(
         array(
-            'name'          => __('404', 'web-doamin'),
+            'name'          => __('404', 'webspeed-domain'),
             'id'            => 'no-page',
-            'description'   => __('404 siden', 'web-doamin'),
+            'description'   => __('404 siden', 'webspeed-domain'),
             'before_widget' => '<div id="%1$s" class="widget widget-pmenu %2$s">',
             'after_widget'  => '</div>',
             'before_title'  => '<h5 class="widget-title widget-title-404-widget">',

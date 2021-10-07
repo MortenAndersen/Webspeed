@@ -121,6 +121,11 @@ add_action('wp_default_scripts', 'remove_jquery_migrate');
 // Theme Widget
 require get_parent_theme_file_path('/inc/widgets.php');
 
+// Theme Posttype
+require get_parent_theme_file_path('/inc/post-type.php');
+require get_parent_theme_file_path('/inc/taxonomy.php');
+require get_parent_theme_file_path('/inc/post-type-shortcode.php');
+
 // Theme functions
 require get_parent_theme_file_path('/inc/web-functions.php');
 

@@ -1,5 +1,17 @@
 <?php
 
+if ( get_post_meta( get_the_ID(), 'footer', true ) ) {
+    echo '<div class="footer-meta-field meta-field">';
+        echo get_post_meta( get_the_ID(), 'footer', true);
+    echo '</div>';
+} 
+
+if ( get_post_meta( get_the_ID(), 'google-map', true ) ) {
+    echo '<div class="google-map-meta-field meta-field">';
+        echo get_post_meta( get_the_ID(), 'google-map', true);
+    echo '</div>';
+} 
+
 if (is_active_sidebar('post-content')) {
     dynamic_sidebar('post-content');
 } 

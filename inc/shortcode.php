@@ -54,3 +54,59 @@ if ( $loop->have_posts() ) {
 }
 /* -------------------------------------- */
 /* -------------------------------------- */
+
+
+// Child pages
+// kunne bruge dette som inspiration
+// https://wordpress.com/support/list-pages-shortcode/
+
+
+add_shortcode('child-grid', 'child_grid');
+function child_grid($atts) {
+    global $post;
+    ob_start();
+
+    // define attributes and their defaults
+    extract(shortcode_atts(array('grid' => '2', 'class' => 'no-class'), $atts));
+
+if( $grid == 2 ) {
+    $grid_class = ' g-d-2 ';
+} elseif ( $grid == 3) {
+    $grid_class = ' g-d-3 ';
+} elseif ( $grid == 4) {
+    $grid_class = ' g-d-4 ';
+}else {
+    $grid_class = ' g-d-1 ';
+}
+
+
+echo '<div class="oversigt grid' . $grid_class . 'gap-2 ' . $class . '">';
+
+$args = array(
+    'post_parent' => $post->ID,
+    'post_type' => 'page',
+    'orderby' => 'menu_order'
+);
+
+$child_query = new WP_Query( $args );
+
+while ( $child_query->have_posts() ) : 
+    $child_query->the_post();
+    $classes = get_post_class( '', $post->ID );
+
+    echo '<div class="' . esc_attr( implode( ' ', $classes ) ) . '">';  
+        echo '<h3><a href="' . get_the_permalink() . '" rel="bookmark" title="' .get_the_title() . '">' .get_the_title() . '</a></h3>';
+        web_thumbnai_link();
+        the_excerpt();
+        web_read_more();
+    echo '</div>';
+endwhile;
+
+wp_reset_postdata();
+
+
+        echo '</div>';
+
+ $myvariable = ob_get_clean();
+    return $myvariable;
+}

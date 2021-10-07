@@ -9,6 +9,22 @@
 	],
 "creatorBuild": "33081",
 "files": {
+	"/.gitattributes": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/.gitattributes",
+		"oF": 0
+		},
+	"/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/.gitignore",
+		"oF": 0
+		},
 	"/404.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -276,12 +292,36 @@
 		"oAP": "/inc/acf.php",
 		"oF": 0
 		},
+	"/inc/post-type-shortcode.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/inc/post-type-shortcode.php",
+		"oF": 0
+		},
+	"/inc/post-type.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/inc/post-type.php",
+		"oF": 0
+		},
 	"/inc/shortcode.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/inc/shortcode.php",
+		"oF": 0
+		},
+	"/inc/taxonomy.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/inc/taxonomy.php",
 		"oF": 0
 		},
 	"/inc/web-functions.php": {
@@ -451,22 +491,6 @@
 		"oAP": "/page-no-wrap.php",
 		"oF": 0
 		},
-	"/page-oversigt-topimg.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/page-oversigt-topimg.php",
-		"oF": 0
-		},
-	"/page-oversigt.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/page-oversigt.php",
-		"oF": 0
-		},
 	"/page-topimg.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -505,19 +529,6 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/bx-slider.css",
-		"oF": 0,
-		"oS": 3,
-		"sct": 0
-		},
-	"/scss/cards.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "/cards.css",
 		"oF": 0,
 		"oS": 3,
 		"sct": 0
@@ -717,6 +728,19 @@
 		"oS": 3,
 		"sct": 0
 		},
+	"/scss/posttypes.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/posttypes.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 0
+		},
 	"/scss/reset.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -791,19 +815,6 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/table.css",
-		"oF": 0,
-		"oS": 3,
-		"sct": 0
-		},
-	"/scss/web-chunks.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "/web-chunks.css",
 		"oF": 0,
 		"oS": 3,
 		"sct": 0
@@ -946,14 +957,6 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/template-parts/content/page-article.php",
-		"oF": 0
-		},
-	"/template-parts/content/page-oversigt.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/template-parts/content/page-oversigt.php",
 		"oF": 0
 		},
 	"/template-parts/content/page-search.php": {
