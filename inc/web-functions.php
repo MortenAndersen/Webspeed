@@ -117,10 +117,10 @@ if (!function_exists('web_social_menu')) {
     function web_social_menu()
     {
     echo '<div class="social">';
-        echo '<a href="https://linkedin.com" target="_blank"><img src="' . get_stylesheet_directory_uri() . '/img/linkedin.svg" alt="Linkedin"></a>';
-        echo '<a href="https://facebook.com" target="_blank"><img src="' . get_stylesheet_directory_uri() . '/img/facebook.svg" alt="Facebook"></a>';
-        echo '<a href="https://twitter.com" target="_blank"><img src="' . get_stylesheet_directory_uri() . '/img/twitter.svg" alt="Twitter"></a>';
-        echo '<a href="https://youtube.com" target="_blank"><img src="' . get_stylesheet_directory_uri() . '/img/youtube.svg" alt="Youtybe"></a>';
+        echo '<a href="https://linkedin.com" target="_blank"><img src="' . get_template_directory_uri() . '/img/linkedin.svg" alt="Linkedin"></a>';
+        echo '<a href="https://facebook.com" target="_blank"><img src="' . get_template_directory_uri() . '/img/facebook.svg" alt="Facebook"></a>';
+        echo '<a href="https://twitter.com" target="_blank"><img src="' . get_template_directory_uri() . '/img/twitter.svg" alt="Twitter"></a>';
+        echo '<a href="https://youtube.com" target="_blank"><img src="' . get_template_directory_uri() . '/img/youtube.svg" alt="Youtybe"></a>';
     echo '</div>';
 
     }
