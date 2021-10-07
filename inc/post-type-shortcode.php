@@ -58,6 +58,7 @@ if ( $loop->have_posts() ) {
         echo '<div class="grid-item element">';
             web_thumbnail();
             the_content();
+            web_edit_link();
         echo '</div>';
 
     endwhile; wp_reset_query();
