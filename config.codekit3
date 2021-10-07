@@ -522,7 +522,7 @@
 		"oA": 1,
 		"oAP": "/bx-slider.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 0
 		},
 	"/scss/elements.scss": {
@@ -535,7 +535,7 @@
 		"oA": 1,
 		"oAP": "/elements.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 0
 		},
 	"/scss/elements/breakpoints.scss": {
@@ -548,7 +548,7 @@
 		"oA": 1,
 		"oAP": "/breakpoints.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 0
 		},
 	"/scss/elements/size.scss": {
@@ -561,7 +561,7 @@
 		"oA": 1,
 		"oAP": "/size.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 0
 		},
 	"/scss/flex.scss": {
@@ -574,7 +574,7 @@
 		"oA": 1,
 		"oAP": "/flex.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 0
 		},
 	"/scss/fonts.scss": {
@@ -587,7 +587,7 @@
 		"oA": 1,
 		"oAP": "/fonts.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 0
 		},
 	"/scss/footer.scss": {
@@ -600,7 +600,7 @@
 		"oA": 1,
 		"oAP": "/footer.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 0
 		},
 	"/scss/form.scss": {
@@ -613,7 +613,7 @@
 		"oA": 1,
 		"oAP": "/form.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 0
 		},
 	"/scss/grid.scss": {
@@ -626,7 +626,20 @@
 		"oA": 1,
 		"oAP": "/grid.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
+		"sct": 0
+		},
+	"/scss/header.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/header.css",
+		"oF": 0,
+		"oS": 2,
 		"sct": 0
 		},
 	"/scss/keyframe.scss": {
@@ -639,7 +652,7 @@
 		"oA": 1,
 		"oAP": "/keyframe.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 0
 		},
 	"/scss/layout.scss": {
@@ -652,7 +665,7 @@
 		"oA": 1,
 		"oAP": "/layout.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 0
 		},
 	"/scss/lightbox.scss": {
@@ -665,7 +678,7 @@
 		"oA": 1,
 		"oAP": "/lightbox.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 0
 		},
 	"/scss/menu-desktop.scss": {
@@ -678,7 +691,7 @@
 		"oA": 1,
 		"oAP": "/menu-desktop.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 0
 		},
 	"/scss/menu-icon.scss": {
@@ -691,7 +704,7 @@
 		"oA": 1,
 		"oAP": "/menu-icon.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 0
 		},
 	"/scss/menu-mobile.scss": {
@@ -704,7 +717,7 @@
 		"oA": 1,
 		"oAP": "/menu-mobile.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 0
 		},
 	"/scss/normalize.scss": {
@@ -717,7 +730,7 @@
 		"oA": 1,
 		"oAP": "/normalize.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 0
 		},
 	"/scss/posttypes.scss": {
@@ -730,7 +743,7 @@
 		"oA": 1,
 		"oAP": "/posttypes.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 0
 		},
 	"/scss/reset.scss": {
@@ -743,7 +756,7 @@
 		"oA": 1,
 		"oAP": "/reset.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 0
 		},
 	"/scss/root.scss": {
@@ -756,7 +769,7 @@
 		"oA": 1,
 		"oAP": "/root.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 0
 		},
 	"/scss/size.scss": {
@@ -769,7 +782,7 @@
 		"oA": 1,
 		"oAP": "/size.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 0
 		},
 	"/scss/social.scss": {
@@ -782,7 +795,7 @@
 		"oA": 1,
 		"oAP": "/social.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 0
 		},
 	"/scss/style.scss": {
@@ -795,7 +808,7 @@
 		"oA": 0,
 		"oAP": "/style.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 0
 		},
 	"/scss/table.scss": {
@@ -808,7 +821,7 @@
 		"oA": 1,
 		"oAP": "/table.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 0
 		},
 	"/scss/wp-plugins.scss": {
@@ -821,7 +834,7 @@
 		"oA": 1,
 		"oAP": "/wp-plugins.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 0
 		},
 	"/scss/wp.scss": {
@@ -834,7 +847,7 @@
 		"oA": 1,
 		"oAP": "/wp.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 0
 		},
 	"/search.php": {
@@ -2947,7 +2960,7 @@
 		"createSourceMap": 1,
 		"decimalPrecision": 10,
 		"emitCharset": 1,
-		"outputStyle": 3,
+		"outputStyle": 2,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0
 		},

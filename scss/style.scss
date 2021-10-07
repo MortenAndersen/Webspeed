@@ -1,18 +1,4 @@
-/*!
-Theme Name: webspeed
-Author: Morten Andersen
-Description: Starter theme
-Version: 1.0
-Requires at least: 5.0
-Tested up to: 5.8
-Requires PHP: 5.2
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: webspeed-domain
-Domain Path: /languages
-*/
-
-
+@use 'header';
 @use 'root';
 @use 'normalize';
 @use 'reset';
