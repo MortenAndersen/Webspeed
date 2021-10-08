@@ -5,3 +5,34 @@
 		margin-bottom: 1rem;
 	}
 }
+.link-box {
+	.element {
+
+
+display: flex;
+flex-direction: column;
+
+	}
+	p {
+		margin: 0;
+		height: 100%;
+		line-height: 1.2;
+	}
+
+	a {
+		height: 100%;
+		display: block;
+		padding: s.$gap-s;
+		text-decoration: none;
+		background: var(--link-box-bg);
+		color: var(--link-box-font);
+		text-align: center;
+		border-radius: 4px;
+		border: 2px solid var(--main-bg);
+		transition: .5s all;
+		&:hover {
+			background: var(--link-box-bg-hover);
+		color: var(--link-box-font-hover);
+		}
+	}
+}
