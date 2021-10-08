@@ -63,8 +63,7 @@ if (!function_exists('web_header_sticky')) {
 
 // Thumbnail
 
-function web_thumbnai_link() {
-    $caption = get_the_post_thumbnail_caption();
+function web_thumbnail_link() {
     if ( has_post_thumbnail() ) {
         echo '<div class="oversigt-post-img">';
         echo '<a href="' . get_the_permalink() . '">';

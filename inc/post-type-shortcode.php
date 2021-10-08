@@ -19,14 +19,16 @@ function webspeed_elements($atts) {
     $grid_class = ' g-d-1 ';
     }
 
-    if( $gap == 2 ) {
+    if( $gap == 1 ) {
+    $gap_class = 'gap-1 ';
+    } elseif( $gap == 2 ) {
     $gap_class = 'gap-2 ';
     } elseif ( $gap == 3) {
         $gap_class = 'gap-3 ';
     } elseif ( $gap == 4) {
         $gap_class = 'gap-4 ';
     }else {
-    $gap_class = 'gap-1 ';
+    $gap_class = 'no-gap ';
     }
 
 
