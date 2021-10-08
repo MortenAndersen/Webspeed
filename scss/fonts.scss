@@ -210,10 +210,11 @@ strong,
 }
 
 .post-edit-link {
-    text-align: right;
-    color: red;
-    text-decoration: none;
-    font-size: .8rem;
+    text-align: right !important;
+    color: red !important;
+    background: none !important;
+    text-decoration: none !important;
+    font-size: .8rem !important;
 
     &:hover {
         text-decoration: underline;
