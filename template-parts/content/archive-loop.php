@@ -1,7 +1,7 @@
 <main class="page-content page-blog">
 	<div class="wrap-no-pad pad-top-2">
 		<?php 
-			echo '<h1 entry-title>';
+			echo '<h1 class="entry-title">';
 				single_term_title();
 			echo '</h1>';
 		?>

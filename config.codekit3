@@ -874,6 +874,14 @@
 		"oAP": "/single-no-wrap.php",
 		"oF": 0
 		},
+	"/single-topimg.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/single-topimg.php",
+		"oF": 0
+		},
 	"/single.php": {
 		"cB": 0,
 		"ft": 8192,

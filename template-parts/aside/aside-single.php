@@ -19,4 +19,12 @@ $related = get_posts( array( 'category__in' => wp_get_post_categories($post->ID)
     }
 
 wp_reset_postdata(); 
+
+if (is_active_sidebar('aside-single')) {
+
+
+            dynamic_sidebar('aside-single');
+
+}
+
 echo '</aside>';
