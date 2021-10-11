@@ -129,3 +129,21 @@ if (!function_exists('web_social_menu')) {
 function web_reference() {
     echo '<div class="reference"><a href="https://www.web.dk" target="_blank" rel="nofollow">Made by Web.dK</a></div>';
 }
+
+// Post date
+function web_post_date() {
+    $post_date = get_the_date( 'j. F - Y' ); 
+    echo '<div class="post-date">' . $post_date . '</div>';
+}
+// List cat
+function web_category() {
+    echo '<div class="list-category">';
+        the_category(', ');
+    echo '</div>';
+}
+// Post date + List cat
+function web_date_cat() {
+    $post_date = get_the_date( 'j. F - Y' );
+    echo '<div class="post-date-cat post-date">' . $post_date . ' / '; the_category(', ');
+    echo '</div>';
+}

@@ -33,6 +33,14 @@
 		"oAP": "/404.php",
 		"oF": 0
 		},
+	"/archive.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/archive.php",
+		"oF": 0
+		},
 	"/block/test-block.js": {
 		"bF": 0,
 		"ft": 64,
@@ -906,6 +914,22 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/template-parts/aside/aside-right.php",
+		"oF": 0
+		},
+	"/template-parts/aside/aside-single.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/template-parts/aside/aside-single.php",
+		"oF": 0
+		},
+	"/template-parts/content/archive-loop.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/template-parts/content/archive-loop.php",
 		"oF": 0
 		},
 	"/template-parts/content/blog-loop.php": {

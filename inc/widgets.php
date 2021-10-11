@@ -15,7 +15,19 @@ function mother_widgets_init()
         )
     );
 
-     register_sidebar(
+    register_sidebar(
+        array(
+            'name'          => __('Aside Indlæg', 'webspeed-domain'),
+            'id'            => 'aside-single',
+            'description'   => __('Sidebar på Indlæg', 'webspeed-domain'),
+            'before_widget' => '<div id="%1$s" class="widget aside-widget aside-single-widget %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h4 class="widget-title widget-title-aside">',
+            'after_title'   => '</h4>',
+        )
+    );
+
+    register_sidebar(
         array(
             'name'          => __('Aside right', 'webspeed-domain'),
             'id'            => 'aside-right',

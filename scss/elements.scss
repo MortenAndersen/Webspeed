@@ -10,12 +10,12 @@
 }
 
 .page-blog {
-    padding-bottom: s.$gap-n;
-
     article {
         overflow: hidden;
         border-bottom: 1px solid var(--border);
-        padding-top: s.$gap-n;
+        padding-bottom: s.$gap-s;
+        display: flex;
+        flex-flow: column;
     }
 }
 
@@ -332,5 +332,14 @@ article>.post-img {
     left: 0;
     width: 100% !important;
     height: 100% !important;
+    }
+}
+.related-post {
+    margin: 0;
+    padding: 0;
+    li {
+        margin: 0 0 1rem 0;
+        padding: 0;
+        list-style-type: none;
     }
 }

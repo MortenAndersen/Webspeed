@@ -6,22 +6,20 @@
 		
 	<?php if (have_posts()): while (have_posts()): the_post();?>
 		<article id="post-<?php the_ID();?>" <?php post_class();?>>
-			<?php
-			if (has_post_thumbnail()) {
-	            echo '<a href="' . get_the_permalink() . '" alt="' . get_the_title() . '">';
-	            the_post_thumbnail('thumbnail' , array( 'class' => 'alignleft' ));
-	            echo '</a>';
-	        }
-	        echo '<div class="blog-loop-txt">';
-	        	echo '<h2><a href="' . get_permalink() . '">' . get_the_title() . '</a></h2>';
+			<?php 
+			echo '<h2 class="loop-title"><a href="' . get_permalink() . '">' . get_the_title() . '</a></h2>';
+	        	web_date_cat();
+	        	web_thumbnail_link();
 	        	the_excerpt(); 
-	        echo '</div>';
+	        	web_read_more();
+	        
 		echo '</article>';
 endwhile; ?>
-
+</div>
+<div class="wrap">
 <div class="nav-previous"><?php next_posts_link( '>>' ); ?></div>
 <div class="nav-next"><?php previous_posts_link( '<<' ); ?></div>
- 
+</div>
 <?php endif;?>
 </div>
 </main>

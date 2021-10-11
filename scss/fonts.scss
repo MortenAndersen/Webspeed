@@ -49,6 +49,9 @@ article {
         font-size: 1.5rem;
         margin-top: 3rem;
         margin-bottom: 1.5rem;
+        &.loop-title {
+            margin-top: 0;
+        }
     }
 
     h3 {
@@ -231,4 +234,10 @@ article h1+h2 {
 
 h2.no-top {
     margin-top: 0;
+}
+.post-date,
+.list-category {
+    font-size: s.$font-xs;
+    margin-bottom: s.$gap-xs;
+    border-bottom: 1px dashed var(--border);
 }
