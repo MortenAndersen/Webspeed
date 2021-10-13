@@ -40,7 +40,14 @@ h6 {
         margin: 0;
     }
 }
-
+.info {
+    background: aliceblue;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-right: 5px solid lightslategrey;
+}
 article {
     line-height: var(--article-line-height);
     font-size: var(--article-font-size);
