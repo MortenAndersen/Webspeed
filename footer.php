@@ -35,6 +35,12 @@ if (is_active_sidebar('post-footer')) {
 		echo '</div>';
 	echo '</div>';
 }
+
+if (is_active_sidebar('slide-in-frontpage') && is_front_page() ) {
+	echo '<div class="slide-in-content">';
+    	dynamic_sidebar('slide-in-frontpage');
+    echo '</div>';
+} 
 web_reference();
 wp_footer();
 

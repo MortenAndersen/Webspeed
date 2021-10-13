@@ -110,9 +110,22 @@ function mother_widgets_init()
             'name'          => __('Menu widget', 'webspeed-domain'),
             'id'            => 'menu-widget',
             'description'   => __('Vises KUN i mobilmenu!', 'webspeed-domain'),
-            'before_widget' => '<div id="%1$s" class="widget widget-pmenu %2$s">',
+            'before_widget' => '<div id="%1$s" class="widget widget-menu %2$s">',
             'after_widget'  => '</div>',
             'before_title'  => '<h5 class="widget-title widget-title-menu-widget">',
+            'after_title'   => '</h5>',
+        )
+    );
+
+    // Slide in frontpage
+    register_sidebar(
+        array(
+            'name'          => __('Slide in ', 'webspeed-domain'),
+            'id'            => 'slide-in-frontpage',
+            'description'   => __('Vises KUN på forsiden!', 'webspeed-domain'),
+            'before_widget' => '<div id="%1$s" class="widget widget-slide-in %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h5 class="widget-title widget-title-slide-in-widget">',
             'after_title'   => '</h5>',
         )
     );
