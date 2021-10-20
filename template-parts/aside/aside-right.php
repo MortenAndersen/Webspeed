@@ -13,6 +13,11 @@ if( class_exists('ACF') ) {
             echo '</div>';
        } 
 
+        if ( get_post_meta( get_the_ID(), 'shortcode-right', true ) ) {
+            $shortcode = get_post_meta( get_the_ID(), 'shortcode-right', true );
+            echo do_shortcode( "{$shortcode}" );
+        }
+
         dynamic_sidebar('aside-right');
     echo '</aside>';
 }
