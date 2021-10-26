@@ -41,6 +41,16 @@
 		"oAP": "/archive.php",
 		"oF": 0
 		},
+	"/assets/images/time.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/time.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/block/test-block.js": {
 		"bF": 0,
 		"ft": 64,
@@ -585,6 +595,19 @@
 		"oS": 2,
 		"sct": 0
 		},
+	"/scss/event.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/event.css",
+		"oF": 0,
+		"oS": 2,
+		"sct": 0
+		},
 	"/scss/flex.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -905,6 +928,14 @@
 		"oAP": "/search.php",
 		"oF": 0
 		},
+	"/single-event.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/single-event.php",
+		"oF": 0
+		},
 	"/single-no-wrap.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -985,6 +1016,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/template-parts/content/blog-loop.php",
+		"oF": 0
+		},
+	"/template-parts/content/event-article.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/template-parts/content/event-article.php",
 		"oF": 0
 		},
 	"/template-parts/content/page-404.php": {

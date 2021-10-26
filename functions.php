@@ -8,14 +8,11 @@ add_action('init', function () {
     add_action('wp_footer', 'wp_print_head_scripts', 5);
 });
 
-
 // Theme jQuery fil
-function web_scripts()
-{
+
+function web_scripts() {
     wp_register_script('theme-script', get_template_directory_uri() . '/js/starter-min.js', array('jquery'));
     wp_enqueue_script('theme-script');
-
-
 }
 add_action('wp_enqueue_scripts', 'web_scripts');
 
@@ -32,8 +29,7 @@ add_filter( 'excerpt_length', 'web_custom_excerpt_length', 999 );
 // ---------------------------------------------------
 
 if (!function_exists('web_setup')):
-    function web_setup()
-{
+    function web_setup() {
 
         // Fjern elementer i WP
         remove_action( 'wp_head', 'feed_links_extra', 3 );
@@ -77,6 +73,7 @@ if (!function_exists('web_setup')):
         ));
 
     }
+
     add_action('after_setup_theme', 'web_setup');
 endif;
 
@@ -102,8 +99,7 @@ add_action('init', 'crunchify_stop_loading_wp_embed_and_jquery');
 
 
 //Remove JQuery migrate
-function remove_jquery_migrate($scripts)
-{
+function remove_jquery_migrate($scripts) {
     if (!is_admin() && isset($scripts->registered['jquery'])) {
         $script = $scripts->registered['jquery'];
         

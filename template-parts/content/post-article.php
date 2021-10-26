@@ -18,7 +18,7 @@ echo '<main class="page-content">';
 } else {
 	echo '<div class="wrap article-aside">';
 		echo '<article>';
-			the_title('<h1 class="entry-title">', '</h1>');
+			web_title();
 			web_thumbnail();
 			web_date_cat();
 			the_content();

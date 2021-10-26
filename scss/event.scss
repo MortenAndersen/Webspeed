@@ -1,0 +1,153 @@
+ul.events {
+	margin: 1em 0;
+	padding: 0;
+}
+.events li {
+	overflow: hidden;
+	margin: 1em 0;
+	padding: 0 0 1em 0;
+	list-style-type: none;
+	border-bottom: 1px solid #f2f2f2;
+}
+.size-event_small {
+	float: left;
+	margin: 0 .7em .7em 0;
+}
+article .size-event_small {
+	margin: 0 1em 0 0;
+}
+.old-event {
+	opacity: .3;
+}
+.event-month {
+
+	margin: 0 0 1rem 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+div.event {
+	overflow: hidden;
+}
+.event-month-con {
+	margin-bottom: 2em;
+	padding-bottom: 2em;
+	border-bottom: 1px solid #1e402b
+}
+.event-read-more {
+	margin: 1em 0 0 0;
+}
+p.event-title {
+	font-weight: bold;
+	margin:0;
+	padding: 0;
+}
+.event-kort-tekst {
+	font-size: .85em;
+	margin-top: .5em;
+}
+.event-data .event-kort-tekst {
+        margin: 1em 0 0 0;
+}
+div.event .post-edit-link {
+	float: right;
+	margin-bottom: 1em;
+}
+.event-kort-tekst {
+	clear: both;
+}
+article .event-kort-tekst {
+	clear: none;
+}
+.event-date-time {
+    
+}
+.hide-all-time .event-start-time,
+.hide-all-time .event-end-time,
+.hide-all-time .event-klokken,
+.hide-all-time .evnet-til-ens-start-end {display: none;}
+
+.hide-end-time .event-end-time,
+.hide-end-time .evnet-til-ens-start-end,
+.hide-end-time .end-time {display: none;}
+
+.event-txt {
+	padding: 1em;
+}
+.event-con {
+	margin-bottom: 1em;
+}
+.event-buy-link {
+	margin: 1em 0;
+}
+.event-buy-link a {
+    background: #fff;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: .5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .5s all;
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    max-width: 300px;
+}
+.event-buy-link a:hover {
+
+}
+.event-day-month {
+	position: absolute;
+	background: #fff;
+	top: 0;
+	right: 0;
+	padding: 1em;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 1;
+}
+.event .overflow {
+	position: relative;
+}
+.event-short-day {
+	font-size: 2em;
+	padding-bottom: 3px;
+}
+.event-klokken {
+	img {
+		height: 11px;
+		display: inline-block;
+	}
+}
+
+.event-data-con {
+	border-top: 1px solid #1e402b;
+	border-bottom: 1px solid #1e402b;
+	padding: 1em 0;
+	margin-bottom: 2em;
+	div.event {
+		background: none;
+		font-size: 1.5em;
+	}
+	.event-label.small-txt {
+		font-size: 1.5em;
+	}
+	.event-buy-link {
+		margin: 0;
+	}
+	.event-klokken {
+	img {
+		height: 16px;
+		display: inline-block;
+	}
+}
+}
+
+.event-til {
+	color: #000;
+}
+.single-event {
+	.breadcrumb-con {
+		display: none;
+	}
+}

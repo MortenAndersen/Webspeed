@@ -93,7 +93,12 @@ function web_topimg() {
         
             echo '<div class="wrap-no-pad">';
             echo '<div class="top-caption">';
-            the_title('<h1 class="entry-title-big">', '</h1>');
+
+
+            $arr = array(" | " => "<br />","<" => "<span>",">" => "</span>");
+            echo '<h1 class="entry-title-big">' . strtr(get_the_title(),$arr) . '</h1>';
+
+            //echo '<h1 class="entry-title-big">' . str_replace(' | ', '<br />', get_the_title()) . '</h1>';
             if(!empty($caption)) {
                 echo '<h2 class="sub-title-big">' . $caption . '</h2>';
             }
@@ -146,4 +151,10 @@ function web_date_cat() {
     $post_date = get_the_date( 'j. F - Y' );
     echo '<div class="post-date-cat post-date">' . $post_date . ' / '; the_category(', ');
     echo '</div>';
+}
+
+// Title 
+function web_title() {
+    $arr = array(" | " => "<br />","<" => "<span>",">" => "</span>");
+    echo '<h1 class="entry-title">' . strtr(get_the_title(),$arr) . '</h1>';
 }
