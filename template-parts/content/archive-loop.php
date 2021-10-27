@@ -14,7 +14,7 @@
 			<?php
 			
 
-	        	echo '<h2 class="loop-title"><a href="' . get_permalink() . '">' . get_the_title() . '</a></h2>';
+	        	echo '<h2 class="loop-title"><a href="' . get_permalink() . '">' . get_web_title() . '</a></h2>';
 	        	web_post_date();
 	        	web_thumbnail_link();
 	        	the_excerpt(); 

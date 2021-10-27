@@ -158,3 +158,13 @@ function web_title() {
     $arr = array(" | " => "<br />","<" => "<span>",">" => "</span>");
     echo '<h1 class="entry-title">' . strtr(get_the_title(),$arr) . '</h1>';
 }
+function get_web_title() {
+    $arr = array(" | " => "<br />","<" => "<span>",">" => "</span>");
+    $title = strtr(get_the_title(),$arr);
+    return $title;
+}
+function get_clean_web_title() {
+    $arr = array(" | " => " ","<" => "",">" => "");
+    $title = strtr(get_the_title(),$arr);
+    return $title;
+}

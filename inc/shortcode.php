@@ -107,7 +107,7 @@ while ( $child_query->have_posts() ) :
 
     echo '<div class="' . esc_attr( implode( ' ', $classes ) ) . '">';
         web_thumbnail_link();
-        echo '<h3><a href="' . get_the_permalink() . '" rel="bookmark" title="' .get_the_title() . '">' .get_the_title() . '</a></h3>';
+        echo '<h3><a href="' . get_the_permalink() . '" rel="bookmark" title="' .get_clean_web_title() . '">' . get_web_title() . '</a></h3>';
         
         the_excerpt();
         web_read_more();

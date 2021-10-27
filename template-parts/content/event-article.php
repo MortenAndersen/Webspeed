@@ -13,6 +13,6 @@ echo '<main class="page-content">';
 			web_go_back();
 
 		echo '</article>';
-get_template_part('template-parts/aside/aside', 'single'); 
+get_template_part('template-parts/aside/aside', 'event'); 
 	echo '</div>';
 echo '</main>';
