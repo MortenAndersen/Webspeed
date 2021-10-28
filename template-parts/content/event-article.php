@@ -5,7 +5,7 @@ echo '<main class="page-content">';
 		echo '<article>';
 			web_title();
 			web_thumbnail();
-			simpleEvent_showdate();
+			simpleEvent_showdate_year();
 			simleEvent_label();
 			simpleEvent_payLink();
 			the_content();

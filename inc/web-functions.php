@@ -65,10 +65,12 @@ if (!function_exists('web_header_sticky')) {
 
 function web_thumbnail_link() {
     if ( has_post_thumbnail() ) {
-        echo '<div class="oversigt-post-img">';
-        echo '<a href="' . get_the_permalink() . '">';
-        the_post_thumbnail();
-        echo '</a>';
+        echo '<div class="img-zoom">';
+            echo '<div class="oversigt-post-img overflow">';
+            echo '<a href="' . get_the_permalink() . '">';
+            the_post_thumbnail();
+            echo '</a>';
+            echo '</div>';
         echo '</div>';
     }
 }

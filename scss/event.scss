@@ -27,7 +27,15 @@ article .size-event_small {
   font-size: 1.4rem;
 }
 div.event {
-	overflow: hidden;
+}
+.event-img {
+	margin-bottom: 1rem;
+}
+aside div.event{
+	margin-bottom: 2rem;
+	&:last-of-type {
+		margin-bottom: 0;
+	}
 }
 .event-month-con {
 	margin-bottom: 2em;
@@ -60,7 +68,8 @@ article .event-kort-tekst {
 	clear: none;
 }
 .event-date-time {
-    
+    border-bottom: 1px solid var(--border);
+    margin: 0.5rem 0 ;
 }
 .hide-all-time .event-start-time,
 .hide-all-time .event-end-time,
@@ -75,7 +84,10 @@ article .event-kort-tekst {
 	
 }
 .event-con {
-	margin-bottom: 1em;
+	margin: 3rem 0 2em 0;
+	aside & {
+		margin: 0;
+	}
 }
 .event-buy-link {
 	margin: 1em 0;
