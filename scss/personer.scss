@@ -1,0 +1,192 @@
+.person-img-con {
+    background: #7b756d;
+    color: #fff;
+    background: #083a59;
+    margin-bottom: 2em;
+
+    a {
+        color: inherit;
+    }
+}
+
+.person-info {
+
+    a {
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+}
+
+.person-data {
+    margin: 0 0 1em 0;
+    padding: 0 .5rem;
+
+    li {
+        margin: 0;
+        padding: .2em 0;
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        &.title {
+            margin-bottom: 1em;
+        }
+    }
+
+    a {
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    svg {
+        max-width: 20px;
+    }
+}
+.single {
+    .person-data {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.person-img-con {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.person-img,
+.person-info {
+    flex: 1 100%;
+
+}
+
+.person-img {
+    position: relative;
+    margin: 0;
+
+    .img-caption {
+        position: absolute;
+        bottom: 2em;
+        padding: 1em;
+        left: 0;
+        right: 0;
+        background: rgba(7, 52, 80, .7);
+        text-align: left;
+    }
+}
+
+@media (min-width: 700px) {
+    .person-img {
+        flex: 1 60%;
+        max-width: 60%;
+
+        img {
+            float: left;
+        }
+    }
+
+    .person-info {
+        flex: 1 40%;
+        max-width: 40%;
+    }
+}
+
+.person--data {
+    .title {
+        font-weight: bold;
+        font-size: 110%;
+
+        .personer-shortcode & {
+            font-weight: normal;
+        }
+    }
+
+    li {
+        overflow: hidden;
+        margin: 5px 0;
+
+        &.title {
+            margin-bottom: 1em;
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.type-person {
+    padding-top: 1em;
+}
+
+.person-info-inner {
+    background: rgba(0, 0, 0, .1);
+    height: calc(100% - 2vw);
+    margin: 1vw;
+    padding: 2vw;
+}
+
+.personer-shortcode {
+
+    .person--data {
+        li.title {
+            margin: 0 0 .5em 0;
+
+        }
+    }
+
+    article & {
+        margin: 1em 0;
+    }
+}
+.person-titel {
+    margin: 0;
+    .personer-shortcode & {
+        padding: 0 .5rem;
+    }
+}
+.shortcode-person-img {
+    overflow: hidden;
+    box-shadow: 0 0 10px #00000038;
+    border: .5em solid #fff;
+    margin-bottom: 1rem;
+
+    img {
+        float: left;
+        width: 100%;
+    }
+}
+
+@media (min-width: 700px) {
+    .personer-shortcode {
+        &.g1 {
+            margin: 0;
+        }
+    }
+}
+
+@media (min-width: 700px) {
+    article .personer-shortcode.person.left {
+        max-width: 300px;
+        float: left;
+        margin: 1em 2em 2em 0;
+    }
+
+    article .personer-shortcode.person.right {
+        max-width: 300px;
+        float: right;
+        margin: 1em 0 2em 2em;
+    }
+
+    article .personer-shortcode.person.none {
+        max-width: 300px;
+        margin: 1em 0;
+    }
+}

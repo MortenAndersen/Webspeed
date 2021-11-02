@@ -790,6 +790,19 @@
 		"oS": 2,
 		"sct": 0
 		},
+	"/scss/personer.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/personer.css",
+		"oF": 0,
+		"oS": 2,
+		"sct": 0
+		},
 	"/scss/posttypes.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -944,6 +957,14 @@
 		"oAP": "/single-no-wrap.php",
 		"oF": 0
 		},
+	"/single-person.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/single-person.php",
+		"oF": 0
+		},
 	"/single-topimg.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -992,6 +1013,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/template-parts/aside/aside-left.php",
+		"oF": 0
+		},
+	"/template-parts/aside/aside-person.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/template-parts/aside/aside-person.php",
 		"oF": 0
 		},
 	"/template-parts/aside/aside-right.php": {
@@ -1088,6 +1117,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/template-parts/content/page-search.php",
+		"oF": 0
+		},
+	"/template-parts/content/person-article.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/template-parts/content/person-article.php",
 		"oF": 0
 		},
 	"/template-parts/content/post-article-no-wrap.php": {
