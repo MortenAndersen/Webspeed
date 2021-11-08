@@ -71,6 +71,8 @@ if (!function_exists('web_setup')):
         register_nav_menus(array(
             'main-menu' => __('Main Menu', 'webspeed-domain'),
         ));
+        // Excerpt in pages
+        add_post_type_support( 'page', 'excerpt' );
 
     }
 
