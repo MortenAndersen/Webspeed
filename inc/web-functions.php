@@ -11,7 +11,7 @@ function web_logo()
     } else {
         if ( get_bloginfo( 'name' )  !== '' ) { 
             echo '<div class="name">';
-            echo '<span class="blog-name">' . get_bloginfo( 'name' ) . '</span>';
+            echo '<span class="blog-name"><a href="' . home_url() . '">' . get_bloginfo( 'name' ) . '</a></span>';
         
             if ( get_bloginfo( 'description' )  !== '' ) {
                 echo '<span class="blog-desc">' . get_bloginfo('description') . '</span>';

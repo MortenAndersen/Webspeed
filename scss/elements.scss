@@ -236,11 +236,15 @@ article>.post-img {
 
 .name {
     font-weight: bold;
-    margin: .5rem 0;
+    margin: 1rem 0;
     font-size: var(--font-xl);
 
     span {
         display: block;
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
     }
 
     .blog-desc {
