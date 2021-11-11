@@ -12,7 +12,7 @@
 
         echo '<ol class="search-results">';
             while ( have_posts() ) : the_post();
-                echo '<li class="search-result-type--' . get_post_type() . '"><a href="' . get_the_permalink() . '">' . get_the_title() . '</a><div class="small-font">' . get_the_excerpt() . '</div></li>';
+                echo '<li class="search-result-type--' . get_post_type() . '"><a href="' . get_the_permalink() . '">' . get_clean_web_title() . '</a><div class="small-font">' . get_the_excerpt() . '</div></li>';
             endwhile;
         echo '</ol>';
     endif;
