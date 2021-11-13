@@ -166,7 +166,12 @@
         width: 100%;
     }
 }
-
+.person-excerpt {
+    padding: 0 .5rem;
+    p {
+        margin: 0;
+    }
+}
 @media (min-width: 700px) {
     .personer-shortcode {
         &.g1 {
