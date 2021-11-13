@@ -334,3 +334,9 @@ textarea {
 	margin-right: auto;
 	margin-bottom: 1.5rem;
 }
+
+/* Web.dk Hacks
+--------------------------------------------- */
+label.wp-block-search__label.screen-reader-text {
+	width: auto;
+}
