@@ -326,12 +326,20 @@
 		"oAP": "/inc/post-type.php",
 		"oF": 0
 		},
-	"/inc/shortcode.php": {
+	"/inc/shortcode-child-grid.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/inc/shortcode.php",
+		"oAP": "/inc/shortcode-child-grid.php",
+		"oF": 0
+		},
+	"/inc/shortcode-post.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/inc/shortcode-post.php",
 		"oF": 0
 		},
 	"/inc/taxonomy.php": {

@@ -78,15 +78,17 @@ article {
         margin-bottom: .3rem;
     }
 }
+
 .page-template-page-aside-left-right-topimg,
 .page-template-page-aside-right-topimg,
 .page-template-page-topimg,
 .page-template-page-aside-left-topimg,
 .page-template-page-no-wrap-topimg {
-    article > h2:first-of-type {
+    article>h2:first-of-type {
         margin-top: 0;
     }
 }
+
 .widget-title {
     font-weight: 600;
     font-size: s.$font-n;
@@ -126,6 +128,9 @@ p {
         text-align: right;
         line-height: 1;
         font-size: .9rem;
+        position: relative;
+        padding-right: 12px;
+        max-width: inherit;
 
         a {
             text-decoration: none;
@@ -138,10 +143,16 @@ p {
             }
 
             &:before {
-                content: '\2192';
-                padding-right: 1ch;
-                opacity: .6;
-                transition: .5s opacity;
+                content: '';
+                position: absolute;
+                right: 0;
+                top: 50%;
+                display: block;
+                border-right: 1px solid var(--link);
+                border-bottom: 1px solid var(--link);
+                width: 6px;
+                height: 6px;
+                transform: translate(-50%, -50%) rotate(-45deg);
             }
         }
     }

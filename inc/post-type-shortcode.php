@@ -40,12 +40,12 @@ function webspeed_elements($atts) {
         'order' => 'ASC',
         'posts_per_page' => -1,
         'tax_query' => array(
-        array (
-            'taxonomy' => 'webspeeed_element_type',
-            'field' => 'slug',
-            'terms' => $type,
-        )
-    ),
+            array (
+                'taxonomy' => 'webspeeed_element_type',
+                'field' => 'slug',
+                'terms' => $type,
+            )
+        ),
     )
 );
 
