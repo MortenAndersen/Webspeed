@@ -15,11 +15,13 @@ function web_post($atts) {
             'date_cat' => 'no', 
             'type' => 'not-set', 
             'excerpt' => 'yes',
-            'related' => 'no'
+            'related' => 'no',
+            'grid' => '2',
+            'gap' =>'2'
         ), 
     $atts));
 
-
+require get_parent_theme_file_path('/inc/grid-gap.php');
 /* -------------------------------------- */
 
 if ($type != 'not-set' && $related == 'no') {
@@ -59,16 +61,26 @@ if ($type != 'not-set' && $related != 'no') {
 
 if ( $loop->have_posts() ) {
 
-    echo '<div class="web-loop-posts">';
+    echo '<div class="web-loop-posts grid' . $grid_class . $gap_class . '">';
 		while ( $loop->have_posts() ) : $loop->the_post();
 			$classes = get_post_class( '', $post->ID );
-			echo '<article class="' . esc_attr( implode( ' ', $classes ) ) . '">';
+			echo '<div class="poost-loop ' . esc_attr( implode( ' ', $classes ) ) . '">';
 
-            // Title
-            if ( $link == 'yes') {
-                echo '<h3 class="loop-title"><a href="' . get_the_permalink() . '">' . get_web_title() . '</a></h3>';
-            } else {
-                echo '<h3 class="loop-title">' . get_web_title() . '</h3>';
+            
+
+            // thumbnail
+            if ( has_post_thumbnail() && $img == 'yes' ) {
+                echo '<div class="loop-post-img">';
+                if ( $link == 'yes') {
+                    echo '<div class="img-zoom">';
+                        echo '<a href="' . get_the_permalink() . '">';
+                            the_post_thumbnail('webspeed-post');
+                        echo '</a>';
+                        echo '</div>';
+                } else {
+                    the_post_thumbnail('webspeed-post');
+                } 
+                echo '</div>';
             }
 
             // Date
@@ -80,24 +92,16 @@ if ( $loop->have_posts() ) {
                 web_date_cat();
             }
 
-            // thumbnail
-            if ( has_post_thumbnail() && $img == 'yes' ) {
-                echo '<div class="loop-post-img">';
-                if ( $link == 'yes') {
-                    echo '<div class="img-zoom">';
-                        echo '<a href="' . get_the_permalink() . '">';
-                            the_post_thumbnail('large');
-                        echo '</a>';
-                        echo '</div>';
-                } else {
-                    the_post_thumbnail('large');
-                } 
-                echo '</div>';
+                        // Title
+            if ( $link == 'yes') {
+                echo '<h3 class="loop-title"><a href="' . get_the_permalink() . '">' . get_web_title() . '</a></h3>';
+            } else {
+                echo '<h3 class="loop-title">' . get_web_title() . '</h3>';
             }
 
             // the_excerpt
             if ( $excerpt == 'yes') {
-                the_excerpt();
+                web_excerpt();
             }
 
             // Read more
@@ -105,7 +109,7 @@ if ( $loop->have_posts() ) {
                 web_read_more();
             }
 
-            echo '</article>';
+            echo '</div>';
 		endwhile; wp_reset_query();
     echo '</div>';
 }

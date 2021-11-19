@@ -231,7 +231,7 @@ article>.post-img {
 }
 
 .loop-post-img {
-    margin: s.$gap-s 0;
+    margin: 0 0 s.$gap-s 0;
 }
 
 .name {
@@ -347,4 +347,11 @@ article>.post-img {
         padding: 0;
         list-style-type: none;
     }
+}
+.web-loop-posts {
+    margin-bottom: s.$gap-n;
+}
+.poost-loop {
+    display: flex;
+    flex-flow: column;
 }

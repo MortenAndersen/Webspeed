@@ -310,6 +310,14 @@
 		"oAP": "/inc/acf.php",
 		"oF": 0
 		},
+	"/inc/grid-gap.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/inc/grid-gap.php",
+		"oF": 0
+		},
 	"/inc/post-type-shortcode.php": {
 		"cB": 0,
 		"ft": 8192,

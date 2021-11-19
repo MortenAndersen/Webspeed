@@ -12,12 +12,12 @@
 	<?php if (have_posts()): while (have_posts()): the_post();?>
 		<article id="post-<?php the_ID();?>" <?php post_class();?>>
 			<?php
-			
-
-	        	echo '<h2 class="loop-title"><a href="' . get_permalink() . '">' . get_web_title() . '</a></h2>';
-	        	web_post_date();
+		
+	        	
 	        	web_thumbnail_link();
-	        	the_excerpt(); 
+	        	web_post_date();
+	        	echo '<h2 class="loop-title"><a href="' . get_permalink() . '">' . get_web_title() . '</a></h2>';
+	        	web_excerpt(); 
 	        	web_read_more();
 
 		echo '</article>';

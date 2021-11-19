@@ -61,6 +61,12 @@ if (!function_exists('web_header_sticky')) {
     }
 }
 
+function web_excerpt() {
+    echo '<div class="the-excerpt">';
+        the_excerpt();
+    echo '</div>';
+}
+
 // Thumbnail
 
 function web_thumbnail_link() {
@@ -68,7 +74,7 @@ function web_thumbnail_link() {
         echo '<div class="img-zoom">';
             echo '<div class="oversigt-post-img overflow">';
             echo '<a href="' . get_the_permalink() . '">';
-            the_post_thumbnail();
+            the_post_thumbnail('webspeed-post');
             echo '</a>';
             echo '</div>';
         echo '</div>';
@@ -79,7 +85,7 @@ function web_thumbnail() {
     $caption = get_the_post_thumbnail_caption();
     if ( has_post_thumbnail() ) {
         echo '<div class="post-img">';
-        the_post_thumbnail();
+        the_post_thumbnail('webspeed-post');
         if(!empty($caption)) {
             echo '<div class="caption">' . $caption . '</div>';
         }

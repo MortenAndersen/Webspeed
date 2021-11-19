@@ -62,7 +62,8 @@ if (!function_exists('web_setup')):
 
         // Images
         add_theme_support('post-thumbnails');
-        add_image_size('web-content-image', 2000, 1200, true);
+        add_image_size('webspeed-post', 705, 395, true);
+
 
         // Shortkoder i widget
         add_filter('widget_text', 'do_shortcode');
