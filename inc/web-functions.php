@@ -93,6 +93,18 @@ function web_thumbnail() {
     }
 }
 
+function web_img() {
+    $caption = get_the_post_thumbnail_caption();
+    if ( has_post_thumbnail() ) {
+        echo '<div class="post-img">';
+        the_post_thumbnail();
+        if(!empty($caption)) {
+            echo '<div class="caption">' . $caption . '</div>';
+        }
+        echo '</div>';
+    }
+}
+
 function web_topimg() {
     $caption = get_the_post_thumbnail_caption();
     if ( has_post_thumbnail() ) {
@@ -102,11 +114,9 @@ function web_topimg() {
             echo '<div class="wrap-no-pad">';
             echo '<div class="top-caption">';
 
-
             $arr = array(" | " => "<br />","<" => "<span>",">" => "</span>");
             echo '<h1 class="entry-title-big">' . strtr(get_the_title(),$arr) . '</h1>';
 
-            //echo '<h1 class="entry-title-big">' . str_replace(' | ', '<br />', get_the_title()) . '</h1>';
             if(!empty($caption)) {
                 echo '<h2 class="sub-title-big">' . $caption . '</h2>';
             }

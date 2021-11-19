@@ -4,7 +4,7 @@ echo '<main class="page-content">';
 	echo '<div class="wrap article-aside">';
 		echo '<article>';
 			web_title();
-			web_thumbnail();
+			web_img();
 			simpleEvent_showdate_year();
 			simleEvent_label();
 			simpleEvent_payLink();

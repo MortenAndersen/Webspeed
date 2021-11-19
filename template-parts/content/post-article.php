@@ -19,7 +19,7 @@ if ( is_page_template( 'single-topimg.php' ) ) {
 		
 			while (have_posts()) : the_post();
 				web_title();
-				web_thumbnail();
+				web_img();
 				web_date_cat();
 				the_content();
 				comment_form();

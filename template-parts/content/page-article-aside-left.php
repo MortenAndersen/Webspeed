@@ -13,7 +13,7 @@ if ( is_page_template( 'page-aside-left-topimg.php' ) ) {
 		echo '<article>';
 			while (have_posts()) : the_post();
 				web_title();
-				web_thumbnail();
+				web_img();
 				the_content();
 			endwhile; 
 }

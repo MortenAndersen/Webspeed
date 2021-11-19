@@ -5,7 +5,7 @@ echo '<main class="page-content">';
 echo '<div class="wrap article-aside">';
 echo '<article>';
 
-			web_thumbnail();
+			web_img();
 			web_title();
 			
 			the_content();

@@ -15,7 +15,7 @@ echo '<main class="page-content">';
 		echo '<article>';
 			while (have_posts()) : the_post();
 				web_title();
-				web_thumbnail();
+				web_img();
 				the_content();
 			endwhile; 
 }
