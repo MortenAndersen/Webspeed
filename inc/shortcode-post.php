@@ -7,7 +7,8 @@ function web_post($atts) {
     // define attributes and their defaults
     extract(shortcode_atts(
         array(
-            'number' => '3', 
+            'number' => '3',
+            'offset' => '0',
             'img' => 'yes', 
             'read_more' => 'yes', 
             'link' => 'yes',
@@ -27,13 +28,15 @@ require get_parent_theme_file_path('/inc/grid-gap.php');
 if ($type != 'not-set' && $related == 'no') {
     $loop = new WP_Query( array(
         'post_type' => 'post',
-        'posts_per_page' => $number,     
+        'posts_per_page' => $number,
+        'offset' => $offset,     
         'category_name' => $type,
     ));
 } else {
     $loop = new WP_Query( array(
         'post_type' => 'post',
         'posts_per_page' => $number,
+        'offset' => $offset,
     ));
 }
 
@@ -41,7 +44,8 @@ if ($type != 'not-set' && $related == 'no') {
 if ($type != 'not-set' && $related != 'no') {
     $loop = new WP_Query( array(
         'post_type' => 'post',
-        'posts_per_page' => $number,     
+        'posts_per_page' => $number,
+        'offset' => $offset,     
         'category_name' => $type,
         'category__in' => wp_get_post_categories($post->ID),
 
@@ -51,6 +55,7 @@ if ($type != 'not-set' && $related != 'no') {
     $loop = new WP_Query( array(
         'post_type' => 'post',
         'posts_per_page' => $number,
+        'offset' => $offset,
         'category__in' => wp_get_post_categories($post->ID),
 
      'post__not_in' => array($post->ID) 
