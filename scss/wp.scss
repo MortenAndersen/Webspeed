@@ -340,3 +340,11 @@ textarea {
 label.wp-block-search__label.screen-reader-text {
 	width: auto;
 }
+@media (max-width: 599px) {
+	.wp-block-column {
+	    margin-bottom: 2rem;
+	    &:last-child {
+	    	margin-bottom: 0;
+	    }
+	}
+}
