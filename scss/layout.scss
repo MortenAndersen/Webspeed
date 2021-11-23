@@ -21,8 +21,9 @@
 }
 .wp-block-columns {
     padding: 0;
-    .page-template-page-no-wrap & {
-        padding: s.$gap-n * 2 s.$gap-n s.$gap-n s.$gap-n;
+    .page-template-page-no-wrap &,
+    .page-template-page-no-wrap-topimg &{
+        padding: s.$gap-n s.$gap-n 0 s.$gap-n;
     }
 }
 @media (min-width: b.$phone) {
