@@ -280,3 +280,10 @@ article h1+h2 {
     margin-bottom: s.$gap-xs;
     border-bottom: 1px dashed var(--border);
 }
+.wp-block-column {
+    * {
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}
