@@ -63,6 +63,7 @@ acf_add_local_field_group(array(
 	'hide_on_screen' => '',
 	'active' => true,
 	'description' => '',
+	'show_in_rest' => 0,
 ));
 
 acf_add_local_field_group(array(
@@ -127,6 +128,7 @@ acf_add_local_field_group(array(
 	'hide_on_screen' => '',
 	'active' => true,
 	'description' => '',
+	'show_in_rest' => 0,
 ));
 
 endif;

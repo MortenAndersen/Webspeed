@@ -10,36 +10,35 @@ function child_grid($atts) {
     ob_start();
 
     // define attributes and their defaults
-    extract(shortcode_atts(array('grid' => '2', 'gap' => '2', 'class' => 'no-class'), $atts));
+    extract(shortcode_atts(
+        array(
+            'grid' => '2',
+            'gap' => '2',
+            'class' => 'no-class',
+            'number' => '999',
+            'offset' => '0',
+            'img' => 'yes',
+            'excerpt' => 'yes',
+            'read_more' => 'yes',
+        ), $atts));
 
-if( $grid == 2 ) {
-    $grid_class = ' g-d-2 ';
-} elseif ( $grid == 3) {
-    $grid_class = ' g-d-3 ';
-} elseif ( $grid == 4) {
-    $grid_class = ' g-d-4 ';
-}else {
-    $grid_class = ' g-d-1 ';
+require get_parent_theme_file_path('/inc/grid-gap.php');
+
+if (is_page_template('page-no-wrap-topimg.php') || is_page_template('page-no-wrap.php') ) { 
+
+    echo '<div class="wide-con wrap-' . $class . '">';
+        echo '<div class="wrap">';
 }
-
-if( $gap == 1 ) {
-    $gap_class = 'gap-1 ';
-    } elseif( $gap == 2 ) {
-    $gap_class = 'gap-2 ';
-    } elseif ( $gap == 3) {
-        $gap_class = 'gap-3 ';
-    } elseif ( $gap == 4) {
-        $gap_class = 'gap-4 ';
-    }else {
-    $gap_class = 'no-gap ';
-    }
 
 echo '<div class="oversigt grid' . $grid_class . $gap_class . $class . '">';
 
 $args = array(
     'post_parent' => $post->ID,
     'post_type' => 'page',
-    'orderby' => 'menu_order'
+    'posts_per_page' => $number,
+    'offset' => $offset,
+    'orderby' => 'menu_order',
+    'order' => 'ASC',
 );
 
 $child_query = new WP_Query( $args );
@@ -49,11 +48,21 @@ while ( $child_query->have_posts() ) :
     $classes = get_post_class( '', $post->ID );
 
     echo '<div class="' . esc_attr( implode( ' ', $classes ) ) . '">';
+    if ( has_post_thumbnail() && $img == 'yes' ) {
         web_thumbnail_link();
+    }
         echo '<h3><a href="' . get_the_permalink() . '" rel="bookmark" title="' .get_clean_web_title() . '">' . get_web_title() . '</a></h3>';
         
-        the_excerpt();
-        web_read_more();
+        // the_excerpt
+        if ( $excerpt == 'yes') {
+            web_excerpt();
+        }
+
+        // Read more
+        if ( $read_more == 'yes') {
+            web_read_more();
+        }
+
         web_edit_link();
     echo '</div>';
 endwhile;
@@ -62,6 +71,11 @@ wp_reset_postdata();
 
 
         echo '</div>';
+
+    if (is_page_template('page-no-wrap-topimg.php') || is_page_template('page-no-wrap.php') ) { 
+            echo '</div>';
+        echo '</div>';
+    }
 
  $myvariable = ob_get_clean();
     return $myvariable;
