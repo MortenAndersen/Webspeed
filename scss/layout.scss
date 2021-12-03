@@ -122,13 +122,13 @@ aside {
 @media (min-width: b.$phone) {
     .article-aside {
         display: grid;
-        grid-template-columns: 1fr s.$aside-width;
+        grid-template-columns: 1fr s.$aside-width-small;
         grid-gap: s.$gap-n;
     }
 
     .aside-article {
         display: grid;
-        grid-template-columns: s.$aside-width 1fr;
+        grid-template-columns: s.$aside-width-small 1fr;
         grid-gap: s.$gap-n;
 
         aside {
@@ -163,7 +163,7 @@ aside {
 @media(min-width: b.$phone) {
     .aside-article-aside {
         display: grid;
-        grid-template-columns: 1fr s.$aside-width;
+        grid-template-columns: 1fr s.$aside-width-small;
 
         .left-aside {
             order: 3;
@@ -181,6 +181,12 @@ aside {
 }
 
 @media(min-width: 1000px) {
+    .aside-article {
+        grid-template-columns: s.$aside-width 1fr;
+    }
+    .article-aside {
+        grid-template-columns: 1fr s.$aside-width;
+    }
     .aside-article-aside {
         display: grid;
         grid-template-columns: s.$aside-width 1fr s.$aside-width;
