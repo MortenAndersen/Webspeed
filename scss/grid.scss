@@ -52,6 +52,18 @@
     }
 }
 
+@media (min-width: b.$phone) {
+    .page-template-default,
+    .page-template-page-topimg,
+    .page-template-page-no-wrap,
+    .page-template-page-no-wrap-topimg {
+        .g-d-3 {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+}
+
 @media (min-width: b.$ipad-vertical) {
     .g-d-2 {
         grid-template-columns: repeat(2, minmax(0, 1fr));
