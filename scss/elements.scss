@@ -361,3 +361,14 @@ article>.post-img {
         background: #fff;
     }
 }
+
+.fokus {
+    background: var(--fokus-bg);
+    color: var(--fokus-color);
+    font-size: s.$font-l;
+    p {
+        &:last-of-type {
+            margin: 0;
+        }
+    }
+}

@@ -2,13 +2,14 @@
 echo '<main class="page-content">';
 if ( is_page_template( 'page-aside-left-topimg.php' ) ) {
 			web_topimg();
+			web_front_fokus();
 	echo '<div class="wrap aside-article">';
 		echo '<article>';
 			while (have_posts()) : the_post();
 				the_content();
 			endwhile;
 } else {
-
+	web_front_fokus();
 	echo '<div class="wrap aside-article">';
 		echo '<article>';
 			while (have_posts()) : the_post();

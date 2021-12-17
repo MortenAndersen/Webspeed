@@ -2,7 +2,8 @@
 
 echo '<main class="page-content">';
  if ( is_page_template( 'page-topimg.php' ) ) {
-	web_topimg(); 
+	web_topimg();
+	web_front_fokus();
 	echo '<div class="wrap">';
 		echo '<article>';
 			while (have_posts()) : the_post();
@@ -10,7 +11,7 @@ echo '<main class="page-content">';
 			endwhile;
 
 } else {
-
+	web_front_fokus();
 	echo '<div class="wrap">';
 		echo '<article>';
 			while (have_posts()) : the_post();

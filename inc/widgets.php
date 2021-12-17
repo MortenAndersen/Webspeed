@@ -78,6 +78,19 @@ function mother_widgets_init()
         )
     );
 
+    // Frontpage fokus
+    register_sidebar(
+        array(
+            'name'          => __('Frontpage fokus', 'webspeed-domain'),
+            'id'            => 'fokus-frontpage',
+            'description'   => __('Widget til forsiden fokus indhold', 'webspeed-domain'),
+            'before_widget' => '<div id="%1$s" class="widget fokus-frontpage %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h4 class="widget-title widget-title-fokus-frontpage">',
+            'after_title'   => '</h4>',
+        )
+    );
+
     // Footer
     register_sidebar(
         array(

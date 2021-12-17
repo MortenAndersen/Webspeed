@@ -126,6 +126,18 @@ function web_topimg() {
     }
 }
 
+// Frontpage fokus
+
+function web_front_fokus() {
+    if ( is_front_page() && is_active_sidebar( 'fokus-frontpage' )  ) {
+        echo '<div class="fokus">';
+            echo '<div class="wrap">';
+                dynamic_sidebar('fokus-frontpage');
+            echo '</div>';
+        echo '</div>';
+    }
+}
+
 // Menu desktop align
 if (!function_exists('web_menu_pos')) {
     function web_menu_pos()
