@@ -13,6 +13,19 @@
     display: none;
     a {
     	color: #fff;
+    	opacity: .9;
+    	&:hover {
+    		color: #fff;
+    		opacity: 1;
+    	}
+    }
+    .menu {
+    	li {
+    		border-bottom: 1px solid #ffffff3d;
+    	}
+    	a {
+    		text-decoration: none;
+    	}
     }
 }
 
