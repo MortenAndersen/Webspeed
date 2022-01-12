@@ -318,6 +318,14 @@
 		"oAP": "/inc/grid-gap.php",
 		"oF": 0
 		},
+	"/inc/gutenberg/acf-blocks.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/inc/gutenberg/acf-blocks.php",
+		"oF": 0
+		},
 	"/inc/post-type-shortcode.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -545,6 +553,19 @@
 		"ou": "lpckwebp-none",
 		"q": 100,
 		"rq": 75
+		},
+	"/scss/acc.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/acc.css",
+		"oF": 0,
+		"oS": 2,
+		"sct": 0
 		},
 	"/scss/bx-slider.scss": {
 		"aP": 1,
@@ -1170,6 +1191,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/template-parts/content/post-article.php",
+		"oF": 0
+		},
+	"/template-parts/gutenberg-blocks/acc/acc.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/template-parts/gutenberg-blocks/acc/acc.php",
 		"oF": 0
 		},
 	"/template-parts/nav/main-menu.php": {
