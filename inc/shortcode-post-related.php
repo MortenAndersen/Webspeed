@@ -1,6 +1,6 @@
 <?php
-add_shortcode('post', 'web_post');
-function web_post($atts) {
+add_shortcode('post_related', 'web_post_related');
+function web_post_related($atts) {
     global $post;
     ob_start();
 
@@ -24,21 +24,29 @@ function web_post($atts) {
 require get_parent_theme_file_path('/inc/grid-gap.php');
 /* -------------------------------------- */
 
+
+
+
 if ($type != 'not-set') {
     $loop = new WP_Query( array(
         'post_type' => 'post',
         'posts_per_page' => $number,
         'offset' => $offset,     
         'category_name' => $type,
+        'category__in' => wp_get_post_categories($post->ID),
+
+     'post__not_in' => array($post->ID) 
     ));
 } else {
     $loop = new WP_Query( array(
         'post_type' => 'post',
         'posts_per_page' => $number,
         'offset' => $offset,
+        'category__in' => wp_get_post_categories($post->ID),
+
+     'post__not_in' => array($post->ID) 
     ));
 }
-
 
 /* -------------------------------------- */
 

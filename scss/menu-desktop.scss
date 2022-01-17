@@ -6,11 +6,18 @@
         display: flex; //block;
         flex: auto;
         font-size: s.$font-s;
+
         //flex: 1;
         &.right-align {
             margin-left: auto;
             flex: inherit;
+             ul:not(.sub-menu) {
+                > li {
+                    margin-left: 1rem;
+                }
+            }
         }
+
         ul {
             display: flex;
             background: var(--header-desktop);
@@ -37,6 +44,7 @@
                     &:hover {
                         background-color: var(--menu-desktop-sub-hover-bg);
                     }
+
                     a:after {
                         display: none;
                     }
@@ -50,12 +58,16 @@
 
             li {
                 position: relative;
-                a:after {
+
+                /*a:after {
                     content: ' | ';
                     display: inline-block;
                     padding-left: 1rem;
                     color: var(--menu-desktop-divider);
-                }
+                }*/
+
+
+
                 &:last-of-type {
                     a:after {
                         display: none;
@@ -75,31 +87,51 @@
         a {
             color: var(--menu-desktop-font);
             padding: var(--menu-desktop-pad);
+            border-bottom: 1px solid transparent;
+            &:hover {
+                border-bottom: 1px solid var(--menu-desktop-current-font);
+            }
+
             &[aria-current=page] {
                 color: var(--menu-desktop-current-font);
                 background: var(--menu-desktop-current-bg);
+                border-bottom: 1px solid
             }
-        };
+        }
+
+        .current-menu-parent > {
+            a {
+                border-bottom: 1px solid var(--menu-desktop-current-font);
+            }
+        }
+
         li li {
             a {
                 color: var(--menu-desktop-sub-font);
                 padding: var(--menu-desktop-sub-pad);
+                border-bottom: none;
+                &:hover {
+                    border-bottom: none;
+                }
+
                 &[aria-current=page] {
-                        margin-left: calc(var(--menu-desktop-sub-pad-side) * -1);
-                        margin-right: calc(var(--menu-desktop-sub-pad-side) * -1);
-                        background: var(--menu-desktop-sub-current-bg);
-                        color: var(--menu-desktop-sub-current-font);
-                        padding-left: calc(var(--menu-desktop-sub-pad-side) + .5rem);
-                        padding-right: calc(var(--menu-desktop-sub-pad-side) + .5rem);
-                    }
+                    margin-left: calc(var(--menu-desktop-sub-pad-side) * -1);
+                    margin-right: calc(var(--menu-desktop-sub-pad-side) * -1);
+                    background: var(--menu-desktop-sub-current-bg);
+                    color: var(--menu-desktop-sub-current-font);
+                    padding-left: calc(var(--menu-desktop-sub-pad-side) + .5rem);
+                    padding-right: calc(var(--menu-desktop-sub-pad-side) + .5rem);
+                    border-bottom: none;
+                }
             }
         }
-> ul {
-    > li {
 
-        &:last-of-type {
+        >ul {
+            >li {
 
-            ul {
+                &:last-of-type {
+
+                    ul {
                         left: auto;
                         right: 0;
 
@@ -108,9 +140,9 @@
                             right: 100%;
                         }
                     }
+                }
+            }
         }
-    }
-}
     }
 
     .menu-close {
@@ -124,17 +156,19 @@
         background-position: 10px center;
     }
 
-    // Right-alin menu
+    // Right-align menu
     .menu.right-align {
-        > ul > li:last-of-type ul {
+        >ul>li:last-of-type ul {
             left: auto;
             right: 0;
+
             ul {
                 left: auto;
                 right: 100%;
             }
         }
     }
+
     .scroll-menu {
         box-shadow: 0 5px 5px -5px #333;
     }
