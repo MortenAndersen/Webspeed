@@ -377,3 +377,22 @@ article>.post-img {
         color: var(--a-fokus-color);
     }
 }
+
+@media (min-width: b.$menu-break) {
+    .fokus {
+        margin-top: 3rem;
+    }
+}
+
+.only-desktop {
+    display: none;
+}
+
+@media (min-width: b.$menu-break) {
+    .only-mobile {
+        display: none;
+    }
+    .only-desktop {
+        display: block;
+    }
+}

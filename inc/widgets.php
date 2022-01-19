@@ -1,6 +1,18 @@
 <?php
 function mother_widgets_init()
 {
+    // Pre header
+    register_sidebar(
+        array(
+            'name'          => __('Pre header', 'webspeed-domain'),
+            'id'            => 'pre-header',
+            'description'   => __('Widget før header', 'webspeed-domain'),
+            'before_widget' => '<div id="%1$s" class="widget pre-header-col %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h4 class="widget-title widget-title-pre-header">',
+            'after_title'   => '</h4>',
+        )
+    );
 
     // Aside
     register_sidebar(

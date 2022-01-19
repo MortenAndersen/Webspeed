@@ -40,6 +40,21 @@ form[role=search].wp-block-search {
             border-left: none;
         }
     }
+    .pre-header & {
+        input,
+    button {
+
+
+        &[type=text] {
+            border-radius: 0;
+        }
+
+        &[type=submit] {
+            border-radius: 0;
+
+        }
+    }
+    }
 }
 
 .menu-widget {
@@ -93,4 +108,7 @@ textarea:-ms-input-placeholder {
 }
 #commentform {
     max-width: 500px;
+    #submit {
+            max-width: 160px;
+        }
 }

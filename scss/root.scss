@@ -13,6 +13,7 @@
   --logo-text: #fff;
   --link: #0073e5;
   --link-hover: #111;
+  --title-highlight :#e56101;
   --article-font-size: 1.06rem;
   --article-line-height: 1.6rem;
   --border: #eee;
@@ -35,7 +36,7 @@
   --menu-mobile-sub-bg: rgba(0,0,0,.2);
   --menu-mobile-border: #b2b2b2;
   --menu-mobile-trigger-bg: transparent;
-  --menu-mobile-trigger-active-bg: #b88a0852;
+  --menu-mobile-trigger-active-bg: #0052cd52;
   --menu-mobile-trigger-font: #fff;
   --menu-mobile-trigger-active-font: #fff;
   --menu-icon: #111;
@@ -58,9 +59,14 @@
   --mobile-search-text-focus-bg: #666;
   --mobile-search-submit-bg: #999;
   --mobile-search-submit-font: #222;
-  --fokus-bg: red;
+  --fokus-bg: #e50101;
   --fokus-color: #fff;
   --a-fokus-color: chartreuse;
+  --pre-header-bg: #fff;
+  --pre-header-color: #222;
+  --menu-pre-header-font: #222;
+  --menu-pre-header-hover: #333;
+  --menu-pre-header-active: #0073e5;;
   
   --top-caption: rgba(0,0,0,.8);
   --link-box-bg: #2a3443;
@@ -68,10 +74,16 @@
    --link-box-bg-hover: #45566e;
   --link-box-font-hover: #fff;
 
-  --slider-bg: rgb(7 60 87 / 95%);
+  --submit-bg: #0073e5;
+  --submit-bg-hover: #035db7;
+  --submit-font: #fff;
+  --submit-font-hover: #fff;
+  --submit-border: #0073e5;
+
+  --slider-bg: #0073e5;
   --slider-txt: #fff;
 
-  --acc-head-bg: #f6f6f6;
+  --acc-head-bg: #f9f9f9;
 
   --font-xl: 2rem;
   --font-l: 1.8rem;

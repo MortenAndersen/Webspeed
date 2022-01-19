@@ -10,6 +10,12 @@
 <body <?php body_class();?>>
   <?php wp_body_open();?>
 
+<?php if (is_active_sidebar('pre-header')) {
+	echo '<div class="pre-header flex">';
+    dynamic_sidebar('pre-header');
+  echo '</div>';
+} ?>
+
 <header class="page-header">
 	<div class="<?php web_header_style(); ?>">
 		<?php web_logo();?>

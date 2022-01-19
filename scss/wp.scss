@@ -1,4 +1,3 @@
-
 /* Typography
 --------------------------------------------- */
 
@@ -7,48 +6,48 @@ dfn,
 cite,
 em,
 i {
-	font-style: italic;
+    font-style: italic;
 }
 
 blockquote {
-	margin: 0 1.5em;
+    margin: 0 1.5em;
 }
 
 address {
-	margin: 0 0 1.5em;
+    margin: 0 0 1.5em;
 }
 
 pre {
-	background: #eee;
-	font-family: "Courier 10 Pitch", courier, monospace;
-	line-height: 1.6;
-	margin-bottom: 1.6em;
-	max-width: 100%;
-	overflow: auto;
-	padding: 1.6em;
+    background: #eee;
+    font-family: "Courier 10 Pitch", courier, monospace;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1.6em;
 }
 
 code,
 kbd,
 tt,
 var {
-	font-family: monaco, consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+    font-family: monaco, consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 }
 
 abbr,
 acronym {
-	border-bottom: 1px dotted #666;
-	cursor: help;
+    border-bottom: 1px dotted #666;
+    cursor: help;
 }
 
 mark,
 ins {
-	background: #fff9c0;
-	text-decoration: none;
+    background: #fff9c0;
+    text-decoration: none;
 }
 
 big {
-	font-size: 125%;
+    font-size: 125%;
 }
 
 
@@ -57,7 +56,7 @@ big {
 embed,
 iframe,
 object {
-	max-width: 100%;
+    max-width: 100%;
 }
 
 
@@ -71,13 +70,14 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"],
 .wp-block-search .wp-block-search__button {
- height: 2.5rem;
- padding: 0;
- margin: 0;
- border: 1px solid var(--border);
- background: var(--border);
- color: var(--body-font);
-	outline: none;
+    height: 2.5rem;
+    padding: 0;
+    margin: 0;
+    border-radius: 3px;
+    border: 1px solid var(--submit-border);
+    background: var(--submit-bg);
+    color: var(--submit-font);
+    outline: none;
     width: 100%;
     height: 2rem;
     line-height: 1;
@@ -86,16 +86,17 @@ input[type="submit"],
     -moz-appearance: none;
     -webkit-appearance: none;
     cursor: pointer;
-    		box-shadow:inset 0 -0.6em 1em -0.35em rgba(0,0,0,0.17),inset 0 0.6em 2em -0.3em rgba(255,255,255,0.15),inset 0 0 0em 0.05em rgba(255,255,255,0.12);
-
+    box-shadow: inset 0 -0.6em 1em -0.35em rgba(0, 0, 0, 0.17), inset 0 0.6em 2em -0.3em rgba(255, 255, 255, 0.15), inset 0 0 0em 0.05em rgba(255, 255, 255, 0.12);
+    &:hover {
+    	background: var(--submit-bg-hover);
+    	color: var(--submit-font-hover);
+    }
 }
 
 button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
-input[type="submit"]:hover {
-	
-}
+input[type="submit"]:hover {}
 
 button:active,
 button:focus,
@@ -105,7 +106,7 @@ input[type="reset"]:active,
 input[type="reset"]:focus,
 input[type="submit"]:active,
 input[type="submit"]:focus {
-	border-color: #aaa #bbb #bbb;
+    border-color: #aaa #bbb #bbb;
 }
 
 input[type="text"],
@@ -125,9 +126,9 @@ input[type="datetime-local"],
 input[type="color"],
 textarea,
 .wp-block-search .wp-block-search__input {
-	padding: 0 5px;
-	border: 1px solid var(--border);
-	outline: none;
+    padding: 0 5px;
+    border: 1px solid var(--border);
+    outline: none;
     width: 100%;
     height: 2rem;
     line-height: 1;
@@ -153,25 +154,25 @@ input[type="datetime"]:focus,
 input[type="datetime-local"]:focus,
 input[type="color"]:focus,
 textarea:focus {
-	 background: rgba(0,0,0,0.1);
+    background: rgba(0, 0, 0, 0.1);
 }
 
 select {
-	border: 1px solid #ccc;
+    border: 1px solid #ccc;
 }
 
 textarea {
-	width: 100%;
+    width: 100%;
 }
 
 /* Comments
 --------------------------------------------- */
 .comment-content a {
-	word-wrap: break-word;
+    word-wrap: break-word;
 }
 
 .bypostauthor {
-	display: block;
+    display: block;
 }
 
 
@@ -181,10 +182,10 @@ textarea {
 .page-content .wp-smiley,
 .entry-content .wp-smiley,
 .comment-content .wp-smiley {
-	border: none;
-	margin-bottom: 0;
-	margin-top: 0;
-	padding: 0;
+    border: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
 }
 
 
@@ -192,73 +193,73 @@ textarea {
 /* Captions
 --------------------------------------------- */
 .wp-caption {
-	margin-bottom: 1.5em;
-	max-width: 100%;
+    margin-bottom: 1.5em;
+    max-width: 100%;
 }
 
 .wp-caption img[class*="wp-image-"] {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .wp-caption .wp-caption-text {
-	margin: .5rem 0;
-	font-style: italic;
+    margin: .5rem 0;
+    font-style: italic;
 }
 
 .wp-caption-text {
-	text-align: center;
+    text-align: center;
 }
 
 /* Galleries
 --------------------------------------------- */
 .gallery {
-	margin-bottom: 1.5em;
-	display: grid;
-	grid-gap: 1.5em;
+    margin-bottom: 1.5em;
+    display: grid;
+    grid-gap: 1.5em;
 }
 
 .gallery-item {
-	display: inline-block;
-	text-align: center;
-	width: 100%;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
 }
 
 .gallery-columns-2 {
-	grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .gallery-columns-3 {
-	grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .gallery-columns-4 {
-	grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .gallery-columns-5 {
-	grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .gallery-columns-6 {
-	grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
 }
 
 .gallery-columns-7 {
-	grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(7, 1fr);
 }
 
 .gallery-columns-8 {
-	grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(8, 1fr);
 }
 
 .gallery-columns-9 {
-	grid-template-columns: repeat(9, 1fr);
+    grid-template-columns: repeat(9, 1fr);
 }
 
 .gallery-caption {
-	display: block;
+    display: block;
 }
 
 
@@ -268,83 +269,85 @@ textarea {
 
 /* Text meant only for screen readers. */
 .screen-reader-text {
-	border: 0;
-	clip: rect(1px, 1px, 1px, 1px);
-	clip-path: inset(50%);
-	height: 1px;
-	margin: -1px;
-	overflow: hidden;
-	padding: 0;
-	position: absolute !important;
-	width: 1px;
-	word-wrap: normal !important;
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important;
 }
 
 .screen-reader-text:focus {
-	background-color: #f1f1f1;
-	border-radius: 3px;
-	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-	clip: auto !important;
-	clip-path: none;
-	color: #21759b;
-	display: block;
-	font-size: 0.875rem;
-	font-weight: 700;
-	height: auto;
-	left: 5px;
-	line-height: normal;
-	padding: 15px 23px 14px;
-	text-decoration: none;
-	top: 5px;
-	width: auto;
-	z-index: 100000;
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    clip-path: none;
+    color: #21759b;
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 700;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
 }
 
 /* Do not show the outline on the skip link target. */
 #primary[tabindex="-1"]:focus {
-	outline: 0;
+    outline: 0;
 }
 
 /* Alignments
 --------------------------------------------- */
 .alignleft {
 
-	/*rtl:ignore*/
-	float: left;
+    /*rtl:ignore*/
+    float: left;
 
-	/*rtl:ignore*/
-	margin-right: 1.5rem;
-	margin-bottom: 1.5rem;
+    /*rtl:ignore*/
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .alignright {
 
-	/*rtl:ignore*/
-	float: right;
+    /*rtl:ignore*/
+    float: right;
 
-	/*rtl:ignore*/
-	margin-left: 1.5rem;
-	margin-bottom: 1.5rem;
+    /*rtl:ignore*/
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .aligncenter {
-	clear: both;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 1.5rem;
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
 }
 
 /* Web.dk Hacks
 --------------------------------------------- */
 label.wp-block-search__label.screen-reader-text {
-	width: auto;
+    width: auto;
 }
+
 @media (max-width: 599px) {
-	.wp-block-column {
-	    margin-bottom: 2rem;
-	    &:last-child {
-	    	margin-bottom: 0;
-	    }
-	}
+    .wp-block-column {
+        margin-bottom: 2rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
 }

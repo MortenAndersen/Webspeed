@@ -1,0 +1,21 @@
+.pre-header {
+	background: var(--pre-header-bg);
+	flex-direction: row-reverse;
+	align-items: baseline;
+	gap: 1rem;
+	line-height: 1;
+	.menu {
+		display: flex;
+		gap: 1rem;
+		a {
+			text-decoration: none;
+			color: var(--menu-pre-header-font);
+			&:hover {
+				color: var(--menu-pre-header-hover);
+			}
+			&[aria-current=page] {
+				border-bottom: 1px solid var(--menu-pre-header-active);
+			}
+		}
+	}
+}

@@ -549,6 +549,24 @@
 		"oAP": "/page.php",
 		"oF": 0
 		},
+	"/pre-header.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/pre-header-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/pre-header.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/pre-header.css.map",
+		"oF": 0
+		},
 	"/screenshot.png": {
 		"ft": 32768,
 		"iS": 1305984,
@@ -870,6 +888,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/posttypes.css",
+		"oF": 0,
+		"oS": 2,
+		"sct": 0
+		},
+	"/scss/pre-header.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/pre-header.css",
 		"oF": 0,
 		"oS": 2,
 		"sct": 0
