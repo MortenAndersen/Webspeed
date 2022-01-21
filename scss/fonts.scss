@@ -140,19 +140,6 @@ p {
                     opacity: 1;
                 }
             }
-
-            &:before {
-                content: '';
-                position: absolute;
-                right: 0;
-                top: 50%;
-                display: block;
-                border-right: 1px solid var(--link);
-                border-bottom: 1px solid var(--link);
-                width: 6px;
-                height: 6px;
-                transform: translate(-50%, -50%) rotate(-45deg);
-            }
         }
     }
 
