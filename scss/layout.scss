@@ -98,6 +98,7 @@ aside {
 .page-header {
     background: var(--header-phone);
     border-bottom: 1px solid var(--border);
+    padding: 1rem 0;
 }
 
 @media (min-width: b.$phone) {

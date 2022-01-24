@@ -7,7 +7,7 @@
 		?>
 		<?php echo category_description(); ?>
 	</div>
-	<div class="wrap-no-pad grid g-d-2 gap-2">
+	<div class="wrap-no-pad grid g-d-3 gap-2">
 		
 	<?php if (have_posts()): while (have_posts()): the_post();?>
 		<article id="post-<?php the_ID();?>" <?php post_class();?>>
