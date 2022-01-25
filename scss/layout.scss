@@ -70,12 +70,11 @@ aside {
     border-top: 1px solid var(--border);
     font-size: s.$font-s;
     line-height: s.$line-s;
-    overflow: hidden;
     padding-bottom: s.$gap-n;
     background: var(--page-footer-bg);
     color: var(--page-footer-font);
 }
-
+ 
 .footer-col {
     >*:last-of-type:not(.widget-title-footer) {
         margin-bottom: 0;
@@ -84,14 +83,16 @@ aside {
 
 .post-footer {
     border-top: 1px solid var(--border);
-    overflow: hidden;
-    text-align: center;
     font-size: s.$font-xs;
     line-height: s.$line-xs;
     padding-bottom: s.$gap-n;
 
     p {
         margin-bottom: .5rem;
+    }
+    .menu {
+        display: flex;
+        gap: 1rem;
     }
 }
 

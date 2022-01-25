@@ -1,3 +1,4 @@
+@use 'elements/breakpoints'as b;
 @use 'elements/size'as s;
 
 .page-footer {
@@ -31,6 +32,44 @@
 
             &:hover {
                 opacity: .7;
+            }
+        }
+    }
+
+    div {
+        p {
+            &:last-of-type {
+                margin: 0;
+            }
+        }
+    }
+}
+
+.post-footer {
+    .menu {
+        a {
+            padding: 0;
+            text-decoration: none;
+            transition: .5s opacity;
+
+            &:hover {
+                opacity: .7;
+            }
+        }
+    }
+}
+.post-footer-content {
+    > div {
+        margin-bottom: s.$gap-s;
+    }
+}
+@media (min-width: b.$phone) {
+    .post-footer {
+        .post-footer-content {
+            display: flex;
+            justify-content: space-between;
+            > div {
+                margin-bottom: 0;
             }
         }
     }

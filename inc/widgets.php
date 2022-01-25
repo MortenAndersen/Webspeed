@@ -111,7 +111,7 @@ function mother_widgets_init()
             'description'   => __('Sidefod', 'webspeed-domain'),
             'before_widget' => '<div id="%1$s" class="widget footer-col %2$s">',
             'after_widget'  => '</div>',
-            'before_title'  => '<h4 class="widget-title widget-title-footer">',
+            'before_title'  => '<h4 class="widget-title-footer">',
             'after_title'   => '</h4>',
         )
     );
