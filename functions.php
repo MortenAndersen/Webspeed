@@ -16,6 +16,12 @@ function web_scripts() {
 }
 add_action('wp_enqueue_scripts', 'web_scripts');
 
+add_filter('style_loader_tag', 'web_remove_type_attr', 10, 2);
+add_filter('script_loader_tag', 'web_remove_type_attr', 10, 2);
+
+function web_remove_type_attr($tag, $handle) {
+    return preg_replace( "/type=['\"]text\/(javascript|css)['\"]/", '', $tag );
+}
 
 // ---------------------------------------------------
 // The Excerpt length
