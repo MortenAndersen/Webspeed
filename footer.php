@@ -28,22 +28,28 @@ if (is_active_sidebar('post-content-frontpage') && is_front_page() ) {
     dynamic_sidebar('post-content-frontpage');
 } 
 
-if (is_active_sidebar('footer')) {
+if (is_active_sidebar('footer') || is_active_sidebar('pre-footer') || is_active_sidebar('post-footer') ) {
 	echo '<div class="page-footer">';
 		echo '<div class="wrap">';
-			echo '<div class="grid g-d-4 gap-2">';
-				dynamic_sidebar('footer');
-			echo '</div>';
-		echo '</div>';
-	echo '</div>';
-}
 
-if (is_active_sidebar('post-footer')) {
-	echo '<div class="post-footer">';
-		echo '<div class="wrap">';
-			echo '<div class="post-footer-content">';
-				dynamic_sidebar('post-footer');
-			echo '</div>';
+			if (is_active_sidebar('pre-footer')) {
+				echo '<div class="pre-footer">';
+					dynamic_sidebar('pre-footer');
+				echo '</div>';
+			}
+
+			if (is_active_sidebar('footer')) {
+				echo '<div class="grid g-d-4 gap-2">';
+					dynamic_sidebar('footer');
+				echo '</div>';
+			}
+
+			if (is_active_sidebar('post-footer')) {
+				echo '<div class="post-footer">';
+					dynamic_sidebar('post-footer');
+				echo '</div>';
+			}
+
 		echo '</div>';
 	echo '</div>';
 }

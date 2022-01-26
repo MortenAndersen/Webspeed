@@ -103,6 +103,19 @@ function mother_widgets_init()
         )
     );
 
+    // Pre Footer
+    register_sidebar(
+        array(
+            'name'          => __('Pre Footer', 'webspeed-domain'),
+            'id'            => 'pre-footer',
+            'description'   => __('Før sidefod', 'webspeed-domain'),
+            'before_widget' => '<div id="%1$s" class="widget widget-post-footer %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h5 class="widget-title widget-title-pre-footer">',
+            'after_title'   => '</h5>',
+        )
+    );
+
     // Footer
     register_sidebar(
         array(

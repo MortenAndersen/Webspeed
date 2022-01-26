@@ -47,6 +47,7 @@
 
 .post-footer {
     .menu {
+        flex-flow: row;
         a {
             padding: 0;
             text-decoration: none;
@@ -58,19 +59,20 @@
         }
     }
 }
-.post-footer-content {
+.post-footer {
+    margin: s.$gap-n 0;
     > div {
         margin-bottom: s.$gap-s;
     }
 }
 @media (min-width: b.$phone) {
-    .post-footer {
-        .post-footer-content {
+
+        .post-footer {
             display: flex;
             justify-content: space-between;
             > div {
                 margin-bottom: 0;
             }
         }
-    }
+
 }
