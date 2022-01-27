@@ -21,11 +21,13 @@
   --menu-desktop-pad: .5rem 0 1rem 0;
   --menu-desktop-bg: #fff;
   --menu-desktop-font: #222;
+  --menu-desktop-hover-font: #333;
   --menu-desktop-divider: #999;
   --menu-desktop-current-bg: transparent;
   --menu-desktop-current-font: #0073e5;
   --menu-desktop-sub-pad: .5rem;
   --menu-desktop-sub-font: #444;
+  --menu-desktop-sub-hover-font: #333;
   --menu-desktop-sub-bg: #fff;
   --menu-desktop-sub-pad-side: 1rem;
   --menu-desktop-sub-hover-bg: #f2f2f2;
@@ -33,7 +35,7 @@
   --menu-desktop-sub-current-bg: #0073e5;
   --menu-desktop-sub-current-font: #fff;
   --menu-mobile-bg: #262626;
-  --menu-mobile-sub-bg: rgba(0,0,0,.2);
+  --menu-mobile-sub-bg: rgba(255,255,255,.1);
   --menu-mobile-border: #b2b2b2;
   --menu-mobile-trigger-bg: transparent;
   --menu-mobile-trigger-active-bg: #0052cd52;

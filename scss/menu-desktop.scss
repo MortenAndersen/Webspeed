@@ -89,7 +89,7 @@
             padding: var(--menu-desktop-pad);
             border-bottom: 1px solid transparent;
             &:hover {
-                border-bottom: 1px solid var(--menu-desktop-current-font);
+                color:  var(--menu-desktop-hover-font);
             }
 
             &[aria-current=page] {
@@ -111,7 +111,7 @@
                 padding: var(--menu-desktop-sub-pad);
                 border-bottom: none;
                 &:hover {
-                    border-bottom: none;
+                    color:  var(--menu-desktop-sub-hover-font);
                 }
 
                 &[aria-current=page] {
