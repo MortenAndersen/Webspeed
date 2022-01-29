@@ -533,6 +533,14 @@
 		"oAP": "/page-no-wrap.php",
 		"oF": 0
 		},
+	"/page-normal-titleimg.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-normal-titleimg.php",
+		"oF": 0
+		},
 	"/page-topimg.php": {
 		"cB": 0,
 		"ft": 8192,

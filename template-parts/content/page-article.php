@@ -10,7 +10,19 @@ echo '<main class="page-content">';
 				the_content();
 			endwhile;
 
-} else {
+} 
+
+if ( is_page_template( 'page-normal-titleimg.php' ) ) {
+	echo '<div class="wrap">';
+		echo '<article>';
+			while (have_posts()) : the_post();
+				web_small_topimg();
+				the_content();
+			endwhile; 
+
+} 
+
+else {
 	web_front_fokus();
 	echo '<div class="wrap">';
 		echo '<article>';

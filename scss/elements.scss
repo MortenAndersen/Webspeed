@@ -287,7 +287,10 @@ article>.post-img {
         padding: 0;
     }
 }
-
+.small-top-post-img {
+    position: relative;
+    margin-bottom: s.$gap-n;
+}
 @media (min-width: b.$menu-break) {
     .top-post-img {
         margin-top: 3rem;

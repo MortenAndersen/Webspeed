@@ -126,6 +126,24 @@ function web_topimg() {
     }
 }
 
+function web_small_topimg() {
+    $caption = get_the_post_thumbnail_caption();
+    if ( has_post_thumbnail() ) {
+        echo '<div class="small-top-post-img">';
+        the_post_thumbnail();
+        
+
+            echo '<div class="top-caption">';
+
+            $arr = array(" | " => "<br />","<" => "<span>",">" => "</span>");
+            echo '<h1 class="entry-title-big">' . strtr(get_the_title(),$arr) . '</h1>';
+
+             echo '</div>';
+
+        echo '</div>';
+    }
+}
+
 // Frontpage fokus
 
 function web_front_fokus() {
