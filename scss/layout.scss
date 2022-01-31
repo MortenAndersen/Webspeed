@@ -55,6 +55,9 @@ main {
     .wrap {
         padding: 0 s.$gap-n s.$gap-n * 1.5 ;
     }
+    .wrap-pad {
+        padding: s.$gap-n;
+    }
 }
 
 article {
@@ -71,7 +74,8 @@ aside {
 .page-template-page-topimg,
 .page-template-page-aside-left-right-topimg,
 .page-template-page-aside-left-topimg,
-.page-template-page-aside-right-topimg {
+.page-template-page-aside-right-topimg,
+.page-template-page-no-wrap-topimg {
     .page-content {
     padding-top: 0;
 }

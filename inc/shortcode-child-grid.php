@@ -27,7 +27,7 @@ require get_parent_theme_file_path('/inc/grid-gap.php');
 if (is_page_template('page-no-wrap-topimg.php') || is_page_template('page-no-wrap.php') ) { 
 
     echo '<div class="wide-con wrap-' . $class . '">';
-        echo '<div class="wrap">';
+        echo '<div class="wrap-pad">';
 }
 
 echo '<div class="oversigt grid' . $grid_class . $gap_class . $class . '">';
