@@ -1,3 +1,4 @@
+@use 'elements/breakpoints'as b;
 @use 'elements/size'as s;
 
 .go-back-con {
@@ -111,4 +112,28 @@ textarea:-ms-input-placeholder {
     #submit {
             max-width: 160px;
         }
+}
+
+ul.form-grid {
+    margin: 0 0 1rem 0;
+    padding: 0;
+    li {
+        margin: 0 0 1rem 0;
+        padding: 0;
+        list-style-type: none;
+        > br {
+            display: none;
+        }
+    }
+    label {
+        width: 100%;
+    }
+}
+@media (min-width: b.$phone) {
+    ul.form-grid {
+        li {
+            display: flex;
+            gap: 1rem;
+        }
+    }
 }
