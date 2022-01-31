@@ -65,6 +65,9 @@ aside {
     font-size: s.$font-s;
     line-height: s.$line-s;
 }
+.page-content {
+    padding-top: s.$gap-n;
+}
 
 .page-footer {
     border-top: 1px solid var(--border);
