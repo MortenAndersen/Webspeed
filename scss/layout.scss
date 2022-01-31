@@ -2,7 +2,8 @@
 @use 'elements/size'as s;
 
 .wrap,
-.wp-block-columns {
+.wp-block-columns,
+.wrap-pad {
     margin: 0 auto;
     max-width: var(--page-width);
     padding: s.$gap-n s.$gap-n 0 s.$gap-n;
