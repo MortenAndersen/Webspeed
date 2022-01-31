@@ -350,6 +350,14 @@
 		"oAP": "/inc/shortcode-child-grid.php",
 		"oF": 0
 		},
+	"/inc/shortcode-page.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/inc/shortcode-page.php",
+		"oF": 0
+		},
 	"/inc/shortcode-post-related.php": {
 		"cB": 0,
 		"ft": 8192,

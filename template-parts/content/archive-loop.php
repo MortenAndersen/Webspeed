@@ -1,5 +1,5 @@
 <main class="page-content page-blog">
-	<div class="wrap-no-pad pad-top-2">
+	<div class="wrap">
 		<?php 
 			echo '<h1 class="entry-title">';
 				single_term_title();
@@ -7,7 +7,7 @@
 		?>
 		<?php echo category_description(); ?>
 	</div>
-	<div class="wrap-no-pad grid g-d-3 gap-2">
+	<div class="wrap grid g-d-3 gap-2">
 		
 	<?php if (have_posts()): while (have_posts()): the_post();?>
 		<article id="post-<?php the_ID();?>" <?php post_class();?>>

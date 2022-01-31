@@ -293,7 +293,7 @@ article>.post-img {
 }
 @media (min-width: b.$menu-break) {
     .top-post-img {
-        margin-top: 3rem;
+        margin-bottom: s.$gap-n;
         .wrap-no-pad {
             padding-left: s.$gap-n;
             padding-right: s.$gap-n;
@@ -363,6 +363,7 @@ article>.post-img {
     background: var(--fokus-bg);
     color: var(--fokus-color);
     font-size: s.$font-l;
+    margin-bottom: s.$gap-n;
     p {
         &:last-of-type {
             margin: 0;
@@ -372,12 +373,16 @@ article>.post-img {
     a:hover {
         color: var(--a-fokus-color);
     }
-}
-
-@media (min-width: b.$menu-break) {
-    .fokus {
-        margin-top: 3rem;
+    .wrap {
+        padding: s.$gap-n;
     }
+}
+@media (min-width: b.$menu-break) {
+.page-template-page-topimg {
+    .fokus {
+        margin-top: -2rem;
+    }
+}
 }
 
 .only-desktop {
