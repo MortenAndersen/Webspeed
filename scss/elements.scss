@@ -378,7 +378,10 @@ article>.post-img {
     }
 }
 @media (min-width: b.$menu-break) {
-.page-template-page-topimg {
+.page-template-page-topimg,
+.page-template-page-aside-left-right-topimg,
+.page-template-page-aside-left-topimg,
+.page-template-page-aside-right-topimg {
     .fokus {
         margin-top: -2rem;
     }
