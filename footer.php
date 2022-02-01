@@ -39,8 +39,10 @@ if (is_active_sidebar('footer') || is_active_sidebar('pre-footer') || is_active_
 			}
 
 			if (is_active_sidebar('footer')) {
-				echo '<div class="grid g-d-4 gap-2">';
-					dynamic_sidebar('footer');
+				$the_sidebars = wp_get_sidebars_widgets();
+				echo '<div class="grid g-d-' . count( $the_sidebars['footer'] ) .' gap-2">';
+				
+				dynamic_sidebar('footer');
 				echo '</div>';
 			}
 
