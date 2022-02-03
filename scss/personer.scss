@@ -35,6 +35,7 @@
         &.title {
             margin-bottom: 1em;
         }
+
         span.icon {
             width: 30px;
             display: flex;
@@ -48,10 +49,12 @@
             text-decoration: underline;
         }
     }
+
     svg {
         max-width: 20px;
     }
 }
+
 .single {
     .person-data {
         margin: 0;
@@ -148,20 +151,24 @@
     article & {
         margin: 1em 0;
     }
+
     p.read-more {
         padding-right: .5rem;
     }
 }
+
 .person-titel {
     margin: 0;
+
     .personer-shortcode & {
         padding: 0 .5rem;
     }
 }
+
 .shortcode-person-img {
     overflow: hidden;
     box-shadow: 0 0 10px #00000038;
-    border: .5em solid #fff;
+    border: .5em solid transparent;
     margin-bottom: 1rem;
 
     img {
@@ -169,18 +176,21 @@
         width: 100%;
     }
 }
+
 .person-excerpt {
     padding: 1rem .5rem;
     border-top: 1px solid;
-        margin-top: 1rem;
+    margin-top: 1rem;
 
     p {
         margin: 0;
     }
+
     aside & {
         padding: 1rem 0;
-            }
+    }
 }
+
 @media (min-width: 700px) {
     .personer-shortcode {
         &.g1 {

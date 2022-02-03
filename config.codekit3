@@ -51,17 +51,6 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
-	"/block/test-block.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/block/test-block-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"/footer.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -84,6 +73,38 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/header.php",
+		"oF": 0
+		},
+	"/img/contact/icon-cell.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/img/contact/icon-cell.php",
+		"oF": 0
+		},
+	"/img/contact/icon-location.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/img/contact/icon-location.php",
+		"oF": 0
+		},
+	"/img/contact/icon-mail.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/img/contact/icon-mail.php",
+		"oF": 0
+		},
+	"/img/contact/icon-phone.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/img/contact/icon-phone.php",
 		"oF": 0
 		},
 	"/img/facebook.svg": {
@@ -618,6 +639,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/bx-slider.css",
+		"oF": 0,
+		"oS": 2,
+		"sct": 0
+		},
+	"/scss/contact.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/contact.css",
 		"oF": 0,
 		"oS": 2,
 		"sct": 0
@@ -1254,6 +1288,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/template-parts/gutenberg-blocks/acc/acc.php",
+		"oF": 0
+		},
+	"/template-parts/gutenberg-blocks/contact/contact.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/template-parts/gutenberg-blocks/contact/contact.php",
 		"oF": 0
 		},
 	"/template-parts/nav/main-menu.php": {

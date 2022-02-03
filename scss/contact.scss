@@ -1,0 +1,28 @@
+@use 'elements/size'as s;
+@use 'elements/breakpoints'as b;
+.contact-con {
+	margin: 0;
+	padding: 0;
+	li {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		display: flex;
+		flex-flow: row;
+		&.location {
+			margin-bottom: 1rem;
+		}
+	}
+	.contact-label {
+		width: 100px;
+		padding-top: 4px;
+	}
+	svg {
+		fill: var(--main-bg);
+		max-height: 25px;
+		max-width: 25px;
+	}
+	.svg-color {
+		stroke: red;
+	}
+} 
