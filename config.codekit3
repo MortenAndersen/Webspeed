@@ -75,6 +75,16 @@
 		"oAP": "/header.php",
 		"oF": 0
 		},
+	"/img/contact/cell.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/contact/cell.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/img/contact/icon-cell.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -106,6 +116,36 @@
 		"oA": 0,
 		"oAP": "/img/contact/icon-phone.php",
 		"oF": 0
+		},
+	"/img/contact/locations.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/contact/locations.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/img/contact/mail.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/contact/mail.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/img/contact/phone.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/contact/phone.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
 		},
 	"/img/facebook.svg": {
 		"ft": 2097152,

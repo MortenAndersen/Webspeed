@@ -9,8 +9,11 @@
 		list-style-type: none;
 		display: flex;
 		flex-flow: row;
-		&.location {
-			margin-bottom: 1rem;
+		&.contact-location {
+			margin-bottom: s.$gap-s;
+		}
+		&.contact-info {
+			margin-top: s.$gap-s;
 		}
 	}
 	.contact-label {
