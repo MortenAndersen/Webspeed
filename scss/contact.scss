@@ -1,7 +1,7 @@
 @use 'elements/size'as s;
 @use 'elements/breakpoints'as b;
 .contact-con {
-	margin: 0;
+	margin: s.$gap-n 0;
 	padding: 0;
 	li {
 		margin: 0;
@@ -21,11 +21,10 @@
 		padding-top: 4px;
 	}
 	svg {
-		fill: var(--main-bg);
 		max-height: 25px;
 		max-width: 25px;
 	}
 	.svg-color {
-		stroke: red;
+		stroke: var(--main-bg);
 	}
 } 
