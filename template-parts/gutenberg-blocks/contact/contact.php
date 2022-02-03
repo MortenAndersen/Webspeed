@@ -20,7 +20,7 @@ echo '<ul class="contact-con">';
     }
     if( get_field('telefon_2') ) {
     	echo '<li class="contact-telefon-2"><span class="contact-label">';
-    	get_template_part('img/contact/icon', 'cell');
+    	get_template_part('img/contact/icon', 'phone');
     	echo '</span><span class="contact-info"><a href="tel:' . str_replace(' ', '',get_field('telefon_2')) . '">' . get_field('telefon_2') . '</a></span></li>';
     }
     if( get_field('info') ) {
