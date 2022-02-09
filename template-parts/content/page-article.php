@@ -12,7 +12,7 @@ echo '<main class="page-content">';
 
 } 
 
-if ( is_page_template( 'page-normal-titleimg.php' ) ) {
+elseif ( is_page_template( 'page-normal-titleimg.php' ) ) {
 	echo '<div class="wrap">';
 		echo '<article>';
 			while (have_posts()) : the_post();
