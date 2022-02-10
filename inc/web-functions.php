@@ -109,7 +109,7 @@ function web_topimg() {
     $caption = get_the_post_thumbnail_caption();
     if ( has_post_thumbnail() ) {
         echo '<div class="top-post-img">';
-        the_post_thumbnail();
+        the_post_thumbnail( '', [ 'loading' => false]);
         
             echo '<div class="wrap-no-pad">';
             echo '<div class="top-caption">';
