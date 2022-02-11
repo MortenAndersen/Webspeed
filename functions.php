@@ -123,6 +123,14 @@ function remove_jquery_migrate($scripts) {
 add_action('wp_default_scripts', 'remove_jquery_migrate');
 
 // ---------------------------------------------------
+
+function webspeed_thumbnail_remove_class($output) {
+        $output = preg_replace('/class=".*?"/', '', $output);
+        return $output;
+}
+add_filter('post_thumbnail_html', 'webspeed_thumbnail_remove_class');
+
+// ---------------------------------------------------
 // Contact Form 7
 
 add_filter( 'wpcf7_load_css', '__return_false' );
