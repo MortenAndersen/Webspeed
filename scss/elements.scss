@@ -26,6 +26,12 @@
 .oversigt-post-img {
     margin-bottom: s.$gap-s;
 }
+.oversigt {
+    > div {
+        display: flex;
+        flex-flow: column
+    }
+}
 
 article>.post-img {
     border-bottom: 2px solid var(--border);
