@@ -165,6 +165,14 @@ textarea {
     width: 100%;
 }
 
+.pre-header {
+    input[type="search"],
+    button[type="submit"] {
+        height: 1.8rem;
+        font-size: .8rem;
+    }
+}
+
 /* Comments
 --------------------------------------------- */
 .comment-content a {
