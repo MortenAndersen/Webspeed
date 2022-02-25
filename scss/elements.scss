@@ -279,6 +279,7 @@ article>.post-img {
     max-height: 700px;
     overflow: hidden;
     position: relative;
+    margin-bottom: s.$gap-n;
 
     img {
         height: 100%;
@@ -299,7 +300,6 @@ article>.post-img {
 }
 @media (min-width: b.$menu-break) {
     .top-post-img {
-        margin-bottom: s.$gap-n;
         .wrap-no-pad {
             padding-left: s.$gap-n;
             padding-right: s.$gap-n;
