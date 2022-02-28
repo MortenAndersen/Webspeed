@@ -18,6 +18,7 @@ function child_grid($atts) {
             'number' => '999',
             'offset' => '0',
             'img' => 'yes',
+            'title' => 'yes',
             'excerpt' => 'yes',
             'read_more' => 'yes',
         ), $atts));
@@ -51,7 +52,9 @@ while ( $child_query->have_posts() ) :
     if ( has_post_thumbnail() && $img == 'yes' ) {
         web_thumbnail_link();
     }
-        echo '<h3><a href="' . get_the_permalink() . '" rel="bookmark" title="' .get_clean_web_title() . '">' . get_web_title() . '</a></h3>';
+        if ( $title == 'yes') {
+            echo '<h3><a href="' . get_the_permalink() . '" rel="bookmark" title="' .get_clean_web_title() . '">' . get_web_title() . '</a></h3>';
+        }
         
         // the_excerpt
         if ( $excerpt == 'yes') {
