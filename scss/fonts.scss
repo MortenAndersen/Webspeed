@@ -145,9 +145,6 @@ p {
     &:empty {
         display: none;
     }
-    &.has-background {
-        padding: s.$gap-n;
-    }
 }
 
 article .bx-wrapper p {
