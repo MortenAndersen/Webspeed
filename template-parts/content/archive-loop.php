@@ -1,10 +1,42 @@
-<main class="page-content page-blog">
-	<div class="wrap">
-		<?php 
+<?php 
+if( class_exists('ACF') ) {
+
+		$term = get_queried_object();
+		$image = get_field('billede', $term);
+
+		if ( $image ) {
+			echo '<main class="page-content page-blog top-img">';
+			echo '<div class="top-post-img">';
+				echo '<img src="' . $image['url'] . '">';    
+            	echo '<div class="wrap-no-pad">';
+            	echo '<div class="top-caption">';
+            		echo '<h1 class="entry-title">';
+						single_term_title();
+					echo '</h1>';
+            	echo '</div>';
+            	echo '</div>';
+            echo '</div>';
+			echo '<div class="wrap">';
+		} else {
+			echo '<main class="page-content page-blog">';
+				echo '<div class="wrap">';
+					echo '<h1 class="entry-title">';
+						single_term_title();
+					echo '</h1>';
+		}
+
+	}
+else {
+echo '<main class="page-content page-blog">';
+		 echo '<div class="wrap">';
 			echo '<h1 class="entry-title">';
 				single_term_title();
 			echo '</h1>';
-		?>
+}
+
+?>
+
+
 		<?php echo category_description(); ?>
 	</div>
 	<div class="wrap grid g-d-3 gap-2">
