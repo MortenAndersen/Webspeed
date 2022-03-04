@@ -1,5 +1,4 @@
-<main class="page-content page-blog">
-	<?php web_topimg_blog(); ?>
+<?php web_topimg_blog(); ?>
 
 	<div class="wrap grid g-d-3 gap-2">
 		

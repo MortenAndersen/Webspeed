@@ -137,7 +137,7 @@ function web_topimg_blog() {
 
             // Get the ID of that page's Featured Image
             $thumb_id = get_post_thumbnail_id( $page_for_posts);
-            
+            echo '<main class="page-content page-blog top-img">';
             echo '<div class="top-post-img">';
 
                 // Display that image
@@ -151,6 +151,7 @@ function web_topimg_blog() {
             echo '</div>';
         } 
         else {
+            echo '<main class="page-content page-blog">';
             echo '<div class="wrap">';
                 single_post_title('<h1 class="entry-title">','</h1>');
             echo '</div>';
