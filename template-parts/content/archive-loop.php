@@ -24,9 +24,9 @@
 	endwhile; ?>
 	</div>
 	
-<div class="wrap">
-	<div class="nav-previous"><?php next_posts_link( '>>' ); ?></div>
-	<div class="nav-next"><?php previous_posts_link( '<<' ); ?></div>
+<div class="blog-nav wrap flex gap-2">
+	<div class="nav-previous"><?php previous_posts_link( '<<' ); ?></div>
+	<div class="nav-next"><?php next_posts_link( '>>' ); ?></div>
 </div>
 
 <?php endif;?>

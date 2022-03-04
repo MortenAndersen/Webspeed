@@ -126,6 +126,38 @@ function web_topimg() {
     }
 }
 
+function web_topimg_blog() {
+    if ( has_post_thumbnail() ) {
+        
+        // Get the ID of the page set to Display Posts in Settings > Reading
+        $page_for_posts = get_option( 'page_for_posts' ); 
+
+        // If that page ID exists, and that page has a Featured Image....
+        if ($page_for_posts && has_post_thumbnail($page_for_posts)) {
+
+            // Get the ID of that page's Featured Image
+            $thumb_id = get_post_thumbnail_id( $page_for_posts);
+            
+            echo '<div class="top-post-img">';
+
+                // Display that image
+                echo wp_get_attachment_image($thumb_id, 'full');
+            
+                echo '<div class="wrap-no-pad">';
+                    echo '<div class="top-caption">';
+                        single_post_title('<h1 class="entry-title-big">','</h1>');
+                    echo '</div>';
+                echo '</div>';
+            echo '</div>';
+        } 
+        else {
+            echo '<div class="wrap">';
+                single_post_title('<h1 class="entry-title">','</h1>');
+            echo '</div>';
+        }
+    }
+}
+
 function web_small_topimg() {
     $caption = get_the_post_thumbnail_caption();
     if ( has_post_thumbnail() ) {
