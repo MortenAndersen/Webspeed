@@ -14,9 +14,9 @@ echo '<main class="page-content">';
 
 elseif ( is_page_template( 'page-normal-titleimg.php' ) ) {
 	echo '<div class="wrap">';
+		web_small_topimg();
 		echo '<article>';
 			while (have_posts()) : the_post();
-				web_small_topimg();
 				the_content();
 			endwhile; 
 
