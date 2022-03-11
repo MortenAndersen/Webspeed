@@ -57,12 +57,14 @@ h3 span,
     border-right: 5px solid lightslategrey;
 }
 
+h2 {
+    font-size: 1.5rem;
+}
 article {
     line-height: var(--article-line-height);
     font-size: var(--article-font-size);
 
     h2 {
-        font-size: 1.5rem;
         margin-top: 3rem;
         margin-bottom: 1.5rem;
 
