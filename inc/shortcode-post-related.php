@@ -85,9 +85,9 @@ if ( $loop->have_posts() ) {
 
                         // Title
             if ( $link == 'yes') {
-                echo '<h3 class="loop-title"><a href="' . get_the_permalink() . '">' . get_web_title() . '</a></h3>';
+                echo '<h4 class="loop-title"><a href="' . get_the_permalink() . '">' . get_web_title() . '</a></h4>';
             } else {
-                echo '<h3 class="loop-title">' . get_web_title() . '</h3>';
+                echo '<h4 class="loop-title">' . get_web_title() . '</h4>';
             }
 
             // the_excerpt
