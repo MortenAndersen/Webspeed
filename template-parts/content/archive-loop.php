@@ -48,7 +48,7 @@ echo '<main class="page-content page-blog">';
 	        	
 	        	web_thumbnail_link();
 	        	web_post_date();
-	        	echo '<h2 class="loop-title"><a href="' . get_permalink() . '">' . get_web_title() . '</a></h2>';
+	        	echo '<h3 class="loop-title"><a href="' . get_permalink() . '">' . get_web_title() . '</a></h3>';
 	        	web_excerpt(); 
 	        	web_read_more();
 
