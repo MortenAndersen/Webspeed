@@ -54,6 +54,13 @@ acf_add_local_field_group(array(
 				'value' => 'page-aside-left-topimg.php',
 			),
 		),
+		array(
+			array(
+				'param' => 'page_template',
+				'operator' => '==',
+				'value' => 'page-aside-left-titleimg.php',
+			),
+		),
 	),
 	'menu_order' => 0,
 	'position' => 'normal',
@@ -117,6 +124,13 @@ acf_add_local_field_group(array(
 				'param' => 'post_template',
 				'operator' => '==',
 				'value' => 'page-aside-right-topimg.php',
+			),
+		),
+		array(
+			array(
+				'param' => 'post_template',
+				'operator' => '==',
+				'value' => 'page-aside-right-titleimg.php',
 			),
 		),
 	),

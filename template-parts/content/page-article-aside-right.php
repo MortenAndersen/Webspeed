@@ -8,7 +8,16 @@ if ( is_page_template( 'page-aside-right-topimg.php' ) ) {
 			while (have_posts()) : the_post();
 				the_content();
 			endwhile;
-} else {
+} elseif ( is_page_template( 'page-aside-right-titleimg.php' ) ) {
+	echo '<div class="wrap article-aside">';
+		echo '<article>';
+		web_small_topimg();
+			while (have_posts()) : the_post();
+				the_content();
+			endwhile; 
+}
+
+else {
 	web_front_fokus();
 	echo '<div class="wrap article-aside">';
 		echo '<article>';

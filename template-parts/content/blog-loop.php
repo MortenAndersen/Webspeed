@@ -7,7 +7,7 @@
 			<?php 
 	        	web_thumbnail_link();
 	        	web_date_cat();
-	        	echo '<h2 class="loop-title"><a href="' . get_permalink() . '">' . get_web_title() . '</a></h2>';
+	        	echo '<h3 class="loop-title"><a href="' . get_permalink() . '">' . get_web_title() . '</a></h3>';
 	        	web_excerpt(); 
 	        	web_read_more();
 	        

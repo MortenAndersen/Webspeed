@@ -554,6 +554,14 @@
 		"oAP": "/page-aside-left-right.php",
 		"oF": 0
 		},
+	"/page-aside-left-titleimg.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-aside-left-titleimg.php",
+		"oF": 0
+		},
 	"/page-aside-left-topimg.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -568,6 +576,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/page-aside-left.php",
+		"oF": 0
+		},
+	"/page-aside-right-titleimg.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-aside-right-titleimg.php",
 		"oF": 0
 		},
 	"/page-aside-right-topimg.php": {

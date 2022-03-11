@@ -98,6 +98,7 @@ article {
 
 .loop-title {
     font-size: s.$font-l;
+    margin-bottom: s.$gap-s * 1.5;
 }
 
 .entry-title {
@@ -179,17 +180,21 @@ blockquote {
     p {
         font-size: 1.2rem;
         line-height: 1.5;
+
         &:last-of-type {
             margin-bottom: 0;
         }
     }
+
     &.wp-block-quote.is-style-large {
         padding: s.$gap-s s.$gap-n;
         margin: s.$gap-n 0;
         border-left-width: 4px;
+
         p {
             font-size: 200%;
         }
+
         cite {
             text-align: right;
             display: block;
@@ -282,6 +287,7 @@ article h1+h2 {
     margin-bottom: s.$gap-xs;
     border-bottom: 1px dashed var(--border);
 }
+
 .wp-block-column {
     * {
         &:last-child {
