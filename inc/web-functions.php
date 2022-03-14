@@ -1,23 +1,25 @@
 <?php
 // Logo
 
-function web_logo()
-{
-    $custom_logo_id = get_theme_mod('custom_logo');
-    $logo           = wp_get_attachment_image_src($custom_logo_id, 'full');
+if (!function_exists('web_logo')) {
+    function web_logo()
+    {
+        $custom_logo_id = get_theme_mod('custom_logo');
+        $logo           = wp_get_attachment_image_src($custom_logo_id, 'full');
 
-    if (has_custom_logo()) {
-        echo '<div class="logo"><a href="' . home_url() . '"><img id="logo" width="' . $logo[1] . '" height="' . $logo[2]. '" src="' . esc_url($logo[0]) . '" alt="' . get_bloginfo('name') . '"></a></div>';
-    } else {
-        if ( get_bloginfo( 'name' )  !== '' ) { 
-            echo '<div class="name">';
-            echo '<span class="blog-name"><a href="' . home_url() . '">' . get_bloginfo( 'name' ) . '</a></span>';
-        
-            if ( get_bloginfo( 'description' )  !== '' ) {
-                echo '<span class="blog-desc">' . get_bloginfo('description') . '</span>';
+        if (has_custom_logo()) {
+            echo '<div class="logo"><a href="' . home_url() . '"><img id="logo" width="' . $logo[1] . '" height="' . $logo[2]. '" src="' . esc_url($logo[0]) . '" alt="' . get_bloginfo('name') . '"></a></div>';
+        } else {
+            if ( get_bloginfo( 'name' )  !== '' ) { 
+                echo '<div class="name">';
+                echo '<span class="blog-name"><a href="' . home_url() . '">' . get_bloginfo( 'name' ) . '</a></span>';
+            
+                if ( get_bloginfo( 'description' )  !== '' ) {
+                    echo '<span class="blog-desc">' . get_bloginfo('description') . '</span>';
+                } 
+                echo '</div>';
             } 
-            echo '</div>';
-        } 
+        }
     }
 }
 
