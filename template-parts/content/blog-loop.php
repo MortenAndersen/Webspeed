@@ -1,5 +1,6 @@
 <?php web_topimg_blog(); ?>
 
+<main class="page-content">
 	<div class="wrap grid g-d-3 gap-2">
 		
 	<?php if (have_posts()): while (have_posts()): the_post();?>
@@ -14,10 +15,12 @@
 		echo '</article>';
 endwhile; ?>
 </div>
+
 <div class="blog-nav wrap flex gap-2">
 	<div class="nav-previous"><?php previous_posts_link( '<<' ); ?></div>
 	<div class="nav-next"><?php next_posts_link( '>>' ); ?></div>
 </div>
+
 <?php endif;?>
-</div>
+
 </main>
