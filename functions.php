@@ -16,12 +16,7 @@ function web_scripts() {
 }
 add_action('wp_enqueue_scripts', 'web_scripts');
 
-add_filter('style_loader_tag', 'web_remove_type_attr', 10, 2);
-add_filter('script_loader_tag', 'web_remove_type_attr', 10, 2);
 
-function web_remove_type_attr($tag, $handle) {
-    return preg_replace( "/type=['\"]text\/(javascript|css)['\"]/", '', $tag );
-}
 
 // ---------------------------------------------------
 // The Excerpt length
@@ -50,6 +45,9 @@ if (!function_exists('web_setup')):
         remove_action( 'admin_print_scripts', 'print_emoji_detection_script' ); 
         remove_action( 'wp_print_styles', 'print_emoji_styles' ); 
         remove_action( 'admin_print_styles', 'print_emoji_styles' );
+
+
+
 
         // HTML5
         add_theme_support('html5', array(
@@ -81,6 +79,9 @@ if (!function_exists('web_setup')):
         // Excerpt in pages
         add_post_type_support( 'page', 'excerpt' );
 
+        // Style and Scripts
+        add_theme_support( 'html5', array( 'script', 'style' ) );
+
     }
 
     add_action('after_setup_theme', 'web_setup');
@@ -92,7 +93,6 @@ function web_localize_theme() {
 }
 
 add_action( 'after_setup_theme', 'web_localize_theme' );
-
 
 // ---------------------------------------------------
 
@@ -121,6 +121,8 @@ function remove_jquery_migrate($scripts) {
 }
 
 add_action('wp_default_scripts', 'remove_jquery_migrate');
+
+
 
 // ---------------------------------------------------
 
