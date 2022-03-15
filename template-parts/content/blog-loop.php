@@ -1,11 +1,12 @@
-<?php web_topimg_blog(); ?>
+<?php 
+web_topimg_blog();
 
-<main class="page-content">
-	<div class="wrap grid g-d-3 gap-2">
+echo '<div class="wrap grid g-d-3 gap-2">';
 		
-	<?php if (have_posts()): while (have_posts()): the_post();?>
-		<article id="post-<?php the_ID();?>" <?php post_class();?>>
-			<?php 
+	if (have_posts()): while (have_posts()): the_post();
+		$classes = get_post_class( '', $post->ID );
+		echo '<article class="' . esc_attr( implode( ' ', $classes ) ) . '">';
+		 
 	        	web_thumbnail_link();
 	        	web_date_cat();
 	        	echo '<h3 class="loop-title"><a href="' . get_permalink() . '">' . get_web_title() . '</a></h3>';

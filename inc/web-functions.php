@@ -147,7 +147,9 @@ function web_topimg_blog() {
             
                 echo '<div class="wrap-no-pad">';
                     echo '<div class="top-caption">';
-                        single_post_title('<h1 class="entry-title-big">','</h1>');
+                        echo '<h1 class="entry-title-big">';
+                            single_post_title();
+                        echo '</h1>';
                     echo '</div>';
                 echo '</div>';
             echo '</div>';
@@ -155,7 +157,9 @@ function web_topimg_blog() {
         else {
             echo '<main class="page-content page-blog">';
             echo '<div class="wrap">';
-                single_post_title('<h1 class="entry-title">','</h1>');
+                echo '<h1 class="entry-title">';
+                    single_post_title();
+                echo '</h1>';
             echo '</div>';
         }
     }
