@@ -248,7 +248,6 @@ function web_date_cat_author() {
     echo '</div>';
 }
 
-
 // Title 
 function web_title() {
     $arr = array(" | " => "<br />","<" => "<span>",">" => "</span>");
