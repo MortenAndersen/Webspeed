@@ -240,6 +240,15 @@ function web_date_cat() {
     echo '</div>';
 }
 
+// Post date + List cat + Author
+function web_date_cat_author() {
+    $post_date = get_the_date( 'j. F - Y' );
+    echo '<div class="post-date-cat post-date">' . $post_date . ' / '; the_category(', ');
+    echo  '<div class="author">' . get_the_author_meta('display_name') . '</div>';
+    echo '</div>';
+}
+
+
 // Title 
 function web_title() {
     $arr = array(" | " => "<br />","<" => "<span>",">" => "</span>");
