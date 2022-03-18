@@ -99,7 +99,8 @@
             }
         }
 
-        .current-menu-parent > {
+        .current-menu-parent >,
+        .current_page_parent > {
             a {
                 border-bottom: 1px solid var(--menu-desktop-current-font);
             }
