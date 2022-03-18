@@ -109,6 +109,14 @@
 		"oAP": "/img/contact/icon-mail.php",
 		"oF": 0
 		},
+	"/img/contact/icon-meeting.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/img/contact/icon-meeting.php",
+		"oF": 0
+		},
 	"/img/contact/icon-phone.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -137,11 +145,31 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/img/contact/meeting.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/contact/meeting.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/img/contact/phone.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/img/contact/phone.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/img/contact/test.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/contact/test.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 52780316221407,
@@ -1352,6 +1380,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/template-parts/gutenberg-blocks/contact/contact.php",
+		"oF": 0
+		},
+	"/template-parts/gutenberg-blocks/meeting/meeting.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/template-parts/gutenberg-blocks/meeting/meeting.php",
 		"oF": 0
 		},
 	"/template-parts/nav/main-menu.php": {

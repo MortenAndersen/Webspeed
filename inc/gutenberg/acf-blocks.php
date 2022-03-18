@@ -37,3 +37,22 @@ function contact_block() {
         ));
     }
 }
+
+add_action('acf/init', 'meeting_block');
+function meeting_block() {
+
+    // Check function exists.
+    if( function_exists('acf_register_block_type') ) {
+
+        // register a Spalter block.
+        acf_register_block_type(array(
+            'name'              => 'meeting',
+            'title'             => __('Meeting WEB'),
+            'description'       => __('Meeting Information'),
+            'render_template'   => 'template-parts/gutenberg-blocks/meeting/meeting.php',
+            'category'          => 'formatting',
+            'icon'              => 'admin-comments',
+            'keywords'          => array( 'meeting', 'quote' ),
+        ));
+    }
+}

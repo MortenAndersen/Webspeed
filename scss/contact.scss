@@ -23,4 +23,12 @@
 	.svg-color {
 		stroke: var(--body-font);
 	}
+	.svg-color-fill {
+		fill: var(--body-font);
+	}
+	&.meeting {
+		.contact-label {
+			padding-top: 0;
+		}
+	}
 } 
