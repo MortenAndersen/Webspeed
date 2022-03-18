@@ -218,8 +218,10 @@ if (!function_exists('web_social_menu')) {
 }
 
 // Reference
-function web_reference() {
-    echo '<div class="reference"><a href="https://www.web.dk" target="_blank" rel="nofollow noreferrer">Made by Web.dK</a></div>';
+if (!function_exists('web_reference')) {
+    function web_reference() {
+        echo '<div class="reference"><a href="https://www.web.dk" target="_blank" rel="nofollow noreferrer">Made by Web.dK</a></div>';
+    }
 }
 
 // Post date
