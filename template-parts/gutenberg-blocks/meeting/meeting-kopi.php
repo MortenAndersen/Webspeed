@@ -1,6 +1,4 @@
 <?php
-
-
 if( have_rows('person') ):
 echo '<ul class="contact-con meeting">';
 
@@ -9,7 +7,7 @@ echo '<ul class="contact-con meeting">';
         $link = get_sub_field('link');
 
         echo '<li class="meeting-person"><span class="contact-label">';
-            echo svg_url(0);
+        get_template_part('img/contact/icon', 'meeting');
         echo '</span><span class="contact-info"><a href="' .$link . '" target="_blank">' . $name . '</a></span></li>';
     endwhile;
 echo '</ul>';  

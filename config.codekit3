@@ -75,125 +75,23 @@
 		"oAP": "/header.php",
 		"oF": 0
 		},
-	"/img/contact/cell.svg": {
+	"/img/contact/sprite-sheet.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "/img/contact/cell.svg",
+		"oAP": "/img/contact/sprite-sheet.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 52780316221407,
 		"prP": 0
 		},
-	"/img/contact/icon-cell.php": {
+	"/img/icon.afdesign": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/img/contact/icon-cell.php",
+		"oAP": "/img/icon.afdesign",
 		"oF": 0
-		},
-	"/img/contact/icon-location.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/img/contact/icon-location.php",
-		"oF": 0
-		},
-	"/img/contact/icon-mail.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/img/contact/icon-mail.php",
-		"oF": 0
-		},
-	"/img/contact/icon-meeting.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/img/contact/icon-meeting.php",
-		"oF": 0
-		},
-	"/img/contact/icon-phone.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/img/contact/icon-phone.php",
-		"oF": 0
-		},
-	"/img/contact/locations.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/contact/locations.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
-	"/img/contact/mail.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/contact/mail.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
-	"/img/contact/meeting.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/contact/meeting.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
-	"/img/contact/phone.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/contact/phone.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
-	"/img/contact/test.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/contact/test.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
-	"/img/facebook.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/facebook.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
-	"/img/has-sub.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/has-sub.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
 		},
 	"/img/iconer.afdesign": {
 		"cB": 0,
@@ -1374,12 +1272,28 @@
 		"oAP": "/template-parts/gutenberg-blocks/acc/acc.php",
 		"oF": 0
 		},
+	"/template-parts/gutenberg-blocks/contact/contact-kopi.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/template-parts/gutenberg-blocks/contact/contact-kopi.php",
+		"oF": 0
+		},
 	"/template-parts/gutenberg-blocks/contact/contact.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/template-parts/gutenberg-blocks/contact/contact.php",
+		"oF": 0
+		},
+	"/template-parts/gutenberg-blocks/meeting/meeting-kopi.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/template-parts/gutenberg-blocks/meeting/meeting-kopi.php",
 		"oF": 0
 		},
 	"/template-parts/gutenberg-blocks/meeting/meeting.php": {

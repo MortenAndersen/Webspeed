@@ -265,3 +265,11 @@ function get_clean_web_title() {
     $title = strtr(get_the_title(),$arr);
     return $title;
 }
+
+// Icons
+Function svg_url($type_key) {
+    $svg_type = ['calendar', 'phone', 'mail', 'instagram', 'globe', 'map', 'linkedin', 'facebook'];
+    $svg_url = '<svg class="icon meeting"><use href="' . get_template_directory_uri() . '/img/contact/sprite-sheet.svg#' .  $svg_type[$type_key]  . '" /></svg>';
+
+    return $svg_url ;
+}

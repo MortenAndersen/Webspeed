@@ -11,24 +11,31 @@
 		flex-flow: row;
 	}
 	.contact-label {
-		width: 25px;
+		width: 22px;
 		text-align: center;
 		padding-top: 4px;
 		margin-right: 45px;
 	}
 	svg {
-		max-height: 25px;
-		max-width: 25px;
-	}
-	.svg-color {
-		stroke: var(--body-font);
-	}
-	.svg-color-fill {
-		fill: var(--body-font);
+		max-height: 22px;
+		max-width: 22px;
+		fill: var(--icon-color);
 	}
 	&.meeting {
 		.contact-label {
 			padding-top: 0;
+		}
+	}
+	&.personer {
+		li {
+			margin: 0;
+			padding: 0 .5rem; 
+		}
+		.contact-label {
+			margin-right: 1rem;
+		}
+		.title {
+			margin-bottom: s.$gap-s;
 		}
 	}
 } 
