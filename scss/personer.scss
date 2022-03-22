@@ -8,7 +8,10 @@
         color: inherit;
     }
 }
-
+.person-item {
+    display: flex;
+    flex-flow: column;
+}
 .person-info {
 
     a {
