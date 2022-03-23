@@ -1,42 +1,51 @@
 @use 'elements/size'as s;
 @use 'elements/breakpoints'as b;
+
 .contact-con {
-	margin: s.$gap-n 0;
-	padding: 0;
-	li {
-		margin: 0 0 s.$gap-s 0;
-		padding: 0;
-		list-style-type: none;
-		display: flex;
-		flex-flow: row;
-	}
-	.contact-label {
-		width: 22px;
-		text-align: center;
-		padding-top: 4px;
-		margin-right: 45px;
-	}
-	svg {
-		max-height: 22px;
-		max-width: 22px;
-		fill: var(--icon-color);
-	}
-	&.meeting {
-		.contact-label {
-			padding-top: 0;
-		}
-	}
-	&.personer {
-		margin: 0;
-		li {
-			margin: 0;
-			padding: 0 .5rem; 
-		}
-		.contact-label {
-			margin-right: 1rem;
-		}
-		.title {
-			margin-bottom: s.$gap-s;
-		}
-	}
-} 
+    margin: s.$gap-n 0;
+    padding: 0;
+
+    li {
+        margin: 0 0 s.$gap-s 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        flex-flow: row;
+    }
+
+    .contact-label {
+        width: 22px;
+        text-align: center;
+        padding-top: 4px;
+        margin-right: 45px;
+    }
+
+    svg {
+        max-height: 22px;
+        max-width: 22px;
+        fill: var(--icon-color);
+    }
+
+    &.meeting {
+        .contact-label {
+            padding-top: 0;
+        }
+    }
+
+    &.personer {
+        margin: 0;
+
+        li {
+            margin: 0;
+            padding: 0 .5rem;
+        }
+
+        .contact-label {
+            margin-right: 1ch;
+        }
+
+        .title {
+            margin-bottom: s.$gap-s;
+        }
+    }
+}
