@@ -75,6 +75,7 @@ aside {
 .page-content {
     padding-top: s.$gap-n;
 }
+/*
 .page-template-page-topimg,
 .page-template-page-aside-left-right-topimg,
 .page-template-page-aside-left-topimg,
@@ -88,6 +89,7 @@ aside {
 .page-content.top-img {
     padding-top: 0;
 }
+*/
 .page-footer {
     border-top: 1px solid var(--border);
     font-size: s.$font-s;
@@ -120,7 +122,7 @@ aside {
 
 .page-header {
     background: var(--header-phone);
-    border-bottom: 1px solid var(--border);
+    /* border-bottom: 1px solid var(--border); */
     padding: 1rem 0;
 }
 
