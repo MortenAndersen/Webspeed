@@ -31,7 +31,7 @@
                 z-index: 100;
                 left: 0;
                 min-width: 250px;
-                line-height: 1.2;
+                line-height: 1.6;
                 background: var(--menu-desktop-sub-bg);
                 box-shadow: 0 0 20px rgb(0 0 0 / 5%);
 
@@ -40,7 +40,7 @@
                 }
 
                 li {
-                    padding: .25rem var(--menu-desktop-sub-pad-side);
+                    padding: 0 var(--menu-desktop-sub-pad-side);
                     border-bottom: 1px solid var(--menu-desktop-sub-border);
                     transition: .3s background;
 
