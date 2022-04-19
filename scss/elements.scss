@@ -293,6 +293,9 @@ article>.post-img {
     .wrap-no-pad {
         padding: 0;
     }
+    .page-template-page-no-wrap-topimg & {
+        margin-bottom: 0;
+    }
 }
 .small-top-post-img {
     position: relative;
@@ -425,4 +428,7 @@ article>.post-img {
 }
 .author {
     font-weight: bold;
+}
+.logo {
+    align-self: center;
 }

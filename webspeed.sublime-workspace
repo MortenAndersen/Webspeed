@@ -4,36 +4,72 @@
 		"selected_items":
 		[
 			[
-				"pa",
-				"padding-top"
+				"min",
+				"min-width"
+			],
+			[
+				"m",
+				"margin-bottom"
+			],
+			[
+				"r",
+				"right"
+			],
+			[
+				"o",
+				"overskrift"
+			],
+			[
+				"bor",
+				"border-bottom"
+			],
+			[
+				"pD",
+				"padding-bottom"
 			],
 			[
 				"font",
-				"font-weight"
+				"font-size"
 			],
 			[
-				"border-l",
-				"border-left-width"
-			],
-			[
-				"text",
-				"text-align"
+				"border",
+				"border-bottom"
 			],
 			[
 				"pad",
+				"padding-left"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"p",
 				"padding-top"
 			],
 			[
 				"mar",
+				"margin-left"
+			],
+			[
+				"ma",
 				"margin"
 			],
 			[
-				"border",
-				"border"
+				"fon",
+				"font-weight"
 			],
 			[
-				"min",
-				"min-width"
+				"pa",
+				"padding"
+			],
+			[
+				"svg_",
+				"svg_end"
+			],
+			[
+				"border-l",
+				"border-left-width"
 			],
 			[
 				"tex",
@@ -62,14 +98,6 @@
 			[
 				"last",
 				"last-of-type"
-			],
-			[
-				"ma",
-				"margin"
-			],
-			[
-				"o",
-				"orderby"
 			],
 			[
 				"di",
@@ -122,10 +150,6 @@
 			[
 				"ga",
 				"gap-s"
-			],
-			[
-				"m",
-				"maxHeight"
 			],
 			[
 				"a",
@@ -202,10 +226,6 @@
 			[
 				"sel",
 				"align-self\tproperty"
-			],
-			[
-				"p",
-				"personer"
 			],
 			[
 				"re",
@@ -290,10 +310,6 @@
 			[
 				"bac",
 				"background-image"
-			],
-			[
-				"fon",
-				"font-size\tproperty"
 			],
 			[
 				"ch",
@@ -472,10 +488,6 @@
 				"finish\t.finish()"
 			],
 			[
-				"r",
-				"right"
-			],
-			[
 				"ap",
 				"appendTo\t.appendTo()"
 			],
@@ -502,112 +514,21 @@
 			[
 				"padi",
 				"padding-bottom"
-			],
-			[
-				"tog",
-				"toggle\t.toggle()"
-			],
-			[
-				"Ma",
-				"masonry"
-			],
-			[
-				"colu",
-				"column-count: "
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "inc/web-functions.php",
+			"file": "functions.php",
 			"settings":
 			{
-				"buffer_size": 8168,
-				"encoding": "UTF-8",
+				"buffer_size": 5313,
 				"line_ending": "Unix"
 			},
 			"undo_stack":
 			[
-				[
-					12,
-					1,
-					"insert",
-					{
-						"characters": "\n"
-					},
-					"AQAAABAaAAAAAAAAERoAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAQGgAAAAAAABAaAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					13,
-					1,
-					"paste",
-					null,
-					"AQAAABEaAAAAAAAAOBoAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAARGgAAAAAAABEaAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					16,
-					1,
-					"indent",
-					null,
-					"AgAAADkaAAAAAAAAPRoAAAAAAAAAAAAAWBoAAAAAAABcGgAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAA5GgAAAAAAANcaAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					18,
-					1,
-					"insert",
-					{
-						"characters": "\t"
-					},
-					"AQAAAN8aAAAAAAAA4xoAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADfGgAAAAAAAN8aAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					21,
-					1,
-					"insert",
-					{
-						"characters": "\n}"
-					},
-					"BQAAAOQaAAAAAAAA5RoAAAAAAAAAAAAA5RoAAAAAAADpGgAAAAAAAAAAAADpGgAAAAAAAOoaAAAAAAAAAAAAAOUaAAAAAAAA5RoAAAAAAAAEAAAAICAgIOUaAAAAAAAA5RoAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADkGgAAAAAAAOQaAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					24,
-					1,
-					"insert",
-					{
-						"characters": "re"
-					},
-					"AwAAACsaAAAAAAAALBoAAAAAAAAAAAAALBoAAAAAAAAsGgAAAAAAAAgAAABtZW51X3BvcywaAAAAAAAALRoAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAArGgAAAAAAADMaAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					25,
-					1,
-					"insert_completion",
-					{
-						"completion": "web_reference",
-						"format": "text",
-						"keep_prefix": false,
-						"must_insert": false,
-						"trigger": "web_reference"
-					},
-					"AgAAACcaAAAAAAAAJxoAAAAAAAAGAAAAd2ViX3JlJxoAAAAAAAA0GgAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAtGgAAAAAAAC0aAAAAAAAAAAAAAAAA8L8"
-				]
 			]
-		},
-		{
-			"file": "img/contact/mail.svg",
-			"settings":
-			{
-				"buffer_size": 1507,
-				"line_ending": "Unix"
-			}
 		}
 	],
 	"build_system": "",
@@ -707,29 +628,65 @@
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/img",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/img/contact",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/inc",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/inc/gutenberg",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/js",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/template-parts",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/template-parts/aside",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/template-parts/content",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/template-parts/gutenberg-blocks",
-		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/template-parts/gutenberg-blocks/contact"
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/template-parts/gutenberg-blocks/contact",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/template-parts/gutenberg-blocks/meeting",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/template-parts/nav",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/woocommerce",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/woocommerce/single-product",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/woocommerce/single-product/tabs"
 	],
 	"file_history":
 	[
-		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/template-parts/gutenberg-blocks/contact/contact.php",
-		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/img/contact/icon-mail.php",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/inc/gutenberg/acf-blocks.php",
-		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/template-parts/gutenberg-blocks/meeting/meeting.php",
-		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/img/contact/icon-meeting.php",
-		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss/contact.scss",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/template-parts/gutenberg-blocks/fullwidth/fullwidth.php",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss/fonts.scss",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss/root.scss",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss/fullwidth.scss",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss/layout.scss",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss/nav.scss",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss/style.scss",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/template-parts/nav/main-menu.php",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/header.php",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss/menu-desktop.scss",
-		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/img/contact/meeting.svg",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/js/starter.js",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss/megamenu.scss",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss/elements.scss",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss/menu-mobile.scss",
+		"/Users/morten/Desktop/t.svg",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss/woo.scss",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/inc/woocommerce-functions.php",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/inc/widgets.php",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/woocommerce/single-product-reviews.php",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/archive.php",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/woocommerce/single-product/tabs/XXXadditional-information.php",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/woocommerce/templates/single-product/tabs/additional-information.php",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss/contact.scss",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/XXXwoocommerce.php",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss/wp.scss",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/sidebar.php",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/functions.php",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/template-parts/content/page-woocommerce.php",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss/personer.scss",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/inc/web-functions.php",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss/form.scss",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/template-parts/gutenberg-blocks/contact/contact.php",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/template-parts/gutenberg-blocks/meeting/meeting.php",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/img/contact/sprite-sheet.svg",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/img/contact/icons/facebook.svg",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/img/contact/icon-mail.php",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/img/contact/icon-meeting.php",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/img/contact/meeting.svg",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/template-parts/content/blog-loop.php",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/template-parts/content/post-article.php",
-		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss/elements.scss",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss/table.scss",
-		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/functions.php",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/img/menu-icon.php",
-		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss/fonts.scss",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/inc/shortcode-post-related.php",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/template-parts/content/archive-loop.php",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/page-aside-right-titleimg.php",
@@ -738,31 +695,21 @@
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/inc/acf.php",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/page-aside-left-titleimg.php",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/template-parts/content/page-article.php",
-		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss/layout.scss",
-		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss/root.scss",
-		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss/form.scss",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/inc/shortcode-child-grid.php",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/searchform.php",
-		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss/wp.scss",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/img/contact/icon-cell.php",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/img/contact/icon-phone.php",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/img/contact/icon-location.php",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/template-parts/gutenberg-blocks/acc/acc.php",
-		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss/style.scss",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/page-normal-titleimg.php",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/inc/shortcode-page.php",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/footer.php",
-		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss/personer.scss",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss/contactform.scss",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss/pre-header.scss",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss/menu-icon.scss",
-		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/inc/widgets.php",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss/footer.scss",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss/acc.scss",
-		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/header.php",
-		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/js/starter.js",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/inc/shortcode-post.php",
-		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/template-parts/nav/main-menu.php",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/inc/shortcode-post-releated.php",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/inc/guttenberg/acf-blocks.php",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/single-event.php",
@@ -789,10 +736,8 @@
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/template-parts/aside/aside-right.php",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/template-parts/aside/aside-left.php",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss/posttypes.scss",
-		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss/nav.scss",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/single-topimg.php",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/single-no-wrap.php",
-		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/archive.php",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss/header.scss",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/style.css",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/inc/post-type.php",
@@ -826,22 +771,7 @@
 		"/Applications/MAMP/htdocs/mother/wp-content/themes/mother/search.php",
 		"/Applications/MAMP/htdocs/mother/wp-content/themes/mother/scss/menu.scss",
 		"/Applications/MAMP/htdocs/mother/wp-content/themes/mother/scss/theme.scss",
-		"/Applications/MAMP/htdocs/mother/wp-content/themes/mother/scss/style.scss",
-		"/Applications/MAMP/htdocs/mother/wp-content/themes/mother/assets/js/theme.js",
-		"/Applications/MAMP/htdocs/mother/wp-content/themes/mother/assets/js/mother.js",
-		"/Applications/MAMP/htdocs/mother/wp-content/themes/mother/Gruntfile.js",
-		"/Applications/MAMP/htdocs/mother/wp-content/themes/mother/scss/jc-submenu.scss",
-		"/Applications/MAMP/htdocs/mother/wp-content/themes/mother/scss/layout.scss",
-		"/Applications/MAMP/htdocs/mother/wp-content/themes/mother/inc/mother-functions.php",
-		"/Applications/MAMP/htdocs/mother/wp-content/themes/mother/functions.php",
-		"/Applications/MAMP/htdocs/mother/wp-content/themes/mother/assets/js/scroll.js",
-		"/Applications/MAMP/htdocs/mother/wp-content/themes/mother/scss/form.scss",
-		"/Applications/MAMP/htdocs/mother/wp-content/themes/mother/template/navigation/nav-mainmenu.php",
-		"/Applications/MAMP/htdocs/mother/wp-content/themes/mother/template/page/content-article.php",
-		"/Applications/MAMP/htdocs/mother/wp-content/themes/mother/index.php",
-		"/Applications/MAMP/htdocs/mother/wp-content/themes/mother/template/navigation/hamburger.php",
-		"/Applications/MAMP/htdocs/mother/wp-content/themes/mother/tempalte/page/content-article.php",
-		"/Applications/MAMP/htdocs/mother/wp-content/themes/mother/scss/grid.scss"
+		"/Applications/MAMP/htdocs/mother/wp-content/themes/mother/scss/style.scss"
 	],
 	"find":
 	{
@@ -860,6 +790,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"site-menu",
+			"dk.newsite",
+			"fill",
+			"fill=\"#fff\"",
+			"fill",
 			"has-background",
 			".wp-block-image",
 			".top-post-img",
@@ -892,19 +827,20 @@
 			[
 				{
 					"buffer": 0,
-					"file": "inc/web-functions.php",
-					"semi_transient": false,
+					"file": "functions.php",
+					"selected": true,
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 8168,
+						"buffer_size": 5313,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6708,
-								6708
+								2807,
+								576
 							]
 						],
 						"settings":
@@ -914,37 +850,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"stack_multiselect": false,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "img/contact/mail.svg",
-					"selected": true,
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 1507,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/XML/XML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 4132.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,

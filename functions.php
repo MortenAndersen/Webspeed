@@ -173,3 +173,6 @@ if( class_exists('ACF') ) {
     require get_parent_theme_file_path('/inc/acf.php');
     require get_parent_theme_file_path( '/inc/gutenberg/acf-blocks.php' );
 }
+
+// WooCommerce
+require get_parent_theme_file_path('/inc/woocommerce-functions.php');

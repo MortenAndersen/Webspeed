@@ -150,26 +150,6 @@
 		"q": 100,
 		"rq": 75
 		},
-	"/img/linkedin.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/linkedin.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
-	"/img/mail.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/mail.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
 	"/img/menu-icon-close.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -185,16 +165,6 @@
 		"oA": 0,
 		"oAP": "/img/menu-icon.php",
 		"oF": 0
-		},
-	"/img/phone.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/phone.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
 		},
 	"/img/slider/bx_loader.gif": {
 		"ft": 4194304,
@@ -254,36 +224,6 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/img/slider/stop.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
-	"/img/twitter.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/twitter.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
-	"/img/www.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/www.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
-	"/img/youtube.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/youtube.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 52780316221407,
@@ -383,6 +323,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/inc/widgets.php",
+		"oF": 0
+		},
+	"/inc/woocommerce-functions.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/inc/woocommerce-functions.php",
 		"oF": 0
 		},
 	"/index.php": {
@@ -568,24 +516,6 @@
 		"oAP": "/page.php",
 		"oF": 0
 		},
-	"/pre-header.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/pre-header-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/pre-header.css.map": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/pre-header.css.map",
-		"oF": 0
-		},
 	"/screenshot.png": {
 		"ft": 32768,
 		"iS": 1305984,
@@ -608,6 +538,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/acc.css",
+		"oF": 0,
+		"oS": 2,
+		"sct": 0
+		},
+	"/scss/button.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/button.css",
 		"oF": 0,
 		"oS": 2,
 		"sct": 0
@@ -768,6 +711,19 @@
 		"oS": 2,
 		"sct": 0
 		},
+	"/scss/fullwidth.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/fullwidth.css",
+		"oF": 0,
+		"oS": 2,
+		"sct": 0
+		},
 	"/scss/grid.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -829,6 +785,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/lightbox.css",
+		"oF": 0,
+		"oS": 2,
+		"sct": 0
+		},
+	"/scss/megamenu.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/megamenu.css",
 		"oF": 0,
 		"oS": 2,
 		"sct": 0
@@ -996,7 +965,7 @@
 		"ec": 1,
 		"ft": 4,
 		"ma": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/social.css",
 		"oF": 0,
 		"oS": 2,
@@ -1024,6 +993,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/table.css",
+		"oF": 0,
+		"oS": 2,
+		"sct": 0
+		},
+	"/scss/woo.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/woo.css",
 		"oF": 0,
 		"oS": 2,
 		"sct": 0
@@ -1060,6 +1042,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/search.php",
+		"oF": 0
+		},
+	"/sidebar.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/sidebar.php",
 		"oF": 0
 		},
 	"/single-event.php": {
@@ -1240,6 +1230,14 @@
 		"oAP": "/template-parts/content/page-search.php",
 		"oF": 0
 		},
+	"/template-parts/content/page-woocommerce.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/template-parts/content/page-woocommerce.php",
+		"oF": 0
+		},
 	"/template-parts/content/person-article.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1288,6 +1286,14 @@
 		"oAP": "/template-parts/gutenberg-blocks/contact/contact.php",
 		"oF": 0
 		},
+	"/template-parts/gutenberg-blocks/fullwidth/fullwidth.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/template-parts/gutenberg-blocks/fullwidth/fullwidth.php",
+		"oF": 0
+		},
 	"/template-parts/gutenberg-blocks/meeting/meeting-kopi.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1326,6 +1332,22 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/webspeed.sublime-workspace",
+		"oF": 0
+		},
+	"/woocommerce/single-product-reviews.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/woocommerce/single-product-reviews.php",
+		"oF": 0
+		},
+	"/XXXwoocommerce.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/XXXwoocommerce.php",
 		"oF": 0
 		}
 	},

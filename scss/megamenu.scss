@@ -1,0 +1,66 @@
+@use 'elements/breakpoints'as b;
+@use 'elements/size'as s;
+
+@media (min-width: b.$menu-break) {
+    .megamenu {
+        margin-left: auto;
+
+        .first-lvl {
+            display: flex;
+            gap: 2rem;
+            height: 100%;
+            line-height: 4rem;
+
+            >li:hover>.sub-menu {
+                display: grid;
+            }
+
+            >li>a {
+                display: flex;
+                height: 100%;
+            }
+        }
+
+        .sub-menu {
+            display: none;
+            position: absolute;
+            left: 0;
+            right: 0;
+            grid-template-columns: repeat(4, 1fr);
+            padding: 2rem;
+            z-index: 100;
+            line-height: 24px;
+            gap: 1rem;
+            background: #fff;
+            border-top: 1px solid var(--border);
+            box-shadow: 0 7px 7px rgb(0 0 0 / 10%);
+            max-width: 1100px;
+            margin: 0 auto;
+
+            .sub-menu {
+                display: block;
+                border: none;
+                padding: 0;
+                box-shadow: none;
+                position: relative;
+                padding-top: .5rem;
+
+                .sub-menu {
+                    padding: 0;
+                    padding-left: 1rem;
+                }
+            }
+        }
+
+        .m-head>a {
+            border-bottom: 1px solid var(--border);
+            font-size: .9rem;
+        }
+    }
+
+
+    #menu-item-42>.sub-menu {
+        //display: grid;
+    }
+
+}

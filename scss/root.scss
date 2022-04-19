@@ -17,15 +17,16 @@
   --article-font-size: 1.06rem;
   --article-line-height: 1.6rem;
   --border: #eee;
+  --title-border: #e56101;
   --blockquote: rgba(0,0,0,.1);
-  --menu-desktop-pad: .5rem 0 ;
+  --menu-desktop-pad: 0;
   --menu-desktop-bg: #fff;
   --menu-desktop-font: #222;
   --menu-desktop-hover-font: #333;
   --menu-desktop-divider: #999;
   --menu-desktop-current-bg: transparent;
   --menu-desktop-current-font: #0073e5;
-  --menu-desktop-sub-pad: .5rem;
+  --menu-desktop-sub-pad: .25rem;
   --menu-desktop-sub-font: #444;
   --menu-desktop-sub-hover-font: #333;
   --menu-desktop-sub-bg: #fff;
@@ -69,6 +70,10 @@
   --menu-pre-header-font: #222;
   --menu-pre-header-hover: #333;
   --menu-pre-header-active: #0073e5;
+  --but-txt: #fff;
+  --but-bg: #0073e5;
+  --but-txt-hover: #f2f2f2;
+  --but-bg-hover: #0073e5d1;
 
   --icon-color: rgb(59, 67, 67);
   

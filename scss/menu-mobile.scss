@@ -78,7 +78,7 @@
         }
     }
 
-    .site-menu {
+    .mobile-menu {
         flex: 1;
         display: none;
         background: var(--menu-mobile-bg);
@@ -107,13 +107,13 @@
 
 
 
-    .site-menu ul ul {
+    .mobile-menu ul ul {
         display: none;
         padding-right: 0;
         border: none;
     }
 
-    .site-menu a {
+    .mobile-menu a {
         color: #fff;
         opacity: .8;
         display: block;
@@ -122,19 +122,19 @@
         padding-left: .15rem;
     }
 
-    .site-menu a.active {
+    .mobile-menu a.active {
         opacity: 1;
     }
 
-    .site-menu li li a {
+    .mobile-menu li li a {
         padding-left: s.$gap-s/2;
     }
 
-    .site-menu li li li a {
+    .mobile-menu li li li a {
         padding-left: s.$gap-s;
     }
 
-    .site-menu .current-menu-item>a {
+    .mobile-menu .current-menu-item>a {
         opacity: 1;
     }
 
@@ -143,7 +143,7 @@
     }
 
     // WordPress
-    .site-menu {
+    .mobile-menu {
         .current-menu-item {
             >a {
                 opacity: 1;

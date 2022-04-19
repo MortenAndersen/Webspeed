@@ -79,7 +79,8 @@ aside {
 .page-template-page-aside-left-right-topimg,
 .page-template-page-aside-left-topimg,
 .page-template-page-aside-right-topimg,
-.page-template-page-no-wrap-topimg {
+.page-template-page-no-wrap-topimg,
+.page-template-page-no-wrap {
     .page-content {
     padding-top: 0;
 }
@@ -132,12 +133,13 @@ aside {
 @media (min-width: b.$menu-break) {
     .page-header {
         background: var(--header-desktop);
+        padding: 0;
     }
 
-    .sticky-header {
+    .sticky {
         position: sticky;
         top: 0;
-        z-index: 9999;
+        z-index: 99;
     }
 
 }

@@ -23,6 +23,15 @@ if (!function_exists('web_logo')) {
     }
 }
 
+// Menu type
+
+if (!function_exists('web_menu')) {
+    function web_menu() {
+        return 'site-menu';
+        // megamenu
+    }
+}
+
 // BackButton
 
 function web_go_back()
@@ -203,19 +212,6 @@ if (!function_exists('web_menu_pos')) {
     }
 }
 
-// Social Icon
-if (!function_exists('web_social_menu')) {
-    function web_social_menu()
-    {
-    echo '<div class="social">';
-        echo '<a href="https://linkedin.com" target="_blank"><img src="' . get_template_directory_uri() . '/img/linkedin.svg" alt="Linkedin"></a>';
-        echo '<a href="https://facebook.com" target="_blank"><img src="' . get_template_directory_uri() . '/img/facebook.svg" alt="Facebook"></a>';
-        echo '<a href="https://twitter.com" target="_blank"><img src="' . get_template_directory_uri() . '/img/twitter.svg" alt="Twitter"></a>';
-        echo '<a href="https://youtube.com" target="_blank"><img src="' . get_template_directory_uri() . '/img/youtube.svg" alt="Youtybe"></a>';
-    echo '</div>';
-
-    }
-}
 
 // Reference
 if (!function_exists('web_reference')) {

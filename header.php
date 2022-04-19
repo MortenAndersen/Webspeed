@@ -16,7 +16,7 @@
   echo '</div>';
 } ?>
 
-<header class="page-header">
+<header class="page-header sticky">
 	<div class="<?php web_header_style(); ?>">
 		<?php web_logo();?>
 		<div class="menu-icon">

@@ -19,6 +19,8 @@ function acc_block() {
     }
 }
 
+// ---------------------------------------------------
+
 add_action('acf/init', 'contact_block');
 function contact_block() {
 
@@ -38,6 +40,8 @@ function contact_block() {
     }
 }
 
+// ---------------------------------------------------
+
 add_action('acf/init', 'meeting_block');
 function meeting_block() {
 
@@ -53,6 +57,27 @@ function meeting_block() {
             'category'          => 'formatting',
             'icon'              => 'admin-comments',
             'keywords'          => array( 'meeting', 'quote' ),
+        ));
+    }
+}
+
+// ---------------------------------------------------
+
+add_action('acf/init', 'fullwidth_block');
+function fullwidth_block() {
+
+    // Check function exists.
+    if( function_exists('acf_register_block_type') ) {
+
+        // register a Spalter block.
+        acf_register_block_type(array(
+            'name'              => 'fullwidth',
+            'title'             => __('Full Width WEB'),
+            'description'       => __('Image and Text Information'),
+            'render_template'   => 'template-parts/gutenberg-blocks/fullwidth/fullwidth.php',
+            'category'          => 'formatting',
+            'icon'              => 'admin-comments',
+            'keywords'          => array( 'WEB', 'quote' ),
         ));
     }
 }

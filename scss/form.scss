@@ -156,3 +156,15 @@ ul.form-grid {
         }
     }
 }
+
+select {
+    font-size: .85rem;
+    height: 2.5rem;
+    outline: none;
+    padding-left: 1ch;
+
+    -webkit-appearance: none;
+   -moz-appearance: none;
+        appearance: none;
+
+}

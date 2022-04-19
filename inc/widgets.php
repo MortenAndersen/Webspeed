@@ -1,5 +1,5 @@
 <?php
-function mother_widgets_init()
+function webspeed_widgets_init()
 {
     // Pre header
     register_sidebar(
@@ -183,4 +183,4 @@ function mother_widgets_init()
 
 }
 
-add_action('widgets_init', 'mother_widgets_init');
+add_action('widgets_init', 'webspeed_widgets_init');

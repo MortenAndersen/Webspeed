@@ -20,20 +20,27 @@
         });
 
         // MOBILE MENU //
-        $('.site-menu a').click(function() {
-            $('.site-menu a').removeClass('active');
-            $('.site-menu ul').removeClass('active-trail');
+        $('.mobile-menu a').click(function() {
+            $('.mobile-menu a').removeClass('active');
+            $('.mobile-menu ul').removeClass('active-trail');
             $(this).addClass('active');
         });
 
         // Sub menu trigger
-        $('.site-menu ul').parent('li').append('<span class="menu-trigger" aria-label="Åben undermenu"></span>');
+        $('.mobile-menu ul').parent('li').append('<span class="menu-trigger" aria-label="Åben undermenu"></span>');
 
         // Sub menu toggle
         $('.current_page_ancestor > .menu-trigger').addClass('active-trigger');
         $('.menu-trigger').click(function() {
             $(this).siblings('ul').slideToggle().toggleClass('mobile-sibling-open');
             $(this).toggleClass('active-trigger');
+        });
+
+        // Sub menu toggle uden link - MegaMenu
+        $('.m-head > a').click(function() {
+            $(this).siblings('ul').slideToggle().toggleClass('mobile-sibling-open');
+            $(this).toggleClass('active-trigger');
+            $(this).siblings('span').toggleClass('active-trigger');
         });
 
         $('.sub-menu li:has(ul)').addClass('has-sub');

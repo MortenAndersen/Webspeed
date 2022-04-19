@@ -1,3 +1,5 @@
+@use 'elements/breakpoints'as b;
+@use 'elements/size'as s;
 .menu {
 	margin: 0;
 	padding: 0;
@@ -6,4 +8,67 @@
 		padding: 0;
 		list-style-type: none;
 	}
+}
+
+.m-head > {
+    	a {
+    		text-transform: uppercase;
+    		font-weight: bold;
+    		color:var(--body-font);
+    		&:hover {
+    			cursor: inherit;
+    		}
+    	}
+    }
+
+@media (min-width: b.$menu-break) {
+	.page-header nav {
+	a {
+            color: var(--menu-desktop-font);
+            padding: var(--menu-desktop-pad);
+            border-bottom: 1px solid transparent;
+            &:hover {
+                color:  var(--menu-desktop-hover-font);
+            }
+
+            &[aria-current=page] {
+                color: var(--menu-desktop-current-font);
+                background: var(--menu-desktop-current-bg);
+                border-bottom: 1px solid
+            }
+        }
+
+        >.current-menu-parent >,
+        .current_page_ancestor > {
+            a {
+                border-bottom: 1px solid var(--menu-desktop-current-font);
+            }
+        }
+
+        li li {
+            a {
+                color: var(--menu-desktop-sub-font);
+                padding: var(--menu-desktop-sub-pad);
+                border-bottom: none;
+                &:hover {
+                    color:  var(--menu-desktop-sub-hover-font);
+                }
+
+                &[aria-current=page] {
+                    margin-left: calc(var(--menu-desktop-sub-pad-side) * -1);
+                    margin-right: calc(var(--menu-desktop-sub-pad-side) * -1);
+                    background: var(--menu-desktop-sub-current-bg);
+                    color: var(--menu-desktop-sub-current-font);
+                    padding-left: calc(var(--menu-desktop-sub-pad-side) + .5rem);
+                    padding-right: calc(var(--menu-desktop-sub-pad-side) + .5rem);
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+}
+.single-post {
+    .current_page_parent > a {
+        border-bottom: 1px solid var(--menu-desktop-current-font);
+    }
 }

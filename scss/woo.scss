@@ -1,0 +1,89 @@
+:root {
+	--woo-but-bg: red;
+	--woo-but-txt: #fff;
+	--woo-but-bg-hover: green;
+	--woo-but-txt-hover: #000;
+	--woo-but-dis-bg: red;
+	--woo-but-dis-txt: green;
+	--woo-onsale-bg: green;
+	--woo-onsale-txt: #fff;
+	--woo-price-txt: red;
+	--woo-button-bg: blue;
+	--woo-button-txt: #fff;
+	--woo-button-bg-hover: red;
+	--woo-button-txt-hover: blue;
+	--woo-link-txt: #222;
+	--woo-link-txt-hover: #555;
+	--woo-mes-bg: #ddd;
+	--woo-mes-txt: #444;
+	--woo-mes-border-color: blue;
+	--woo-info-border-color: yellow;
+	--woo-err-border-color: red;
+}
+
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
+	background: var(--woo-but-bg);
+	color: var(--woo-but-txt)
+}
+.woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover {
+	background: var(--woo-but-bg-hover);
+	color: var(--woo-but-txt-hover)
+}
+
+.woocommerce button.button.alt.disabled {
+	background: var(--woo-but-dis-bg);
+	color: var(--woo-but-dis-txt)
+}
+
+.woocommerce span.onsale {
+	background: var(--woo-onsale-bg);
+	color: var(--woo-onsale-txt)
+}
+
+.woocommerce ul.products li.product .price,
+.woocommerce div.product p.price, .woocommerce div.product span.price {
+	color: var(--woo-price-txt)
+}
+
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
+	background: var(--woo-button-bg);
+	color: var(--woo-button-txt);
+}
+
+.woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover {
+	background: var(--woo-button-bg-hover);
+	color: var(--woo-button-txt-hover);
+}
+
+.woocommerce ul.products li.product a {
+	color: var(--woo-link-txt);
+}
+
+.woocommerce ul.products li.product a:hover {
+	color: var(--woo-link-txt-hover);
+}
+
+.woocommerce-error, .woocommerce-info, .woocommerce-message {
+	background: var(--woo-mes-bg);
+	color: var(--woo-mes-txt);
+}
+.woocommerce-message {
+	border-color: var(--woo-mes-border-color);
+}
+.woocommerce-info {
+	border-color: var(--woo-info-border-color);
+}
+.woocommerce-error {
+	border-color: var(--woo-err-border-color);
+}
+
+
+
+
+.woocommerce .woocommerce-breadcrumb {
+	margin: 1rem 0;
+	display: flex;
+}
+.product_meta {
+	display: grid;
+}
