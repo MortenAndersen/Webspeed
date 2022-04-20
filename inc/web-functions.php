@@ -125,7 +125,7 @@ function web_topimg() {
             echo '<div class="wrap-no-pad">';
             echo '<div class="top-caption">';
 
-            $arr = array(" | " => "<br />","<" => "<span>",">" => "</span>");
+            $arr = array(" | " => "<br />");
             echo '<h1 class="entry-title-big">' . strtr(get_the_title(),$arr) . '</h1>';
 
             if(!empty($caption)) {
@@ -183,7 +183,7 @@ function web_small_topimg() {
 
             echo '<div class="top-caption">';
 
-            $arr = array(" | " => "<br />","<" => "<span>",">" => "</span>");
+            $arr = array(" | " => "<br />");
             echo '<h1 class="entry-title-big">' . strtr(get_the_title(),$arr) . '</h1>';
 
              echo '</div>';
