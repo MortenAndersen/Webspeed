@@ -248,11 +248,11 @@ function web_date_cat_author() {
 
 // Title 
 function web_title() {
-    $arr = array(" | " => "<br />","<" => "<span>",">" => "</span>");
+    $arr = array(" | " => "<br />");
     echo '<h1 class="entry-title">' . strtr(get_the_title(),$arr) . '</h1>';
 }
 function get_web_title() {
-    $arr = array(" | " => "<br />","<" => "<span>",">" => "</span>");
+    $arr = array(" | " => "<br />");
     $title = strtr(get_the_title(),$arr);
     return $title;
 }
