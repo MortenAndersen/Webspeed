@@ -4,6 +4,10 @@
     >div {
         position: relative;
         box-shadow: 0 0 1px #ababab;
+        &:hover {
+            box-shadow: 0 0 2px #ababab;
+            z-index: 1;
+        }
     }
     .arrow {
         content: '';
