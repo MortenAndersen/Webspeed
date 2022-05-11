@@ -520,40 +520,10 @@
 	"buffers":
 	[
 		{
-			"file": "scss/elements.scss",
+			"file": "inc/web-functions.php",
 			"settings":
 			{
-				"buffer_size": 6812,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			},
-			"undo_stack":
-			[
-				[
-					7,
-					1,
-					"left_delete",
-					null,
-					"AQAAAIkPAAAAAAAAiQ8AAAAAAAAEAAAALXRvcA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACNDwAAAAAAAIkPAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					9,
-					1,
-					"insert",
-					{
-						"characters": " 0"
-					},
-					"AgAAAJAPAAAAAAAAkQ8AAAAAAAAAAAAAkQ8AAAAAAACSDwAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACQDwAAAAAAAJAPAAAAAAAAAAAAAAAA8L8"
-				]
-			]
-		},
-		{
-			"file": "scss/layout.scss",
-			"settings":
-			{
-				"buffer_size": 4245,
+				"buffer_size": 7754,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			},
@@ -562,383 +532,54 @@
 				[
 					3,
 					1,
-					"insert",
-					{
-						"characters": "\n"
-					},
-					"AgAAAPwJAAAAAAAA/QkAAAAAAAAAAAAA/QkAAAAAAAAFCgAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAD8CQAAAAAAAPwJAAAAAAAAAAAAAAAA8L8"
+					"left_delete",
+					null,
+					"AQAAAOEbAAAAAAAA4RsAAAAAAAAhAAAALCI8IiA9PiAiPHNwYW4+IiwiPiIgPT4gIjwvc3Bhbj4i",
+					"EQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADhGwAAAAAAAAIcAAAAAAAAAAAAAAAA8L8"
 				],
 				[
 					6,
 					1,
-					"insert",
-					{
-						"characters": "\n\n."
-					},
-					"BwAAAPwJAAAAAAAA/QkAAAAAAAAAAAAA/QkAAAAAAAAFCgAAAAAAAAAAAAAGCgAAAAAAAAYKAAAAAAAACAAAACAgICAgICAgBQoAAAAAAAAGCgAAAAAAAAAAAAAGCgAAAAAAAA4KAAAAAAAAAAAAAP0JAAAAAAAA/QkAAAAAAAAIAAAAICAgICAgICAGCgAAAAAAAAcKAAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAD8CQAAAAAAAPwJAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					7,
-					1,
-					"paste",
+					"left_delete",
 					null,
-					"AQAAAAcKAAAAAAAAEAoAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAHCgAAAAAAAAcKAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					8,
-					1,
-					"insert",
-					{
-						"characters": " &"
-					},
-					"AgAAABAKAAAAAAAAEQoAAAAAAAAAAAAAEQoAAAAAAAASCgAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAQCgAAAAAAABAKAAAAAAAAAAAAAAAA8L8"
+					"AQAAAHAcAAAAAAAAcBwAAAAAAAAhAAAALCI8IiA9PiAiPHNwYW4+IiwiPiIgPT4gIjwvc3Bhbj4i",
+					"EQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABwHAAAAAAAAJEcAAAAAAAAAAAAAAAA8L8"
 				],
 				[
 					9,
 					1,
-					"insert",
-					{
-						"characters": " "
-					},
-					"AQAAABIKAAAAAAAAEwoAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAASCgAAAAAAABIKAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					10,
-					1,
-					"insert_snippet",
-					{
-						"contents": "{$0}"
-					},
-					"AQAAABMKAAAAAAAAFQoAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAATCgAAAAAAABMKAAAAAAAAAAAAAAAA8L8"
+					"left_delete",
+					null,
+					"AQAAAHkNAAAAAAAAeQ0AAAAAAAAgAAAALCI8IiA9PiAiPHNwYW4+IiwiPiIgPT4gIjwvc3Bhbj4",
+					"EQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAB5DQAAAAAAAJkNAAAAAAAAAAAAAAAA8L8"
 				],
 				[
 					11,
 					1,
-					"run_macro_file",
-					{
-						"file": "res://Packages/Default/Add Line in Braces.sublime-macro"
-					},
-					"BgAAABQKAAAAAAAAFQoAAAAAAAAAAAAAFQoAAAAAAAAdCgAAAAAAAAAAAAAdCgAAAAAAAB4KAAAAAAAAAAAAAB4KAAAAAAAAJgoAAAAAAAAAAAAAFQoAAAAAAAAVCgAAAAAAAAgAAAAgICAgICAgIBUKAAAAAAAAIQoAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAUCgAAAAAAABQKAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					12,
-					1,
-					"insert",
-					{
-						"characters": "to"
-					},
-					"AgAAACEKAAAAAAAAIgoAAAAAAAAAAAAAIgoAAAAAAAAjCgAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAhCgAAAAAAACEKAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					13,
-					1,
-					"insert_completion",
-					{
-						"completion": "top: ",
-						"format": "snippet",
-						"keep_prefix": false,
-						"must_insert": false,
-						"trigger": "top"
-					},
-					"AgAAACEKAAAAAAAAIQoAAAAAAAACAAAAdG8hCgAAAAAAACYKAAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAjCgAAAAAAACMKAAAAAAAAAAAAAAAA8L8"
+					"left_delete",
+					null,
+					"AQAAAHkNAAAAAAAAeQ0AAAAAAAABAAAAIg",
+					"EQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAB6DQAAAAAAAHoNAAAAAAAAAAAAAAAA8L8"
 				],
 				[
 					14,
 					1,
-					"insert",
-					{
-						"characters": "32px"
-					},
-					"BAAAACYKAAAAAAAAJwoAAAAAAAAAAAAAJwoAAAAAAAAoCgAAAAAAAAAAAAAoCgAAAAAAACkKAAAAAAAAAAAAACkKAAAAAAAAKgoAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAmCgAAAAAAACYKAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					15,
-					1,
-					"insert",
-					{
-						"characters": ";"
-					},
-					"AQAAACoKAAAAAAAAKwoAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAqCgAAAAAAACoKAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					18,
-					1,
-					"insert",
-					{
-						"characters": "\n/"
-					},
-					"AgAAAOsEAAAAAAAA7AQAAAAAAAAAAAAA7AQAAAAAAADtBAAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADrBAAAAAAAAOsEAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					19,
-					1,
-					"insert",
-					{
-						"characters": "*"
-					},
-					"AQAAAO0EAAAAAAAA7gQAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADtBAAAAAAAAO0EAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					22,
-					1,
-					"insert",
-					{
-						"characters": "\n*"
-					},
-					"AgAAACIGAAAAAAAAIwYAAAAAAAAAAAAAIwYAAAAAAAAkBgAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAiBgAAAAAAACIGAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					23,
-					1,
-					"insert",
-					{
-						"characters": "/"
-					},
-					"AQAAACQGAAAAAAAAJQYAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAkBgAAAAAAACQGAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					26,
-					1,
-					"insert",
-					{
-						"characters": "/*"
-					},
-					"AgAAAJQIAAAAAAAAlQgAAAAAAAAAAAAAlQgAAAAAAACWCAAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACUCAAAAAAAAJQIAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					27,
-					1,
-					"insert",
-					{
-						"characters": " "
-					},
-					"AQAAAJYIAAAAAAAAlwgAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACWCAAAAAAAAJYIAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					30,
-					1,
-					"insert",
-					{
-						"characters": " */"
-					},
-					"AwAAAL4IAAAAAAAAvwgAAAAAAAAAAAAAvwgAAAAAAADACAAAAAAAAAAAAADACAAAAAAAAMEIAAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAC+CAAAAAAAAL4IAAAAAAAAAAAAAAAA8L8"
+					"left_delete",
+					null,
+					"AQAAAAQVAAAAAAAABBUAAAAAAAAhAAAALCI8IiA9PiAiPHNwYW4+IiwiPiIgPT4gIjwvc3Bhbj4i",
+					"EQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAEFQAAAAAAACUVAAAAAAAAAAAAAAAA8L8"
 				]
 			]
 		},
 		{
-			"file": "scss/menu-desktop.scss",
+			"file": "functions.php",
 			"settings":
 			{
-				"buffer_size": 2904,
-				"encoding": "UTF-8",
+				"buffer_size": 5229,
 				"line_ending": "Unix"
 			},
 			"undo_stack":
 			[
-				[
-					3,
-					1,
-					"left_delete",
-					null,
-					"AQAAAAQEAAAAAAAABAQAAAAAAAABAAAAMA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAFBAAAAAAAAAUEAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					4,
-					1,
-					"insert",
-					{
-						"characters": ".25rem"
-					},
-					"BgAAAAQEAAAAAAAABQQAAAAAAAAAAAAABQQAAAAAAAAGBAAAAAAAAAAAAAAGBAAAAAAAAAcEAAAAAAAAAAAAAAcEAAAAAAAACAQAAAAAAAAAAAAACAQAAAAAAAAJBAAAAAAAAAAAAAAJBAAAAAAAAAoEAAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAEBAAAAAAAAAQEAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					5,
-					6,
-					"left_delete",
-					null,
-					"BgAAAAkEAAAAAAAACQQAAAAAAAABAAAAbQgEAAAAAAAACAQAAAAAAAABAAAAZQcEAAAAAAAABwQAAAAAAAABAAAAcgYEAAAAAAAABgQAAAAAAAABAAAANQUEAAAAAAAABQQAAAAAAAABAAAAMgQEAAAAAAAABAQAAAAAAAABAAAALg",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAKBAAAAAAAAAoEAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					6,
-					1,
-					"insert",
-					{
-						"characters": "0"
-					},
-					"AQAAAAQEAAAAAAAABQQAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAEBAAAAAAAAAQEAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					9,
-					1,
-					"left_delete",
-					null,
-					"AQAAAA8DAAAAAAAADwMAAAAAAAABAAAAMg",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAQAwAAAAAAABADAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					10,
-					1,
-					"insert",
-					{
-						"characters": "6"
-					},
-					"AQAAAA8DAAAAAAAAEAMAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAPAwAAAAAAAA8DAAAAAAAAAAAAAAAA8L8"
-				]
-			]
-		},
-		{
-			"file": "scss/fullwidth.scss",
-			"settings":
-			{
-				"buffer_size": 784,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			},
-			"undo_stack":
-			[
-				[
-					3,
-					1,
-					"cut",
-					null,
-					"AQAAAMQCAAAAAAAAxAIAAAAAAAA1AAAAJjpob3ZlciB7CiAgICAgICAgICAgIGZpbHRlcjogZ3JheXNjYWxlKDEpOwogICAgICAgIH0",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADEAgAAAAAAAPkCAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					4,
-					4,
-					"left_delete",
-					null,
-					"BAAAAMACAAAAAAAAwAIAAAAAAAAEAAAAICAgILwCAAAAAAAAvAIAAAAAAAAEAAAAICAgILsCAAAAAAAAuwIAAAAAAAABAAAACroCAAAAAAAAugIAAAAAAAABAAAACg",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADEAgAAAAAAAMQCAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					7,
-					1,
-					"insert",
-					{
-						"characters": "\na"
-					},
-					"AwAAAMACAAAAAAAAwQIAAAAAAAAAAAAAwQIAAAAAAADFAgAAAAAAAAAAAADFAgAAAAAAAMYCAAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADAAgAAAAAAAMACAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					8,
-					1,
-					"insert",
-					{
-						"characters": " "
-					},
-					"AQAAAMYCAAAAAAAAxwIAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADGAgAAAAAAAMYCAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					9,
-					1,
-					"insert_snippet",
-					{
-						"contents": "{$0}"
-					},
-					"AQAAAMcCAAAAAAAAyQIAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADHAgAAAAAAAMcCAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					10,
-					1,
-					"run_macro_file",
-					{
-						"file": "res://Packages/Default/Add Line in Braces.sublime-macro"
-					},
-					"BgAAAMgCAAAAAAAAyQIAAAAAAAAAAAAAyQIAAAAAAADNAgAAAAAAAAAAAADNAgAAAAAAAM4CAAAAAAAAAAAAAM4CAAAAAAAA0gIAAAAAAAAAAAAAyQIAAAAAAADJAgAAAAAAAAQAAAAgICAgyQIAAAAAAADRAgAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADIAgAAAAAAAMgCAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					11,
-					1,
-					"insert",
-					{
-						"characters": "img"
-					},
-					"AwAAANECAAAAAAAA0gIAAAAAAAAAAAAA0gIAAAAAAADTAgAAAAAAAAAAAADTAgAAAAAAANQCAAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADRAgAAAAAAANECAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					12,
-					1,
-					"paste",
-					null,
-					"AQAAANQCAAAAAAAACQMAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADUAgAAAAAAANQCAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					15,
-					1,
-					"left_delete",
-					null,
-					"AQAAANQCAAAAAAAA1AIAAAAAAAABAAAAJg",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADVAgAAAAAAANUCAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					18,
-					1,
-					"insert",
-					{
-						"characters": ":hover"
-					},
-					"BgAAAMYCAAAAAAAAxwIAAAAAAAAAAAAAxwIAAAAAAADIAgAAAAAAAAAAAADIAgAAAAAAAMkCAAAAAAAAAAAAAMkCAAAAAAAAygIAAAAAAAAAAAAAygIAAAAAAADLAgAAAAAAAAAAAADLAgAAAAAAAMwCAAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADGAgAAAAAAAMYCAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					21,
-					6,
-					"left_delete",
-					null,
-					"BgAAAN8CAAAAAAAA3wIAAAAAAAABAAAAct4CAAAAAAAA3gIAAAAAAAABAAAAZd0CAAAAAAAA3QIAAAAAAAABAAAAdtwCAAAAAAAA3AIAAAAAAAABAAAAb9sCAAAAAAAA2wIAAAAAAAABAAAAaNoCAAAAAAAA2gIAAAAAAAABAAAAOg",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADgAgAAAAAAAOACAAAAAAAAAAAAAAAA8L8"
-				]
-			]
-		},
-		{
-			"file": "header.php",
-			"settings":
-			{
-				"buffer_size": 822,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			},
-			"undo_stack":
-			[
-				[
-					5,
-					2,
-					"left_delete",
-					null,
-					"AgAAAPMBAAAAAAAA8wEAAAAAAAAGAAAAc3RpY2t58gEAAAAAAADyAQAAAAAAAAEAAAAg",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADzAQAAAAAAAPkBAAAAAAAAAAAAAAAA8L8"
-				]
 			]
 		}
 	],
@@ -1041,14 +682,13 @@
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/inc",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/inc/gutenberg",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/js",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/languages",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss/elements",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/template-parts",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/template-parts/aside",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/template-parts/content",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/template-parts/gutenberg-blocks",
-		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/template-parts/gutenberg-blocks/contact",
-		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/template-parts/gutenberg-blocks/fullwidth",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/template-parts/gutenberg-blocks/meeting",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/template-parts/nav",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/woocommerce",
@@ -1057,8 +697,15 @@
 	],
 	"file_history":
 	[
-		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/footer.php",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/functions.php",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss/fonts.scss",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/template-parts/content/page-search.php",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/header.php",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss/fullwidth.scss",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss/menu-desktop.scss",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss/layout.scss",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss/elements.scss",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/footer.php",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss/button.scss",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/template-parts/nav/main-menu.php",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/inc/web-functions.php",
@@ -1067,12 +714,7 @@
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/template-parts/gutenberg-blocks/fullwidth/fullwidth.php",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/strator/formular-widget.html",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/inc/gutenberg/acf-blocks.php",
-		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss/fonts.scss",
-		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss/fullwidth.scss",
-		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss/layout.scss",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss/nav.scss",
-		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/header.php",
-		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss/menu-desktop.scss",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/js/starter.js",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss/megamenu.scss",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss/menu-mobile.scss",
@@ -1088,7 +730,6 @@
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/XXXwoocommerce.php",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss/wp.scss",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/sidebar.php",
-		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/functions.php",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/template-parts/content/page-woocommerce.php",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss/personer.scss",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/scss/form.scss",
@@ -1140,7 +781,6 @@
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/inc/post-type-shortcode.php",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/inc/grid-gap.php",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/template-parts/aside/aside-single.php",
-		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/template-parts/content/page-search.php",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/page-aside-right-topimg.php",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/single-person.php",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/template-parts/aside/aside-person.php",
@@ -1203,6 +843,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"allstart",
 			"site-menu",
 			"dk.newsite",
 			"fill",
@@ -1240,86 +881,24 @@
 			[
 				{
 					"buffer": 0,
-					"file": "scss/elements.scss",
+					"file": "inc/web-functions.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6812,
+						"buffer_size": 7754,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3986,
-								3986
+								185,
+								185
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"stack_multiselect": false,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "scss/layout.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4245,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2241,
-								2241
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"stack_multiselect": false,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "scss/menu-desktop.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2904,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								784,
-								784
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
@@ -1332,65 +911,34 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "scss/fullwidth.scss",
+					"buffer": 1,
+					"file": "functions.php",
 					"selected": true,
-					"semi_transient": false,
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 784,
+						"buffer_size": 5229,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								730,
-								730
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 207.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"stack_multiselect": false,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "header.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 822,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								498,
-								498
+								4999,
+								4972
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": false
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 4876.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 0,
 					"stack_multiselect": false,
 					"type": "text"
 				}

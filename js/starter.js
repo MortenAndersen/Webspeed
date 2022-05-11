@@ -72,6 +72,17 @@
             $(this).parent().find('.acc-content').slideToggle(280);
         });
 
+        // Detect scroll
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 100) {
+                $('.sticky-header').addClass("scroll");
+            } else {
+                $('.sticky-header').removeClass("scroll");
+            }
+        });
+
 
 });
 

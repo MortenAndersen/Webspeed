@@ -68,10 +68,6 @@ if (!function_exists('web_setup')):
         add_theme_support('post-thumbnails');
         add_image_size('webspeed-post', 705, 395, true);
 
-
-        // Shortkoder i widget
-        add_filter('widget_text', 'do_shortcode');
-
         // Menu
         register_nav_menus(array(
             'main-menu' => __('Main Menu', 'webspeed-domain'),

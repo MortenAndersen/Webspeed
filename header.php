@@ -16,8 +16,8 @@
   echo '</div>';
 } ?>
 
-<header class="page-header">
-	<div class="<?php web_header_style(); ?>">
+<header class="page-header <?php web_header_class(); ?>">
+	<div class="<?php web_header_div_class(); ?>">
 		<?php web_logo();?>
 		<div class="menu-icon">
 			<?php get_template_part('img/menu', 'icon');?>

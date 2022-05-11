@@ -59,14 +59,14 @@ function web_edit_link()
 
 // Header style
 if (!function_exists('web_header_style')) {
-    function web_header_style()
+    function web_header_div_class()
     {
         echo 'flex wrap-no-pad';
     }
 }
 
 if (!function_exists('web_header_sticky')) {
-    function web_header_sticky()
+    function web_header_class()
     {
         echo 'sticky-header';
     }

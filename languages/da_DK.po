@@ -1,17 +1,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: web\n"
-"POT-Creation-Date: 2021-08-09 15:32+0200\n"
-"PO-Revision-Date: 2021-10-04 11:12+0200\n"
+"POT-Creation-Date: 2022-04-21 14:05+0200\n"
+"PO-Revision-Date: 2022-04-21 14:06+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: da_DK\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.1\n"
-"X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: style.css\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -25,111 +25,343 @@ msgstr ""
 msgid "Main Menu"
 msgstr ""
 
-#: inc/web-functions.php:22
+#: inc/gutenberg/acf-blocks.php:12
+msgid "Accordion WEB"
+msgstr ""
+
+#: inc/gutenberg/acf-blocks.php:13
+msgid "Accordion"
+msgstr ""
+
+#: inc/gutenberg/acf-blocks.php:33
+msgid "Contact WEB"
+msgstr ""
+
+#: inc/gutenberg/acf-blocks.php:34
+msgid "Contact Information"
+msgstr ""
+
+#: inc/gutenberg/acf-blocks.php:54
+msgid "Meeting WEB"
+msgstr ""
+
+#: inc/gutenberg/acf-blocks.php:55
+msgid "Meeting Information"
+msgstr ""
+
+#: inc/gutenberg/acf-blocks.php:75
+msgid "Full Width WEB"
+msgstr ""
+
+#: inc/gutenberg/acf-blocks.php:76
+msgid "Image and Text Information"
+msgstr ""
+
+#: inc/post-type.php:12
+msgid "Elements"
+msgstr ""
+
+#: inc/post-type.php:13
+msgid "Element"
+msgstr ""
+
+#: inc/taxonomy.php:9
+msgctxt "taxonomy general name"
+msgid "Element Type"
+msgstr ""
+
+#: inc/taxonomy.php:10
+msgctxt "taxonomy singular name"
+msgid "Element Type"
+msgstr ""
+
+#: inc/taxonomy.php:11
+msgid "Søg Element Type"
+msgstr ""
+
+#: inc/taxonomy.php:12
+msgid "Alle Elements Typer"
+msgstr ""
+
+#: inc/taxonomy.php:13
+msgid "Parent Element Type"
+msgstr ""
+
+#: inc/taxonomy.php:14
+msgid "Parent Element Type:"
+msgstr ""
+
+#: inc/taxonomy.php:15
+msgid "Ret Element Type"
+msgstr ""
+
+#: inc/taxonomy.php:16
+msgid "Updater Element Type"
+msgstr ""
+
+#: inc/taxonomy.php:17
+msgid "Tilføj ny Element Type"
+msgstr ""
+
+#: inc/taxonomy.php:18
+msgid "Ny Element Type navn"
+msgstr ""
+
+#: inc/taxonomy.php:19
+msgid "Typer"
+msgstr ""
+
+#: inc/web-functions.php:40
 msgid "Go Back"
 msgstr "Tilbage"
 
-#: inc/web-functions.php:32
+#: inc/web-functions.php:49
 msgid "Read More"
 msgstr "Læs mere"
 
-#: inc/web-functions.php:39
+#: inc/web-functions.php:56
 msgid "edit"
+msgstr "ret"
+
+#: inc/widgets.php:7
+msgid "Pre header"
 msgstr ""
 
-#. Template Name of the plugin/theme
-#: inc/widgets.php:8
-msgid "Aside left"
-msgstr ""
-
-#: inc/widgets.php:10
-msgid "Venstre sidebar"
+#: inc/widgets.php:9
+msgid "Widget før header"
 msgstr ""
 
 #. Template Name of the plugin/theme
 #: inc/widgets.php:20
-msgid "Aside right"
+msgid "Aside left"
 msgstr ""
 
 #: inc/widgets.php:22
-msgid "Højre sidebar"
+msgid "Venstre sidebar"
 msgstr ""
 
-#: inc/widgets.php:33
-msgid "Pre content"
+#: inc/widgets.php:32
+msgid "Aside Indlæg"
 msgstr ""
 
-#: inc/widgets.php:35
-msgid "Widget før indhold"
+#: inc/widgets.php:34
+msgid "Sidebar på Indlæg"
+msgstr ""
+
+#. Template Name of the plugin/theme
+#: inc/widgets.php:44
+msgid "Aside right"
 msgstr ""
 
 #: inc/widgets.php:46
-msgid "Post content"
+msgid "Højre sidebar"
 msgstr ""
 
-#: inc/widgets.php:48
-msgid "Widget efter indhold"
+#: inc/widgets.php:57
+msgid "Pre content"
 msgstr ""
 
 #: inc/widgets.php:59
-msgid "Footer"
+msgid "Widget før indhold"
 msgstr ""
 
-#: inc/widgets.php:61
-msgid "Sidefod"
+#: inc/widgets.php:70
+msgid "Post content"
 msgstr ""
 
 #: inc/widgets.php:72
-msgid "Post Footer"
+msgid "Widget efter indhold"
 msgstr ""
 
-#: inc/widgets.php:74
-msgid "Efter sidefod"
+#: inc/widgets.php:83
+msgid "Post content Frontpage"
 msgstr ""
 
 #: inc/widgets.php:85
-msgid "Menu widget"
+msgid "Widget efter indhold på forsiden"
 msgstr ""
 
-#: inc/widgets.php:87
-msgid "Vises KUN i mobilmenu!"
+#: inc/widgets.php:96
+msgid "Frontpage fokus"
 msgstr ""
 
 #: inc/widgets.php:98
+msgid "Widget til forsiden fokus indhold"
+msgstr ""
+
+#: inc/widgets.php:109
+msgid "Pre Footer"
+msgstr ""
+
+#: inc/widgets.php:111
+msgid "Før sidefod"
+msgstr ""
+
+#: inc/widgets.php:122
+msgid "Footer"
+msgstr ""
+
+#: inc/widgets.php:124
+msgid "Sidefod"
+msgstr ""
+
+#: inc/widgets.php:135
+msgid "Post Footer"
+msgstr ""
+
+#: inc/widgets.php:137
+msgid "Efter sidefod"
+msgstr ""
+
+#: inc/widgets.php:148
+msgid "Menu widget"
+msgstr ""
+
+#: inc/widgets.php:150
+msgid "Vises KUN i mobilmenu!"
+msgstr ""
+
+#: inc/widgets.php:161
+msgid "Slide in "
+msgstr ""
+
+#: inc/widgets.php:163
+msgid "Vises KUN på forsiden!"
+msgstr ""
+
+#: inc/widgets.php:174
 msgid "404"
 msgstr ""
 
-#: inc/widgets.php:100
+#: inc/widgets.php:176
 msgid "404 siden"
 msgstr ""
 
-#: template-parts/content/page-search.php:5
-#, php-format
-msgid "Search Results for: %s"
-msgstr "Søgeresultat for: %s"
+#: inc/woocommerce-functions.php:79
+msgid "Related products"
+msgstr ""
+
+#: inc/woocommerce-functions.php:86
+msgid "You may also like&hellip;"
+msgstr ""
+
+#: inc/woocommerce-functions.php:94
+msgid "Additional information"
+msgstr ""
 
 #: template-parts/content/page-search.php:7
+msgid "Search Results for"
+msgstr "Søgeresultat for"
+
+#: template-parts/content/page-search.php:9
 msgid "Nothing Found"
 msgstr "UPS her er ikke noget"
 
+#: template-parts/content/page-search.php:10
+msgid "Search Suggestions"
+msgstr "Prøv en anden måde at søge på"
+
+#: template-parts/content/page-search.php:12
+msgid "Check your spelling"
+msgstr "Tjek din stavning"
+
+#: template-parts/content/page-search.php:13
+msgid "Try more general words"
+msgstr "Prøv mere generelle ord"
+
+#: template-parts/content/page-search.php:14
+msgid "Try different words that mean the same thing"
+msgstr "Prøv andre ord der betyder det samme"
+
+#: woocommerce/single-product-reviews.php:53
+msgid "There are no reviews yet."
+msgstr ""
+
+#. translators: %s is product title
+#: woocommerce/single-product-reviews.php:64
+msgid "Add a review"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:64
+#, php-format
+msgid "Be the first to review &ldquo;%s&rdquo;"
+msgstr ""
+
+#. translators: %s is product title
+#: woocommerce/single-product-reviews.php:66
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:70
+msgid "Submit"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:78
+msgid "Name"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:84
+msgid "Email"
+msgstr ""
+
+#. translators: %s opening and closing link tags respectively
+#: woocommerce/single-product-reviews.php:109
+#, php-format
+msgid "You must be %1$slogged in%2$s to post a review."
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:113
+msgid "Your rating"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:114
+msgid "Rate&hellip;"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:115
+msgid "Perfect"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:116
+msgid "Good"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:117
+msgid "Average"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:118
+msgid "Not that bad"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:119
+msgid "Very poor"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:123
+msgid "Your review"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:130
+msgid ""
+"Only logged in customers who have purchased this product may leave a review."
+msgstr ""
+
 #. Theme Name of the plugin/theme
-msgid "web"
+msgid "webspeed"
 msgstr ""
 
 #. Theme URI of the plugin/theme
-msgid "https://www.hjemmesider.dk"
+msgid "https://github.com/MortenAndersen/Webspeed"
 msgstr ""
 
 #. Description of the plugin/theme
-msgid "Base / Starter theme"
+msgid "Starter theme"
 msgstr ""
 
 #. Author of the plugin/theme
-msgid "Morten Andersen - www.hjemmesider.dk"
-msgstr ""
-
-#. Author URI of the plugin/theme
-msgid "https://www.hjemmesider.dk/morten-andersen"
+msgid "Morten Andersen"
 msgstr ""
 
 #. Template Name of the plugin/theme
@@ -137,9 +369,45 @@ msgid "Article NO wrap"
 msgstr ""
 
 #. Template Name of the plugin/theme
-msgid "NO wrap * Template Post Type: post*/"
+msgid "Top img / Aside left"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Normal / Title img"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "NO wrap */"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Top img / Article NO wrap"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Top img / Aside left and right"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Aside left / Title img"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Aside right / Title img"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Top img / Aside right"
 msgstr ""
 
 #. Template Name of the plugin/theme
 msgid "Aside left and right"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Top img / Single */"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Top img / Article"
 msgstr ""

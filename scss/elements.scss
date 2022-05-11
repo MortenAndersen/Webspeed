@@ -257,7 +257,15 @@ article>.post-img {
         font-size: 60%;
         margin: .5rem 0;
     }
+    .sticky-header & {
+        transition: transform 1s ease;
+        transform-origin: center left;
+    }
 }
+
+.sticky-header.scroll .name {
+            transform: scale(.7);
+        }
 
 #background-video {
     width: 100vw;
@@ -431,4 +439,27 @@ article>.post-img {
 }
 .logo {
     align-self: center;
+}
+@media (min-width: b.$menu-break) {
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    .admin-bar & {
+        top: 32px;
+    }
+    .logo {
+        position: absolute;
+        top: 0;
+        transition: transform 1s ease;
+        transform-origin: top left;
+    }
+}
+.sticky-header.scroll {
+    border-bottom: 1px solid var(--border);
+
+ .logo  {
+   transform: scale(.5);
+}
+}
 }
