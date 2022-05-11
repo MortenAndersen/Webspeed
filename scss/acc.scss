@@ -3,7 +3,7 @@
 
     >div {
         position: relative;
-        box-shadow: 0 0 3px #ababab;
+        box-shadow: 0 0 1px #ababab;
     }
     .arrow {
         content: '';
@@ -58,7 +58,6 @@
 
 .acc-title {
     margin: 0;
-    font-weight: bold;
     position: relative;
     z-index: 1;
 }
