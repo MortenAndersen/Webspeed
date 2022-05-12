@@ -263,9 +263,16 @@ function get_clean_web_title() {
 }
 
 // Icons
-Function svg_url($type_key) {
+function svg_url($type_key) {
     $svg_type = ['calendar', 'phone', 'mail', 'instagram', 'globe', 'map', 'linkedin', 'facebook'];
     $svg_url = '<svg class="icon meeting"><use href="' . get_template_directory_uri() . '/img/contact/sprite-sheet.svg#' .  $svg_type[$type_key]  . '" /></svg>';
 
     return $svg_url ;
+}
+
+// PreHeader
+if (!function_exists('get_pre_header_class')) {
+    function get_pre_header_class() {
+        return ' wrap-no-pad only-desktop-flex';
+    }
 }

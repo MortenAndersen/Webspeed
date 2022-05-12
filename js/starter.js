@@ -78,7 +78,8 @@
 
             if (scroll >= 100) {
                 $('.sticky-header').addClass("scroll");
-            } else {
+            } 
+            if (scroll <= 200) {
                 $('.sticky-header').removeClass("scroll");
             }
         });

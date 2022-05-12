@@ -1,5 +1,7 @@
-.pre-header {
+.pre-header-con {
 	background: var(--pre-header-bg);
+}
+.pre-header {
 	flex-direction: row-reverse;
 	align-items: baseline;
 	gap: 1rem;

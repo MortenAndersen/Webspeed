@@ -406,7 +406,9 @@ article>.post-img {
 }
 }
 
-.only-desktop {
+.only-desktop,
+.only-desktop-flex,
+.only-desktop-grid {
     display: none;
 }
 
@@ -416,6 +418,12 @@ article>.post-img {
     }
     .only-desktop {
         display: block;
+    }
+    .only-desktop-flex {
+        display: flex;
+    }
+    .only-desktop-grid {
+        display: grid;
     }
 }
 .element {

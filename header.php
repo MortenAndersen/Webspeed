@@ -10,11 +10,15 @@
 <body <?php body_class();?>>
   <?php wp_body_open();?>
 
-<?php if (is_active_sidebar('pre-header')) {
-	echo '<div class="pre-header flex">';
-    dynamic_sidebar('pre-header');
-  echo '</div>';
-} ?>
+<?php 
+	if (is_active_sidebar('pre-header')) {
+		echo '<div class="pre-header-con">';
+    	echo '<div class="pre-header flex' . get_pre_header_class() . '">';
+        	dynamic_sidebar('pre-header');
+    	echo '</div>';
+    echo '</div>';
+  } 
+?>
 
 <header class="page-header <?php web_header_class(); ?>">
 	<div class="<?php web_header_div_class(); ?>">
