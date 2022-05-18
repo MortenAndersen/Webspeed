@@ -57,20 +57,6 @@ function web_edit_link()
     }
 }
 
-// Header style
-if (!function_exists('web_header_style')) {
-    function web_header_div_class()
-    {
-        echo 'flex wrap-no-pad';
-    }
-}
-
-if (!function_exists('web_header_sticky')) {
-    function web_header_class()
-    {
-        echo 'sticky-header';
-    }
-}
 
 function web_excerpt() {
     echo '<div class="the-excerpt">';
@@ -270,9 +256,31 @@ function svg_url($type_key) {
     return $svg_url ;
 }
 
-// PreHeader
+// ------------------------------------------------- //
+
+// PreHeader style
 if (!function_exists('get_pre_header_class')) {
     function get_pre_header_class() {
-        return ' wrap-no-pad only-desktop-flex';
+        return 'pre-header flex wrap-no-pad only-desktop-flex';
+    }
+}
+
+// Header style
+if (!function_exists('web_header_div_class')) {
+    function web_header_div_class() {
+        echo 'flex wrap-no-pad';
+    }
+}
+
+if (!function_exists('web_header_class')) {
+    function web_header_class() {
+        echo 'sticky-header';
+    }
+}
+
+// web_pre_footer_inject();
+if (!function_exists('web_pre_footer_inject')) {
+    function web_pre_footer_inject() {
+
     }
 }

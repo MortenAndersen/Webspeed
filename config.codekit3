@@ -1334,20 +1334,20 @@
 		"oAP": "/webspeed.sublime-workspace",
 		"oF": 0
 		},
+	"/woocommerce.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/woocommerce.php",
+		"oF": 0
+		},
 	"/woocommerce/single-product-reviews.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/woocommerce/single-product-reviews.php",
-		"oF": 0
-		},
-	"/XXXwoocommerce.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/XXXwoocommerce.php",
 		"oF": 0
 		}
 	},

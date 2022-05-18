@@ -1,5 +1,7 @@
 <?php
 
+web_pre_footer_inject();
+
 if ( get_post_meta( get_the_ID(), 'footer', true ) ) {
     echo '<div class="footer-meta-field meta-field">';
         echo get_post_meta( get_the_ID(), 'footer', true);

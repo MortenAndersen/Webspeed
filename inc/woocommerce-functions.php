@@ -76,14 +76,14 @@ add_action('woocommerce_shop_loop_item_title', 'webspeed_products_title', 10);
 
 // Relaterede overskrift
 function webspeed_related_title() {
-    echo '<h4 class="related">'. __( 'Related products', 'woocommerce' ) . '</h4>';
+    echo '<p class="related-title">'. __( 'Related products', 'woocommerce' ) . '</p>';
 }
 remove_action('woocommerce_product_related_products_heading', 'related', 10);
 add_action('woocommerce_product_related_products_heading', 'webspeed_related_title', 10);
 
 // Upsell overskrift
 function webspeed_upsell_title() {
-    echo '<h4 class="upsell">'. __( 'You may also like&hellip;', 'woocommerce' ) . '</h4>';
+    echo '<p class="upsell-title">'. __( 'You may also like&hellip;', 'woocommerce' ) . '</p>';
 }
 remove_action('woocommerce_product_upsells_products_heading', 'woocomerce', 10);
 add_action('woocommerce_product_upsells_products_heading', 'webspeed_upsell_title', 10);
@@ -96,3 +96,10 @@ function webspeed_add_title() {
 remove_action('woocommerce_product_additional_information_heading', 'woocomerce', 10);
 add_action('woocommerce_product_additional_information_heading', 'webspeed_add_title', 10);
 
+
+// Fjerner title på kategorisider - da den printes direkte i woocommerce.php
+add_filter('woocommerce_show_page_title', 'webspeed_hide_shop_page_title');
+function webspeed_hide_shop_page_title($title) {
+   if (is_product_category()) $title = false;
+   return $title;
+}

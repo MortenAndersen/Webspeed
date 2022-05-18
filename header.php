@@ -13,7 +13,7 @@
 <?php 
 	if (is_active_sidebar('pre-header')) {
 		echo '<div class="pre-header-con">';
-    	echo '<div class="pre-header flex' . get_pre_header_class() . '">';
+    	echo '<div class="' . get_pre_header_class() . '">';
         	dynamic_sidebar('pre-header');
     	echo '</div>';
     echo '</div>';
