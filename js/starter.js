@@ -43,7 +43,7 @@
             $(this).siblings('span').toggleClass('active-trigger');
         });
 
-        $('.sub-menu li:has(ul)').addClass('has-sub');
+        //$('.sub-menu li:has(ul)').addClass('has-sub');
 
         // Video
         $('.video, .wp-block-embed__wrapper').fitVids();

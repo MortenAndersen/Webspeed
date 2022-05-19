@@ -33,7 +33,7 @@
 
             &[aria-current=page] {
                 color: var(--menu-desktop-current-font);
-                background: var(--menu-desktop-current-bg);
+                background-color: var(--menu-desktop-current-bg);
                 border-bottom: 1px solid
             }
         }
@@ -57,7 +57,7 @@
                 &[aria-current=page] {
                     margin-left: calc(var(--menu-desktop-sub-pad-side) * -1);
                     margin-right: calc(var(--menu-desktop-sub-pad-side) * -1);
-                    background: var(--menu-desktop-sub-current-bg);
+                    background-color: var(--menu-desktop-sub-current-bg);
                     color: var(--menu-desktop-sub-current-font);
                     padding-left: calc(var(--menu-desktop-sub-pad-side) + .5rem);
                     padding-right: calc(var(--menu-desktop-sub-pad-side) + .5rem);
