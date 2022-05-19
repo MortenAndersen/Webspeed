@@ -63,9 +63,9 @@ if (is_active_sidebar('slide-in-frontpage') && is_front_page() ) {
     	dynamic_sidebar('slide-in-frontpage');
     echo '</div>';
 } 
-web_reference();
-wp_footer();
 
+wp_footer();
+web_reference();
 ?>
 </body>
 </html>
