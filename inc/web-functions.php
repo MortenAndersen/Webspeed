@@ -1,6 +1,8 @@
 <?php
 // Logo
 
+
+
 if (!function_exists('web_logo')) {
     function web_logo()
     {
@@ -108,17 +110,10 @@ function web_topimg() {
         echo '<div class="top-post-img">';
         the_post_thumbnail( '', [ 'loading' => false]);
         
-            echo '<div class="wrap-no-pad">';
-            echo '<div class="top-caption">';
+          
 
-            $arr = array(" | " => "<br />");
-            echo '<h1 class="entry-title-big">' . strtr(get_the_title(),$arr) . '</h1>';
+            web_img_title();
 
-            if(!empty($caption)) {
-                echo '<h2 class="sub-title-big">' . $caption . '</h2>';
-            }
-             echo '</div>';
-            echo '</div>';
         echo '</div>';
     }
 }
@@ -168,11 +163,10 @@ function web_small_topimg() {
         
 
             echo '<div class="top-caption">';
-
             $arr = array(" | " => "<br />");
             echo '<h1 class="entry-title-big">' . strtr(get_the_title(),$arr) . '</h1>';
 
-             echo '</div>';
+            echo '</div>';
 
         echo '</div>';
     }
@@ -246,6 +240,35 @@ function get_clean_web_title() {
     $arr = array(" | " => " ","<" => "",">" => "");
     $title = strtr(get_the_title(),$arr);
     return $title;
+}
+// Title til TopImg
+function web_img_title() {
+
+
+    $arr = array(" | " => "<br />");
+if ( class_exists('ACF') ) {
+    if ( !get_field('skjul_titel') ) {
+        echo '<div class="wrap-no-pad">';
+            echo '<div class="top-caption">';
+                echo '<h1 class="entry-title-big">' . strtr(get_the_title(),$arr) . '</h1>';
+                if(!empty($caption)) {
+                    echo '<h2 class="sub-title-big">' . $caption . '</h2>';
+                }
+            echo '</div>';
+        echo '</div>';
+    } 
+}
+
+    if ( !class_exists('ACF') ) {
+        echo '<div class="wrap-no-pad">';
+            echo '<div class="top-caption">';
+                echo '<h1 class="entry-title-big">' . strtr(get_the_title(),$arr) . '</h1>';
+                if(!empty($caption)) {
+                    echo '<h2 class="sub-title-big">' . $caption . '</h2>';
+                }
+            echo '</div>';
+        echo '</div>';
+    }
 }
 
 // Icons
