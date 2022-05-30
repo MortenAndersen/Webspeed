@@ -244,8 +244,9 @@ function get_clean_web_title() {
 // Title til TopImg
 function web_img_title() {
 
-
+    $caption = get_the_post_thumbnail_caption();
     $arr = array(" | " => "<br />");
+
 if ( class_exists('ACF') ) {
     if ( !get_field('skjul_titel') ) {
         echo '<div class="wrap-no-pad">';
