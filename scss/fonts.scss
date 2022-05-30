@@ -16,7 +16,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-h1,
 h2,
 h3,
 h4,
@@ -51,6 +50,10 @@ h6 {
     font-weight: bold;
     letter-spacing: 1px;
     border-right: 5px solid lightslategrey;
+}
+h1 {
+    font-size: 2rem;
+    margin: 0 0 .625rem 0;
 }
 
 h2 {
@@ -97,11 +100,6 @@ article {
 .loop-title {
     font-size: s.$font-l;
     margin-bottom: s.$gap-s * 1.5;
-}
-
-.entry-title {
-    font-size: 2rem;
-    margin-bottom: .625rem;
 }
 
 .entry-title-big {
