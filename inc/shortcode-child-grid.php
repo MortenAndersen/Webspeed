@@ -38,7 +38,7 @@ $args = array(
     'post_type' => 'page',
     'posts_per_page' => $number,
     'offset' => $offset,
-    'orderby' => 'menu_order',
+    'orderby' => 'date',
     'order' => 'ASC',
 );
 
