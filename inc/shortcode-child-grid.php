@@ -49,9 +49,10 @@ while ( $child_query->have_posts() ) :
     $classes = get_post_class( '', $post->ID );
 
     echo '<div class="' . esc_attr( implode( ' ', $classes ) ) . '">';
-    if ( has_post_thumbnail() && $img == 'yes' ) {
-        web_thumbnail_link();
-    }
+        if ( $img == 'yes' ) {
+            web_thumbnail_link();
+        }
+
         if ( $title == 'yes') {
             echo '<h3><a href="' . get_the_permalink() . '" rel="bookmark" title="' .get_clean_web_title() . '">' . get_web_title() . '</a></h3>';
         }

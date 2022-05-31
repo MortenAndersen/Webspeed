@@ -69,15 +69,48 @@ function web_excerpt() {
 // Thumbnail
 
 function web_thumbnail_link() {
-    if ( has_post_thumbnail() ) {
+    
+    if( ! class_exists('ACF') ) {
+
+        if ( has_post_thumbnail() ) {
+            echo '<div class="img-zoom">';
+                echo '<div class="oversigt-post-img overflow">';
+                    echo '<a href="' . get_the_permalink() . '">';
+                        the_post_thumbnail('webspeed-post');
+                    echo '</a>';
+                echo '</div>';
+            echo '</div>';
+        }
+        
+    } else {
+    $image = get_field('billede');
+    $size = 'webspeed-post'; 
+    if( $image ) {
+
         echo '<div class="img-zoom">';
             echo '<div class="oversigt-post-img overflow">';
                 echo '<a href="' . get_the_permalink() . '">';
-                    the_post_thumbnail('webspeed-post');
+                    echo wp_get_attachment_image( $image, $size );
                 echo '</a>';
             echo '</div>';
         echo '</div>';
+
+    } else {
+
+        if ( has_post_thumbnail() ) {
+            echo '<div class="img-zoom">';
+                echo '<div class="oversigt-post-img overflow">';
+                    echo '<a href="' . get_the_permalink() . '">';
+                        the_post_thumbnail('webspeed-post');
+                    echo '</a>';
+                echo '</div>';
+            echo '</div>';
+        }
+
     }
+
+}
+
 }
 
 function web_thumbnail() {
@@ -109,11 +142,7 @@ function web_topimg() {
     if ( has_post_thumbnail() ) {
         echo '<div class="top-post-img">';
         the_post_thumbnail( '', [ 'loading' => false]);
-        
-          
-
             web_img_title();
-
         echo '</div>';
     }
 }
