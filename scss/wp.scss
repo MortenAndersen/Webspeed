@@ -138,6 +138,10 @@ textarea,
     -webkit-appearance: none;
 }
 
+.wp-block-search .wp-block-search__input {
+    border-radius: 3px 0 0 3px;
+}
+
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="url"]:focus,
