@@ -94,7 +94,8 @@ li.product a:hover {
 .woocommerce div.product .woocommerce-tabs ul.tabs li a,
 .woocommerce-terms-and-conditions-wrapper,
 #review_form,
-.woocommerce .woocommerce-breadcrumb {
+.woocommerce .woocommerce-breadcrumb,
+.woocommerce-Tabs-panel--additional_information {
 	font-size: var(--woo-small-font);
 	line-height: var(--woo-small-line);
 }
@@ -140,4 +141,13 @@ li.product a:hover {
 	display: flex;
 	gap: 1rem;
 	margin-top: 1rem;
+}
+.woocommerce ul.order_details {
+	padding: 1rem;
+	background: var(--woo-mes-bg);
+}
+.woocommerce-Tabs-panel {
+	p {
+		max-width: 80ch;
+	}
 }

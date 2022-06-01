@@ -160,7 +160,11 @@ p {
 article .bx-wrapper p {
     max-width: none;
 }
-
+article {
+    li {
+        max-width: 80ch;
+    }
+}
 a {
     color: var(--link);
     text-decoration: underline;
