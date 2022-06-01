@@ -38,8 +38,7 @@ $args = array(
     'post_type' => 'page',
     'posts_per_page' => $number,
     'offset' => $offset,
-    'orderby' => 'menu_order',
-    'order' => 'ASC',
+    'orderby' => array( 'menu_order' => 'ASC' ),
 );
 
 $child_query = new WP_Query( $args );
