@@ -113,12 +113,14 @@ article {
 }
 .tit-bor {
     font-size: 2rem;
+    line-height: 1.1;
     &::after {
         content: '';
         height: 3px;
         width: 55px;
         background: var(--title-border);
         display: block;
+        margin-top: .6rem;
     }
 }
 
