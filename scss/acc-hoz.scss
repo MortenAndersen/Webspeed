@@ -34,23 +34,23 @@
  
     
     .acc-hoz-title {
-      color: #E74C3C;
+      color: #fff;
       font-weight: bold;
 
 
     }
-    &:before {
-      &.active {
-        
-      }
-    }
+    
     
     .section-content {
      
       opacity: 1;
       transform: scaleX(1);
-      color: #E74C3C;
+      color: #fff;
+    
+    > div {
+      color: #fff;
     }
+  }
   }
   
   .section-title {
@@ -84,6 +84,7 @@
     margin-top: 1rem;
     text-align: right;
     text-decoration: none;
+    color: #fff;
     &:before {
       content: '- ';
     }

@@ -176,7 +176,7 @@ function web_topimg_blog() {
         else {
             echo '<main class="page-content page-blog">';
             echo '<div class="wrap">';
-                echo '<h1 class="entry-title">';
+                echo '<h1>';
                     single_post_title();
                 echo '</h1>';
             echo '</div>';
@@ -258,7 +258,7 @@ function web_date_cat_author() {
 // Title 
 function web_title() {
     $arr = array(" | " => "<br />");
-    echo '<h1 class="entry-title">' . strtr(get_the_title(),$arr) . '</h1>';
+    echo '<h1>' . strtr(get_the_title(),$arr) . '</h1>';
 }
 function get_web_title() {
     $arr = array(" | " => "<br />");

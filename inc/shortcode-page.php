@@ -13,24 +13,19 @@ function web_page($atts) {
             'excerpt' => 'yes',
             'grid' => '2',
             'gap' =>'2',
-            'id' => ''
-            
+            'id' => ''         
         ), 
     $atts));
 
 require get_parent_theme_file_path('/inc/grid-gap.php');
 /* -------------------------------------- */
 
-
     $loop = new WP_Query( array(
         'post_type' => 'page',
         'post__in' => explode( ',', $id ),
         'orderby' => 'menu_order',
-        'order' => 'ASC',
-       
+        'order' => 'ASC',     
     ));
-
-
 
 /* -------------------------------------- */
 
@@ -40,8 +35,6 @@ if ( $loop->have_posts() ) {
 		while ( $loop->have_posts() ) : $loop->the_post();
 			$classes = get_post_class( '', $post->ID );
 			echo '<div class="poost-loop ' . esc_attr( implode( ' ', $classes ) ) . '">';
-
-            
 
             // thumbnail
             if ( has_post_thumbnail() && $img == 'yes' ) {
@@ -57,8 +50,6 @@ if ( $loop->have_posts() ) {
                 } 
                 echo '</div>';
             }
-
-            
 
                         // Title
             if ( $link == 'yes') {
@@ -76,6 +67,7 @@ if ( $loop->have_posts() ) {
             if ( $read_more == 'yes' && $link != 'no') {
                 web_read_more();
             }
+            web_edit_link();
 
             echo '</div>';
 		endwhile; wp_reset_query();

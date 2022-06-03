@@ -182,7 +182,18 @@ a:hover {
         color: inherit;
     }
 }
-
+.has-text-color {
+    a {
+        color: inherit;
+        transition: .5s all;
+        &:hover {
+            opacity: .8;
+        }
+    }
+    .read-more {
+        font-weight: bold;
+    }
+}
 blockquote {
     border-left: 2px solid var(--blockquote);
     padding: s.$gap-s s.$gap-n;
@@ -272,12 +283,11 @@ strong,
 }
 
 .post-edit-link {
-    text-align: right !important;
-    color: red !important;
+    float: right;
+    color: red;
     background: none !important;
     text-decoration: none !important;
     font-size: .8rem !important;
-
     &:hover {
         text-decoration: underline;
     }
