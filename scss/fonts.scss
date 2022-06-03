@@ -186,12 +186,14 @@ a:hover {
     a {
         color: inherit;
         transition: .5s all;
-        &:hover {
-            opacity: .8;
-        }
     }
     .read-more {
         font-weight: bold;
+        a {
+            &:hover {
+            opacity: .8;
+        }
+        }
     }
 }
 blockquote {
