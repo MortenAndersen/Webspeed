@@ -529,19 +529,6 @@
 		"q": 100,
 		"rq": 75
 		},
-	"/scss/acc-hoz.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "/acc-hoz.css",
-		"oF": 0,
-		"oS": 2,
-		"sct": 0
-		},
 	"/scss/acc.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -1331,6 +1318,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/template-parts/gutenberg-blocks/fullwidth/fullwidth.php",
+		"oF": 0
+		},
+	"/template-parts/gutenberg-blocks/hoz/hoz.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/template-parts/gutenberg-blocks/hoz/hoz.php",
 		"oF": 0
 		},
 	"/template-parts/gutenberg-blocks/meeting/meeting-kopi.php": {
@@ -3329,7 +3324,7 @@
 	"languageDefaultsSASS": {
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.css",
-		"autoOutputPathRelativePath": "",
+		"autoOutputPathRelativePath": "/",
 		"autoOutputPathReplace1": "sass",
 		"autoOutputPathReplace2": "css",
 		"autoOutputPathStyle": 1,

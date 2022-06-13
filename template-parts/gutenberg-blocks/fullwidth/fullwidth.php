@@ -1,9 +1,10 @@
 <?php
 if( have_rows('chunk') ):
+	$arr = array(" | " => "<br />");
 echo '<div class="full-width">';
     while( have_rows('chunk') ) : the_row();
         $billede = get_sub_field('billede');
-        $overskrift = '<h3 class="tit-bor">' . get_sub_field('overskrift') . '</h3>';
+        $overskrift = '<h3 class="tit-bor">' . strtr(get_sub_field('overskrift'),$arr)  . '</h3>';
         $tekst = get_sub_field('tekst');
         $link = get_sub_field('link');
 
@@ -28,4 +29,4 @@ echo '<div class="full-width">';
         echo '</div>';
     endwhile;
 echo '</div>';  
-endif;
+endif; 

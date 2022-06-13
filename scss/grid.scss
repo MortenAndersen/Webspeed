@@ -58,7 +58,7 @@
     .page-template-page-no-wrap,
     .page-template-page-no-wrap-topimg {
         .g-d-3 {
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(3, minmax(0, 1fr));
         }
     }
 

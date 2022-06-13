@@ -72,15 +72,7 @@
             $(this).parent().find('.acc-content').slideToggle(280);
         });
 
-        // ACC HOZ
-        var section = $('.acc-hoz-item');
 
-        function toggleAccordion() {
-          section.removeClass('active');
-          $(this).addClass('active');
-        }
-
-        section.on('click', toggleAccordion);
 
         // Detect scroll
         $(window).scroll(function() {

@@ -112,7 +112,7 @@ article {
     margin: 0;
 }
 .tit-bor {
-    font-size: 2rem;
+    font-size: clamp(2rem, 3vw, 4rem);
     line-height: 1.1;
     &::after {
         content: '';
