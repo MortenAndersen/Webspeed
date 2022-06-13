@@ -114,6 +114,7 @@ article {
 .tit-bor {
     font-size: clamp(2rem, 3vw, 4rem);
     line-height: 1.1;
+    max-width: inherit !important;
     &::after {
         content: '';
         height: 3px;
