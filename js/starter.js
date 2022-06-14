@@ -78,10 +78,10 @@
         $(window).scroll(function() {
             var scroll = $(window).scrollTop();
 
-            if (scroll >= 100) {
+            if (scroll > 120) {
                 $('.sticky-header').addClass("scroll");
             } 
-            if (scroll <= 200) {
+            if ( scroll < 100) {
                 $('.sticky-header').removeClass("scroll");
             }
         });

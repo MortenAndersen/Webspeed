@@ -535,7 +535,7 @@
 					"left_delete",
 					null,
 					"AQAAAK4EAAAAAAAArgQAAAAAAAABAAAACg",
-					"AQAAAAAAAAABAAAArwQAAAAAAACvBAAAAAAAAAAAAAAAAPC/"
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAK8EAAAAAAAArwQAAAAAAAAAAAAAAADwvw"
 				]
 			]
 		},
@@ -557,9 +557,220 @@
 						"characters": "\n"
 					},
 					"AQAAAFECAAAAAAAAUgIAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAUQIAAAAAAABRAgAAAAAAAAAAAAAAAPC/"
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAFECAAAAAAAAUQIAAAAAAAAAAAAAAADwvw"
 				]
 			]
+		},
+		{
+			"file": "scss/fonts.scss",
+			"settings":
+			{
+				"buffer_size": 5213,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					3,
+					1,
+					"paste",
+					null,
+					"AgAAAMcHAAAAAAAA3gcAAAAAAAAAAAAA3gcAAAAAAADeBwAAAAAAAAUAAAAycmVtOw",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADHBwAAAAAAAMwHAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					6,
+					1,
+					"insert",
+					{
+						"characters": ".5"
+					},
+					"AgAAAM4HAAAAAAAAzwcAAAAAAAAAAAAAzwcAAAAAAADQBwAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADOBwAAAAAAAM4HAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					7,
+					3,
+					"left_delete",
+					null,
+					"AwAAAM8HAAAAAAAAzwcAAAAAAAABAAAANc4HAAAAAAAAzgcAAAAAAAABAAAALs0HAAAAAAAAzQcAAAAAAAABAAAAMQ",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADQBwAAAAAAANAHAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					8,
+					1,
+					"insert",
+					{
+						"characters": "2"
+					},
+					"AQAAAM0HAAAAAAAAzgcAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADNBwAAAAAAAM0HAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					10,
+					1,
+					"left_delete",
+					null,
+					"AQAAANMHAAAAAAAA0wcAAAAAAAABAAAAMg",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADUBwAAAAAAANQHAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					11,
+					1,
+					"insert",
+					{
+						"characters": "3"
+					},
+					"AQAAANMHAAAAAAAA1AcAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADTBwAAAAAAANMHAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					14,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AgAAAPQHAAAAAAAA9QcAAAAAAAAAAAAA9QcAAAAAAAD5BwAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAD0BwAAAAAAAPQHAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					16,
+					1,
+					"insert",
+					{
+						"characters": "max"
+					},
+					"AwAAAPkHAAAAAAAA+gcAAAAAAAAAAAAA+gcAAAAAAAD7BwAAAAAAAAAAAAD7BwAAAAAAAPwHAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAD5BwAAAAAAAPkHAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					17,
+					1,
+					"insert_completion",
+					{
+						"completion": "max-width: ",
+						"format": "snippet",
+						"keep_prefix": false,
+						"must_insert": false,
+						"trigger": "max-width"
+					},
+					"AgAAAPkHAAAAAAAA+QcAAAAAAAADAAAAbWF4+QcAAAAAAAAECAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAD8BwAAAAAAAPwHAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					18,
+					1,
+					"paste",
+					null,
+					"AQAAAAQIAAAAAAAAFggAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAECAAAAAAAAAQIAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					19,
+					1,
+					"insert",
+					{
+						"characters": ";"
+					},
+					"AQAAABYIAAAAAAAAFwgAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAWCAAAAAAAABYIAAAAAAAAAAAAAAAA8L8"
+				]
+			]
+		},
+		{
+			"file": "template-parts/gutenberg-blocks/fullwidth/fullwidth.php",
+			"redo_stack":
+			[
+				[
+					23,
+					1,
+					"left_delete",
+					null,
+					"AQAAACEAAAAAAAAAQQAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAhAAAAAAAAACEAAAAAAAAAAAAAAAAA8L8"
+				]
+			],
+			"settings":
+			{
+				"buffer_size": 1130,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					3,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAADoEAAAAAAAAOwQAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAA6BAAAAAAAADoEAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					6,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AgAAAB8AAAAAAAAAIAAAAAAAAAAAAAAAIAAAAAAAAAAhAAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAfAAAAAAAAAB8AAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					7,
+					1,
+					"paste",
+					null,
+					"AQAAACEAAAAAAAAAQQAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAhAAAAAAAAACEAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					12,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAOwAAAAAAAAA7QAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADsAAAAAAAAAOwAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					14,
+					1,
+					"paste",
+					null,
+					"AQAAAOwAAAAAAAAABwEAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADsAAAAAAAAAOwAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					17,
+					1,
+					"cut",
+					null,
+					"AQAAAAgBAAAAAAAACAEAAAAAAAAbAAAAZ2V0X3N1Yl9maWVsZCgnb3ZlcnNrcmlmdCcp",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAIAQAAAAAAACMBAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					20,
+					1,
+					"paste",
+					null,
+					"AgAAAPIAAAAAAAAADQEAAAAAAAAAAAAADQEAAAAAAAANAQAAAAAAAA8AAABnZXRfdGhlX3RpdGxlKCk",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAABAQAAAAAAAPIAAAAAAAAAAAAAAAAA8L8"
+				]
+			]
+		},
+		{
+			"file": "inc/web-functions.php",
+			"settings":
+			{
+				"buffer_size": 9566,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "",
@@ -668,6 +879,7 @@
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/template-parts/aside",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/template-parts/content",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/template-parts/gutenberg-blocks",
+		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/template-parts/gutenberg-blocks/fullwidth",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/template-parts/gutenberg-blocks/hoz",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/template-parts/nav",
 		"/Users/morten/Sites/localhost/wp/wp-content/themes/webspeed/woocommerce",
@@ -889,17 +1101,16 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 468.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 4,
 					"stack_multiselect": false,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
 					"file": "scss/style.scss",
-					"selected": true,
 					"semi_transient": false,
 					"settings":
 					{
@@ -922,7 +1133,101 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 3,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "scss/fonts.scss",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5213,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2071,
+								2071
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2302.0,
+						"zoom_level": 1.0
+					},
 					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "template-parts/gutenberg-blocks/fullwidth/fullwidth.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1130,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								65,
+								33
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "inc/web-functions.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 9566,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5661,
+								5688
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"stack_multiselect": false,
 					"type": "text"
 				}
