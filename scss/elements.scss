@@ -472,3 +472,28 @@ article>.post-img {
 }
 }
 }
+.g-t-t {
+    position: fixed;
+    right: 10px;
+    bottom: 100px;
+    display: none;
+    &.ggt-active {
+        display: block;
+    }
+    svg {
+        width: 20px;
+        height: 20px;
+        padding: 3px;
+        border-radius: 3px;
+        background-color: rgba(255,255,255,.8);
+    }
+
+        g#pil-op {
+            fill: red;
+        }
+}
+@media (min-width: b.$menu-break) {
+    .g-t-t {
+        right: 20px;
+    }
+}

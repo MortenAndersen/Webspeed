@@ -7,7 +7,7 @@
 <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet" />
 </head>
 
-<body <?php body_class();?>>
+<body <?php body_class();?> id="top">
   <?php wp_body_open();?>
 
 <?php 

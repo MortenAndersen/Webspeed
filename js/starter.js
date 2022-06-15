@@ -84,6 +84,14 @@
             if ( scroll < 100) {
                 $('.sticky-header').removeClass("scroll");
             }
+
+            if (scroll > 120) {
+                $('.g-t-t').addClass("ggt-active");
+            } 
+
+            if (scroll < 100) {
+                $('.g-t-t').removeClass("ggt-active");
+            } 
         });
 
 
