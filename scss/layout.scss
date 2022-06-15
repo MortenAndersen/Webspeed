@@ -29,8 +29,9 @@
         margin-bottom: 0;
     }
 }
-.has-background {
+article > .has-background {
     padding: s.$gap-n;
+
 }
 @media (min-width: b.$phone) {
     .wrap {
