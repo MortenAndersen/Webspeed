@@ -143,9 +143,10 @@ function web_topimg() {
         echo '<div class="top-post-img">';
         the_post_thumbnail( '', [ 'loading' => false]);
             web_img_title();
+            web_topimg_inject();
         echo '</div>';
     }
-}
+} 
 
 function web_topimg_blog() {
     if ( has_post_thumbnail() ) {
@@ -334,6 +335,13 @@ if (!function_exists('web_header_class')) {
 // web_pre_footer_inject();
 if (!function_exists('web_pre_footer_inject')) {
     function web_pre_footer_inject() {
+
+    }
+}
+
+// web_topimg_inject();
+if (!function_exists('web_topimg_inject')) {
+    function web_topimg_inject() {
 
     }
 }
