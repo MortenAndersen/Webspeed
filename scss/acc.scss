@@ -1,5 +1,8 @@
 .acc-con {
     margin: 2rem 0;
+    .wp-block-column & {
+        margin: 0;
+    }
 
     >div {
         position: relative;
