@@ -364,6 +364,9 @@ article>.post-img {
 }
 .web-loop-posts {
     margin-bottom: s.$gap-n;
+    .wp-block-group__inner-container & {
+        margin-bottom: 0;
+    }
 }
 .poost-loop {
     display: flex;

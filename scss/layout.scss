@@ -29,9 +29,14 @@
         margin-bottom: 0;
     }
 }
-.wp-block-column.has-background {
+.has-background {
     padding: s.$gap-n;
-
+}
+.wp-block-group.has-background {
+    padding: 0;
+}
+.padding {
+    padding: s.$gap-n !important;
 }
 @media (min-width: b.$phone) {
     .wrap {
