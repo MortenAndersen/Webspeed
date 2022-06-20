@@ -312,13 +312,5 @@ article h1+h2 {
     font-size: s.$font-xs;
     margin-bottom: s.$gap-xs;
     border-bottom: 1px dashed var(--border);
+    padding-bottom: .25rem
 }
-/*
-.wp-block-column {
-    * {
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
-}
-*/
