@@ -1,5 +1,5 @@
 <?php 
-echo '<main class="page-content">';
+echo '<main class="page-content"' . afstand_style() . '>';
 if ( is_page_template( 'page-aside-right-topimg.php' ) ) {
 			web_topimg();
 			web_front_fokus();

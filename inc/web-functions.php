@@ -337,3 +337,15 @@ if (!function_exists('web_pre_footer_inject')) {
 
     }
 }
+
+
+function afstand_style() {
+    if ( class_exists('ACF') ) {
+        if ( get_field('afstand_i_top') ) {
+            return ' style="padding-top:0;"';
+        }
+    } 
+    else {
+        
+    }
+}
