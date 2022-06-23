@@ -246,6 +246,9 @@ article>.post-img {
 
     span {
         display: block;
+        &.blog-name {
+            padding-top: .8rem;
+        }
     }
     a {
         text-decoration: none;
@@ -255,7 +258,7 @@ article>.post-img {
     .blog-desc {
         font-weight: normal;
         font-size: 60%;
-        margin: .5rem 0;
+        margin: .3rem 0;
     }
     .sticky-header & {
         transition: transform 1s ease;
@@ -468,7 +471,7 @@ article>.post-img {
     }
 }
 .sticky-header.scroll {
-    border-bottom: 1px solid var(--border);
+    border-bottom: 2px solid var(--border);
 
  .logo  {
    transform: scale(.5);

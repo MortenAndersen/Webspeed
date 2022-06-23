@@ -26,7 +26,7 @@
 	a {
             color: var(--menu-desktop-font);
             padding: var(--menu-desktop-pad);
-            border-bottom: 1px solid transparent;
+           
             &:hover {
                 color:  var(--menu-desktop-hover-font);
             }
@@ -34,14 +34,16 @@
             &[aria-current=page] {
                 color: var(--menu-desktop-current-font);
                 background-color: var(--menu-desktop-current-bg);
-                border-bottom: 1px solid
+                border-bottom: 2px solid;
+                margin-bottom: -2px;
             }
         }
 
         >.current-menu-parent >,
         .current_page_ancestor > {
             a {
-                border-bottom: 1px solid var(--menu-desktop-current-font);
+                border-bottom: 2px solid var(--menu-desktop-current-font);
+                margin-bottom: -2px;
             }
         }
 
