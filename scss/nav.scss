@@ -71,6 +71,7 @@
 }
 .single-post {
     .current_page_parent > a {
-        border-bottom: 1px solid var(--menu-desktop-current-font);
+        border-bottom: 2px solid var(--menu-desktop-current-font);
+        margin-bottom: -2px;
     }
 }
