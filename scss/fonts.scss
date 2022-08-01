@@ -42,15 +42,6 @@ h6 {
         color: var(--title-highlight);
     }
 }
-
-.info {
-    background: aliceblue;
-    padding: 1rem;
-    font-size: 1.1rem;
-    font-weight: bold;
-    letter-spacing: 1px;
-    border-right: 5px solid lightslategrey;
-}
 h1 {
     font-size: 2rem;
     margin: 0 0 .625rem 0;
@@ -253,16 +244,6 @@ hr {
     a {
         text-decoration: none;
         color: var(--logo-text);
-    }
-}
-
-ul.info {
-    background: #f2f2f2;
-    padding: 3rem 3rem 3rem 4rem;
-
-    li {
-        max-width: 80ch;
-        margin: 0 0 .7rem 0
     }
 }
 

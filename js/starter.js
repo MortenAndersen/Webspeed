@@ -43,8 +43,6 @@
             $(this).siblings('span').toggleClass('active-trigger');
         });
 
-        //$('.sub-menu li:has(ul)').addClass('has-sub');
-
         // Video
         $('.video, .wp-block-embed__wrapper').fitVids();
 
@@ -62,6 +60,48 @@
                 speed: 2000,
                 touchEnabled: false
 
+            });
+        });
+
+           $(function(){
+            $('.slider-2').bxSlider({
+                maxSlides: 2,
+                minSlides: 2,
+                slideWidth: 502,
+                slideMargin: 32,
+                controls: false,
+                auto: true,
+                speed: 2000,
+                pause: 6000,
+                autoHover: true
+            });
+        });
+
+        $(function(){
+            $('.slider-3').bxSlider({
+                maxSlides: 3,
+                minSlides: 2,
+                slideWidth: 326,
+                slideMargin: 32,
+                controls: false,
+                auto: true,
+                speed: 2000,
+                pause: 6000,
+                autoHover: true
+            });
+        });
+
+        $(function(){
+            $('.slider-4').bxSlider({
+                maxSlides: 4,
+                minSlides: 2,
+                slideWidth: 235,
+                slideMargin: 32,
+                controls: false,
+                auto: true,
+                speed: 2000,
+                pause: 6000,
+                autoHover: true
             });
         });
 

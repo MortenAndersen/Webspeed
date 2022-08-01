@@ -4,8 +4,7 @@
 
 
 if (!function_exists('web_logo')) {
-    function web_logo()
-    {
+    function web_logo() {
         $custom_logo_id = get_theme_mod('custom_logo');
         $logo           = wp_get_attachment_image_src($custom_logo_id, 'full');
 
@@ -36,8 +35,7 @@ if (!function_exists('web_menu')) {
 
 // BackButton
 
-function web_go_back()
-{
+function web_go_back() {
         echo '<div class="go-back-con">';
         echo '<button onclick="goBack()" class="go-back">' . esc_html__('Go Back', 'webspeed-domain') . '</button>';
         echo '<script>function goBack() {window.history.back();}</script>';
@@ -46,14 +44,12 @@ function web_go_back()
 
 // Read More
 
-function web_read_more()
-{
+function web_read_more() {
     echo '<p class="read-more"><a href="' . get_the_permalink() . '">' . esc_html__('Read More', 'webspeed-domain') . '</a></p>';
 }
 
 // Edit link
-function web_edit_link()
-{
+function web_edit_link() {
     if (!is_single()) {
         edit_post_link(__('edit', 'webspeed-domain'), '<p>', '</p>');
     }
@@ -68,48 +64,91 @@ function web_excerpt() {
 
 // Thumbnail
 
+function web_blog_thumbnail() {
+    if ( has_post_thumbnail() ) {
+            echo '<div class="img-zoom oversigt-post-img">';
+                    echo '<a href="' . get_the_permalink() . '">';
+                        the_post_thumbnail('webspeed-post');
+                    echo '</a>';
+            echo '</div>';
+        }
+}
+
 function web_thumbnail_link() {
     
     if( ! class_exists('ACF') ) {
 
         if ( has_post_thumbnail() ) {
             echo '<div class="img-zoom">';
-                echo '<div class="oversigt-post-img overflow">';
                     echo '<a href="' . get_the_permalink() . '">';
                         the_post_thumbnail('webspeed-post');
                     echo '</a>';
+            echo '</div>';
+        }
+
+    else {
+        $image = get_field('billede');
+        $size = 'webspeed-post'; 
+        if( $image ) {
+
+            echo '<div class="img-zoom">';
+                    echo '<a href="' . get_the_permalink() . '">';
+                        echo wp_get_attachment_image( $image, $size );
+                    echo '</a>';
+
+
+        } else {
+
+            if ( has_post_thumbnail() ) {
+                echo '<div class="img-zoom">';
+                        echo '<a href="' . get_the_permalink() . '">';
+                            the_post_thumbnail('webspeed-post');
+                        echo '</a>';
                 echo '</div>';
+            }
+        }
+    }
+}
+
+}
+
+
+function web_thumbnail_link_no_lazy() {
+    
+    if( ! class_exists('ACF') ) {
+
+        if ( has_post_thumbnail() ) {
+            echo '<div class="img-zoom">';
+                    echo '<a href="' . get_the_permalink() . '">';
+                        the_post_thumbnail('webspeed-post', [ 'loading' => false]);
+                    echo '</a>';
             echo '</div>';
         }
         
     } else {
-    $image = get_field('billede');
-    $size = 'webspeed-post'; 
-    if( $image ) {
+        $image = get_field('billede');
+        $size = 'webspeed-post'; 
+        if( $image ) {
 
-        echo '<div class="img-zoom">';
-            echo '<div class="oversigt-post-img overflow">';
-                echo '<a href="' . get_the_permalink() . '">';
-                    echo wp_get_attachment_image( $image, $size );
-                echo '</a>';
-            echo '</div>';
-        echo '</div>';
-
-    } else {
-
-        if ( has_post_thumbnail() ) {
             echo '<div class="img-zoom">';
-                echo '<div class="oversigt-post-img overflow">';
                     echo '<a href="' . get_the_permalink() . '">';
-                        the_post_thumbnail('webspeed-post');
+                        echo wp_get_attachment_image( $image, $size );
                     echo '</a>';
-                echo '</div>';
             echo '</div>';
+
+        } else {
+
+            if ( has_post_thumbnail() ) {
+                echo '<div class="img-zoom">';
+                        echo '<a href="' . get_the_permalink() . '">';
+                            the_post_thumbnail('webspeed-post', [ 'loading' => false]);
+                        echo '</a>';
+                echo '</div>';
+            }
         }
 
     }
 
-}
 
 }
 
@@ -345,7 +384,4 @@ function afstand_style() {
             return ' style="padding-top:0;"';
         }
     } 
-    else {
-        
-    }
 }

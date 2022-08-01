@@ -13,7 +13,9 @@ function web_page($atts) {
             'excerpt' => 'yes',
             'grid' => '2',
             'gap' =>'2',
-            'id' => ''         
+            'id' => '',
+            'class' => 'no-class',
+            'slider' => 'no-slider'         
         ), 
     $atts));
 
@@ -31,7 +33,12 @@ require get_parent_theme_file_path('/inc/grid-gap.php');
 
 if ( $loop->have_posts() ) {
 
-    echo '<div class="web-loop-posts grid' . $grid_class . $gap_class . '">';
+    if ( $slider != 'no-slider')  {
+        echo '<div class="web-loop-posts ' . $slider . ' ' . $class . '">';
+    } else {
+        echo '<div class="web-loop-posts grid' . $grid_class . $gap_class . $class . '">';
+    }
+
 		while ( $loop->have_posts() ) : $loop->the_post();
 			$classes = get_post_class( '', $post->ID );
 			echo '<div class="poost-loop ' . esc_attr( implode( ' ', $classes ) ) . '">';
@@ -40,18 +47,18 @@ if ( $loop->have_posts() ) {
             if ( has_post_thumbnail() && $img == 'yes' ) {
                 echo '<div class="loop-post-img">';
                 if ( $link == 'yes') {
-                    echo '<div class="img-zoom">';
-                        echo '<a href="' . get_the_permalink() . '">';
-                            the_post_thumbnail('webspeed-post');
-                        echo '</a>';
-                        echo '</div>';
+                    if ( $slider != 'no-slider')  {
+                            web_thumbnail_link_no_lazy();
+                        } else {
+                            web_thumbnail_link();
+                        }
                 } else {
                     the_post_thumbnail('webspeed-post');
                 } 
                 echo '</div>';
             }
 
-                        // Title
+            // Title
             if ( $link == 'yes') {
                 echo '<h3 class="loop-title"><a href="' . get_the_permalink() . '">' . get_web_title() . '</a></h3>';
             } else {

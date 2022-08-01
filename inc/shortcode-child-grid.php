@@ -21,6 +21,7 @@ function child_grid($atts) {
             'title' => 'yes',
             'excerpt' => 'yes',
             'read_more' => 'yes',
+            'slider' => 'no-slider'
         ), $atts));
 
 require get_parent_theme_file_path('/inc/grid-gap.php');
@@ -30,8 +31,11 @@ if (is_page_template('page-no-wrap-topimg.php') || is_page_template('page-no-wra
     echo '<div class="wide-con wrap-' . $class . '">';
         echo '<div class="wrap-pad">';
 }
-
+if ( $slider != 'no-slider')  {
+        echo '<div class="Xoversigt ' . $slider . ' ' . $class . '">';
+    } else {
 echo '<div class="oversigt grid' . $grid_class . $gap_class . $class . '">';
+}
 
 $args = array(
     'post_parent' => $post->ID,
@@ -45,11 +49,15 @@ $child_query = new WP_Query( $args );
 
 while ( $child_query->have_posts() ) : 
     $child_query->the_post();
-    $classes = get_post_class( '', $post->ID );
-
-    echo '<div class="' . esc_attr( implode( ' ', $classes ) ) . '">';
+    echo '<div class="post-loop">';
         if ( $img == 'yes' ) {
-            web_thumbnail_link();
+            echo '<div class="loop-post-img">';
+                if ( $slider != 'no-slider')  {
+                    web_thumbnail_link_no_lazy();
+                } else {
+                    web_thumbnail_link();
+                }
+            echo '</div>';
         }
 
         if ( $title == 'yes') {

@@ -7,7 +7,7 @@ echo '<div class="wrap grid g-d-3 gap-2">';
 		$classes = get_post_class( '', $post->ID );
 		echo '<article class="' . esc_attr( implode( ' ', $classes ) ) . '">';
 		 
-	        	web_thumbnail_link();
+	        	web_blog_thumbnail();
 	        	web_date_cat();
 	        	echo '<h3 class="loop-title"><a href="' . get_permalink() . '">' . get_web_title() . '</a></h3>';
 	        	web_excerpt(); 
