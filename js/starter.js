@@ -112,7 +112,8 @@
             $(this).parent().find('.acc-content').slideToggle(280);
         });
 
-
+        // Date Picker
+        $("#datepicker").datepicker();
 
         // Detect scroll
         $(window).scroll(function() {
