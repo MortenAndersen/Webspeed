@@ -537,6 +537,19 @@
 		"q": 100,
 		"rq": 75
 		},
+	"/scss/acc-kopi.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "/acc-kopi.css",
+		"oF": 0,
+		"oS": 2,
+		"sct": 0
+		},
 	"/scss/acc.scss": {
 		"aP": 1,
 		"bl": 0,

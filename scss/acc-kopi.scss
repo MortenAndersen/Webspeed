@@ -1,20 +1,14 @@
 .acc-con {
     margin: 2rem 0;
-        background-image: linear-gradient(to right, #808080 10%, rgba(255, 255, 255, 0) 0%);
-    background-position: top;
-    background-size: 6px 1px;
-    background-repeat: repeat-x;
     .wp-block-column & {
         margin: 0;
     }
 
     >div {
         position: relative;
-        background-image: linear-gradient(to right, #808080 10%, rgba(255, 255, 255, 0) 0%);
-    background-position: bottom;
-    background-size: 6px 1px;
-    background-repeat: repeat-x;
+        box-shadow: 0 0 1px #ababab;
         &:hover {
+            box-shadow: 0 0 2px #ababab;
             z-index: 1;
         }
     }
@@ -27,27 +21,23 @@
         opacity: 1;
         border-left: 4px solid transparent;
         border-right: 4px solid transparent;
-        border-top: 8px solid #000;
+        border-top: 8px solid var(--link);
         transition: 0.3s ease;
         z-index: 2;
 
     }
 
     .acc-head {
-        padding: 1rem;
-        padding-left: calc(2rem - 2ch);
+        background-color: var(--acc-head-bg);
+        padding: 1rem 1.5rem;
         cursor: pointer;
         transition: 0.2s ease;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        font-weight: bold;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        font-size: .9rem;
         &:hover {
         	.arrow {
-        		border-top-color: rgba(0,0,0,.4);
+        		border-top-color: var(--body-font);
         	}
         }
     }
@@ -63,15 +53,8 @@
     .arrow-animate {
         border-left: 4px solid transparent;
         border-right: 4px solid transparent;
-        border-bottom: 8px solid #000;
+        border-bottom: 8px solid red;
         border-top:0;
-    }
-    .acc-head {
-        &:hover {
-            .arrow-animate {
-                border-bottom-color: rgba(0,0,0,.2);
-            }
-        }
     }
 
 }
@@ -79,8 +62,4 @@
     margin: 0;
     position: relative;
     z-index: 1;
-    &::before {
-        content: '-';
-        padding-right: 1ch;
-    }
 }
