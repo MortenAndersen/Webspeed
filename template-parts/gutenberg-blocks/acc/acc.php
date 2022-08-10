@@ -7,7 +7,7 @@ echo '<div class="acc-con">';
         $sub_title = get_sub_field('title');
         $sub_body = get_sub_field('body');
 
-        echo '<div id="accordion-' . $i . '">';
+        echo '<div id="acc-' . $i . '">';
             echo '<div class="acc-head">';
                 echo '<p class="acc-title">' . $sub_title . '</p>';
                 echo '<i class="arrow"></i>';

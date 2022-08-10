@@ -237,6 +237,14 @@
 		"oAP": "/inc/acf.php",
 		"oF": 0
 		},
+	"/inc/fullwidth-acf.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/inc/fullwidth-acf.php",
+		"oF": 0
+		},
 	"/inc/grid-gap.php": {
 		"cB": 0,
 		"ft": 8192,

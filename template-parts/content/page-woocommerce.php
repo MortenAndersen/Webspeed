@@ -10,7 +10,7 @@ if( class_exists('ACF') ) {
 				echo '<img src="' . $image['url'] . '">';    
             	echo '<div class="wrap-no-pad">';
             	echo '<div class="top-caption">';
-            		echo '<h1 class="entry-title">';
+            		echo '<h1>';
 						single_term_title();
 					echo '</h1>';
             	echo '</div>';
@@ -26,7 +26,7 @@ echo '</div>';
 	woocommerce_breadcrumb();
 echo '</div>';
 				echo '<div class="wrap">';
-					echo '<h1 class="entry-title">';
+					echo '<h1>';
 						single_term_title();
 					echo '</h1>';
 		}
@@ -38,7 +38,7 @@ echo '<div class="woo-bread wrap-no-pad">';
 	woocommerce_breadcrumb();
 echo '</div>';
 		 echo '<div class="wrap">';
-			echo '<h1 class="entry-title">';
+			echo '<h1>';
 				single_term_title();
 			echo '</h1>';
 }

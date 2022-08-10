@@ -13,10 +13,10 @@ if (!function_exists('web_logo')) {
         } else {
             if ( get_bloginfo( 'name' )  !== '' ) { 
                 echo '<div class="name">';
-                echo '<span class="blog-name"><a href="' . home_url() . '">' . get_bloginfo( 'name' ) . '</a></span>';
+                echo '<span class="site-name"><a href="' . home_url() . '">' . get_bloginfo( 'name' ) . '</a></span>';
             
                 if ( get_bloginfo( 'description' )  !== '' ) {
-                    echo '<span class="blog-desc">' . get_bloginfo('description') . '</span>';
+                    echo '<span class="site-desc">' . get_bloginfo('description') . '</span>';
                 } 
                 echo '</div>';
             } 
@@ -205,7 +205,7 @@ function web_topimg_blog() {
             
                 echo '<div class="wrap-no-pad">';
                     echo '<div class="top-caption">';
-                        echo '<h1 class="entry-title-big">';
+                        echo '<h1>';
                             single_post_title();
                         echo '</h1>';
                     echo '</div>';
@@ -232,7 +232,7 @@ function web_small_topimg() {
 
             echo '<div class="top-caption">';
             $arr = array(" | " => "<br />");
-            echo '<h1 class="entry-title-big">' . strtr(get_the_title(),$arr) . '</h1>';
+            echo '<h1>' . strtr(get_the_title(),$arr) . '</h1>';
 
             echo '</div>';
 
@@ -273,12 +273,7 @@ function web_post_date() {
     $post_date = get_the_date( 'j. F - Y' ); 
     echo '<div class="post-date">' . $post_date . '</div>';
 }
-// List cat
-function web_category() {
-    echo '<div class="list-category">';
-        the_category(', ');
-    echo '</div>';
-}
+
 // Post date + List cat
 function web_date_cat() {
     $post_date = get_the_date( 'j. F - Y' );
@@ -319,9 +314,9 @@ if ( class_exists('ACF') ) {
     if ( !get_field('skjul_titel') ) {
         echo '<div class="wrap-no-pad">';
             echo '<div class="top-caption">';
-                echo '<h1 class="entry-title-big">' . strtr(get_the_title(),$arr) . '</h1>';
+                echo '<h1>' . strtr(get_the_title(),$arr) . '</h1>';
                 if(!empty($caption)) {
-                    echo '<h2 class="sub-title-big">' . $caption . '</h2>';
+                    echo '<h2>' . $caption . '</h2>';
                 }
             echo '</div>';
         echo '</div>';
@@ -331,9 +326,9 @@ if ( class_exists('ACF') ) {
     if ( !class_exists('ACF') ) {
         echo '<div class="wrap-no-pad">';
             echo '<div class="top-caption">';
-                echo '<h1 class="entry-title-big">' . strtr(get_the_title(),$arr) . '</h1>';
+                echo '<h1>' . strtr(get_the_title(),$arr) . '</h1>';
                 if(!empty($caption)) {
-                    echo '<h2 class="sub-title-big">' . $caption . '</h2>';
+                    echo '<h2>' . $caption . '</h2>';
                 }
             echo '</div>';
         echo '</div>';

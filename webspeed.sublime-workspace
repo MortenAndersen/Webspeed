@@ -520,10 +520,130 @@
 	"buffers":
 	[
 		{
-			"file": "inc/shortcode-page.php",
+			"file": "js/starter.js",
 			"settings":
 			{
-				"buffer_size": 2498,
+				"buffer_size": 4033,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					3,
+					1,
+					"reindent",
+					null,
+					"AQAAAJcNAAAAAAAAnw0AAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACXDQAAAAAAAJcNAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					4,
+					1,
+					"insert",
+					{
+						"characters": "//"
+					},
+					"AgAAAJ8NAAAAAAAAoA0AAAAAAAAAAAAAoA0AAAAAAAChDQAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACfDQAAAAAAAJ8NAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					5,
+					1,
+					"insert",
+					{
+						"characters": " Date"
+					},
+					"BQAAAKENAAAAAAAAog0AAAAAAAAAAAAAog0AAAAAAACjDQAAAAAAAAAAAACjDQAAAAAAAKQNAAAAAAAAAAAAAKQNAAAAAAAApQ0AAAAAAAAAAAAApQ0AAAAAAACmDQAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAChDQAAAAAAAKENAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					6,
+					1,
+					"insert",
+					{
+						"characters": " Picker"
+					},
+					"BwAAAKYNAAAAAAAApw0AAAAAAAAAAAAApw0AAAAAAACoDQAAAAAAAAAAAACoDQAAAAAAAKkNAAAAAAAAAAAAAKkNAAAAAAAAqg0AAAAAAAAAAAAAqg0AAAAAAACrDQAAAAAAAAAAAACrDQAAAAAAAKwNAAAAAAAAAAAAAKwNAAAAAAAArQ0AAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACmDQAAAAAAAKYNAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					7,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AgAAAK0NAAAAAAAArg0AAAAAAAAAAAAArg0AAAAAAAC2DQAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACtDQAAAAAAAK0NAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					8,
+					1,
+					"paste",
+					null,
+					"AQAAALYNAAAAAAAA1A0AAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAC2DQAAAAAAALYNAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					11,
+					1,
+					"left_delete",
+					null,
+					"AQAAALkNAAAAAAAAuQ0AAAAAAAABAAAAIw",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAC6DQAAAAAAALoNAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					12,
+					1,
+					"insert",
+					{
+						"characters": "."
+					},
+					"AQAAALkNAAAAAAAAug0AAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAC5DQAAAAAAALkNAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					13,
+					1,
+					"left_delete",
+					null,
+					"AQAAALkNAAAAAAAAuQ0AAAAAAAABAAAALg",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAC6DQAAAAAAALoNAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					14,
+					1,
+					"insert",
+					{
+						"characters": "#"
+					},
+					"AQAAALkNAAAAAAAAug0AAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAC5DQAAAAAAALkNAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					17,
+					1,
+					"cut",
+					null,
+					"AQAAAJ8NAAAAAAAAnw0AAAAAAAA1AAAALy8gRGF0ZSBQaWNrZXIKICAgICAgICAkKCIjZGF0ZXBpY2tlciIpLmRhdGVwaWNrZXIoKTs",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACfDQAAAAAAANQNAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					18,
+					4,
+					"left_delete",
+					null,
+					"BAAAAJsNAAAAAAAAmw0AAAAAAAAEAAAAICAgIJcNAAAAAAAAlw0AAAAAAAAEAAAAICAgIJYNAAAAAAAAlg0AAAAAAAABAAAACpUNAAAAAAAAlQ0AAAAAAAABAAAACg",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACfDQAAAAAAAJ8NAAAAAAAAAAAAAAAA8L8"
+				]
+			]
+		},
+		{
+			"file": "scss/grid.scss",
+			"settings":
+			{
+				"buffer_size": 2960,
 				"line_ending": "Unix"
 			}
 		}
@@ -839,12 +959,43 @@
 			[
 				{
 					"buffer": 0,
-					"file": "inc/shortcode-page.php",
+					"file": "js/starter.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4033,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4033,
+								4017
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "scss/grid.scss",
 					"selected": true,
 					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 2498,
+						"buffer_size": 2960,
 						"regions":
 						{
 						},
@@ -857,12 +1008,12 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 426.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,

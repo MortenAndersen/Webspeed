@@ -10,7 +10,7 @@ if( class_exists('ACF') ) {
 				echo '<img src="' . $image['url'] . '">';    
             	echo '<div class="wrap-no-pad">';
             	echo '<div class="top-caption">';
-            		echo '<h1 class="entry-title">';
+            		echo '<h1>';
 						single_term_title();
 					echo '</h1>';
             	echo '</div>';
@@ -20,7 +20,7 @@ if( class_exists('ACF') ) {
 		} else {
 			echo '<main class="page-content page-blog">';
 				echo '<div class="wrap">';
-					echo '<h1 class="entry-title">';
+					echo '<h1>';
 						single_term_title();
 					echo '</h1>';
 		}
@@ -29,7 +29,7 @@ if( class_exists('ACF') ) {
 else {
 echo '<main class="page-content page-blog">';
 		 echo '<div class="wrap">';
-			echo '<h1 class="entry-title">';
+			echo '<h1>';
 				single_term_title();
 			echo '</h1>';
 }
