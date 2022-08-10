@@ -34,7 +34,7 @@
     }
 
     .acc-head {
-        padding: 1rem;
+        padding: 1.5rem;
         padding-left: calc(2rem - 2ch);
         cursor: pointer;
         transition: 0.2s ease;
@@ -54,7 +54,7 @@
 
     .acc-content {
         display: none;
-        padding: 1rem 2rem;
+        padding: 0 2rem 1rem 2rem;
         p {
         	margin: 0 0 1rem 0;
         }
