@@ -85,8 +85,8 @@ function web_thumbnail_link() {
                     echo '</a>';
             echo '</div>';
         }
-
-    else {
+        
+    } else {
         $image = get_field('billede');
         $size = 'webspeed-post'; 
         if( $image ) {
@@ -95,20 +95,20 @@ function web_thumbnail_link() {
                     echo '<a href="' . get_the_permalink() . '">';
                         echo wp_get_attachment_image( $image, $size );
                     echo '</a>';
-
+            echo '</div>';
 
         } else {
 
             if ( has_post_thumbnail() ) {
                 echo '<div class="img-zoom">';
                         echo '<a href="' . get_the_permalink() . '">';
-                            the_post_thumbnail('webspeed-post');
+                            the_post_thumbnail('webspeed-post',);
                         echo '</a>';
                 echo '</div>';
             }
         }
+
     }
-}
 
 }
 
@@ -148,7 +148,6 @@ function web_thumbnail_link_no_lazy() {
         }
 
     }
-
 
 }
 
