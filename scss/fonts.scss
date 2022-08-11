@@ -228,6 +228,9 @@ cite {
 
 figure {
     margin: s.$gap-n 0;
+    .acc-content & {
+        margin: 0;
+    }
 }
 
 hr {
