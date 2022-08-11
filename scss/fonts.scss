@@ -243,7 +243,8 @@ figure {
     margin: s.$gap-n 0;
 
     .acc-content & {
-        margin: 0;
+        margin-top: 0;
+        margin-bottom: 0;
     }
 }
 
