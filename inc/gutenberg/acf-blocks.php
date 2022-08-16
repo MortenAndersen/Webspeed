@@ -15,6 +15,13 @@ function acc_block() {
             'category'          => 'formatting',
             'icon'              => 'admin-comments',
             'keywords'          => array( 'acc', 'quote' ),
+            'supports'        => [
+                'anchor' => true,
+            'color'           => [
+                'background' => true,
+                'text'       => true,
+            ],
+        ],
         ));
     }
 }

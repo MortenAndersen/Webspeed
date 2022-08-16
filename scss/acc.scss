@@ -1,19 +1,15 @@
 .acc-con {
     margin: 2rem 0;
-        background-image: linear-gradient(to right, #808080 10%, rgba(255, 255, 255, 0) 0%);
-    background-position: top;
-    background-size: 6px 1px;
-    background-repeat: repeat-x;
+    border-top: 1px solid;
     .wp-block-column & {
         margin: 0;
     }
 
     >div {
         position: relative;
-        background-image: linear-gradient(to right, #808080 10%, rgba(255, 255, 255, 0) 0%);
-    background-position: bottom;
-    background-size: 6px 1px;
-    background-repeat: repeat-x;
+
+        border-bottom: 1px solid;
+
         &:hover {
             z-index: 1;
         }
@@ -27,7 +23,7 @@
         opacity: 1;
         border-left: 4px solid transparent;
         border-right: 4px solid transparent;
-        border-top: 8px solid #000;
+        border-top: 8px solid;
         transition: 0.3s ease;
         z-index: 2;
 
@@ -51,12 +47,15 @@
         		border-top-color: rgba(0,0,0,.4);
         	}
         }
+        &.active {
+            background: rgba(0,0,0, 5%);
+        }
     }
 
     .acc-content {
         display: none;
         overflow: hidden;
-        padding: 0 2rem 1rem 2rem;
+        padding: 2rem 2rem 1rem 2rem;
     }
 
     .arrow-animate {

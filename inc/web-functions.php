@@ -361,7 +361,7 @@ if (!function_exists('web_header_div_class')) {
 // web_header_inject();
 if (!function_exists('web_post_header_inject')) {
     function web_post_header_inject() {
-        echo'Morten';
+        
     }
 }
 
