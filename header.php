@@ -30,6 +30,8 @@
 	</div>
 </header>
 
+<?php web_post_header_inject(); ?>
+
 <?php if (is_active_sidebar('pre-content')) {
     dynamic_sidebar('pre-content');
 } ?>

@@ -33,6 +33,14 @@ if (!function_exists('web_menu')) {
     }
 }
 
+// Menu desktop align
+if (!function_exists('web_menu_pos')) {
+    function web_menu_pos()
+    {
+        echo 'right-align align-end';
+    }
+}
+
 // BackButton
 
 function web_go_back() {
@@ -251,14 +259,6 @@ function web_front_fokus() {
     }
 }
 
-// Menu desktop align
-if (!function_exists('web_menu_pos')) {
-    function web_menu_pos()
-    {
-        echo 'right-align align-end';
-    }
-}
-
 
 // Reference
 if (!function_exists('web_reference')) {
@@ -358,6 +358,13 @@ if (!function_exists('web_header_div_class')) {
     }
 }
 
+// web_header_inject();
+if (!function_exists('web_post_header_inject')) {
+    function web_post_header_inject() {
+        echo'Morten';
+    }
+}
+
 if (!function_exists('web_header_class')) {
     function web_header_class() {
         echo 'sticky-header';
@@ -379,3 +386,5 @@ function afstand_style() {
         }
     } 
 }
+
+
