@@ -6,6 +6,7 @@ if( !empty($block['anchor']) ) {
 
 
 $classes = [ 'acc-con' ];
+$block_style = '';
 if ( ! empty( $block['className'] ) ) {
     $classes = array_merge( $classes, explode( ' ', $block['className'] ) );
 }
@@ -28,7 +29,7 @@ if ( ! empty( $block['textColor'] ) ) {
 if( have_rows('accordion') ):
 	$i = 1;
 
-printf(    '<div id="' . $id . '" class="%s"%s>',
+printf(    '<div id="' . $id . '"' . 'class="%s"%s>',
     esc_attr( join( ' ', $classes ) ),
     ! empty( $block['anchor'] ) ? ' id="' . esc_attr( sanitize_title( $block['anchor'] ) ) . '"' : '',
 );

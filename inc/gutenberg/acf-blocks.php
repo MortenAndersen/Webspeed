@@ -20,6 +20,7 @@ function acc_block() {
             'color'           => [
                 'background' => true,
                 'text'       => true,
+                'jsx'        => true,
             ],
         ],
         ));

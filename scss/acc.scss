@@ -15,7 +15,7 @@
             height: 1px;
             background: currentColor;
             display: block;
-            opacity: .5;
+            opacity: .35;
         }
     }
     .arrow {
@@ -73,7 +73,10 @@
         border-top:0;
         animation: blink-animation 2s steps(5, start) infinite;
     }
-
+    img {
+        border: 1px solid;
+        padding: 3px;
+    }
 }
 .acc-title {
     margin: 0;
