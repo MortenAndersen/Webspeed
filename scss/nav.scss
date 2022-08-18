@@ -34,16 +34,16 @@
             &[aria-current=page] {
                 color: var(--menu-desktop-current-font);
                 background-color: var(--menu-desktop-current-bg);
-                border-bottom: 2px solid;
-                margin-bottom: -2px;
+                border-bottom: 1px solid;
+                margin-bottom: -1px;
             }
         }
 
         >.current-menu-parent >,
         .current_page_ancestor > {
             a {
-                border-bottom: 2px solid var(--menu-desktop-current-font);
-                margin-bottom: -2px;
+                border-bottom: 1px solid var(--menu-desktop-current-font);
+                margin-bottom: -1px;
             }
         }
 
@@ -71,7 +71,7 @@
 }
 .single-post {
     .current_page_parent > a {
-        border-bottom: 2px solid var(--menu-desktop-current-font);
-        margin-bottom: -2px;
+        border-bottom: 1px solid var(--menu-desktop-current-font);
+        margin-bottom: -1px;
     }
 }

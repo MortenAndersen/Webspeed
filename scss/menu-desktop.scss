@@ -22,7 +22,10 @@
             display: flex;
             background: var(--header-desktop);
             a {
-                line-height: 3rem;
+                line-height: 2rem;
+            }
+            li {
+                align-self: center;
             }
 
             ul {
