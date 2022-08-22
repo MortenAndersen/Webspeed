@@ -499,15 +499,11 @@ g#pil-op {
     }
 }
 
-.no-pad-top {
-    padding-top: 0 !important;
+.page-template-page-no-wrap .has-background.mange-spalter,
+.page-template-page-no-wrap-topimg .has-background.mange-spalter {
+    padding: 2rem;
 }
-.no-pad-bottom {
-    padding-bottom: 0 !important;
-}
-.no-pad-left {
-   padding-left: 0 !important;
-}
-.no-pad-right {
-    padding-right: 0 !important;
+.page-template-page-no-wrap .mange-spalter .wp-block-columns,
+.page-template-page-no-wrap-topimg .mange-spalter .wp-block-columns {
+    padding: 0 2rem;
 }
