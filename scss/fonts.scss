@@ -203,11 +203,12 @@ blockquote {
     border-left: 2px solid var(--blockquote);
     padding: s.$gap-s s.$gap-n;
     margin: s.$gap-n 0;
+    font-size: 1.2rem;
+    line-height: 1.5;
+
 
     p {
-        font-size: 1.2rem;
-        line-height: 1.5;
-
+        
         &:last-of-type {
             margin-bottom: 0;
         }
