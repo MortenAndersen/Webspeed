@@ -200,7 +200,7 @@ a:hover {
 }
 
 blockquote {
-    border-left: 2px solid var(--blockquote);
+    border-left: 2px solid;
     padding: s.$gap-s s.$gap-n;
     margin: s.$gap-n 0;
     font-size: 1.2rem;
@@ -214,20 +214,6 @@ blockquote {
         }
     }
 
-    &.wp-block-quote.is-style-large {
-        padding: s.$gap-s s.$gap-n;
-        margin: s.$gap-n 0;
-        border-left-width: 4px;
-
-        p {
-            font-size: 200%;
-        }
-
-        cite {
-            text-align: right;
-            display: block;
-        }
-    }
 }
 
 cite {
