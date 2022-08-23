@@ -210,16 +210,16 @@ blockquote {
             margin-bottom: 0;
         }
     }
-    .has-x-large-font-size {
+    &.has-x-large-font-size {
        border-left: 8px solid;
     }
-    .has-large-font-size {
+    &.has-large-font-size {
        border-left: 6px solid;
     }
-    .has-medium-font-size {
+    &.has-medium-font-size {
       border-left: 4px solid;
     }
-    .has-small-font-size {
+    &.has-small-font-size {
       border-left: 1px solid;
     }
 
