@@ -208,7 +208,7 @@ blockquote {
 
 
     p {
-        
+        max-width: inherit;
         &:last-of-type {
             margin-bottom: 0;
         }
