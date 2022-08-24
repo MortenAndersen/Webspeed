@@ -59,6 +59,35 @@ h2 {
     font-size: 1.5rem;
 }
 
+.has-x-large-font-size h1,
+.has-x-large-font-size h2,
+.has-x-large-font-size h3,
+.has-x-large-font-size h4,
+.has-x-large-font-size h5,
+.has-x-large-font-size h6,
+.has-large-font-size h1,
+.has-large-font-size h2,
+.has-large-font-size h3,
+.has-large-font-size h4,
+.has-large-font-size h5,
+.has-large-font-size h6,
+.has-medium-font-size h1,
+.has-medium-font-size h2,
+.has-medium-font-size h3,
+.has-medium-font-size h4,
+.has-medium-font-size h5,
+.has-medium-font-size h6,
+.has-small-font-size h1,
+.has-small-font-size h2,
+.has-small-font-size h3,
+.has-small-font-size h4,
+.has-small-font-size h5,
+.has-small-font-size h6,
+{
+       font-size: inherit;
+    }
+
+
 .top-caption h2 {
     font-size: var(--xl);
     margin: 0;
@@ -97,7 +126,6 @@ article {
 }
 
 .loop-title {
-    font-size: s.$font-l;
     margin-bottom: s.$gap-s * 1.5;
 }
 

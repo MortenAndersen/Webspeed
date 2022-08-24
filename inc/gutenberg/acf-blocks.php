@@ -17,12 +17,18 @@ function acc_block() {
             'keywords'          => array( 'acc', 'quote' ),
             'supports'        => [
                 'anchor' => true,
-            'color'           => [
-                'background' => true,
-                'text'       => true,
-                'jsx'        => true,
+                'color'           => [
+                    'background' => true,
+                    'text'       => true,
+                    'jsx'        => true,
+                ],
+                /*
+                'typography' => [
+                    'fontSize' => true,
+                    'lineHeight' => true,
+                ],
+                */
             ],
-        ],
         ));
     }
 }

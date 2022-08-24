@@ -10,16 +10,17 @@ $block_style = '';
 if ( ! empty( $block['className'] ) ) {
     $classes = array_merge( $classes, explode( ' ', $block['className'] ) );
 }
-if ( ! empty( $block['align'] ) ) {
-    $classes[] = 'align' . $block['align'];
-}
 if ( ! empty( $block['backgroundColor'] ) ) {
     $classes[] = 'has-' . $block['backgroundColor'] . '-background-color';
 }
 if ( ! empty( $block['textColor'] ) ) {
     $classes[] = 'has-' . $block['textColor'] . '-color';
 }
-
+/*
+if ( ! empty( $block['fontSize'] ) ) {
+    $classes[] = 'xx-' . $block['fontSize'] . '-yy';
+}
+*/
 
 
 
@@ -29,7 +30,7 @@ if ( ! empty( $block['textColor'] ) ) {
 if( have_rows('accordion') ):
 	$i = 1;
 
-printf(    '<div id="' . $id . '"' . 'class="%s"%s>',
+printf(    '<div id="' . $id . '"' . 'class="%s">',
     esc_attr( join( ' ', $classes ) ),
     ! empty( $block['anchor'] ) ? ' id="' . esc_attr( sanitize_title( $block['anchor'] ) ) . '"' : '',
 );
