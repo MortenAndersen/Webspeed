@@ -1,7 +1,10 @@
 <?php
 // Logo
-
-
+if (!function_exists('logo_absolute')) {
+    function logo_absolute() {
+        return ' logo-absolute';
+    }
+}
 
 if (!function_exists('web_logo')) {
     function web_logo() {
@@ -9,7 +12,7 @@ if (!function_exists('web_logo')) {
         $logo           = wp_get_attachment_image_src($custom_logo_id, 'full');
 
         if (has_custom_logo()) {
-            echo '<div class="logo logo-absolute"><a href="' . home_url() . '"><img id="logo" width="' . $logo[1] . '" height="' . $logo[2]. '" src="' . esc_url($logo[0]) . '" alt="' . get_bloginfo('name') . '"></a></div>';
+            echo '<div class="logo' . logo_absolute() . '"><a href="' . home_url() . '"><img id="logo" width="' . $logo[1] . '" height="' . $logo[2]. '" src="' . esc_url($logo[0]) . '" alt="' . get_bloginfo('name') . '"></a></div>';
         } else {
             if ( get_bloginfo( 'name' )  !== '' ) { 
                 echo '<div class="name">';

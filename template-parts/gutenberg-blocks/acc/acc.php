@@ -25,8 +25,6 @@ if ( ! empty( $block['fontSize'] ) ) {
 
 
 
-
-
 if( have_rows('accordion') ):
 	$i = 1;
 
@@ -39,6 +37,7 @@ printf(    '<div id="' . $id . '"' . 'class="%s">',
         $sub_title = get_sub_field('title');
         $sub_body = get_sub_field('body');
         $sub_class_master = get_sub_field('class');
+        $sub_chortcode = get_sub_field('shortcode');
 
         if ($sub_class_master) {
             $sub_class = ' ' . get_sub_field('class');
@@ -53,6 +52,7 @@ printf(    '<div id="' . $id . '"' . 'class="%s">',
             echo '</div>';
             echo '<div class="acc-content">';
                 echo $sub_body;
+                //echo $sub_chortcode;
             echo '</div>';
         echo '</div>';
         
