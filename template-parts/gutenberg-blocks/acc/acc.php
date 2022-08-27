@@ -52,7 +52,7 @@ printf(    '<div id="' . $id . '"' . 'class="%s">',
             echo '</div>';
             echo '<div class="acc-content">';
                 echo $sub_body;
-                //echo $sub_chortcode;
+                echo $sub_chortcode;
             echo '</div>';
         echo '</div>';
         
