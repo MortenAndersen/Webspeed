@@ -1,5 +1,5 @@
-<?php
-			if( function_exists('acf_add_local_field_group') ):
+<?php 
+if( function_exists('acf_add_local_field_group') ):
 
 acf_add_local_field_group(array(
 	'key' => 'group_61dda70c369dd',
@@ -26,7 +26,7 @@ acf_add_local_field_group(array(
 			'sub_fields' => array(
 				array(
 					'key' => 'field_61ddab55f3cd9',
-					'label' => 'Title',
+					'label' => 'Overskrift',
 					'name' => 'title',
 					'type' => 'text',
 					'instructions' => '',
@@ -45,7 +45,7 @@ acf_add_local_field_group(array(
 				),
 				array(
 					'key' => 'field_61ddab5bf3cda',
-					'label' => 'Body',
+					'label' => 'Indhold',
 					'name' => 'body',
 					'type' => 'wysiwyg',
 					'instructions' => '',
@@ -63,11 +63,30 @@ acf_add_local_field_group(array(
 					'delay' => 0,
 				),
 				array(
+					'key' => 'field_63088ca363d06',
+					'label' => 'Shortcode',
+					'name' => 'shortcode',
+					'type' => 'text',
+					'instructions' => '',
+					'required' => 0,
+					'conditional_logic' => 0,
+					'wrapper' => array(
+						'width' => '',
+						'class' => '',
+						'id' => '',
+					),
+					'default_value' => '',
+					'placeholder' => '',
+					'prepend' => '',
+					'append' => '',
+					'maxlength' => '',
+				),
+				array(
 					'key' => 'field_62fba03c06d95',
 					'label' => 'Class',
 					'name' => 'class',
 					'type' => 'text',
-					'instructions' => 'Benyttes til CSS (design af elementet)',
+					'instructions' => '',
 					'required' => 0,
 					'conditional_logic' => 0,
 					'wrapper' => array(

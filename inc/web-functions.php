@@ -2,7 +2,7 @@
 // Logo
 if (!function_exists('logo_absolute')) {
     function logo_absolute() {
-        return ' logo-absolute';
+        return 'logo-absolute';
     }
 }
 
@@ -13,6 +13,7 @@ if (!function_exists('web_logo')) {
 
         if (has_custom_logo()) {
             echo '<div class="logo' . logo_absolute() . '"><a href="' . home_url() . '"><img id="logo" width="' . $logo[1] . '" height="' . $logo[2]. '" src="' . esc_url($logo[0]) . '" alt="' . get_bloginfo('name') . '"></a></div>';
+            echo "\n";
         } else {
             if ( get_bloginfo( 'name' )  !== '' ) { 
                 echo '<div class="name">';
@@ -22,6 +23,7 @@ if (!function_exists('web_logo')) {
                     echo '<span class="site-desc">' . get_bloginfo('description') . '</span>';
                 } 
                 echo '</div>';
+                echo "\n";
             } 
         }
     }

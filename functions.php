@@ -92,16 +92,6 @@ add_action( 'after_setup_theme', 'web_localize_theme' );
 
 // ---------------------------------------------------
 
-// Remove jQuery Migrate Script from header and Load jQuery from Google API
-function crunchify_stop_loading_wp_embed_and_jquery() {
-    if (!is_admin()) {
-        wp_deregister_script('wp-embed');
-        //wp_deregister_script('jquery');  // Bonus: remove jquery too if it's not required
-    }
-}
-add_action('init', 'crunchify_stop_loading_wp_embed_and_jquery');
-
-
 
 //Remove JQuery migrate
 function remove_jquery_migrate($scripts) {
@@ -117,7 +107,6 @@ function remove_jquery_migrate($scripts) {
 }
 
 add_action('wp_default_scripts', 'remove_jquery_migrate');
-
 
 
 // ---------------------------------------------------
@@ -168,7 +157,7 @@ if( class_exists('ACF') ) {
     // ACF
     require get_parent_theme_file_path('/inc/acf.php');
     require get_parent_theme_file_path('/inc/fullwidth-acf.php');
-    //require get_parent_theme_file_path('/inc/accordion-acf.php');
+    require get_parent_theme_file_path('/inc/accordion-acf.php');
     require get_parent_theme_file_path( '/inc/gutenberg/acf-blocks.php' );
 }
 
