@@ -113,14 +113,6 @@ function designlist_block() {
             'category'          => 'formatting',
             'icon'              => 'admin-comments',
             'keywords'          => array( 'WEB', 'List' ),
-            'supports'        => [
-                'anchor' => true,
-                'color'           => [
-                    'background' => true,
-                    'text'       => true,
-                    'jsx'        => true,
-                ],
-            ],
         ));
     }
 }
