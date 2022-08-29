@@ -155,6 +155,7 @@ require get_parent_theme_file_path('/inc/shortcode-page.php');
 
 if( class_exists('ACF') ) {
     // ACF
+    require get_parent_theme_file_path('/inc/design-list.php');
     require get_parent_theme_file_path('/inc/acf.php');
     require get_parent_theme_file_path('/inc/fullwidth-acf.php');
     require get_parent_theme_file_path('/inc/accordion-acf.php');

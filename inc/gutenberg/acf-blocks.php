@@ -91,10 +91,38 @@ function fullwidth_block() {
             'render_template'   => 'template-parts/gutenberg-blocks/fullwidth/fullwidth.php',
             'category'          => 'formatting',
             'icon'              => 'admin-comments',
-            'keywords'          => array( 'WEB', 'quote' ),
+            'keywords'          => array( 'WEB', 'Design' ),
         ));
     }
 }
 
 // ---------------------------------------------------
 
+add_action('acf/init', 'designlist_block');
+function designlist_block() {
+
+    // Check function exists.
+    if( function_exists('acf_register_block_type') ) {
+
+        // register a Spalter block.
+        acf_register_block_type(array(
+            'name'              => 'designlist',
+            'title'             => __('Design list WEB'),
+            'description'       => __('List amd Icon'),
+            'render_template'   => 'template-parts/gutenberg-blocks/designlist/designlist.php',
+            'category'          => 'formatting',
+            'icon'              => 'admin-comments',
+            'keywords'          => array( 'WEB', 'List' ),
+            'supports'        => [
+                'anchor' => true,
+                'color'           => [
+                    'background' => true,
+                    'text'       => true,
+                    'jsx'        => true,
+                ],
+            ],
+        ));
+    }
+}
+
+// ---------------------------------------------------

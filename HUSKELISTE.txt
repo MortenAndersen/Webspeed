@@ -1,0 +1,30 @@
+NYE TILTAG
+---------------------------------------------
+
+Designer-lister
+Lister med forskellige ikoner
+(rettetegn, fejl/kryds, ...)
+
+Site-data:
+Et samlet sted hvor man skriver divers data som så kan printes via shorcode
+(adresse, tlf, mail, sociale link med ikoner)
+
+Menu SUB:
+Find løsning til to delte menuer, hvor sub-pages kan vises i aside
+
+
+NYE TILTAG ...på sigt!
+---------------------------------------------
+
+Front-end editing af tema
+
+
+SKAL FORBEDRES
+---------------------------------------------
+
+Menu:
+Skal kunne vises under logo og almindelige venstrestillet
+
+Mega-menu skal forbedres
+
+Ikoner og farvestyring af menu

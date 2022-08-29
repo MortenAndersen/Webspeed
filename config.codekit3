@@ -93,6 +93,14 @@
 		"oAP": "/header.php",
 		"oF": 0
 		},
+	"/HUSKELISTE.txt": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/HUSKELISTE.txt",
+		"oF": 0
+		},
 	"/img/contact/sprite-sheet.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -261,6 +269,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/inc/acf.php",
+		"oF": 0
+		},
+	"/inc/design-list.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/inc/design-list.php",
 		"oF": 0
 		},
 	"/inc/fullwidth-acf.php": {
@@ -862,7 +878,7 @@
 		"oS": 2,
 		"sct": 0
 		},
-	"/scss/liste.scss": {
+	"/scss/list.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -870,7 +886,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/liste.css",
+		"oAP": "/list.css",
 		"oF": 0,
 		"oS": 2,
 		"sct": 0
@@ -1370,6 +1386,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/template-parts/gutenberg-blocks/contact/contact.php",
+		"oF": 0
+		},
+	"/template-parts/gutenberg-blocks/designlist/designlist.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/template-parts/gutenberg-blocks/designlist/designlist.php",
 		"oF": 0
 		},
 	"/template-parts/gutenberg-blocks/fullwidth/fullwidth.php": {
