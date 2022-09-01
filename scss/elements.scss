@@ -501,9 +501,11 @@ g#pil-op {
 
 .page-template-page-no-wrap .has-background.mange-spalter,
 .page-template-page-no-wrap-topimg .has-background.mange-spalter {
-    padding: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 .page-template-page-no-wrap .mange-spalter .wp-block-columns,
 .page-template-page-no-wrap-topimg .mange-spalter .wp-block-columns {
-    padding: 0 2rem;
+    padding-top: 0;
+    padding-bottom: 0;
 }

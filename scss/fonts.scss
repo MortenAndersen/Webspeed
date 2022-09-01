@@ -337,3 +337,11 @@ article h1+h2 {
     border-bottom: 1px dashed var(--border);
     padding-bottom: .25rem
 }
+
+.wp-block-column {
+    p {
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}
