@@ -1477,6 +1477,19 @@
 		"oA": 0,
 		"oAP": "/woocommerce/single-product-reviews.php",
 		"oF": 0
+		},
+	"/Xlogo-mobil.png": {
+		"ft": 32768,
+		"iS": 65077,
+		"oA": 0,
+		"oAP": "/Xlogo-mobil.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		}
 	},
 "hooks": [
