@@ -10,6 +10,7 @@ if (!function_exists('logo_absolute')) {
 if (!function_exists('web_logo')) {
     function web_logo() {
         $logo_mobil = get_theme_file_path() . '/logo-mobil.png';
+        list($width, $height) = getimagesize( $logo_mobil );
         $custom_logo_id = get_theme_mod('custom_logo');
         $logo           = wp_get_attachment_image_src($custom_logo_id, 'full');
 
@@ -23,7 +24,8 @@ if (!function_exists('web_logo')) {
             echo '<div class="logo' . logo_absolute() . '">';
                 echo '<a class="' . $logo_class . '" href="' . home_url() . '"><img id="logo" width="' . $logo[1] . '" height="' . $logo[2]. '" src="' . esc_url($logo[0]) . '" alt="' . get_bloginfo('name') . '"></a>';
                 if (file_exists($logo_mobil)) {
-                    echo '<a href="' . home_url() . '" class="only-mobile"><img id="logo-mobil" src="' . get_stylesheet_directory_uri() . '/logo-mobil.png" alt="' . get_bloginfo('name') . '"></a>';
+                    echo '<a href="' . home_url() . '" class="only-mobile"><img id="logo-mobil" width="' . $width . '" height="' . $height . '" src="' . get_stylesheet_directory_uri() . '/logo-mobil.png" alt="' . get_bloginfo('name') . '"></a>';
+
                 }
             echo '</div>';
             echo "\n";
