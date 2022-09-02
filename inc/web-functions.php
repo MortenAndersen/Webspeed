@@ -10,12 +10,13 @@ if (!function_exists('logo_absolute')) {
 if (!function_exists('web_logo')) {
     function web_logo() {
         $logo_mobil = get_theme_file_path() . '/logo-mobil.png';
-        list($width, $height) = getimagesize( $logo_mobil );
+        
         $custom_logo_id = get_theme_mod('custom_logo');
         $logo           = wp_get_attachment_image_src($custom_logo_id, 'full');
 
         if (file_exists($logo_mobil)) {
             $logo_class = 'only-desktop';
+            list($width, $height) = getimagesize( $logo_mobil );
         } else {
             $logo_class = 'no-mobil-logo';
         }
