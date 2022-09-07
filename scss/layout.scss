@@ -129,7 +129,6 @@ aside {
 
 .page-header {
     background: var(--header-phone);
-    /* border-bottom: 1px solid var(--border); */
     padding: 1rem 0;
 }
 
@@ -142,7 +141,7 @@ aside {
 @media (min-width: b.$menu-break) {
     .page-header {
         background: var(--header-desktop);
-        padding: 0;
+        padding: 1rem 0 0 0;
     }
 
     .sticky {

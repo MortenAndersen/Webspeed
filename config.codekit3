@@ -101,6 +101,16 @@
 		"oAP": "/HUSKELISTE.txt",
 		"oF": 0
 		},
+	"/img/calendar.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/calendar.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/img/contact/sprite-sheet.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -136,6 +146,16 @@
 		"oA": 0,
 		"oAP": "/img/iconer.afdesign",
 		"oF": 0
+		},
+	"/img/info.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/info.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
 		},
 	"/img/lb/close.png": {
 		"ft": 32768,
@@ -201,6 +221,16 @@
 		"oA": 0,
 		"oAP": "/img/menu-icon.php",
 		"oF": 0
+		},
+	"/img/placering.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/placering.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
 		},
 	"/img/slider/bx_loader.gif": {
 		"ft": 4194304,
