@@ -4,9 +4,10 @@ echo '<main class="page-content">';
 $event_option = get_field('event_options');
 if( $event_option && in_array('Skjul tid', $event_option) ) {
     $hide_time = ' hide-all-time';
-}
-if( $event_option && in_array('Skjul sluttid', $event_option) ) {
+} elseif( $event_option && in_array('Skjul sluttid', $event_option) ) {
   $hide_time = ' hide-end-time';
+} else {
+	$hide_time = ' viser-alle-tider';
 }
 
 	echo '<div class="wrap article-aside">';
