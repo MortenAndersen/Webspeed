@@ -1,6 +1,14 @@
 <?php 
 echo '<main class="page-content">';
 
+$event_option = get_field('event_options');
+if( $event_option && in_array('Skjul tid', $event_option) ) {
+    $hide_time = ' hide-all-time';
+}
+if( $event_option && in_array('Skjul sluttid', $event_option) ) {
+  $hide_time = ' hide-end-time';
+}
+
 	echo '<div class="wrap article-aside">';
 		echo '<article>';
 			web_title();
@@ -8,8 +16,8 @@ echo '<main class="page-content">';
 				echo '<div class="eve-img">';
 					web_img();
 				echo '</div>';
-				echo '<div class="eve-txt">';
-					simpleEvent_showdate_year();
+				echo '<div class="eve-txt' . $hide_time . '">';
+					simpleEvent_showdate();
 					simpleEvent_location();
 					simpleEvent_kortBeskrivelse();
 					simleEvent_label();

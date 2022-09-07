@@ -47,8 +47,9 @@ aside div.event{
 }
 p.event-title {
 	font-weight: bold;
-	margin:0;
-	padding: 0;
+	border-bottom: 1px solid;
+	margin:0 0 1rem 0;
+	padding: 0 0 1rem 0;
 }
 .event-kort-tekst {
 	font-size: .85em;
@@ -190,9 +191,6 @@ article .event-kort-tekst {
 .eve-img {
 	padding: 1rem;
 	background: var(--eve-info-bg);
-	img {
-		border: 1px solid;
-	}
 }
 
 .eve-icon {
