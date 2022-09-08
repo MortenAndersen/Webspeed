@@ -245,6 +245,11 @@ article .event-kort-tekst {
     background: var(--eve-info-bg);
     color: var(--eve-info-font);
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    .event-buy-link {
+        margin-top: auto;
+    }
 }
 
 .eve-img {
