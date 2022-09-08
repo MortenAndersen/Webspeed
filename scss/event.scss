@@ -115,6 +115,9 @@ article .event-kort-tekst {
 
 .event-buy-link {
     margin: 1em 0 0 0;
+    article & {
+        max-width: 400px;   
+    }
 }
 
 .event-buy-link a {
@@ -127,7 +130,6 @@ article .event-kort-tekst {
     text-transform: uppercase;
     transition: .5s all;
     border-radius: 2px;
-
 }
 
 .event-buy-link a:hover {
