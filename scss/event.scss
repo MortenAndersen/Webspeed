@@ -57,6 +57,20 @@ aside div.event {
 
 .event-read-more {
     margin: auto 0 0 0;
+     a {
+    background: var(--border);
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: .5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .5s all;
+    border-radius: 2px;
+    &:hover {
+         box-shadow: inset 0 0 10px #00000029;
+     }
+    }
 }
 
 p.event-title {
