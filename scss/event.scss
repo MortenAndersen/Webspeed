@@ -32,7 +32,10 @@ article .size-event_small {
     font-size: 2rem;
 }
 
-div.event {}
+div.event {
+    display: flex;
+    flex-direction: column
+}
 
 .event-img {
     margin-bottom: 1rem;
@@ -53,7 +56,7 @@ aside div.event {
 }
 
 .event-read-more {
-    margin: 1em 0 0 0;
+    margin: auto 0 0 0;
 }
 
 p.event-title {
