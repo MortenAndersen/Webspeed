@@ -98,9 +98,12 @@ article .event-kort-tekst {
     display: none;
 }
 
-.event-txt {}
+
 .event-title {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.5rem;
 }
 .event-con {
     margin: 3rem 0 2em 0;
@@ -231,14 +234,16 @@ article .event-kort-tekst {
     background: var(--eve-info-bg);
 }
 
-.eve-icon {}
+.event-con {
+    font-size: .9rem;
+}
 
 .eve-icon-con {
     grid-template-columns: 20px 1fr;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
     gap: .5rem;
     &.alt-date {
-        margin-bottom: .2rem;
+        margin-bottom: .5rem;
     }
 }
 

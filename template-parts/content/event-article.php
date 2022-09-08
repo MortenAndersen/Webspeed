@@ -18,7 +18,11 @@ if( $event_option && in_array('Skjul tid', $event_option) ) {
 					web_img();
 				echo '</div>';
 				echo '<div class="eve-txt' . $hide_time . '">';
-					simpleEvent_showdate();
+					if( have_rows('alternative_datoer') ) {
+    					event_alt_dato();
+					} else {
+    					simpleEvent_showdate();
+					}					
 					simpleEvent_location();
 					simpleEvent_kortBeskrivelse();
 					simleEvent_label();
