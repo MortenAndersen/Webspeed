@@ -35,6 +35,11 @@
 .has-background:not(div) {
     margin: s.$gap-n 0;
 }
+.wp-block-column {
+    .has-background:not(div):first-of-type {
+        margin-top: 0;
+    }
+}
 .wp-block-group.has-background {
     padding: 0;
 }
