@@ -2,7 +2,7 @@
 // Logo
 if (!function_exists('logo_absolute')) {
     function logo_absolute() {
-        return 'logo-absolute';
+        return ' logo-absolute';
     }
 }
 
