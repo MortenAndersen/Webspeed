@@ -22,7 +22,7 @@ if (!function_exists('web_logo')) {
         }
 
         if (has_custom_logo()) {
-            echo '<div class="logo' . logo_absolute() . '">';
+            echo '<div class="logo">';
                 echo '<a class="' . $logo_class . '" href="' . home_url() . '"><img id="logo" width="' . $logo[1] . '" height="' . $logo[2]. '" src="' . esc_url($logo[0]) . '" alt="' . get_bloginfo('name') . '"></a>';
                 if (file_exists($logo_mobil)) {
                     echo '<a href="' . home_url() . '" class="only-mobile"><img id="logo-mobil" width="' . $width . '" height="' . $height . '" src="' . get_stylesheet_directory_uri() . '/logo-mobil.png" alt="' . get_bloginfo('name') . '"></a>';
@@ -58,7 +58,7 @@ if (!function_exists('web_menu')) {
 if (!function_exists('web_menu_pos')) {
     function web_menu_pos()
     {
-        echo 'right-align align-end';
+        echo 'right-align';
     }
 }
 

@@ -87,7 +87,7 @@ aside {
     line-height: s.$line-s;
 }
 .page-content {
-    padding-top: s.$gap-n;
+    padding-top: s.$gap-s;
 }
 /*
 .page-template-page-topimg,
@@ -134,7 +134,7 @@ aside {
 
 .page-header {
     background: var(--header-phone);
-    padding: 1rem 0;
+    padding: 1rem 0 0 0;
 }
 
 @media (min-width: b.$phone) {

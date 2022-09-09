@@ -450,9 +450,7 @@ article>.post-img {
 .author {
     font-weight: bold;
 }
-.logo {
-    align-self: center;
-}
+
 @media (min-width: b.$menu-break) {
     .sticky-header {
         position: sticky;
@@ -465,15 +463,13 @@ article>.post-img {
     .sticky-header.scroll {
         border-bottom: 2px solid var(--border);
 
-         .logo-absolute  {
+         .logo  {
            transform: scale(.5);
         }
     }
-    .logo.logo-absolute {
-        position: absolute;
-        top: 1rem;
+    .logo {
         transition: transform 1s ease;
-        transform-origin: top left;
+        transform-origin: center left;
     }
 }
 @media (max-width: 800px) {
