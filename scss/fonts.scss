@@ -48,11 +48,18 @@ h1 {
     margin: 0 0 .625rem 0;
 }
 
-.top-caption h1 {
-    font-size: var(--xxl);
-    line-height: 1.2;
-    margin: 0;
-    font-weight: normal;
+.top-caption {
+    h1 {
+        font-size: var(--xxl);
+        line-height: 1.2;
+        margin: 0;
+        font-weight: normal;
+    }
+    h2 {
+        font-size: var(--xl);
+        margin: 0;
+        font-weight: normal;
+    }
 }
 
 h2 {
@@ -95,11 +102,6 @@ h6 {
        font-size: inherit;
     }
 
-
-.top-caption h2 {
-    font-size: var(--xl);
-    margin: 0;
-}
 
 article {
     line-height: var(--article-line-height);
