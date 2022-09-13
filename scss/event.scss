@@ -39,6 +39,7 @@ div.event {
 
 .event-img {
     margin-bottom: 1rem;
+    position: relative;
 }
 
 aside div.event {
@@ -91,7 +92,8 @@ p.event-title {
 
 div.event .post-edit-link {
     float: right;
-    margin-bottom: 1em;
+    margin-top: 1em;
+    text-align: right;
 }
 
 .event-kort-tekst {
@@ -117,10 +119,8 @@ article .event-kort-tekst {
 
 
 .event-title {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     font-size: 1.1rem;
-    border-bottom: 1px solid var(--border);
-    padding-bottom: 0.5rem;
 }
 .event-con {
     margin: 3rem 0 2em 0;
@@ -261,14 +261,11 @@ article .event-kort-tekst {
     grid-template-columns: 20px 1fr;
     margin-bottom: .5rem;
     gap: .5rem;
-    &.alt-date {
-        margin-bottom: .5rem;
+    &.short-txt {
+        margin-bottom: 1rem;
     }
 }
 
 .eve-info .eve-svg {
     fill: var(--eve-svg);
-}
-.alt-date-con {
-    margin-bottom: 1rem;
 }
