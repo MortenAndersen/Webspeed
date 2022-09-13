@@ -26,11 +26,6 @@ function child_grid($atts) {
 
 require get_parent_theme_file_path('/inc/grid-gap.php');
 
-if (is_page_template('page-no-wrap-topimg.php') || is_page_template('page-no-wrap.php') ) { 
-
-    echo '<div class="wide-con wrap-' . $class . '">';
-        echo '<div class="wrap-pad">';
-}
 if ( $slider != 'no-slider')  {
         echo '<div class="Xoversigt ' . $slider . ' ' . $class . '">';
     } else {
@@ -83,10 +78,6 @@ wp_reset_postdata();
 
         echo '</div>';
 
-    if (is_page_template('page-no-wrap-topimg.php') || is_page_template('page-no-wrap.php') ) { 
-            echo '</div>';
-        echo '</div>';
-    }
 
  $myvariable = ob_get_clean();
     return $myvariable;
