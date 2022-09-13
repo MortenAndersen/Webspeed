@@ -367,6 +367,14 @@
 		"oAP": "/inc/shortcode-child-grid.php",
 		"oF": 0
 		},
+	"/inc/shortcode-child-menu.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/inc/shortcode-child-menu.php",
+		"oF": 0
+		},
 	"/inc/shortcode-page.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -940,6 +948,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/megamenu.css",
+		"oF": 0,
+		"oS": 2,
+		"sct": 0
+		},
+	"/scss/menu-child.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/menu-child.css",
 		"oF": 0,
 		"oS": 2,
 		"sct": 0

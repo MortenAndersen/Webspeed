@@ -1,0 +1,22 @@
+.child-menu {
+	line-height: 1.2;
+	 a {
+		border-bottom: 1px solid var(--border);
+		display: block;
+		padding: .5rem 0;
+	}
+	.children {
+		.children {
+			margin-left: .5rem;
+		}
+	}
+	.current_page_item > a {
+		border-bottom-color: var(--menu-desktop-current-font);
+	}
+}
+.child-menu-top {}
+.child-menu-top > .page_item_has_children > a {
+	font-weight: bold;
+	text-transform: uppercase;
+	border-bottom-width: 2px;
+}
