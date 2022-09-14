@@ -16,8 +16,8 @@ function web_post_related($atts) {
             'date_cat' => 'no', 
             'type' => 'not-set', 
             'excerpt' => 'yes',
-            'grid' => '2',
-            'gap' =>'2'
+            'grid' => '1',
+            'gap' =>'1'
         ), 
     $atts));
 

@@ -1,33 +1,26 @@
-<?php 
+<?php
 
-// https://wordpress.stackexchange.com/questions/299138/generate-a-menu-that-displays-all-child-pages-of-top-level-parent
 
-add_shortcode('child-menu', 'child_menu');
+
+add_shortcode('childmenu', 'child_menu');
 function child_menu($atts) {
   
+     global $post;
     ob_start();
-    extract(shortcode_atts(
-        array(
-            'show_parent' => 'yes',
-        ), $atts));
 
 
 /* -------------------------------------- */
+if (!function_exists('child_menu_list')) {
+function child_menu_list(){
 
-
-	if ( ! is_page() ) {
+    if ( ! is_page() ) {
       return false;
     }
 
     // Get the current post.
     $post = get_post();
 
-    /**
-     * Get array of post ancestor IDs.
-     * Note: The direct parent is returned as the first value in the array.
-     * The highest level ancestor is returned as the last value in the array.
-     * See https://codex.wordpress.org/Function_Reference/get_post_ancestors
-     */
+
     $ancestors = get_post_ancestors( $post->ID );
 
     // If there are ancestors, get the top level parent.
@@ -52,9 +45,9 @@ function child_menu($atts) {
 
     // Add parent page to beginning of $page_ids array.
 
-    if ( $show_parent == 'yes' ) {
+
     array_unshift( $page_ids, $parent );
-}
+
 
     // Get the output and return results if they exist.
     $output = wp_list_pages( [
@@ -67,10 +60,16 @@ function child_menu($atts) {
     if ( ! $output ) {
         return false;
     } else { 
-        return '<nav class="child-menu"><ul class="child-menu-top">' . PHP_EOL .
+        echo '<nav class="child-menu"><ul class="child-menu-top">' . PHP_EOL .
                             $output . PHP_EOL .
                         '</ul></nav>' . PHP_EOL;
     }
+}
+}
+/* -------------------------------------- */
+
+
+     child_menu_list();
 
 
     $myvariable = ob_get_clean();
