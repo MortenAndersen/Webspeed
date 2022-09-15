@@ -368,7 +368,7 @@ function svg_url($type_key) {
 // PreHeader style
 if (!function_exists('get_pre_header_class')) {
     function get_pre_header_class() {
-        return 'pre-header flex wrap only-desktop-flex';
+        return 'pre-header flex wrap-pad-top-small only-desktop-flex';
     }
 }
 
