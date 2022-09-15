@@ -366,7 +366,8 @@ function svg_url($type_key) {
 
 if (!function_exists('webspeed_breadcrumb')) {
     function webspeed_breadcrumb() {
-        if ( function_exists('yoast_breadcrumb') && !is_front_page() ) {
+        global $post;     
+        if ( function_exists('yoast_breadcrumb') && !is_front_page() && $post->post_parent ) {
             yoast_breadcrumb( '<div id="breadcrumbs"><div class="wrap-no-pad">','</div></div>' );
         } 
     }
