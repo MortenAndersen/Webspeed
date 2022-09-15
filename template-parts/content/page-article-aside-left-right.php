@@ -1,9 +1,11 @@
 <?php 
+
 echo '<main class="page-content"' . afstand_style() . '>';
 
  if ( is_page_template( 'page-aside-left-right-topimg.php' ) ) {
 	web_topimg();
 	web_front_fokus();
+	webspeed_breadcrumb();
     echo '<div class="wrap aside-article-aside">';
 		echo '<article>';
 			while (have_posts()) : the_post();
@@ -12,6 +14,7 @@ echo '<main class="page-content"' . afstand_style() . '>';
 
 	} else {
 	web_front_fokus();
+	webspeed_breadcrumb();
 	echo '<div class="wrap aside-article-aside">';
 		echo '<article>';
 			while (have_posts()) : the_post();

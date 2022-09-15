@@ -3,6 +3,7 @@ echo '<main class="page-content">';
 
 if ( is_page_template( 'single-topimg.php' ) ) {
 	web_topimg(); 
+	webspeed_breadcrumb();
 	echo '<div class="wrap article-aside">';
 		echo '<article>';
 
@@ -14,6 +15,7 @@ if ( is_page_template( 'single-topimg.php' ) ) {
 			endwhile;
 
 } else {
+	webspeed_breadcrumb();
 	echo '<div class="wrap article-aside">';
 		echo '<article>';
 		

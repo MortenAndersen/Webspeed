@@ -666,6 +666,19 @@
 		"oS": 2,
 		"sct": 0
 		},
+	"/scss/breadcrumbs.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/breadcrumbs.css",
+		"oF": 0,
+		"oS": 2,
+		"sct": 0
+		},
 	"/scss/button.scss": {
 		"aP": 1,
 		"bl": 0,

@@ -4,6 +4,7 @@ echo '<main class="page-content"' . afstand_style() . '>';
  if ( is_page_template( 'page-topimg.php' ) ) {
 	web_topimg();
 	web_front_fokus();
+	webspeed_breadcrumb();
 	echo '<div class="wrap">';
 		echo '<article>';
 			while (have_posts()) : the_post();
@@ -15,6 +16,7 @@ echo '<main class="page-content"' . afstand_style() . '>';
 elseif ( is_page_template( 'page-normal-titleimg.php' ) ) {
 	echo '<div class="wrap">';
 		web_small_topimg();
+		webspeed_breadcrumb();
 		echo '<article>';
 			while (have_posts()) : the_post();
 				the_content();
@@ -24,6 +26,7 @@ elseif ( is_page_template( 'page-normal-titleimg.php' ) ) {
 
 else {
 	web_front_fokus();
+	webspeed_breadcrumb();
 	echo '<div class="wrap">';
 		echo '<article>';
 			while (have_posts()) : the_post();

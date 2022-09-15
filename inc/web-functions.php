@@ -363,6 +363,15 @@ function svg_url($type_key) {
     return $svg_url ;
 }
 
+
+if (!function_exists('webspeed_breadcrumb')) {
+    function webspeed_breadcrumb() {
+        if ( function_exists('yoast_breadcrumb') && !is_front_page() ) {
+            yoast_breadcrumb( '<div id="breadcrumbs"><div class="wrap-no-pad">','</div></div>' );
+        } 
+    }
+}
+
 // ------------------------------------------------- //
 
 // PreHeader style

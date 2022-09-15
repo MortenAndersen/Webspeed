@@ -4,12 +4,14 @@ echo '<main class="page-content"' . afstand_style() . '>';
 if ( is_page_template( 'page-aside-left-topimg.php' ) ) {
 			web_topimg();
 			web_front_fokus();
+			webspeed_breadcrumb();
 	echo '<div class="wrap aside-article">';
 		echo '<article>';
 			while (have_posts()) : the_post();
 				the_content();
 			endwhile;
 } elseif ( is_page_template( 'page-aside-left-titleimg.php' ) ) {
+	webspeed_breadcrumb();
 	echo '<div class="wrap aside-article">';
 		echo '<article>';
 			web_small_topimg();
@@ -21,6 +23,7 @@ if ( is_page_template( 'page-aside-left-topimg.php' ) ) {
 
 else {
 	web_front_fokus();
+	webspeed_breadcrumb();
 	echo '<div class="wrap aside-article">';
 		echo '<article>';
 			while (have_posts()) : the_post();
