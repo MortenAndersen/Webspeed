@@ -202,8 +202,8 @@ article {
         max-width: 80ch;
     }
 }
-ul:not[class],
-ol:not[class] {
+ul,
+ol {
         li {
             margin-bottom: 1rem;
         }
