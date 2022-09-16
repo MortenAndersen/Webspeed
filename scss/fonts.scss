@@ -201,6 +201,11 @@ article {
     li {
         max-width: 80ch;
     }
+    ul:not[class] {
+        li {
+            margin-bottom: 1rem;
+        }
+    }
 }
 
 a {
