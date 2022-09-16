@@ -201,12 +201,13 @@ article {
     li {
         max-width: 80ch;
     }
-    ul:not[class] {
+}
+ul:not[class],
+ol:not[class] {
         li {
             margin-bottom: 1rem;
         }
     }
-}
 
 a {
     color: var(--link);
