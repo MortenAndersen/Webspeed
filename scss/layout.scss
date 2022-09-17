@@ -97,18 +97,6 @@ aside {
 .page-content {
     padding-top: s.$gap-s;
 }
-/*
-.page-template-page-topimg,
-.page-template-page-aside-left-right-topimg,
-.page-template-page-aside-left-topimg,
-.page-template-page-aside-right-topimg,
-.page-template-page-no-wrap-topimg,
-.page-template-page-no-wrap {
-    .page-content {
-    padding-top: 0;
-    }
-}
- */
 
 .page-footer {
     border-top: 1px solid var(--border);
@@ -172,14 +160,14 @@ aside {
 @media (min-width: b.$phone) {
     .article-aside {
         display: grid;
-        grid-template-columns: 1fr s.$aside-width-small;
-        grid-gap: s.$gap-n;
+        grid-template-columns: 1fr var(--aside-right);
+        grid-gap: var(--gap);
     }
 
     .aside-article {
         display: grid;
-        grid-template-columns: s.$aside-width-small 1fr;
-        grid-gap: s.$gap-n;
+        grid-template-columns: var(--aside-left) 1fr;
+        grid-gap: var(--gap);
 
         aside {
             order: 1;
@@ -195,7 +183,7 @@ aside {
 .aside-article-aside {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: s.$gap-n;
+    grid-gap: var(--gap);
 
     .right-aside {
         order: 3;
@@ -213,7 +201,7 @@ aside {
 @media(min-width: b.$phone) {
     .aside-article-aside {
         display: grid;
-        grid-template-columns: 1fr s.$aside-width-small;
+        grid-template-columns: 1fr var(--aside-right);
 
         .left-aside {
             order: 3;
@@ -232,14 +220,14 @@ aside {
 
 @media(min-width: 1000px) {
     .aside-article {
-        grid-template-columns: s.$aside-width 1fr;
+        grid-template-columns: var(--aside-left) 1fr;
     }
     .article-aside {
-        grid-template-columns: 1fr s.$aside-width;
+        grid-template-columns: 1fr var(--aside-right);
     }
     .aside-article-aside {
         display: grid;
-        grid-template-columns: s.$aside-width 1fr s.$aside-width;
+        grid-template-columns: var(--aside-left) 1fr var(--aside-right);
 
         .left-aside {
             order: 1;
@@ -253,14 +241,5 @@ aside {
         article {
             order: 2;
         }
-    }
-}
-
-@media(min-width: 1100px) {
-
-    .aside-article-aside,
-    .aside-article,
-    .article-aside {
-        grid-gap: s.$gap-x;
     }
 }

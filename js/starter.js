@@ -43,6 +43,18 @@
             $(this).siblings('span').toggleClass('active-trigger');
         });
 
+
+
+// -------------------------------------
+
+$('.widget_nav_menu .menu-item-has-children').append('<span class="m-a-t">+</span>');
+$('.m-a-t').click(function() {
+            $(this).siblings('ul').slideToggle().toggleClass('mobile-sibling-open');
+            $(this).toggleClass('active-trigger');
+        });
+
+
+//--------------------------
         // Video
         $('.video, .wp-block-embed__wrapper').fitVids();
 

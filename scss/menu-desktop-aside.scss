@@ -1,0 +1,36 @@
+@use 'elements/breakpoints'as b;
+@use 'elements/size'as s;
+
+@media (min-width: b.$menu-break) {
+	.widget_nav_menu {
+		a {
+			text-decoration: none;
+			
+		}
+		[aria-current='page'] {
+				text-decoration: underline;
+			}
+		ul {
+			ul {
+				display: none;
+				padding: 0 0 0 1rem;
+			}
+			.current-page-ancestor {
+				ul {
+					display: block;
+				}
+			}
+		}
+		li {
+			position: relative;
+		}
+		.m-a-t {
+			position: absolute;
+			top: 0;
+			right: 0;
+			cursor: pointer;
+		}
+
+	}
+
+}

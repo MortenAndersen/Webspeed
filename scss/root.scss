@@ -104,11 +104,22 @@
   --font-l: 1.8rem;
   --xxl: 1.7rem;
   --xl: 1.1rem;
+
+  --aside-left: 24%;
+  --aside-right: 24%;
+  --gap: 2rem
 }
 
 @media (min-width: 700px) {
   :root {
     --xxl: 3rem;
-    --xl: 2rem
+    --xl: 2rem;
   }
 }
+
+@media (min-width: 1000px) {
+  :root {
+    --gap: 3rem
+  }
+}
+
