@@ -8,7 +8,7 @@
             color: var(--menu-desktop-font);
             padding: var(--menu-desktop-pad);
             padding: 5px 38px 5px 0;
-            border-bottom: 1px solid;
+            border-bottom: 1px solid var(--border);
            
             &:hover {
                 color:  var(--menu-desktop-hover-font);
