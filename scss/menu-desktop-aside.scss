@@ -3,13 +3,22 @@
 
 @media (min-width: b.$menu-break) {
 	.widget_nav_menu {
+		line-height: 32px;
 		a {
-			text-decoration: none;
-			
-		}
-		[aria-current='page'] {
-				text-decoration: underline;
-			}
+            color: var(--menu-desktop-font);
+            padding: var(--menu-desktop-pad);
+            padding: 5px 38px 5px 0;
+            border-bottom: 1px solid;
+           
+            &:hover {
+                color:  var(--menu-desktop-hover-font);
+            }
+
+            &[aria-current=page] {
+                color: var(--menu-desktop-current-font);
+
+            }
+           }
 		ul {
 			ul {
 				display: none;
@@ -23,12 +32,38 @@
 		}
 		li {
 			position: relative;
+			margin: 0;
 		}
 		.m-a-t {
 			position: absolute;
-			top: 0;
+			top: 5px;
 			right: 0;
 			cursor: pointer;
+
+			&::before {
+				content: '+';
+				width: 32px;
+				display: inline-block;
+				background: rgba(0,0,0,.2);
+				text-align: center;
+			}
+			&.active-trigger {
+				&::before {
+					content: '-';
+				}
+			}
+		}
+		.current-page-ancestor {
+			.m-a-t {
+				&::before {
+					content: '-';
+				}
+				&.active-trigger {
+				&::before {
+					content: '+';
+				}
+			}
+			}
 		}
 
 	}

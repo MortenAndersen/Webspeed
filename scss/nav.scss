@@ -23,50 +23,7 @@
 
 @media (min-width: b.$menu-break) {
 	.page-header nav {
-	a {
-            color: var(--menu-desktop-font);
-            padding: var(--menu-desktop-pad);
-           
-            &:hover {
-                color:  var(--menu-desktop-hover-font);
-            }
 
-            &[aria-current=page] {
-                color: var(--menu-desktop-current-font);
-                background-color: var(--menu-desktop-current-bg);
-                border-bottom: 1px solid;
-                margin-bottom: -1px;
-            }
-        }
-
-        >.current-menu-parent >,
-        .current_page_ancestor > {
-            a {
-                border-bottom: 1px solid var(--menu-desktop-current-font);
-                margin-bottom: -1px;
-            }
-        }
-
-        li li {
-            a {
-                color: var(--menu-desktop-sub-font);
-                padding: var(--menu-desktop-sub-pad);
-                border-bottom: none;
-                &:hover {
-                    color:  var(--menu-desktop-sub-hover-font);
-                }
-
-                &[aria-current=page] {
-                    margin-left: calc(var(--menu-desktop-sub-pad-side) * -1);
-                    margin-right: calc(var(--menu-desktop-sub-pad-side) * -1);
-                    background-color: var(--menu-desktop-sub-current-bg);
-                    color: var(--menu-desktop-sub-current-font);
-                    padding-left: calc(var(--menu-desktop-sub-pad-side) + .5rem);
-                    padding-right: calc(var(--menu-desktop-sub-pad-side) + .5rem);
-                    border-bottom: none;
-                }
-            }
-        }
     }
 }
 .single-post {
