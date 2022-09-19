@@ -43,16 +43,19 @@
             $(this).siblings('span').toggleClass('active-trigger');
         });
 
+        $('.current-menu-item .menu-trigger').addClass('active-trigger');
 
 
 // -------------------------------------
 
+/*
 $('.widget_nav_menu .menu-item-has-children').append('<span class="m-a-t"></span>');
+$('.widget_nav_menu .current_page_item .ma-a-t').addClass('active-trigger');
 $('.m-a-t').click(function() {
             $(this).siblings('ul').slideToggle().toggleClass('mobile-sibling-open');
             $(this).toggleClass('active-trigger');
         });
-
+*/
 
 //--------------------------
         // Video

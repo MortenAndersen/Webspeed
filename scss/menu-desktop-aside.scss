@@ -24,7 +24,8 @@
 				display: none;
 				padding: 0 0 0 1rem;
 			}
-			.current-page-ancestor {
+			.current-page-ancestor,
+			.current_page_item > {
 				ul {
 					display: block;
 				}
@@ -34,7 +35,8 @@
 			position: relative;
 			margin: 0;
 		}
-		.m-a-t {
+		.m-a-t,
+		.menu-trigger {
 			position: absolute;
 			top: 5px;
 			right: 0;
@@ -54,7 +56,8 @@
 			}
 		}
 		.current-page-ancestor {
-			.m-a-t {
+			.m-a-t,
+			.menu-trigger {
 				&::before {
 					content: '-';
 				}

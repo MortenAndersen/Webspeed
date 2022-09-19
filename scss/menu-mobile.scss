@@ -113,6 +113,10 @@
         border: none;
     }
 
+    .mobile-menu ul .current-menu-item ul {
+        display: block;
+    }
+
     .mobile-menu a {
         color: #fff;
         opacity: .8;
