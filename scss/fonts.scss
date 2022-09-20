@@ -192,7 +192,9 @@ p {
         margin: 0 0 1rem 0;
     }
 }
-
+.bred {
+    max-width: inherit;
+}
 article .bx-wrapper p {
     max-width: none;
 }
