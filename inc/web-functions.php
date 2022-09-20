@@ -364,6 +364,7 @@ function svg_url($type_key) {
 }
 
 
+
 if (!function_exists('webspeed_breadcrumb')) {
     function webspeed_breadcrumb() {
         global $post;     
