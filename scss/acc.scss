@@ -80,6 +80,7 @@
     margin: 0;
     position: relative;
     z-index: 1;
+    max-width: inherit;
     &::before {
         content: '-';
         padding-right: 1ch;
