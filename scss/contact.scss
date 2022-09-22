@@ -2,15 +2,18 @@
 @use 'elements/breakpoints'as b;
 
 ul.contact-con {
-    margin: s.$gap-n 0;
+    margin: 0;
     padding: 0;
 
     li {
-        margin: 0 0 s.$gap-s 0;
+        margin: 0 0 .5rem 0;
         padding: 0;
         list-style-type: none;
         display: flex;
         flex-flow: row;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
     }
 
     .contact-label {
