@@ -140,9 +140,9 @@ add_action( 'wp_enqueue_scripts', 'rjs_lwp_contactform_css_js');
 require get_parent_theme_file_path('/inc/widgets.php');
 
 // Theme Posttype
-require get_parent_theme_file_path('/inc/post-type.php');
+require get_parent_theme_file_path('/inc/elements.php');
 require get_parent_theme_file_path('/inc/taxonomy.php');
-require get_parent_theme_file_path('/inc/post-type-shortcode.php');
+require get_parent_theme_file_path('/inc/elements-shortcode.php');
 
 // Theme functions
 require get_parent_theme_file_path('/inc/web-functions.php');

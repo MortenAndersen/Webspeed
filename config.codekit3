@@ -327,6 +327,22 @@
 		"oAP": "/inc/design-list.php",
 		"oF": 0
 		},
+	"/inc/elements-shortcode.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/inc/elements-shortcode.php",
+		"oF": 0
+		},
+	"/inc/elements.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/inc/elements.php",
+		"oF": 0
+		},
 	"/inc/fullwidth-acf.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -349,22 +365,6 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/inc/gutenberg/acf-blocks.php",
-		"oF": 0
-		},
-	"/inc/post-type-shortcode.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/inc/post-type-shortcode.php",
-		"oF": 0
-		},
-	"/inc/post-type.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/inc/post-type.php",
 		"oF": 0
 		},
 	"/inc/shortcode-child-grid.php": {

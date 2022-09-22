@@ -7,7 +7,7 @@ function webspeed_elements($atts) {
     ob_start();
 
     // define attributes and their defaults
-    extract(shortcode_atts(array('grid' => '2', 'gap' =>'2', 'type' => 'none', 'class' => 'no-class'), $atts));
+    extract(shortcode_atts(array('grid' => '1', 'gap' =>'0', 'type' => 'none', 'class' => 'no-class'), $atts));
 
     require get_parent_theme_file_path('/inc/grid-gap.php');
 
