@@ -28,7 +28,40 @@ ul.contact-con {
     svg {
         max-height: 22px;
         max-width: 22px;
+        transition: .5s all;
         fill: var(--icon-color);
+    }
+    .contact-social {
+        display: flex;
+        flex-flow: row;
+        gap: 1rem;
+        margin: 2rem  0 0 0;
+        svg {
+            max-height: 35px;
+            max-width: 35px;
+            &:hover {
+                transform: scale(1.5);
+            }
+        }
+
+        a:hover {
+            &.fb {
+                svg {
+                    fill: #1b74e4;
+                }
+            }
+            &.in {
+                svg {
+                    fill: #fd0968;
+                }
+            }
+            &.li {
+                svg {
+                    fill: #0077b5;
+                }
+            }
+        }
+
     }
 
     &.meeting {

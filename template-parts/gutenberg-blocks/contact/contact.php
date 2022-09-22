@@ -29,4 +29,21 @@ echo '<ul class="contact-con">';
     	echo '<li class="contact-info"><span class="contact-label"></span><span class="contact-info">' . get_field('info') . '</span></li>';
     }
 
+
+    if( get_field('facebook') || get_field('linkedin') || get_field('instagram') ) {
+        echo '<li class="contact-social">';
+            if( get_field('facebook') ) {
+                echo '<a href="' . get_field('facebook') . '" class="fb" target="_blank">' . svg_url(7) . '</a>';
+            }
+
+            if( get_field('linkedin') ) {
+                echo '<a href="' . get_field('linkedin') . '" class="li" target="_blank">' . svg_url(6) . '</a>';
+            }
+
+            if( get_field('instagram') ) {
+                echo '<a href="' . get_field('instagram') . '" class="in" target="_blank">' . svg_url(3) . '</a>';
+            }
+        echo '</li>';
+    }
+
 echo '</ul>';  
