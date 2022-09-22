@@ -4,6 +4,9 @@
 ul.contact-con {
     margin: 0;
     padding: 0;
+    article & {
+        margin-bottom: 2rem
+    }
 
     li {
         margin: 0 0 .5rem 0;
