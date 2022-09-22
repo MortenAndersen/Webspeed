@@ -22,7 +22,15 @@
 		ul {
 			ul {
 				display: none;
-				padding: 0 0 0 1rem;
+				padding: 0;
+				 a {
+				 	padding-left: 1rem;
+				 }
+				 ul {
+				 	a {
+				 		padding-left: 2rem;
+				 	}
+				 }
 			}
 			.current-menu-ancestor,
 			.current_page_item > {
