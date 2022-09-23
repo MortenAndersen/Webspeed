@@ -1,7 +1,7 @@
 @use 'elements/size'as s;
 @use 'elements/breakpoints'as b;
 
-ul.contact-con {
+ul.kontakt-con {
     margin: 0;
     padding: 0;
     article & {
@@ -19,26 +19,26 @@ ul.contact-con {
         }
     }
 
-    .contact-label {
+    .k-label {
         width: 22px;
         text-align: center;
         margin-right: .5rem;
     }
 
     svg {
-        max-height: 22px;
-        max-width: 22px;
+        height: 22px;
+        width: 22px;
         transition: .5s all;
         fill: var(--icon-color);
     }
-    .contact-social {
+    .k-some {
         display: flex;
         flex-flow: row;
         gap: 1rem;
         margin: 2rem  0 0 0;
         svg {
-            max-height: 35px;
-            max-width: 35px;
+            height: 30px;
+            width: 30px;
             &:hover {
                 transform: scale(1.5);
             }
@@ -72,15 +72,6 @@ ul.contact-con {
 
     &.personer {
         margin: 0;
-
-        li {
-            margin: 0;
-            padding: 0;
-        }
-
-        .contact-label {
-            margin-right: 1ch;
-        }
 
         .title {
             margin-bottom: s.$gap-s;

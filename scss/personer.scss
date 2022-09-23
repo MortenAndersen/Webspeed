@@ -163,8 +163,6 @@
 
 .shortcode-person-img {
     overflow: hidden;
-    box-shadow: 0 0 5px #00000038;
-    border: .5em solid transparent;
     margin-bottom: 1rem;
 
     img {
@@ -174,16 +172,12 @@
 }
 
 .person-excerpt {
-    padding: 1rem .5rem;
+    padding: 1rem 0;
     border-top: 1px solid;
     margin-top: 1rem;
 
     p {
         margin: 0;
-    }
-
-    aside & {
-        padding: 1rem 0;
     }
 }
 
