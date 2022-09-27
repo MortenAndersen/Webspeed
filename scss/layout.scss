@@ -69,6 +69,12 @@
 .padding {
     padding: s.$gap-n !important;
 }
+.padding-no-top {
+    padding-top: 0 !important
+}
+.padding-no-bottom {
+    padding-bottom: 0 !important
+}
 @media (min-width: b.$phone) {
     .wrap {
         &.pad-4 {
