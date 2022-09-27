@@ -22,11 +22,22 @@
             }
         }
 
-        >.current-menu-parent >,
-        .current_page_ancestor > {
-            a {
+        >.current-menu-parent,
+        .current-menu-ancestor {
+            > a {
                 border-bottom: 1px solid var(--menu-desktop-current-font);
                 margin-bottom: -1px;
+            }
+            .current-menu-ancestor  {
+                > a {
+                    border-bottom: none;
+                    margin-bottom: 0;
+                    &::before {
+                        content: '-';
+                        padding-right: 1ch;
+                        color: var(--menu-desktop-current-font);
+                    }
+                }
             }
         }
 
