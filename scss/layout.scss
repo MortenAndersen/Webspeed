@@ -48,9 +48,9 @@
 }
 
 .wp-block-group.has-background {
-    padding: 0
+    padding-left: 0;
+    padding-right: 0;
 }
-
 
 @media (min-width: b.$menu-break) {
     .wp-block-group.has-background {
