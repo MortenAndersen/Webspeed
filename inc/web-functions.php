@@ -86,9 +86,11 @@ function web_edit_link() {
 
 
 function web_excerpt() {
-    echo '<div class="the-excerpt">';
-        the_excerpt();
-    echo '</div>';
+    if ( has_excerpt() ) {
+        echo '<div class="the-excerpt">';
+            the_excerpt();
+        echo '</div>';
+    }
 }
 
 // Thumbnail
