@@ -45,7 +45,7 @@ $child_query = new WP_Query( $args );
 while ( $child_query->have_posts() ) : 
     $child_query->the_post();
     echo '<div class="post-loop">';
-        if ( $img == 'yes' ) {
+        if ( $img == 'yes' && has_post_thumbnail() ) {
             echo '<div class="loop-post-img">';
                 if ( $slider != 'no-slider')  {
                     web_thumbnail_link_no_lazy();
