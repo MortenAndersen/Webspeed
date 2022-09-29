@@ -52,12 +52,6 @@
     padding-right: 0;
 }
 
-@media (min-width: b.$menu-break) {
-    .wp-block-group.has-background {
-    padding: s.$gap-n;
-    }
-}
-
 .padding {
     padding: s.$gap-n !important;
 }
