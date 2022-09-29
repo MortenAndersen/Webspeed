@@ -37,8 +37,8 @@
 @media (min-width: b.$menu-break) {
     .wp-block-columns {
     padding: 0;
-    .page-template-page-no-wrap &,
-    .page-template-page-no-wrap-topimg &{
+    .page-template-page-no-wrap .has-background &,
+    .page-template-page-no-wrap-topimg .has-background &{
         padding: 4rem s.$gap-n;
     }
 }
