@@ -29,17 +29,17 @@
 }
 .wp-block-columns {
     padding: 0;
-    margin-bottom: 2rem;
     .page-template-page-no-wrap &,
     .page-template-page-no-wrap-topimg &{
         padding: s.$gap-n;
     }
 }
 .has-background {
-    padding: s.$gap-n;
+    
 }
 .has-background:not(div) {
     margin: s.$gap-n 0;
+    padding: s.$gap-n;
 }
 .wp-block-column {
     .has-background:not(div):first-of-type {
