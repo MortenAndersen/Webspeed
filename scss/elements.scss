@@ -367,14 +367,7 @@ article>.post-img {
     display: flex;
     flex-flow: column;
 }
-/*
-.wide-con {
-    background: var(--body-bg);
-    &:nth-child(odd) {
-        background: #fff;
-    }
-}
-*/
+
 .fokus {
     background: var(--fokus-bg);
     color: var(--fokus-color);
@@ -425,15 +418,7 @@ article>.post-img {
         display: grid;
     }
 }
-/*
-.element {
-    > * {
-        &:last-of-type {
-            margin-bottom: 0;
-        }
-    }
-}
-*/
+
 .page-footer {
     .wp-block-image {
         margin: 0;

@@ -34,8 +34,15 @@
         padding: s.$gap-n;
     }
 }
-.has-background {
-    
+@media (min-width: b.$menu-break) {
+    .wp-block-columns {
+    padding: 0;
+    .page-template-page-no-wrap &,
+    .page-template-page-no-wrap-topimg &{
+        padding: 4rem s.$gap-n;
+    }
+}
+
 }
 .has-background:not(div) {
     margin: s.$gap-n 0;
