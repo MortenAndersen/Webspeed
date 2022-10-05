@@ -21,7 +21,9 @@ function child_grid($atts) {
             'title' => 'yes',
             'excerpt' => 'yes',
             'read_more' => 'yes',
-            'slider' => 'no-slider'
+            'slider' => 'no-slider',
+            'orderby' => 'menu_order',
+            'order' => 'ASC',
         ), $atts));
 
 require get_parent_theme_file_path('/inc/grid-gap.php');
@@ -37,7 +39,8 @@ $args = array(
     'post_type' => 'page',
     'posts_per_page' => $number,
     'offset' => $offset,
-    'orderby' => array( 'menu_order' => 'ASC' ),
+    'orderby' => $orderby,
+    'order' => $order,
 );
 
 $child_query = new WP_Query( $args );
