@@ -15,7 +15,9 @@ function web_page($atts) {
             'gap' =>'2',
             'id' => '',
             'class' => 'no-class',
-            'slider' => 'no-slider'         
+            'slider' => 'no-slider',
+            'orderby' => 'menu_order',
+            'order' => 'ASC',         
         ), 
     $atts));
 
@@ -25,8 +27,8 @@ require get_parent_theme_file_path('/inc/grid-gap.php');
     $loop = new WP_Query( array(
         'post_type' => 'page',
         'post__in' => explode( ',', $id ),
-        'orderby' => 'menu_order',
-        'order' => 'ASC',     
+        'orderby' => $orderby,
+        'order' => $order,     
     ));
 
 /* -------------------------------------- */
