@@ -34,30 +34,7 @@
         padding: s.$gap-n;
     }
 }
-@media (min-width: b.$menu-break) {
-    .wp-block-columns {
-    padding: 0;
-    .page-template-page-no-wrap .has-background &,
-    .page-template-page-no-wrap-topimg .has-background &{
-        padding: 4rem s.$gap-n;
-    }
-}
 
-}
-.has-background:not(div) {
-    margin: s.$gap-n 0;
-    padding: s.$gap-n;
-}
-.wp-block-column {
-    .has-background:not(div):first-of-type {
-        margin-top: 0;
-    }
-}
-
-.wp-block-group.has-background {
-    padding-left: 0;
-    padding-right: 0;
-}
 
 .padding {
     padding: s.$gap-n !important;

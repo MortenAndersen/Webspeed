@@ -1,0 +1,52 @@
+@use 'elements/breakpoints'as b;
+@use 'elements/size'as s;
+
+@media (min-width: b.$menu-break) {
+    .wp-block-columns {
+    padding: 0;
+    .page-template-page-no-wrap .has-background &,
+    .page-template-page-no-wrap-topimg .has-background &{
+        padding: 4rem s.$gap-n;
+    }
+}
+
+}
+.has-background:not(div) {
+    margin: s.$gap-n 0;
+    padding: s.$gap-n;
+}
+.wp-block-column {
+    .has-background:not(div):first-of-type {
+        margin-top: 0;
+    }
+}
+
+
+// Sider i wrap
+/*
+.page-template-page-no-wrap,
+.page-template-page-aside-left-right-topimg,
+.page-template-page-aside-left-right,
+.page-template-page-aside-left-titleimg,
+.page-template-page-aside-left-topimg,
+.page-template-page-aside-left,
+.page-template-page-aside-right-titleimg,
+.page-template-page-aside-right-topimg,
+.page-template-page-aside-right
+*/
+
+body:not(.page-template-page-no-wrap, .page-template-page-no-wrap-topimg)
+ {
+    .wp-block-group.has-background {
+        padding: s.$gap-n;
+    }
+}
+
+.wp-block-group__inner-container {
+    h2,h3,h4,h5,h6 {
+        margin-top: 0;
+    }
+    p:last-of-type {
+        margin-bottom: 0;
+    }
+}

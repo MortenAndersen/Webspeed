@@ -303,6 +303,14 @@
 		"oAP": "/inc/accordion-acf.php",
 		"oF": 0
 		},
+	"/inc/acf-woocommerce.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/inc/acf-woocommerce.php",
+		"oF": 0
+		},
 	"/inc/acf.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -670,6 +678,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/animate.css",
+		"oF": 0,
+		"oS": 2,
+		"sct": 0
+		},
+	"/scss/background.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/background.css",
 		"oF": 0,
 		"oS": 2,
 		"sct": 0
