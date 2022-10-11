@@ -42,6 +42,10 @@ body:not(.page-template-page-no-wrap, .page-template-page-no-wrap-topimg)
     }
 }
 
+.wp-block-column.has-background {
+    padding: s.$gap-n;
+}
+
 .wp-block-group__inner-container {
     h2,h3,h4,h5,h6 {
         margin-top: 0;
