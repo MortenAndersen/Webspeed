@@ -46,3 +46,22 @@ ul.has-background {
         margin-left: 1rem
     }
 }
+.spalter {
+    .wp-block-columns {
+        padding-top: 0 !important;
+        padding-bottom: s.$gap-n !important;
+    }
+    .wp-block-group__inner-container {
+        padding-top: s.$gap-n;
+        padding-bottom: 0;
+    }
+}
+@media (min-width: b.$menu-break) {
+    .spalter {
+    
+    .wp-block-group__inner-container {
+        padding: s.$gap-n;
+        padding-bottom: 0;
+    }
+}
+}
