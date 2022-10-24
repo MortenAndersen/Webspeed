@@ -44,6 +44,6 @@
 		display: block;
 	}
 }
-.widget-slide-in:nth-child(odd) {
-	margin-bottom: 2rem;
+.widget-slide-in:nth-child(even) {
+	margin-top: 2rem;
 }
