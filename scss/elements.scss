@@ -480,7 +480,7 @@ g#pil-op {
     }
 }
 // skal forfines sammen men javascript
-.img-zoom {
+.zoom-in .img-zoom {
     transform: scale(0);
     position: relative;
     transition: 1s transform;

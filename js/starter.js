@@ -162,7 +162,7 @@ $('.m-a-t').click(function() {
 }
 
 $(window).scroll(function () {
-    $('.img-zoom').each(function () {
+    $('.zoom-in .img-zoom').each(function () {
         if (isScrolledIntoView(this) === true) {
             $(this).addClass('visible');
         }
@@ -170,7 +170,7 @@ $(window).scroll(function () {
 
 });
 
-$('.img-zoom').each(function () {
+$('.zoom-in .img-zoom').each(function () {
         if (isScrolledIntoView(this) === true) {
             $(this).addClass('visible');
         }
