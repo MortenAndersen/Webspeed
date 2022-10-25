@@ -310,18 +310,22 @@ function web_date_cat_author() {
 }
 
 // Title 
+/*
 function web_title() {
     $arr = array(" | " => "<br />");
     echo '<h1>' . strtr(get_the_title(),$arr) . '</h1>';
 }
+*/
+
+function web_title() {
+    echo '<h1>' . get_the_title() . '</h1>';
+}
 function get_web_title() {
-    $arr = array(" | " => "<br />");
-    $title = strtr(get_the_title(),$arr);
+    $title = get_the_title();
     return $title;
 }
 function get_clean_web_title() {
-    $arr = array(" | " => " ","<" => "",">" => "");
-    $title = strtr(get_the_title(),$arr);
+    $title = get_the_title();
     return $title;
 }
 // Title til TopImg
