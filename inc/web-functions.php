@@ -329,33 +329,35 @@ function get_clean_web_title() {
     return $title;
 }
 // Title til TopImg
-function web_img_title() {
+if (!function_exists('web_img_title')) {
+    function web_img_title() {
 
-    $caption = get_the_post_thumbnail_caption();
-    $arr = array(" | " => "<br />");
+        $caption = get_the_post_thumbnail_caption();
+        $arr = array(" | " => "<br />");
 
-if ( class_exists('ACF') ) {
-    if ( !get_field('skjul_titel') ) {
-        echo '<div class="wrap-no-pad">';
-            echo '<div class="top-caption">';
-                echo '<h1>' . strtr(get_the_title(),$arr) . '</h1>';
-                if(!empty($caption)) {
-                    echo '<h2>' . $caption . '</h2>';
-                }
+    if ( class_exists('ACF') ) {
+        if ( !get_field('skjul_titel') ) {
+            echo '<div class="wrap-no-pad">';
+                echo '<div class="top-caption">';
+                    echo '<h1>' . strtr(get_the_title(),$arr) . '</h1>';
+                    if(!empty($caption)) {
+                        echo '<h2>' . $caption . '</h2>';
+                    }
+                echo '</div>';
             echo '</div>';
-        echo '</div>';
-    } 
-}
+        } 
+    }
 
-    if ( !class_exists('ACF') ) {
-        echo '<div class="wrap-no-pad">';
-            echo '<div class="top-caption">';
-                echo '<h1>' . strtr(get_the_title(),$arr) . '</h1>';
-                if(!empty($caption)) {
-                    echo '<h2>' . $caption . '</h2>';
-                }
+        if ( !class_exists('ACF') ) {
+            echo '<div class="wrap-no-pad">';
+                echo '<div class="top-caption">';
+                    echo '<h1>' . strtr(get_the_title(),$arr) . '</h1>';
+                    if(!empty($caption)) {
+                        echo '<h2>' . $caption . '</h2>';
+                    }
+                echo '</div>';
             echo '</div>';
-        echo '</div>';
+        }
     }
 }
 
