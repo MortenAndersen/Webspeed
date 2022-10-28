@@ -242,30 +242,34 @@ article>.post-img {
 
 .name {
     font-weight: bold;
-    font-size: var(--font-xl);
-
+    font-size: var(--font-l);
+    display: none;
     span {
         display: block;
     }
     a {
         text-decoration: none;
         color: inherit;
+        &:hover {
+            color: inherit;
+        }
     }
 
     .site-desc {
         font-weight: normal;
         font-size: 60%;
-        margin: .3rem 0;
+        margin: .3rem 0 0 0;
     }
     .sticky-header & {
         transition: transform 1s ease;
         transform-origin: center left;
     }
 }
-
-.sticky-header.scroll .name {
-            transform: scale(.7);
-        }
+@media (min-width: 600px) {
+    .name {
+        display: block;
+    }
+}
 
 #background-video {
     width: 100vw;
@@ -443,18 +447,21 @@ article>.post-img {
     .sticky-header.scroll {
         border-bottom: 2px solid var(--border);
         padding-top: 0;
-         .logo  {
+         .logo-name  {
            transform: scale(.5);
         }
-    }
-    .logo {
-        transition: transform 1s ease;
-        transform-origin: center left;
     }
 }
 @media (max-width: 800px) {
     #logo {
         max-width: calc(100% - 2rem);
+    }
+}
+.logo-name {
+    transition: transform 1s ease;
+        transform-origin: center left;
+    .name {
+        align-self: end;
     }
 }
 .g-t-t {

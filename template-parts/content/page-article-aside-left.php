@@ -1,6 +1,6 @@
 <?php 
 
-echo '<main class="page-content"' . afstand_style() . '>';
+echo '<main class="page-content">';
 if ( is_page_template( 'page-aside-left-topimg.php' ) ) {
 			web_topimg();
 			web_front_fokus();

@@ -327,6 +327,46 @@
 		"oAP": "/inc/contact-acf.php",
 		"oF": 0
 		},
+	"/inc/css-var.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/inc/css-var.php",
+		"oF": 0
+		},
+	"/inc/customizer-color.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/inc/customizer-color.php",
+		"oF": 0
+		},
+	"/inc/customizer-header.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/inc/customizer-header.php",
+		"oF": 0
+		},
+	"/inc/customizer-menu-mobile.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/inc/customizer-menu-mobile.php",
+		"oF": 0
+		},
+	"/inc/customizer-menu.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/inc/customizer-menu.php",
+		"oF": 0
+		},
 	"/inc/design-list.php": {
 		"cB": 0,
 		"ft": 8192,

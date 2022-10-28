@@ -5,18 +5,22 @@
     .site-menu {
         display: flex;
         font-size: s.$font-s;
-
+        &.center {
+            align-items: center;
+        }
+        &.bottom {
+            align-items: end;
+        }
             a {
-            color: var(--menu-desktop-font);
+            color: var(--menu-desktop-color);
             padding: var(--menu-desktop-pad);
            
             &:hover {
-                color:  var(--menu-desktop-hover-font);
+                color:  var(--menu-desktop-hover-color);
             }
 
             &[aria-current=page] {
-                color: var(--menu-desktop-current-font);
-                background-color: var(--menu-desktop-current-bg);
+                color: var(--menu-desktop-current-color);
                 border-bottom: 1px solid;
                 margin-bottom: -1px;
             }
@@ -43,18 +47,18 @@
 
         li li {
             a {
-                color: var(--menu-desktop-sub-font);
+                color: var(--menu-desktop-sub-color);
                 padding: var(--menu-desktop-sub-pad);
                 border-bottom: none;
                 &:hover {
-                    color:  var(--menu-desktop-sub-hover-font);
+                    color:  var(--menu-desktop-sub-hover-color);
                 }
 
                 &[aria-current=page] {
                     margin-left: calc(var(--menu-desktop-sub-pad-side) * -1);
                     margin-right: calc(var(--menu-desktop-sub-pad-side) * -1);
                     background-color: var(--menu-desktop-sub-current-bg);
-                    color: var(--menu-desktop-sub-current-font);
+                    color: var(--menu-desktop-sub-current-color);
                     padding-left: calc(var(--menu-desktop-sub-pad-side) + .5rem);
                     padding-right: calc(var(--menu-desktop-sub-pad-side) + .5rem);
                     border-bottom: none;
@@ -66,23 +70,19 @@
         &.right-align {
             margin-left: auto;
             flex: inherit;
-             ul:not(.sub-menu) {
+             
+        }
+ul.first-lvl {
                 > li {
                     margin-left: 1rem;
                 }
             }
-        }
-
         ul {
             display: flex;
-            background: var(--header-desktop);
             a {
                 line-height: 2rem;
             }
-            li {
-                align-self: center;
-                margin: 0;
-            }
+            
 
             ul {
                 display: none;

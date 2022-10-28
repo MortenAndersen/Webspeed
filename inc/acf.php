@@ -253,25 +253,6 @@ acf_add_local_field_group(array(
 			'max_size' => '',
 			'mime_types' => '',
 		),
-		array(
-			'key' => 'field_62b43a09cfd63',
-			'label' => 'Fjern afstand i top (main)',
-			'name' => 'afstand_i_top',
-			'type' => 'true_false',
-			'instructions' => '',
-			'required' => 0,
-			'conditional_logic' => 0,
-			'wrapper' => array(
-				'width' => '',
-				'class' => '',
-				'id' => '',
-			),
-			'message' => '',
-			'default_value' => 0,
-			'ui' => 1,
-			'ui_on_text' => 'Ja',
-			'ui_off_text' => 'Nej',
-		),
 	),
 	'location' => array(
 		array(

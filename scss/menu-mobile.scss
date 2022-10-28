@@ -118,7 +118,7 @@
     }
 
     .mobile-menu a {
-        color: #fff;
+        color: var(--menu-mobile-color);
         opacity: .8;
         display: block;
         transition: .3s all;

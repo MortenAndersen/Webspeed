@@ -70,23 +70,16 @@ main {
     overflow: hidden;
     background: var(--main-bg);
     .wrap {
-        padding: 0 s.$gap-n s.$gap-n * 1.5 ;
+        padding: s.$gap-n;
     }
     .wrap-pad {
         padding: s.$gap-n;
     }
 }
 
-article {
-    //overflow: hidden;
-}
-
 aside {
     font-size: s.$font-s;
     line-height: s.$line-s;
-}
-.page-content {
-    padding-top: s.$gap-s;
 }
 
 .page-footer {
@@ -94,8 +87,7 @@ aside {
     font-size: s.$font-s;
     line-height: s.$line-s;
     padding-bottom: s.$gap-n;
-    background: var(--page-footer-bg);
-    color: var(--page-footer-font);
+    color: var(--footer-color);
 }
  
 .footer-col {
@@ -120,20 +112,14 @@ aside {
 }
 
 .page-header {
-    background: var(--header-phone);
-    padding: 1rem 0 0 0;
+    background: var(--header-bg);
+    color: var(--header-color);
+    padding: 1rem 0;
 }
 
-@media (min-width: b.$phone) {
-    .page-header {
-        background: var(--header-tablet);
-    }
-}
+
 
 @media (min-width: b.$menu-break) {
-    .page-header {
-        background: var(--header-desktop);
-    }
 
     .sticky {
         position: sticky;

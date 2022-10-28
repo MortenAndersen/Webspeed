@@ -4,7 +4,7 @@
 
 body {
     background-color: var(--body-bg);
-    color: var(--body-font);
+    color: var(--body-color);
     line-height: var(--body-line-height);
     font-size: var(--body-font-size);
 
@@ -196,16 +196,15 @@ article .bx-wrapper p {
 }
 
 article {
-    li {
-        max-width: 80ch;
-    }
-}
-ul,
+    ul,
 ol {
         li {
             margin-bottom: .5rem;
+            max-width: 80ch;
         }
     }
+}
+
 
 a {
     color: var(--link);

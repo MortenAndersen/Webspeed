@@ -7,60 +7,103 @@ if (!function_exists('logo_absolute')) {
 }
 
 
+     
+    
 if (!function_exists('web_logo')) {
     function web_logo() {
-        $logo_mobil = get_theme_file_path() . '/logo-mobil.png';
+    $logo_name  = get_theme_mod( 'webspeed_logo_checkbox' );
         
-        $custom_logo_id = get_theme_mod('custom_logo');
-        $logo           = wp_get_attachment_image_src($custom_logo_id, 'full');
 
-        if (file_exists($logo_mobil)) {
-            $logo_class = 'only-desktop';
-            list($width, $height) = getimagesize( $logo_mobil );
-        } else {
-            $logo_class = 'no-mobil-logo';
+        
+            $logo_mobil = get_theme_file_path() . '/logo-mobil.png';
+            
+            $custom_logo_id = get_theme_mod('custom_logo');
+            $logo           = wp_get_attachment_image_src($custom_logo_id, 'full');
+
+            if (file_exists($logo_mobil)) {
+                $logo_class = 'only-desktop';
+                list($width, $height) = getimagesize( $logo_mobil );
+            } else {
+                $logo_class = 'no-mobil-logo';
+            }
+
+        if( $logo_name == false ){
+            echo '<div class="logo-name">';
+            if (has_custom_logo()) {
+                echo '<div class="logo">';
+                    echo '<a class="' . $logo_class . '" href="' . home_url() . '"><img id="logo" width="' . $logo[1] . '" height="' . $logo[2]. '" src="' . esc_url($logo[0]) . '" alt="' . get_bloginfo('name') . '"></a>';
+                    if (file_exists($logo_mobil)) {
+                        echo '<a href="' . home_url() . '" class="only-mobile"><img id="logo-mobil" width="' . $width . '" height="' . $height . '" src="' . get_stylesheet_directory_uri() . '/logo-mobil.png" alt="' . get_bloginfo('name') . '"></a>';
+
+                    }
+                echo '</div>';
+                echo "\n";
+            } else {
+                if ( get_bloginfo( 'name' )  !== '' ) { 
+                    echo '<div class="name">';
+                    echo '<span class="site-name"><a href="' . home_url() . '">' . get_bloginfo( 'name' ) . '</a></span>';
+                
+                    if ( get_bloginfo( 'description' )  !== '' ) {
+                        echo '<span class="site-desc">' . get_bloginfo('description') . '</span>';
+                    } 
+                    echo '</div>';
+                    echo "\n";
+                } 
+            }
+            echo '</div>';
         }
 
-        if (has_custom_logo()) {
-            echo '<div class="logo">';
-                echo '<a class="' . $logo_class . '" href="' . home_url() . '"><img id="logo" width="' . $logo[1] . '" height="' . $logo[2]. '" src="' . esc_url($logo[0]) . '" alt="' . get_bloginfo('name') . '"></a>';
-                if (file_exists($logo_mobil)) {
-                    echo '<a href="' . home_url() . '" class="only-mobile"><img id="logo-mobil" width="' . $width . '" height="' . $height . '" src="' . get_stylesheet_directory_uri() . '/logo-mobil.png" alt="' . get_bloginfo('name') . '"></a>';
 
-                }
-            echo '</div>';
-            echo "\n";
-        } else {
-            if ( get_bloginfo( 'name' )  !== '' ) { 
-                echo '<div class="name">';
-                echo '<span class="site-name"><a href="' . home_url() . '">' . get_bloginfo( 'name' ) . '</a></span>';
-            
-                if ( get_bloginfo( 'description' )  !== '' ) {
-                    echo '<span class="site-desc">' . get_bloginfo('description') . '</span>';
-                } 
+        if( $logo_name == true ){
+            echo '<div class="logo-name flex">';
+            if (has_custom_logo()) {
+                echo '<div class="logo">';
+                    echo '<a class="' . $logo_class . '" href="' . home_url() . '"><img id="logo" width="' . $logo[1] . '" height="' . $logo[2]. '" src="' . esc_url($logo[0]) . '" alt="' . get_bloginfo('name') . '"></a>';
+                    if (file_exists($logo_mobil)) {
+                        echo '<a href="' . home_url() . '" class="only-mobile"><img id="logo-mobil" width="' . $width . '" height="' . $height . '" src="' . get_stylesheet_directory_uri() . '/logo-mobil.png" alt="' . get_bloginfo('name') . '"></a>';
+
+                    }
                 echo '</div>';
                 echo "\n";
             } 
+                if ( get_bloginfo( 'name' )  !== '' ) { 
+                    echo '<div class="name">';
+                    echo '<span class="site-name"><a href="' . home_url() . '">' . get_bloginfo( 'name' ) . '</a></span>';
+                
+                    if ( get_bloginfo( 'description' )  !== '' ) {
+                        echo '<span class="site-desc">' . get_bloginfo('description') . '</span>';
+                    } 
+                    echo '</div>';
+                    echo "\n";
+                } 
+            echo '</div>';
         }
+
     }
 }
+
+
 
 // Menu type
 
 if (!function_exists('web_menu')) {
     function web_menu() {
-        return 'site-menu';
+        $menu_vertical  = get_theme_mod( 'webspeed_menu_pos_dropdown' );
+
+        return 'site-menu ' . $menu_vertical;
+
         // megamenu
     }
 }
 
 // Menu desktop align
-if (!function_exists('web_menu_pos')) {
-    function web_menu_pos()
-    {
+function web_menu_pos() {
+    $menu_left  = get_theme_mod( 'webspeed_menu_left_checkbox' );
+    if( $menu_left == false ){
         echo 'right-align';
     }
 }
+
 
 // BackButton
 
@@ -80,7 +123,7 @@ function web_read_more() {
 // Edit link
 function web_edit_link() {
     if (!is_single()) {
-        edit_post_link(__('edit', 'webspeed-domain'), '<p>', '</p>');
+        edit_post_link(__('+', 'webspeed-domain'), '<p>', '</p>');
     }
 }
 
@@ -215,8 +258,7 @@ function web_topimg() {
 } 
 
 function web_topimg_blog() {
-    if ( has_post_thumbnail() ) {
-        
+    
         // Get the ID of the page set to Display Posts in Settings > Reading
         $page_for_posts = get_option( 'page_for_posts' ); 
 
@@ -240,6 +282,7 @@ function web_topimg_blog() {
                 echo '</div>';
             echo '</div>';
         } 
+    
         else {
             echo '<main class="page-content page-blog">';
             echo '<div class="wrap">';
@@ -248,7 +291,7 @@ function web_topimg_blog() {
                 echo '</h1>';
             echo '</div>';
         }
-    }
+    
 }
 
 function web_small_topimg() {
@@ -403,11 +446,14 @@ if (!function_exists('web_post_header_inject')) {
     }
 }
 
-if (!function_exists('web_header_class')) {
+
     function web_header_class() {
-        echo 'sticky-header';
+        $sticky_menu  = get_theme_mod( 'webspeed_sticky_checkbox' );
+        if( $sticky_menu == true ){
+            echo 'sticky-header';
+        } 
     }
-}
+
 
 // web_pre_footer_inject();
 if (!function_exists('web_pre_footer_inject')) {
@@ -415,14 +461,3 @@ if (!function_exists('web_pre_footer_inject')) {
 
     }
 }
-
-
-function afstand_style() {
-    if ( class_exists('ACF') ) {
-        if ( get_field('afstand_i_top') ) {
-            return ' style="padding-top:0;"';
-        }
-    } 
-}
-
-
