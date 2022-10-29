@@ -8,9 +8,9 @@
 .go-back {
     border: 1px solid var(--border);
     background: var(--main-bg);
+    color: inherit;
     border-radius: 100vmax;
     padding: .25em 2em;
-    
     transition: 1s all;
     cursor: pointer;
 

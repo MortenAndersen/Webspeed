@@ -67,6 +67,58 @@ function webspeed_customizer_color($wp_customize){
     ));
     /* ---------------------------------------------------------- */
 
+    $wp_customize->add_setting( 'link', array(
+                'default' => '#0073e5',
+                'transport' => 'refresh'
+    ));
+
+    $wp_customize->add_control( 'link', array(
+                'label' => '--link',
+                'type'  => 'color',
+                'section' => 'webspeed_section_color',
+                'settings' => 'link'
+    ));
+    /* ---------------------------------------------------------- */
+
+    $wp_customize->add_setting( 'link_hover', array(
+                'default' => '#0073e5',
+                'transport' => 'refresh'
+    ));
+
+    $wp_customize->add_control( 'link_hover', array(
+                'label' => '--link-hover',
+                'type'  => 'color',
+                'section' => 'webspeed_section_color',
+                'settings' => 'link_hover'
+    ));
+    /* ---------------------------------------------------------- */
+
+
+    $wp_customize->add_setting( 'pre_header_bg', array(
+                'default' => '#ffffff',
+                'transport' => 'refresh'
+    ));
+
+    $wp_customize->add_control( 'pre_header_bg', array(
+                'label' => '--pre-header-bg',
+                'type'  => 'color',
+                'section' => 'webspeed_section_color',
+                'settings' => 'pre_header_bg'
+    ));
+    /* ---------------------------------------------------------- */
+
+    $wp_customize->add_setting( 'pre_header_color', array(
+                'default' => '#222222',
+                'transport' => 'refresh'
+    ));
+
+    $wp_customize->add_control( 'pre_header_color', array(
+                'label' => '--pre-header-color',
+                'type'  => 'color',
+                'section' => 'webspeed_section_color',
+                'settings' => 'pre_header_color'
+    ));
+    /* ---------------------------------------------------------- */
 
     $wp_customize->add_setting( 'header_bg', array(
                 'default' => '#ffffff',
@@ -93,7 +145,59 @@ function webspeed_customizer_color($wp_customize){
                 'settings' => 'header_color'
     ));
     /* ---------------------------------------------------------- */
- 
+
+    $wp_customize->add_setting( 'border_color', array(
+                'default' => '#eeeeee',
+                'transport' => 'refresh'
+    ));
+
+    $wp_customize->add_control( 'border_color', array(
+                'label' => '--border',
+                'type'  => 'color',
+                'section' => 'webspeed_section_color',
+                'settings' => 'border_color'
+    ));
+    /* ---------------------------------------------------------- */
+    
+
+    $wp_customize->add_setting( 'pil_op', array(
+                'default' => '#c60202',
+                'transport' => 'refresh'
+    ));
+
+    $wp_customize->add_control( 'pil_op', array(
+                'label' => '--pil-op',
+                'type'  => 'color',
+                'section' => 'webspeed_section_color',
+                'settings' => 'pil_op'
+    ));
+    /* ---------------------------------------------------------- */
+
+    $wp_customize->add_setting( 'slider_bg', array(
+                'default' => '#0073e5;',
+                'transport' => 'refresh'
+    ));
+
+    $wp_customize->add_control( 'slider_bg', array(
+                'label' => '--slider-bg',
+                'type'  => 'color',
+                'section' => 'webspeed_section_color',
+                'settings' => 'slider_bg'
+    ));
+    /* ---------------------------------------------------------- */
+
+    $wp_customize->add_setting( 'slider_color', array(
+                'default' => '#ffffff;',
+                'transport' => 'refresh'
+    ));
+
+    $wp_customize->add_control( 'slider_color', array(
+                'label' => '--slider-color',
+                'type'  => 'color',
+                'section' => 'webspeed_section_color',
+                'settings' => 'slider_color'
+    ));
+    /* ---------------------------------------------------------- */
 }
  
 add_action( 'customize_register', 'webspeed_customizer_color' );

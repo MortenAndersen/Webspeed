@@ -30,7 +30,7 @@
         $('.mobile-menu ul').parent('li').append('<span class="menu-trigger" aria-label="Åben undermenu"></span>');
 
         // Sub menu toggle
-        //$('.current_page_ancestor > .menu-trigger').addClass('active-trigger');
+        $('.current_page_ancestor > .menu-trigger').addClass('active-trigger');
         $('.menu-trigger').click(function() {
             $(this).siblings('ul').slideToggle().toggleClass('mobile-sibling-open');
             $(this).toggleClass('active-trigger');

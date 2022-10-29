@@ -28,16 +28,64 @@ function root_css() {
 			echo '--body-color:#222;';
 		}
 
+		if( get_theme_mod( 'link' ) ) {
+			echo '--link:' . get_theme_mod( 'link' ) . '; ';
+		} else {
+			echo '--link:#0073e5;';
+		}
+
+		if( get_theme_mod( 'link_hover' ) ) {
+			echo '--link-hover:' . get_theme_mod( 'link_hover' ) . '; ';
+		} else {
+			echo '--link-hover:#0073e5;';
+		}
+
 		if( get_theme_mod( 'header_bg' ) ) {
 			echo '--header-bg:' . get_theme_mod( 'header_bg' ) . '; ';
 		} else {
 			echo '--header-bg:#fff;';
 		}
 
+		if( get_theme_mod( 'pre_header_bg' ) ) {
+			echo '--pre-header-bg:' . get_theme_mod( 'pre_header_bg' ) . '; ';
+		} else {
+			echo '--pre-header-bg:#fff;';
+		}
+
+		if( get_theme_mod( 'pre_header_color' ) ) {
+			echo '--pre-header-color:' . get_theme_mod( 'pre_header_color' ) . '; ';
+		} else {
+			echo '--pre-header-color:#222;';
+		}
+
 		if( get_theme_mod( 'header_color' ) ) {
 			echo '--header-color:' . get_theme_mod( 'header_color' ) . '; ';
 		} else {
 			echo '--header-color:#222;';
+		}
+
+		if( get_theme_mod( 'border_color' ) ) {
+			echo '--border:' . get_theme_mod( 'border_color' ) . '; ';
+		} else {
+			echo '--border:#eee;';
+		}
+
+		if( get_theme_mod( 'pil_op' ) ) {
+			echo '--pil-op:' . get_theme_mod( 'pil_op' ) . '; ';
+		} else {
+			echo '--pil-op:#c60202;';
+		}
+
+		if( get_theme_mod( 'slider_bg' ) ) {
+			echo '--slider-bg:' . get_theme_mod( 'slider_bg' ) . '; ';
+		} else {
+			echo '--slider-bg:#0073e5;';
+		}
+
+		if( get_theme_mod( 'slider_color' ) ) {
+			echo '--slider-color:' . get_theme_mod( 'slider_color' ) . '; ';
+		} else {
+			echo '--slider-color:#fff;';
 		}
 
 		if( get_theme_mod( 'menu_desktop_color' ) ) {
@@ -115,7 +163,43 @@ function root_css() {
 		if( get_theme_mod( 'menu_mobile_border' ) ) {
 			echo '--menu-mobile-border:' . get_theme_mod( 'menu_mobile_border' ) . '; ';
 		} else {
-			echo '--menu-mobile-border:#b2b2b2';
+			echo '--menu-mobile-border:#b2b2b2;';
+		}
+
+		if( get_theme_mod( 'menu_mobile_trigger_bg' ) ) {
+			echo '--menu-mobile-trigger-bg:' . get_theme_mod( 'menu_mobile_trigger_bg' ) . '; ';
+		} else {
+			echo '--menu-mobile-trigger-bg:transparent;';
+		}
+
+		if( get_theme_mod( 'menu_mobile_trigger_color' ) ) {
+			echo '--menu-mobile-trigger-color:' . get_theme_mod( 'menu_mobile_trigger_color' ) . '; ';
+		} else {
+			echo '--menu-mobile-trigger-color:#fff;';
+		}
+
+		if( get_theme_mod( 'menu_mobile_trigger_active_bg' ) ) {
+			echo '--menu-mobile-trigger-active-bg:' . get_theme_mod( 'menu_mobile_trigger_active_bg' ) . '; ';
+		} else {
+			echo '--menu-mobile-trigger-active-bg:rgba(0,0,0,.2);';
+		}
+
+		if( get_theme_mod( 'menu_mobile_trigger_active_color' ) ) {
+			echo '--menu-mobile-trigger-active-color:' . get_theme_mod( 'menu_mobile_trigger_active_color' ) . '; ';
+		} else {
+			echo '--menu-mobile-trigger-active-color:#fff;';
+		}
+
+		if( get_theme_mod( 'menu_icon' ) ) {
+			echo '--menu-icon:' . get_theme_mod( 'menu_icon' ) . '; ';
+		} else {
+			echo '--menu-icon:#111;';
+		}
+
+		if( get_theme_mod( 'menu_icon_close' ) ) {
+			echo '--menu-icon-close:' . get_theme_mod( 'menu_icon_close' ) . '; ';
+		} else {
+			echo '--menu-icon-close:#fff;';
 		}
 
 

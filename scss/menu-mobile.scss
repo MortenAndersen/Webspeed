@@ -30,13 +30,13 @@
         width: 12px;
         margin-left: -6px;
         height: 1px;
-        background: var(--menu-mobile-trigger-font);
+        background: var(--menu-mobile-trigger-color);
         transition: all .3s ease-in-out;
     }
 
     .menu-trigger-active-trigger:after,
     .menu-trigger.active-trigger:before {
-        background: var(--menu-mobile-trigger-active-font);
+        background: var(--menu-mobile-trigger-active-color);
     }
 
     .menu-trigger:before {

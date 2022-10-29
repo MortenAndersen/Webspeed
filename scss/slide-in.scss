@@ -3,7 +3,7 @@
 	top: 100px;
 	z-index: 101;
 	background: var(--slider-bg);
-	color: var(--slider-txt);
+	color: var(--slider-color);
 	border-radius: 0 3px 3px 0;
 	padding: 1rem;
 	left: -250px;
@@ -32,7 +32,7 @@
     	margin: 0 0 .5rem 0;
     }
     ul.kontakt-con svg {
-    	fill: var(--slider-txt);
+    	fill: var(--slider-color);
     }
 }
 

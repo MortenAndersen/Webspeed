@@ -56,6 +56,92 @@ function webspeed_customizer_menu_mobile($wp_customize){
     ));
 
     /* ---------------------------------------------------------- */
+
+    $wp_customize->add_setting( 'menu_mobile_trigger_bg', array(
+                'default' => '',
+                'transport' => 'refresh'
+    ));
+
+    $wp_customize->add_control( 'menu_mobile_trigger_bg', array(
+                'label' => '--menu-mobile-trigger-bg',
+                'type'  => 'color',
+                'section' => 'webspeed_section_menu_mobile',
+                'settings' => 'menu_mobile_trigger_bg'
+    ));
+
+    /* ---------------------------------------------------------- */
+
+    $wp_customize->add_setting( 'menu_mobile_trigger_color', array(
+                'default' => '#ffffff',
+                'transport' => 'refresh'
+    ));
+
+    $wp_customize->add_control( 'menu_mobile_trigger_color', array(
+                'label' => '--menu-mobile-trigger-color',
+                'type'  => 'color',
+                'section' => 'webspeed_section_menu_mobile',
+                'settings' => 'menu_mobile_trigger_color'
+    ));
+
+    /* ---------------------------------------------------------- */
+
+
+
+    $wp_customize->add_setting( 'menu_mobile_trigger_active_bg', array(
+                'default' => '',
+                'transport' => 'refresh'
+    ));
+
+    $wp_customize->add_control( 'menu_mobile_trigger_active_bg', array(
+                'label' => '--menu-mobile-trigger-active-bg',
+                'type'  => 'color',
+                'section' => 'webspeed_section_menu_mobile',
+                'settings' => 'menu_mobile_trigger_active_bg'
+    ));
+
+    /* ---------------------------------------------------------- */
+
+    $wp_customize->add_setting( 'menu_mobile_trigger_active_color', array(
+                'default' => '',
+                'transport' => 'refresh'
+    ));
+
+    $wp_customize->add_control( 'menu_mobile_trigger_active_color', array(
+                'label' => '--menu-mobile-trigger-active-color',
+                'type'  => 'color',
+                'section' => 'webspeed_section_menu_mobile',
+                'settings' => 'menu_mobile_trigger_active_color'
+    ));
+
+    /* ---------------------------------------------------------- */
+
+    $wp_customize->add_setting( 'menu_icon', array(
+                'default' => '#111111',
+                'transport' => 'refresh'
+    ));
+
+    $wp_customize->add_control( 'menu_icon', array(
+                'label' => '--menu-icon',
+                'type'  => 'color',
+                'section' => 'webspeed_section_menu_mobile',
+                'settings' => 'menu_icon'
+    ));
+
+    /* ---------------------------------------------------------- */
+
+    $wp_customize->add_setting( 'menu_icon_close', array(
+                'default' => '#ffffff',
+                'transport' => 'refresh'
+    ));
+
+    $wp_customize->add_control( 'menu_icon_close', array(
+                'label' => '--menu-icon-close',
+                'type'  => 'color',
+                'section' => 'webspeed_section_menu_mobile',
+                'settings' => 'menu_icon_close'
+    ));
+
+    /* ---------------------------------------------------------- */
  
 }
  

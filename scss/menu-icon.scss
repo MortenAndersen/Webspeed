@@ -14,10 +14,6 @@
     svg {
         fill: var(--menu-icon);
         transition: .5s all;
-
-        &:hover {
-            fill: var(--menu-icon-hover);
-        }
     }
 
     margin-left: auto;

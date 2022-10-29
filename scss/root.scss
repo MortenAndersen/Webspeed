@@ -9,12 +9,12 @@
   //--main-bg: #fff;
   //--footer-color: #333;
   --logo-text: #fff;
-  --link: #0073e5;
-  --link-hover: #111;
+  //--link: #0073e5;
+  //--link-hover: #0073e5;
   --title-highlight :#e56101;
   --article-font-size: 1.06rem;
   --article-line-height: 1.4;
-  --border: #eee;
+  //--border: #eee;
   --title-border: #e56101;
   --blockquote: rgba(0,0,0,.1);
   --menu-desktop-pad: 0;
@@ -34,23 +34,12 @@
   //--menu-mobile-color: #ffffff;
   --menu-mobile-sub-bg: rgba(255,255,255,.1);
   //--menu-mobile-border: #b2b2b2;
-  --menu-mobile-trigger-bg: transparent;
-  --menu-mobile-trigger-active-bg: #0052cd52;
-  --menu-mobile-trigger-font: #fff;
-  --menu-mobile-trigger-active-font: #fff;
-  --menu-icon: #111;
-  --menu-icon-hover: #555;
-  --menu-icon-close: #fff;
-  --bg-color-1: #AD0909;
-  --bg-color-font-1: #fff;
-  --bg-color-2: #DB6102;
-  --bg-color-font-2: #fff;
-  --bg-color-3: #F2C10F;
-  --bg-color-font-3: #333;
-  --bg-color-4: #9ADB02;
-  --bg-color-font-4: #333;
-  --bg-color-5: #02F948;
-  --bg-color-font-5: #333;
+  //--menu-mobile-trigger-bg: transparent;
+  //--menu-mobile-trigger-active-bg: #0052cd52;
+  //--menu-mobile-trigger-color: #fff;
+  //--menu-mobile-trigger-active-color: #fff;
+  //--menu-icon: #111;
+  //--menu-icon-close: #fff;
   --parallax-font: #222;
   --mobile-search-border: #b2b2b2;
   --mobile-search-text-bg: #444;
@@ -61,8 +50,8 @@
   --fokus-bg: linear-gradient(to left, rgb(237, 33, 58), rgb(147, 41, 30));
   --fokus-color: #fff;
   --a-fokus-color: chartreuse;
-  --pre-header-bg: #fff;
-  --pre-header-color: #222;
+  //--pre-header-bg: #fff;
+  //--pre-header-color: #222;
   --menu-pre-header-font: #222;
   --menu-pre-header-hover: #333;
   --menu-pre-header-active: #0073e5;
@@ -89,10 +78,10 @@
   --submit-font-hover: #fff;
   --submit-border: #0073e5;
   --search-icon: #0073e5;
-  --pil-op: red;
+  //--pil-op: #c60202;
 
-  --slider-bg: #0073e5;
-  --slider-txt: #fff;
+  //--slider-bg: #0073e5;
+  //--slider-color: #fff;
 
   --acc-head-bg: #f9f9f9;
 
@@ -118,4 +107,3 @@
     --gap: 3rem
   }
 }
-
