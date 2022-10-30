@@ -2,14 +2,15 @@
 @use 'elements/size'as s;
 
 @media (min-width: b.$menu-break) {
-	.widget_nav_menu:not(.widget-slide-in) {
+	.widget_nav_menu.aside-left-widget {
 		line-height: 32px;
 		a {
             color: var(--menu-desktop-font);
-            padding: var(--menu-desktop-pad);
-            padding: 5px 38px 5px 0;
+            padding: .5rem 0;
             border-bottom: 1px solid var(--border);
-           
+           display: block;
+           text-decoration: none;
+           line-height: 1.1;
             &:hover {
                 color:  var(--menu-desktop-hover-font);
             }

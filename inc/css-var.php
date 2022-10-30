@@ -88,6 +88,30 @@ function root_css() {
 			echo '--slider-color:#fff;';
 		}
 
+		if( get_theme_mod( 'top_caption_bg' ) ) {
+			echo '--top-caption-bg:' . get_theme_mod( 'top_caption_bg' ) . 'cc; ';
+		} else {
+			echo '--top-caption-bg:#000000cc;';
+		}
+
+		if( get_theme_mod( 'top_caption_color' ) ) {
+			echo '--top-caption-color:' . get_theme_mod( 'top_caption_color' ) . '; ';
+		} else {
+			echo '--top-caption-color:#fff;';
+		}
+
+		if( get_theme_mod( 'submit_bg' ) ) {
+			echo '--submit-bg:' . get_theme_mod( 'submit_bg' ) . '; ';
+		} else {
+			echo '--submit-bg:#0073e5;';
+		}
+
+		if( get_theme_mod( 'submit_color' ) ) {
+			echo '--submit-color:' . get_theme_mod( 'submit_color' ) . '; ';
+		} else {
+			echo '--submit-color:#fff;';
+		}
+
 		if( get_theme_mod( 'menu_desktop_color' ) ) {
 			echo '--menu-desktop-color:' . get_theme_mod( 'menu_desktop_color' ) . '; ';
 		} else {

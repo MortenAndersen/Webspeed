@@ -1,5 +1,6 @@
 .pre-header-con {
 	background: var(--pre-header-bg);
+	color: var(--pre-header-color);
 }
 .pre-header {
 	flex-direction: row-reverse;
@@ -11,13 +12,16 @@
 		gap: 1rem;
 		a {
 			text-decoration: none;
-			color: var(--menu-pre-header-font);
-			&:hover {
-				color: var(--menu-pre-header-hover);
-			}
+			
 			&[aria-current=page] {
-				color: var(--menu-pre-header-active);
+				border-bottom: 1px solid;
 			}
+		}
+	}
+	a {
+		color: inherit;
+		&:hover {
+			color: inherit;
 		}
 	}
 }

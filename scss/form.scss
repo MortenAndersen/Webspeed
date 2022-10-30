@@ -66,6 +66,15 @@ form[role=search].wp-block-search {
     }
     }
 }
+
+.pre-header-con {
+    form[role=search],
+    form[role=search].wp-block-search {
+        >div {
+            max-width: 300px;
+        }
+    }
+}
 form[role=search].wp-block-search.wp-block-search__icon-button {
     >div {
         grid-template-columns: 1fr 30px;

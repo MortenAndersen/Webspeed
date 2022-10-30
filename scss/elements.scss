@@ -321,9 +321,9 @@ article>.post-img {
 
 .top-caption {
     color: #fff;
-    background: var(--top-caption);
+    background: var(--top-caption-bg);
+    color: var(--top-caption-color);
     padding: 2rem;
-    border-top: 1px solid #ffffff2e;
 }
 
 @media (min-width: 800px) {
