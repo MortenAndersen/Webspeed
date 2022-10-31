@@ -20,7 +20,7 @@ function webspeed_customizer_numbers($wp_customize){
     ));
 
     $wp_customize->add_control( 'page_width', array(
-                'label' => '--page-width (px)',
+                'label' => '--page-width (1100px)',
                 'type'  => 'number',
                 'section' => 'webspeed_section_numbers',
                 'settings' => 'page_width'
@@ -34,7 +34,7 @@ function webspeed_customizer_numbers($wp_customize){
     ));
 
     $wp_customize->add_control( 'aside_left', array(
-                'label' => '--aside-left (%)',
+                'label' => '--aside-left (24%)',
                 'type'  => 'number',
                 'section' => 'webspeed_section_numbers',
                 'settings' => 'aside_left'
@@ -48,7 +48,7 @@ function webspeed_customizer_numbers($wp_customize){
     ));
 
     $wp_customize->add_control( 'aside_right', array(
-                'label' => '--aside-right (%)',
+                'label' => '--aside-right (24%)',
                 'type'  => 'number',
                 'section' => 'webspeed_section_numbers',
                 'settings' => 'aside_right'

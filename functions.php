@@ -16,6 +16,23 @@ function web_scripts() {
 }
 add_action('wp_enqueue_scripts', 'web_scripts');
 
+// ----------------------------------------------------------
+
+if( get_theme_mod( 'google_font' ) ) {
+      
+
+
+
+function atu_gfonts_prefetch() {
+    $google_font_link = get_theme_mod( 'google_font' );
+    echo '<link href="' . $google_font_link . '" rel="stylesheet">';
+  echo '<link rel="preconnect" href="https://fonts.googleapis.com">';
+  echo '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>';
+ }
+ add_action( 'wp_head', 'atu_gfonts_prefetch' );
+        
+}
+
 
 
 // ---------------------------------------------------
@@ -148,6 +165,7 @@ require get_parent_theme_file_path('/inc/elements-shortcode.php');
 require get_parent_theme_file_path('/inc/web-functions.php');
 require get_parent_theme_file_path('/inc/css-var.php');
 require get_parent_theme_file_path('/inc/customizer-numbers.php');
+require get_parent_theme_file_path('/inc/customizer-fonts.php');
 require get_parent_theme_file_path('/inc/customizer-header.php');
 require get_parent_theme_file_path('/inc/customizer-color.php');
 require get_parent_theme_file_path('/inc/customizer-menu.php');

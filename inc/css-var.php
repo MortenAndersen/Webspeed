@@ -244,6 +244,12 @@ function root_css() {
 			echo '--aside-right:24%;';
 		}
 
+		if( get_theme_mod( 'google_font_family' ) ) {
+			echo '--font-family:' . get_theme_mod( 'google_font_family' ) . '; ';
+		} else {
+			echo '--font-family:arial,x-locale-body,sans-serif;';
+		}
+
 
 
 		echo '}';
