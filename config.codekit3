@@ -367,6 +367,14 @@
 		"oAP": "/inc/customizer-menu.php",
 		"oF": 0
 		},
+	"/inc/customizer-numbers.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/inc/customizer-numbers.php",
+		"oF": 0
+		},
 	"/inc/design-list.php": {
 		"cB": 0,
 		"ft": 8192,

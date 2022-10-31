@@ -147,6 +147,7 @@ require get_parent_theme_file_path('/inc/elements-shortcode.php');
 // Theme functions
 require get_parent_theme_file_path('/inc/web-functions.php');
 require get_parent_theme_file_path('/inc/css-var.php');
+require get_parent_theme_file_path('/inc/customizer-numbers.php');
 require get_parent_theme_file_path('/inc/customizer-header.php');
 require get_parent_theme_file_path('/inc/customizer-color.php');
 require get_parent_theme_file_path('/inc/customizer-menu.php');

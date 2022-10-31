@@ -226,6 +226,24 @@ function root_css() {
 			echo '--menu-icon-close:#fff;';
 		}
 
+		if( get_theme_mod( 'page_width' ) ) {
+			echo '--page-width:' . get_theme_mod( 'page_width' ) . 'px; ';
+		} else {
+			echo '--page-width:1100px;';
+		}
+
+		if( get_theme_mod( 'aside_left' ) ) {
+			echo '--aside-left:' . get_theme_mod( 'aside_left' ) . '%; ';
+		} else {
+			echo '--aside-left:24%;';
+		}
+
+		if( get_theme_mod( 'aside_right' ) ) {
+			echo '--aside-right:' . get_theme_mod( 'aside_right' ) . '%; ';
+		} else {
+			echo '--aside-right:24%;';
+		}
+
 
 
 		echo '}';
