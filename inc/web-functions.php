@@ -249,10 +249,13 @@ function web_img() {
 
 function web_topimg() {
     $caption = get_the_post_thumbnail_caption();
+    $show_h1  = get_theme_mod( 'webspeed_h1' );
     if ( has_post_thumbnail() ) {
         echo '<div class="top-post-img">';
         the_post_thumbnail( '', [ 'loading' => false]);
-            web_img_title();
+            if ( !$show_h1 ) {
+                web_img_title();
+            }
         echo '</div>';
     }
 } 
@@ -351,14 +354,6 @@ function web_date_cat_author() {
     echo  '<div class="author">' . get_the_author_meta('display_name') . '</div>';
     echo '</div>';
 }
-
-// Title 
-/*
-function web_title() {
-    $arr = array(" | " => "<br />");
-    echo '<h1>' . strtr(get_the_title(),$arr) . '</h1>';
-}
-*/
 
 function web_title() {
     echo '<h1>' . get_the_title() . '</h1>';

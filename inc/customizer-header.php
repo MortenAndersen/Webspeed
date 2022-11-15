@@ -56,6 +56,20 @@ function webspeed_customizer_header($wp_customize){
     /* ---------------------------------------------------------- */
 
       //add setting
+    $wp_customize->add_setting( 'webspeed_h1', array(
+                'default' => '',
+    ));
+
+    $wp_customize->add_control( 'h1_control', array(
+                'label' => 'Vis H1 i content',
+                'type'  => 'checkbox',
+                'section' => 'webspeed_section_header',
+                'settings' => 'webspeed_h1'
+    ));
+
+    /* ---------------------------------------------------------- */
+
+      //add setting
     $wp_customize->add_setting( 'webspeed_menu_pos_dropdown', array(
                 'default' => '',
     ));

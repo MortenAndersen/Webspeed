@@ -9,6 +9,10 @@ echo '<main class="page-content">';
     echo '<div class="wrap aside-article-aside">';
 		echo '<article>';
 			while (have_posts()) : the_post();
+				$show_h1  = get_theme_mod( 'webspeed_h1' );
+				if ( $show_h1 ) {
+					web_title();
+				}
 				the_content();
 			endwhile;
 

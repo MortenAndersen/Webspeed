@@ -7,6 +7,10 @@ if ( is_page_template( 'page-aside-right-topimg.php' ) ) {
 	echo '<div class="wrap article-aside">';
 		echo '<article>';
 			while (have_posts()) : the_post();
+				$show_h1  = get_theme_mod( 'webspeed_h1' );
+				if ( $show_h1 ) {
+					web_title();
+				}
 				the_content();
 			endwhile;
 } elseif ( is_page_template( 'page-aside-right-titleimg.php' ) ) {
