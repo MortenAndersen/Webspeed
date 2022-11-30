@@ -245,7 +245,9 @@ article>.post-img {
     flex-flow: column;
     height: 100%;
 }
-
+.the-excerpt {
+    margin-bottom: 1rem;
+}
 .name {
     font-weight: bold;
     font-size: var(--font-l);
