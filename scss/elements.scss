@@ -240,6 +240,12 @@ article>.post-img {
     margin: 0 0 s.$gap-s 0;
 }
 
+.loop-post-txt {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
 .name {
     font-weight: bold;
     font-size: var(--font-l);
