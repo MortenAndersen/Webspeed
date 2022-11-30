@@ -60,23 +60,25 @@ if ( $loop->have_posts() ) {
                 echo '</div>';
             }
 
-            // Title
-            if ( $link == 'yes') {
-                echo '<h3 class="loop-title"><a href="' . get_the_permalink() . '">' . get_web_title() . '</a></h3>';
-            } else {
-                echo '<h3 class="loop-title">' . get_web_title() . '</h3>';
-            }
+            echo '<div class="loop-post-txt">';
+                // Title
+                if ( $link == 'yes') {
+                    echo '<h3 class="loop-title"><a href="' . get_the_permalink() . '">' . get_web_title() . '</a></h3>';
+                } else {
+                    echo '<h3 class="loop-title">' . get_web_title() . '</h3>';
+                }
 
-            // the_excerpt
-            if ( $excerpt == 'yes') {
-                web_excerpt();
-            }
+                // the_excerpt
+                if ( $excerpt == 'yes') {
+                    web_excerpt();
+                }
 
-            // Read more
-            if ( $read_more == 'yes' && $link != 'no') {
-                web_read_more();
-            }
-            web_edit_link();
+                // Read more
+                if ( $read_more == 'yes' && $link != 'no') {
+                    web_read_more();
+                }
+                web_edit_link();
+            echo '</div>';
 
             echo '</div>';
 		endwhile; wp_reset_query();

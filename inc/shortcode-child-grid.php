@@ -57,22 +57,23 @@ while ( $child_query->have_posts() ) :
                 }
             echo '</div>';
         }
+        echo '<div class="loop-post-txt">';
+            if ( $title == 'yes') {
+                echo '<h3><a href="' . get_the_permalink() . '" rel="bookmark" title="' .get_clean_web_title() . '">' . get_web_title() . '</a></h3>';
+            }
+            
+            // the_excerpt
+            if ( $excerpt == 'yes') {
+                web_excerpt();
+            }
 
-        if ( $title == 'yes') {
-            echo '<h3><a href="' . get_the_permalink() . '" rel="bookmark" title="' .get_clean_web_title() . '">' . get_web_title() . '</a></h3>';
-        }
-        
-        // the_excerpt
-        if ( $excerpt == 'yes') {
-            web_excerpt();
-        }
+            // Read more
+            if ( $read_more == 'yes') {
+                web_read_more();
+            }
 
-        // Read more
-        if ( $read_more == 'yes') {
-            web_read_more();
-        }
-
-        web_edit_link();
+            web_edit_link();
+        echo '</div>';
     echo '</div>';
 endwhile;
 
