@@ -53,7 +53,7 @@ if ( $loop->have_posts() ) {
 
 		while ( $loop->have_posts() ) : $loop->the_post();
 			$classes = get_post_class( '', $post->ID );
-            echo '<div class="poost-loop">';
+            echo '<div class="post-loop">';
 
             
             // thumbnail
