@@ -23,15 +23,13 @@
     margin-bottom: s.$gap-n;
 }
 
-.oversigt-post-img {
-    margin-bottom: s.$gap-s;
-}
-.oversigt {
-    > div {
+
+
+.post-loop {
         display: flex;
         flex-flow: column
     }
-}
+
 
 article>.post-img {
     border-bottom: 1px solid var(--border);
