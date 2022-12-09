@@ -29,7 +29,7 @@
         >.current-menu-parent,
         .current-menu-ancestor {
             > a {
-                border-bottom: 1px solid var(--menu-desktop-current-font);
+                border-bottom: 1px solid var(--menu-desktop-current-color);
                 margin-bottom: -1px;
             }
             .current-menu-ancestor  {
@@ -39,7 +39,7 @@
                     &::before {
                         content: '-';
                         padding-right: 1ch;
-                        color: var(--menu-desktop-current-font);
+                        color: var(--menu-desktop-current-color);
                     }
                 }
             }
