@@ -136,6 +136,13 @@ function web_excerpt() {
 
 // Thumbnail
 
+function web_foto() {
+    $img_description = get_post(get_post_thumbnail_id())->post_content;
+    if ( $img_description ) {
+        echo '<div class="photo-credit">Foto: '. $img_description . '</div>';
+    }
+}
+
 function web_blog_thumbnail() {
     if ( has_post_thumbnail() ) {
             echo '<div class="img-zoom oversigt-post-img">';
@@ -256,6 +263,7 @@ function web_topimg() {
             if ( !$show_h1 ) {
                 web_img_title();
             }
+            web_foto();
         echo '</div>';
     }
 } 

@@ -507,3 +507,17 @@ g#pil-op {
 .max-width-80 {
     max-width: 80ch;
 }
+.photo-credit { display: none; }
+@media (min-width: b.$menu-break ) {
+.photo-credit {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    display: inline-block;
+    font-size: .6rem;
+    background: rgba(0,0,0,.7);
+    color: #fff;
+    padding: 3px;
+    line-height: 1;
+}
+}
