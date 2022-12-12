@@ -251,6 +251,19 @@ function webspeed_customizer_color($wp_customize){
     ));
     /* ---------------------------------------------------------- */
 
+    $wp_customize->add_setting( 'sticky_scroll_bg', array(
+                'default' => '#f2f2f2',
+                'transport' => 'refresh'
+    ));
+
+    $wp_customize->add_control( 'sticky_scroll_bg', array(
+                'label' => '--sticky-scroll-bg',
+                'type'  => 'color',
+                'section' => 'webspeed_section_color',
+                'settings' => 'sticky_scroll_bg'
+    ));
+    /* ---------------------------------------------------------- */
+
 }
  
 add_action( 'customize_register', 'webspeed_customizer_color' );

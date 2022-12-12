@@ -112,6 +112,12 @@ function root_css() {
 			echo '--submit-color:#fff;';
 		}
 
+		if( get_theme_mod( 'sticky_scroll_bg' ) ) {
+			echo '--sticky-scroll-bg:' . get_theme_mod( 'sticky_scroll_bg' ) . '; ';
+		} else {
+			echo '--sticky-scroll-bg:#f2f2f2;';
+		}
+
 		if( get_theme_mod( 'menu_desktop_color' ) ) {
 			echo '--menu-desktop-color:' . get_theme_mod( 'menu_desktop_color' ) . '; ';
 		} else {
