@@ -431,7 +431,6 @@ article>.post-img {
         display: grid;
     }
 }
-
 .page-footer {
     .wp-block-image {
         margin: 0;
@@ -458,6 +457,7 @@ article>.post-img {
         padding-top: 0;
          .logo-name  {
            transform: scale(.5);
+           max-height: 55px;
         }
     }
 }
@@ -467,7 +467,7 @@ article>.post-img {
     }
 }
 .logo-name {
-    transition: transform 1s ease;
+    transition: transform .75s ease;
         transform-origin: center left;
     .name {
         align-self: end;
