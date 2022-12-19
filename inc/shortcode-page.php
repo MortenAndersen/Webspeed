@@ -23,14 +23,12 @@ function web_page($atts) {
 
 require get_parent_theme_file_path('/inc/grid-gap.php');
 /* -------------------------------------- */
-
     $loop = new WP_Query( array(
         'post_type' => 'page',
         'post__in' => explode( ',', $id ),
         'orderby' => $orderby,
         'order' => $order,     
     ));
-
 /* -------------------------------------- */
 
 if ( $loop->have_posts() ) {

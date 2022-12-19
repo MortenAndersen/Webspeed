@@ -59,47 +59,48 @@ if ( $loop->have_posts() ) {
 
             
 
-            // thumbnail
-            if ( has_post_thumbnail() && $img == 'yes' ) {
-                echo '<div class="loop-post-img">';
-                if ( $link == 'yes') {
-                    echo '<div class="img-zoom">';
-                        echo '<a href="' . get_the_permalink() . '">';
-                            the_post_thumbnail('webspeed-post');
-                        echo '</a>';
-                        echo '</div>';
-                } else {
-                    the_post_thumbnail('webspeed-post');
-                } 
+                // thumbnail
+                if ( has_post_thumbnail() && $img == 'yes' ) {
+                    echo '<div class="loop-post-img">';
+                    if ( $link == 'yes') {
+                        echo '<div class="img-zoom">';
+                            echo '<a href="' . get_the_permalink() . '">';
+                                the_post_thumbnail('webspeed-post');
+                            echo '</a>';
+                            echo '</div>';
+                    } else {
+                        the_post_thumbnail('webspeed-post');
+                    } 
+                    echo '</div>';
+                }
+                echo '<div class="loop-post-txt">';
+                    // Date
+                    if ( $date == 'yes' && $date_cat == 'no') {
+                        web_post_date();
+                    }
+
+                    if ( $date_cat != 'no') {
+                        web_date_cat();
+                    }
+
+                                // Title
+                    if ( $link == 'yes') {
+                        echo '<h4 class="loop-title"><a href="' . get_the_permalink() . '">' . get_web_title() . '</a></h4>';
+                    } else {
+                        echo '<h4 class="loop-title">' . get_web_title() . '</h4>';
+                    }
+
+                    // the_excerpt
+                    if ( $excerpt == 'yes') {
+                        web_excerpt();
+                    }
+
+                    // Read more
+                    if ( $read_more == 'yes' && $link != 'no') {
+                        web_read_more();
+                    }
+
                 echo '</div>';
-            }
-
-            // Date
-            if ( $date == 'yes' && $date_cat == 'no') {
-                web_post_date();
-            }
-
-            if ( $date_cat != 'no') {
-                web_date_cat();
-            }
-
-                        // Title
-            if ( $link == 'yes') {
-                echo '<h4 class="loop-title"><a href="' . get_the_permalink() . '">' . get_web_title() . '</a></h4>';
-            } else {
-                echo '<h4 class="loop-title">' . get_web_title() . '</h4>';
-            }
-
-            // the_excerpt
-            if ( $excerpt == 'yes') {
-                web_excerpt();
-            }
-
-            // Read more
-            if ( $read_more == 'yes' && $link != 'no') {
-                web_read_more();
-            }
-
             echo '</div>';
 		endwhile; wp_reset_query();
     echo '</div>';
