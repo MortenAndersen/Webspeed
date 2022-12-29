@@ -46,17 +46,6 @@
         $('.current-menu-item .menu-trigger').addClass('active-trigger');
 
 
-// -------------------------------------
-
-/*
-$('.widget_nav_menu .menu-item-has-children').append('<span class="m-a-t"></span>');
-$('.widget_nav_menu .current_page_item .ma-a-t').addClass('active-trigger');
-$('.m-a-t').click(function() {
-            $(this).siblings('ul').slideToggle().toggleClass('mobile-sibling-open');
-            $(this).toggleClass('active-trigger');
-        });
-*/
-
 //--------------------------
         // Video
         $('.video, .wp-block-embed__wrapper').fitVids();
@@ -88,7 +77,8 @@ $('.m-a-t').click(function() {
                 auto: true,
                 speed: 2000,
                 pause: 6000,
-                autoHover: true
+                autoHover: true,
+                touchEnabled: false
             });
         });
 
@@ -102,7 +92,8 @@ $('.m-a-t').click(function() {
                 auto: true,
                 speed: 2000,
                 pause: 6000,
-                autoHover: true
+                autoHover: true,
+                touchEnabled: false
             });
         });
 
@@ -116,7 +107,8 @@ $('.m-a-t').click(function() {
                 auto: true,
                 speed: 2000,
                 pause: 6000,
-                autoHover: true
+                autoHover: true,
+                touchEnabled: false
             });
         });
 
