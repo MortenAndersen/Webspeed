@@ -123,14 +123,14 @@
         $(window).scroll(function() {
             var scroll = $(window).scrollTop();
 
-            if (scroll > 140) {
+            if (scroll > 150) {
                 $('.sticky-header').addClass("scroll");
             } 
             if ( scroll < 100) {
                 $('.sticky-header').removeClass("scroll");
             }
 
-            if (scroll > 140) {
+            if (scroll > 150) {
                 $('.g-t-t').addClass("ggt-active");
             } 
 
