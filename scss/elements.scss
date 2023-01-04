@@ -454,7 +454,7 @@ article>.post-img {
     }
     .sticky-header.scroll {
         border-bottom: 1px solid var(--border);
-        padding-top: 0;
+        padding: 0;
         background: var(--sticky-scroll-bg);
          .logo-name  {
            transform: scale(.5);
@@ -473,6 +473,11 @@ article>.post-img {
     .name {
         align-self: end;
     }
+}
+
+#logo {
+    max-height: 70px;
+    width: auto;
 }
 .g-t-t {
     position: fixed;

@@ -1608,6 +1608,14 @@
 		"oAP": "/template-parts/nav/main-menu.php",
 		"oF": 0
 		},
+	"/tribe-events/single-event.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/tribe-events/single-event.php",
+		"oF": 0
+		},
 	"/webspeed.sublime-project": {
 		"cB": 0,
 		"ft": 8192,
