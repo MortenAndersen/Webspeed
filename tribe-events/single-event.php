@@ -11,6 +11,9 @@
  *
  */
 
+echo '<div class="wrap article-aside tribe">';
+
+echo '<article>';
 if ( ! defined( 'ABSPATH' ) ) {
 	die( '-1' );
 }
@@ -48,7 +51,7 @@ $title_classes = implode( ' ', tribe_get_classes( $title_classes ) );
  * @param string $before HTML string to display before the title text.
  * @param string $event_id The ID of the displayed event.
  */
-$before = apply_filters( 'tribe_events_single_event_title_html_before', '<h1 class="' . $title_classes . '">', $event_id );
+$before = apply_filters( 'tribe_events_single_event_title_html_before', '<h1>', $event_id );
 
 /**
  * Allows filtering of the single event template title after HTML.
@@ -72,57 +75,44 @@ $title = apply_filters( 'tribe_events_single_event_title_html', the_title( $befo
 
 ?>
 
-<div id="tribe-events-content" class="tribe-events-single">
 
-	<p class="tribe-events-back morten">
-		<a href="<?php echo esc_url( tribe_get_events_link() ); ?>"> <?php printf( '&laquo; ' . esc_html_x( 'All %s', '%s Events plural label', 'the-events-calendar' ), $events_label_plural ); ?></a>
-	</p>
+
 
 	<!-- Notices -->
 	<?php tribe_the_notices() ?>
 
 	<?php echo $title; ?>
 
-	<div class="tribe-events-schedule tribe-clearfix">
-		<?php echo tribe_events_event_schedule_details( $event_id, '<h2>', '</h2>' ); ?>
-		<?php if ( tribe_get_cost() ) : ?>
-			<span class="tribe-events-cost"><?php echo tribe_get_cost( null, true ) ?></span>
-		<?php endif; ?>
-	</div>
 
+		<?php echo tribe_events_event_schedule_details( $event_id, '<p>', '</p>' ); ?>
+		
 	<!-- Event header -->
-	<div id="tribe-events-header" <?php tribe_events_the_header_attributes() ?>>
-		<!-- Navigation -->
-		<nav class="tribe-events-nav-pagination" aria-label="<?php printf( esc_html__( '%s Navigation', 'the-events-calendar' ), $events_label_singular ); ?>">
-			<ul class="tribe-events-sub-nav">
-				<li class="tribe-events-nav-previous"><?php tribe_the_prev_event_link( '<span>&laquo;</span> %title%' ) ?></li>
-				<li class="tribe-events-nav-next"><?php tribe_the_next_event_link( '%title% <span>&raquo;</span>' ) ?></li>
-			</ul>
-			<!-- .tribe-events-sub-nav -->
-		</nav>
-	</div>
-	<!-- #tribe-events-header -->
+
 
 	<?php while ( have_posts() ) :  the_post(); ?>
-		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
 			<!-- Event featured image, but exclude link -->
 			<?php echo tribe_event_featured_image( $event_id, 'full', false ); ?>
 
 			<!-- Event content -->
 			<?php do_action( 'tribe_events_single_event_before_the_content' ) ?>
-			<div class="tribe-events-single-event-description tribe-events-content">
 				<?php the_content(); ?>
-			</div>
 			<!-- .tribe-events-single-event-description -->
 			<?php do_action( 'tribe_events_single_event_after_the_content' ) ?>
+
+</article>
+<aside>
 
 			<!-- Event meta -->
 			<?php do_action( 'tribe_events_single_event_before_the_meta' ) ?>
 			<?php tribe_get_template_part( 'modules/meta' ); ?>
 			<?php do_action( 'tribe_events_single_event_after_the_meta' ) ?>
-		</div> <!-- #post-x -->
-		<?php if ( get_post_type() == Tribe__Events__Main::POSTTYPE && tribe_get_option( 'showComments', false ) ) comments_template() ?>
+
 	<?php endwhile; ?>
+
+
+
+
 
 	<!-- Event footer -->
 	<div id="tribe-events-footer">
@@ -137,4 +127,7 @@ $title = apply_filters( 'tribe_events_single_event_title_html', the_title( $befo
 	</div>
 	<!-- #tribe-events-footer -->
 
-</div><!-- #tribe-events-content -->
+</aside>
+
+
+</div>

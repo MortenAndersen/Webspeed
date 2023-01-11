@@ -1271,6 +1271,19 @@
 		"oS": 2,
 		"sct": 0
 		},
+	"/scss/tribe-events.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/tribe-events.css",
+		"oF": 0,
+		"oS": 2,
+		"sct": 0
+		},
 	"/scss/woo.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -1606,6 +1619,30 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/template-parts/nav/main-menu.php",
+		"oF": 0
+		},
+	"/tribe-events/modules/meta/details.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/tribe-events/modules/meta/details.php",
+		"oF": 0
+		},
+	"/tribe-events/modules/meta/organizer.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/tribe-events/modules/meta/organizer.php",
+		"oF": 0
+		},
+	"/tribe-events/modules/meta/venue.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/tribe-events/modules/meta/venue.php",
 		"oF": 0
 		},
 	"/tribe-events/single-event.php": {

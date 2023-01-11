@@ -14,7 +14,8 @@ echo '<main class="page-content">';
 				}
 				the_content();
 			endwhile;
-
+		echo '</article>';
+	echo '</div>';
 } 
 
 elseif ( is_page_template( 'page-normal-titleimg.php' ) ) {
@@ -29,8 +30,17 @@ elseif ( is_page_template( 'page-normal-titleimg.php' ) ) {
 				}
 				the_content();
 			endwhile; 
-
+		echo '</article>';
+	echo '</div>';
 } 
+
+elseif ( is_singular( 'tribe_events' ) ) {
+	
+		while (have_posts()) : the_post();
+			the_content();
+		endwhile; 
+
+}
 
 else {
 	web_front_fokus();
@@ -42,11 +52,12 @@ else {
 				web_img();
 				the_content();
 			endwhile; 
-}
+
 	 	if ( is_page() && $post->post_parent ) {
     				web_go_back();
 		}
 		
 		echo '</article>';
 	echo '</div>';
+}
 echo '</main>';
