@@ -1,4 +1,4 @@
-// @codekit-prepend "bx-slider.js", "fitvids.js", "lightbox.js" quiet;
+// @codekit-prepend "bx-slider.js", "lightbox.js" quiet;
 
 /*global jQuery*/
 (function ($) {
@@ -47,8 +47,6 @@
 
 
 //--------------------------
-        // Video
-        $('.video, .wp-block-embed__wrapper').fitVids();
 
         // Lightbox
         $('.lightbox-link, .overlay a').attr('data-lightbox', 'content-image');
@@ -169,7 +167,6 @@ $('.zoom-in .img-zoom').each(function () {
     });
 
 // --------------------------------------------
-
 
 
 });
