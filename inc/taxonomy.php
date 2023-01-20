@@ -27,6 +27,7 @@ function webspeed_elements_create_events_custom_taxonomy() {
     'query_var' => true,
     'publicly_queryable' => false,
     'show_in_rest' => true,
+    'show_in_nav_menus'          => false,
     'rewrite' => array( 'slug' => 'element-type' ),
   ));
 }
