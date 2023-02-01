@@ -84,7 +84,7 @@ $title = apply_filters( 'tribe_events_single_event_title_html', the_title( $befo
 	<?php echo $title; ?>
 
 
-		<?php echo tribe_events_event_schedule_details( $event_id, '<p>', '</p>' ); ?>
+		<?php echo tribe_events_event_schedule_details( $event_id, '<p class="single-date">', '</p>' ); ?>
 		
 	<!-- Event header -->
 
@@ -97,8 +97,9 @@ $title = apply_filters( 'tribe_events_single_event_title_html', the_title( $befo
 			<!-- Event content -->
 			<?php do_action( 'tribe_events_single_event_before_the_content' ) ?>
 				<?php the_content(); ?>
+                <?php web_go_back(); ?>
 			<!-- .tribe-events-single-event-description -->
-			<?php do_action( 'tribe_events_single_event_after_the_content' ) ?>
+			
 
 </article>
 <aside>
@@ -108,26 +109,10 @@ $title = apply_filters( 'tribe_events_single_event_title_html', the_title( $befo
 			<?php tribe_get_template_part( 'modules/meta' ); ?>
 			<?php do_action( 'tribe_events_single_event_after_the_meta' ) ?>
 
+            <?php do_action( 'tribe_events_single_event_after_the_content' ) ?>
+
 	<?php endwhile; ?>
 
-
-
-
-
-	<!-- Event footer -->
-	<div id="tribe-events-footer">
-		<!-- Navigation -->
-		<nav class="tribe-events-nav-pagination" aria-label="<?php printf( esc_html__( '%s Navigation', 'the-events-calendar' ), $events_label_singular ); ?>">
-			<ul class="tribe-events-sub-nav">
-				<li class="tribe-events-nav-previous"><?php tribe_the_prev_event_link( '<span>&laquo;</span> %title%' ) ?></li>
-				<li class="tribe-events-nav-next"><?php tribe_the_next_event_link( '%title% <span>&raquo;</span>' ) ?></li>
-			</ul>
-			<!-- .tribe-events-sub-nav -->
-		</nav>
-	</div>
-	<!-- #tribe-events-footer -->
-
 </aside>
-
 
 </div>
