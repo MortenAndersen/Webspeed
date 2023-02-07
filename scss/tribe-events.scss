@@ -35,7 +35,18 @@
     background: green;
     color: #fff;
 }
+.tribe-common-c-svgicon--featured {
+    fill: gold;
+}
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-day__event-content {
+    margin-right: 0;
+    margin-left: 0;
+}
 
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-day__event-content>* {
+    padding-left: 0;
+    padding-right: 0;
+}
 abbr,
 abbr[title],
 acronym {
@@ -181,6 +192,9 @@ acronym {
 .tribe-common--breakpoint-medium.tribe-common .tribe-common-g-row--gutters {
 	margin: 0 0 1rem 0;
 }
+article .tribe-common--breakpoint-medium.tribe-common .tribe-common-g-row--gutters {
+    margin: 0;
+}
 svg.tribe-events-c-subscribe-dropdown__export-icon,
 svg.tribe-events-c-subscribe-dropdown__button-icon,
 svg.tribe-events-c-messages__message-icon-svg {
@@ -218,6 +232,10 @@ main .tribe-events {
 .tribe-events-calendar-day-nav.tribe-events-c-nav {
     display: none;
 }
+article .tribe-common--breakpoint-medium.tribe-common .tribe-common-g-row--gutters>.tribe-common-g-col {
+    padding: 0;
+}
+
 @media (max-width: 832px) {
 .tribe-events-calendar-list__event-date-tag.tribe-common-g-col {
     display: none;
@@ -225,6 +243,7 @@ main .tribe-events {
 }
 :root {
     --title-highlight: #222;
+    --tec-grid-gutter-half: 1rem;
 }
 @media (min-width: 768px) {
 	.tribe-events-meta-group {
