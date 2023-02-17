@@ -14,6 +14,7 @@ function acc_block() {
             'render_template'   => 'template-parts/gutenberg-blocks/acc/acc.php',
             'category'          => 'formatting',
             'icon'              => 'admin-comments',
+            'mode'              => 'edit',
             'keywords'          => array( 'acc', 'quote' ),
             'supports'        => [
                 'anchor' => true,
@@ -49,6 +50,7 @@ function contact_block() {
             'render_template'   => 'template-parts/gutenberg-blocks/contact/contact.php',
             'category'          => 'formatting',
             'icon'              => 'admin-comments',
+            'mode'              => 'edit',
             'keywords'          => array( 'contact', 'quote' ),
         ));
     }
@@ -70,6 +72,7 @@ function meeting_block() {
             'render_template'   => 'template-parts/gutenberg-blocks/meeting/meeting.php',
             'category'          => 'formatting',
             'icon'              => 'admin-comments',
+            'mode'              => 'edit',
             'keywords'          => array( 'meeting', 'quote' ),
         ));
     }
@@ -91,6 +94,7 @@ function fullwidth_block() {
             'render_template'   => 'template-parts/gutenberg-blocks/fullwidth/fullwidth.php',
             'category'          => 'formatting',
             'icon'              => 'admin-comments',
+            'mode'              => 'edit',
             'keywords'          => array( 'WEB', 'Design' ),
         ));
     }
@@ -112,6 +116,7 @@ function designlist_block() {
             'render_template'   => 'template-parts/gutenberg-blocks/designlist/designlist.php',
             'category'          => 'formatting',
             'icon'              => 'admin-comments',
+            'mode'              => 'edit',
             'keywords'          => array( 'WEB', 'List' ),
         ));
     }
