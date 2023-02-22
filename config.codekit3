@@ -974,6 +974,19 @@
 		"oS": 2,
 		"sct": 0
 		},
+	"/scss/hour-booking.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/hour-booking.css",
+		"oF": 0,
+		"oS": 2,
+		"sct": 0
+		},
 	"/scss/keyframe.scss": {
 		"aP": 1,
 		"bl": 0,

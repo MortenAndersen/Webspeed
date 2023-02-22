@@ -1,0 +1,79 @@
+.ahb_m #fbuilder .dfield.fapp {
+	display: unset !important;
+}
+.ahb_m #fbuilder .slots {
+	padding: 0;
+	span {
+		display: inline-block;
+		padding-bottom: .5rem;
+	}
+}
+#fbuilder .slots div.availableslot {
+	margin: 0 .5rem .5rem 0;
+	border-color: var(--border);
+	a {
+		background: none;
+		text-decoration: none;
+		font-weight: bold;
+	}
+}
+.ahb_list {
+	font-size: 1.2rem;
+	border: 1px solid #ddd;
+	background: var(--border);
+	padding: .5rem;
+	margin: 1rem 0;
+}
+#fbuilder {
+	.t {
+		font-weight: bold;
+		&:before {
+			content: ' - ';
+		}
+	}
+	.d {
+		font-weight: bold;
+	}
+	.ahb_list_service {
+		font-size: 1rem;
+	}
+	.cancel {
+		display: none;
+	}
+}
+#fbuilder .fields, #fbuilder .fform {
+	padding: 0 !important;
+}
+#fbuilder button.pbSubmit {
+	background: var(--submit-bg);
+	border-color: var(--submit-bg);
+	color: var(--submit-color);
+	padding: 0;
+	margin: 1rem 0;
+	max-width: 200px;
+}
+.fieldCalendarService {
+	display: none;
+}
+#fbuilder .fields .medium {
+	padding: 0 5px;
+}
+.slotsCalendar {
+	margin-top: 1rem;
+}
+#fbuilder .top_aligned .fields label {
+	font-size: .9rem;
+}
+.label-stor label {
+	font-size: clamp(1.5rem, 4vw, 2.5rem) !important;
+	font-weight: bold;
+	margin-bottom: 1.5rem;
+}
+.label-skjul {
+ label {
+	display: none;
+}
+	.ahb_list_service {
+		display: none;
+	}
+}
