@@ -77,3 +77,11 @@
 		display: none;
 	}
 }
+#fbuilder .captcha {
+	padding: 1rem;
+    background: var(--border);
+    margin: 1rem 0;
+    input {
+    	width: 50%;
+    }
+}
