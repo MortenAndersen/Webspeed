@@ -14,8 +14,6 @@
         overflow: hidden;
         border-bottom: 1px solid var(--border);
         padding-bottom: s.$gap-s;
-        display: flex;
-        flex-flow: column;
     }
 }
 
@@ -27,7 +25,9 @@
 
 .post-loop {
         display: flex;
-        flex-flow: column
+        flex-flow: column;
+        container-type: inline-size;
+        container-name: post-loop;
     }
 
 article>.post-img {

@@ -135,6 +135,19 @@ article {
 
 .loop-title {
     margin-bottom: .5rem;
+    font-size: 1.1rem;
+}
+
+@container post-loop (min-width: 300px) {
+  .loop-title {
+    font-size: 1.4rem;
+  }
+}
+
+@container post-loop (min-width: 500px) {
+  .loop-title {
+    font-size: 2rem;
+  }
 }
 
 

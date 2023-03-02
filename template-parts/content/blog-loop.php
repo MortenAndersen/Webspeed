@@ -1,11 +1,11 @@
 <?php 
 web_topimg_blog();
 
-echo '<div class="wrap grid g-d-3 gap-2">';
+echo '<div class="wrap grid g-d-2 gap-2">';
 		
 	if (have_posts()): while (have_posts()): the_post();
 		$classes = get_post_class( '', $post->ID );
-		echo '<article class="' . esc_attr( implode( ' ', $classes ) ) . '">';
+		echo '<article class="post-loop ' . esc_attr( implode( ' ', $classes ) ) . '">';
 		 
 	        	web_blog_thumbnail();
 	        	web_date_cat();
