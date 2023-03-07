@@ -31,9 +31,9 @@ if (!function_exists('web_logo')) {
             echo '<div class="logo-name">';
             if (has_custom_logo()) {
                 echo '<div class="logo">';
-                    echo '<a class="' . $logo_class . '" href="' . home_url() . '"><img id="logo" width="' . $logo[1] . '" height="' . $logo[2]. '" src="' . esc_url($logo[0]) . '" alt="' . get_bloginfo('name') . '"></a>';
+                    echo '<a class="' . $logo_class . '" href="' . home_url() . '" title="' . get_bloginfo( 'name' ) . '"><img id="logo" width="' . $logo[1] . '" height="' . $logo[2]. '" src="' . esc_url($logo[0]) . '" alt="' . get_bloginfo('name') . '"></a>';
                     if (file_exists($logo_mobil)) {
-                        echo '<a href="' . home_url() . '" class="only-mobile"><img id="logo-mobil" width="' . $width . '" height="' . $height . '" src="' . get_stylesheet_directory_uri() . '/logo-mobil.png" alt="' . get_bloginfo('name') . '"></a>';
+                        echo '<a href="' . home_url() . '" class="only-mobile" title="' . get_bloginfo( 'name' ) . '"><img id="logo-mobil" width="' . $width . '" height="' . $height . '" src="' . get_stylesheet_directory_uri() . '/logo-mobil.png" alt="' . get_bloginfo('name') . '"></a>';
 
                     }
                 echo '</div>';
