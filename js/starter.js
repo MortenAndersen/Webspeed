@@ -44,8 +44,6 @@
         });
 
         $('.current-menu-item .menu-trigger').addClass('active-trigger');
-
-
 //--------------------------
 
         // Lightbox
