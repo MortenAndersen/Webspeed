@@ -168,6 +168,11 @@ $('.zoom-in .img-zoom').each(function () {
 
 // --------------------------------------------
 
+// WOO
+    $('#woo-filter-toggle').click(function(){
+        $('.woo-aside-con').toggleClass('active');
+    });
+
 });
 
 }(jQuery));

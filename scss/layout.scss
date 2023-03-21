@@ -115,7 +115,7 @@ aside {
 .page-header {
     background: var(--header-bg);
     color: var(--header-color);
-    padding: 1rem 0;
+    //padding: 1rem 0;
 }
 
 
@@ -126,6 +126,7 @@ aside {
         position: sticky;
         top: 0;
         z-index: 99;
+        
 
         .admin-bar & {
             top: 32px;
@@ -220,4 +221,14 @@ aside {
             order: 2;
         }
     }
+}
+
+.woo-wrap {
+    display: grid;
+}
+.woo-article {
+    order:2
+}
+.left-woo-aside {
+    order: 1
 }

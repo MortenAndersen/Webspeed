@@ -42,7 +42,6 @@ acronym {
 
 mark,
 ins {
-    background: #fff9c0;
     text-decoration: none;
 }
 
@@ -71,6 +70,8 @@ input[type="reset"],
 input[type="submit"],
 .wp-block-search .wp-block-search__button,
 button.pbSubmit {
+    display: flex;
+    align-content: center;
     height: 2.5rem;
     padding: 0;
     margin: 0;
@@ -114,7 +115,6 @@ input[type="password"],
 input[type="search"],
 input[type="number"],
 input[type="tel"],
-input[type="range"],
 input[type="date"],
 input[type="month"],
 input[type="week"],

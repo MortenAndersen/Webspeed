@@ -1286,7 +1286,7 @@
 		"oS": 2,
 		"sct": 0
 		},
-	"/scss/woo.scss": {
+	"/scss/webspeed-woo.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -1294,6 +1294,19 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
+		"oAP": "/webspeed-woo.css",
+		"oF": 0,
+		"oS": 2,
+		"sct": 0
+		},
+	"/scss/woo.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
 		"oAP": "/woo.css",
 		"oF": 0,
 		"oS": 2,
@@ -1437,6 +1450,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/template-parts/aside/aside-single.php",
+		"oF": 0
+		},
+	"/template-parts/aside/woo-aside-left.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/template-parts/aside/woo-aside-left.php",
 		"oF": 0
 		},
 	"/template-parts/content/archive-loop.php": {
