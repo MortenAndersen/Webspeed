@@ -51,6 +51,7 @@ h1 {
         margin: 0;
         font-weight: normal;
     }
+
     h2 {
         font-size: var(--xl);
         margin: 0;
@@ -62,11 +63,13 @@ h2 {
     font-size: 1.5rem;
     max-width: 45rem;
 }
+
 h3,
 h4,
 h5,
 h6 {
     margin: 0 0 .25rem 0;
+
     a {
         text-decoration: none;
     }
@@ -96,9 +99,9 @@ h6 {
 .has-small-font-size h4,
 .has-small-font-size h5,
 .has-small-font-size h6,
-{
-       font-size: inherit;
-    }
+    {
+    font-size: inherit;
+}
 
 
 article {
@@ -139,15 +142,15 @@ article {
 }
 
 @container post-loop (min-width: 300px) {
-  .loop-title {
-    font-size: 1.4rem;
-  }
+    .loop-title {
+        font-size: 1.4rem;
+    }
 }
 
 @container post-loop (min-width: 500px) {
-  .loop-title {
-    font-size: 2rem;
-  }
+    .loop-title {
+        font-size: 2rem;
+    }
 }
 
 
@@ -199,20 +202,24 @@ p {
     .pre-header-con & {
         margin: 0;
     }
+
     .page-footer & {
         margin: 0 0 1rem 0;
     }
 }
+
 .bred {
     max-width: inherit;
 }
+
 article .bx-wrapper p {
     max-width: none;
 }
 
 main {
+
     ul,
-ol {
+    ol {
         li {
             margin-bottom: .5rem;
             max-width: 70ch;
@@ -263,22 +270,27 @@ blockquote {
     padding: s.$gap-s s.$gap-n;
     margin: s.$gap-n 0;
     font-size: 1.2rem;
+
     p {
         &:last-of-type {
             margin-bottom: 0;
         }
     }
+
     &.has-x-large-font-size {
-       border-left: 8px solid;
+        border-left: 8px solid;
     }
+
     &.has-large-font-size {
-       border-left: 6px solid;
+        border-left: 6px solid;
     }
+
     &.has-medium-font-size {
-      border-left: 4px solid;
+        border-left: 4px solid;
     }
+
     &.has-small-font-size {
-      border-left: 1px solid;
+        border-left: 1px solid;
     }
 
 }
@@ -366,10 +378,13 @@ article h1+h2 {
 }
 
 .wp-block-column {
-    ul,ol {
+
+    ul,
+    ol {
         padding-left: 1.1rem;
     }
 }
+
 figcaption {
     font-size: 75%;
 }
