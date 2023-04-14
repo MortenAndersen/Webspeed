@@ -40,7 +40,8 @@ h6 {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: var(--xxl);
+    line-height: 1.2;
     margin: 0 0 .625rem 0;
 }
 

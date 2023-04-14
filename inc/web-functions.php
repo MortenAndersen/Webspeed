@@ -321,10 +321,10 @@ function web_front_fokus() {
 }
 
 // Reference
-if (!function_exists('web_reference')) {
-	function web_reference() {
-		echo '<div class="reference"><a href="https://www.web.dk" target="_blank" rel="nofollow noreferrer">Made by Web.dK</a></div>';
-	}
+
+add_action('webspeed_before_body_end', 'web_reference', 10);
+function web_reference() {
+	echo '<div class="reference"><a href="https://www.web.dk" target="_blank" rel="nofollow noreferrer">Made by Web.dK</a></div>';
 }
 
 // Post date
@@ -421,30 +421,9 @@ if (!function_exists('get_pre_header_class')) {
 	}
 }
 
-// Header style
-if (!function_exists('web_header_div_class')) {
-	function web_header_div_class() {
-		echo 'flex wrap-no-pad';
-	}
-}
-
-// web_header_inject();
-if (!function_exists('web_post_header_inject')) {
-	function web_post_header_inject() {
-
-	}
-}
-
 function web_header_class() {
 	$sticky_menu = get_theme_mod('webspeed_sticky_checkbox');
 	if ($sticky_menu == true) {
-		echo 'sticky-header';
-	}
-}
-
-// web_pre_footer_inject();
-if (!function_exists('web_pre_footer_inject')) {
-	function web_pre_footer_inject() {
-
+		return ' sticky-header';
 	}
 }

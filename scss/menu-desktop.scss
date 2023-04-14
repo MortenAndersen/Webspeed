@@ -75,11 +75,12 @@
         }
 ul.first-lvl {
                 > li {
-                    margin-left: 1rem;
+                   // margin-left: 1rem;
                 }
             }
         ul {
             display: flex;
+            gap: 1rem;
             a {
                 line-height: 2rem;
             }

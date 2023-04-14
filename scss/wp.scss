@@ -163,6 +163,10 @@ textarea:focus {
 
 select {
     border: 1px solid var(--border);
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxMiIgdmlld0JveD0iMCAwIDEyIDEyIiBmaWxsPSJub25lIiBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSIgc3Ryb2tlPSIjMjQyQTJFIj48cGF0aCBkPSJNMS41MDAwMiA0TDYuMDAwMDIgOEwxMC41IDQiIHN0cm9rZS13aWR0aD0iMS41Ij48L3BhdGg+PC9zdmc+);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 16px) 50%;
+    cursor: pointer;
 }
 
 textarea {

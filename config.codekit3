@@ -1260,6 +1260,19 @@
 		"oS": 2,
 		"sct": 0
 		},
+	"/scss/supports.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/supports.css",
+		"oF": 0,
+		"oS": 2,
+		"sct": 0
+		},
 	"/scss/table.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -1644,6 +1657,14 @@
 		"oAP": "/template-parts/nav/main-menu.php",
 		"oF": 0
 		},
+	"/to-doo.txt": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/to-doo.txt",
+		"oF": 0
+		},
 	"/tribe-events/modules/meta/details.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1716,6 +1737,24 @@
 		"oAP": "/webspeed.sublime-workspace",
 		"oF": 0
 		},
+	"/woo.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/woo-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/woo.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/woo.css.map",
+		"oF": 0
+		},
 	"/woocommerce.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1724,12 +1763,28 @@
 		"oAP": "/woocommerce.php",
 		"oF": 0
 		},
-	"/woocommerce/single-product-reviews.php": {
+	"/woocommerce/single-product/product-attributes.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/woocommerce/single-product-reviews.php",
+		"oAP": "/woocommerce/single-product/product-attributes.php",
+		"oF": 0
+		},
+	"/woocommerce/single-product/title.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/woocommerce/single-product/title.php",
+		"oF": 0
+		},
+	"/woocommerce/XXXsingle-product-reviews.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/woocommerce/XXXsingle-product-reviews.php",
 		"oF": 0
 		},
 	"/Xlogo-mobil.png": {

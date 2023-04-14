@@ -1,68 +1,67 @@
 <?php
+do_action('webspeed_before_footer');
 
-web_pre_footer_inject();
-
-if ( get_post_meta( get_the_ID(), 'footer', true ) ) {
-    echo '<div class="footer-meta-field meta-field">';
-        echo get_post_meta( get_the_ID(), 'footer', true);
-    echo '</div>';
-} 
-
-if ( get_post_meta( get_the_ID(), 'google-map', true ) ) {
-    echo '<div class="google-map-meta-field meta-field">';
-        echo get_post_meta( get_the_ID(), 'google-map', true);
-    echo '</div>';
+if (get_post_meta(get_the_ID(), 'footer', true)) {
+	echo '<div class="footer-meta-field meta-field">';
+	echo get_post_meta(get_the_ID(), 'footer', true);
+	echo '</div>';
 }
 
-if( class_exists('ACF') ) {
-    if( get_field('google_map') ) {
-    	echo '<div class="google-map-meta-field ACF-field">';
-    		the_field('google_map');
-    	echo '</div>';
+if (get_post_meta(get_the_ID(), 'google-map', true)) {
+	echo '<div class="google-map-meta-field meta-field">';
+	echo get_post_meta(get_the_ID(), 'google-map', true);
+	echo '</div>';
+}
+
+if (class_exists('ACF')) {
+	if (get_field('google_map')) {
+		echo '<div class="google-map-meta-field ACF-field">';
+		the_field('google_map');
+		echo '</div>';
 	}
 }
 
 if (is_active_sidebar('post-content')) {
-    dynamic_sidebar('post-content');
-} 
+	dynamic_sidebar('post-content');
+}
 
-if (is_active_sidebar('post-content-frontpage') && is_front_page() ) {
-    dynamic_sidebar('post-content-frontpage');
-} 
+if (is_active_sidebar('post-content-frontpage') && is_front_page()) {
+	dynamic_sidebar('post-content-frontpage');
+}
 
-if (is_active_sidebar('footer') || is_active_sidebar('pre-footer') || is_active_sidebar('post-footer') ) {
+if (is_active_sidebar('footer') || is_active_sidebar('pre-footer') || is_active_sidebar('post-footer')) {
 	echo '<div class="page-footer">';
-		echo '<div class="wrap">';
+	echo '<div class="wrap">';
 
-			if (is_active_sidebar('pre-footer')) {
-				echo '<div class="pre-footer">';
-					dynamic_sidebar('pre-footer');
-				echo '</div>';
-			}
-
-			if (is_active_sidebar('footer')) {
-				$the_sidebars = wp_get_sidebars_widgets();
-				echo '<div class="grid g-d-' . count( $the_sidebars['footer'] ) .' gap-2">';
-				
-				dynamic_sidebar('footer');
-				echo '</div>';
-			}
-
-			if (is_active_sidebar('post-footer')) {
-				echo '<div class="post-footer">';
-					dynamic_sidebar('post-footer');
-				echo '</div>';
-			}
-
+	if (is_active_sidebar('pre-footer')) {
+		echo '<div class="pre-footer">';
+		dynamic_sidebar('pre-footer');
 		echo '</div>';
+	}
+
+	if (is_active_sidebar('footer')) {
+		$the_sidebars = wp_get_sidebars_widgets();
+		echo '<div class="grid g-d-' . count($the_sidebars['footer']) . ' gap-2">';
+
+		dynamic_sidebar('footer');
+		echo '</div>';
+	}
+
+	if (is_active_sidebar('post-footer')) {
+		echo '<div class="post-footer">';
+		dynamic_sidebar('post-footer');
+		echo '</div>';
+	}
+
+	echo '</div>';
 	echo '</div>';
 }
 
-if (is_active_sidebar('slide-in-frontpage') && is_front_page() ) {
+if (is_active_sidebar('slide-in-frontpage') && is_front_page()) {
 	echo '<div class="slide-in-content">';
-    	dynamic_sidebar('slide-in-frontpage');
-    echo '</div>';
-} 
+	dynamic_sidebar('slide-in-frontpage');
+	echo '</div>';
+}
 echo '<a class="g-t-t" href="#top">
 <svg width="100%" height="100%" viewBox="0 0 70 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
     <g id="pil-op" transform="matrix(0.104167,0,0,0.104164,-18.3349,-33.7991)">
@@ -71,7 +70,7 @@ echo '<a class="g-t-t" href="#top">
 </svg>
 </a>';
 wp_footer();
-web_reference();
+do_action('webspeed_before_body_end');
 ?>
 </body>
 </html>
