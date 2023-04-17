@@ -1,13 +1,12 @@
 <?php
-/*
+
 add_action('init', function () {
-remove_action('wp_head', 'wp_print_scripts');
-remove_action('wp_head', 'wp_print_head_scripts', 9);
-remove_action('wp_head', 'print_emoji_detection_script', 7);
-add_action('wp_footer', 'wp_print_scripts', 25);
-add_action('wp_footer', 'wp_print_head_scripts', 25);
+	remove_action('wp_head', 'wp_print_scripts');
+	remove_action('wp_head', 'wp_print_head_scripts', 9);
+	remove_action('wp_head', 'print_emoji_detection_script', 7);
+	add_action('wp_footer', 'wp_print_scripts', 25);
+	add_action('wp_footer', 'wp_print_head_scripts', 25);
 });
- */
 
 // Theme jQuery fil
 
@@ -16,13 +15,6 @@ function web_scripts() {
 	wp_enqueue_script('theme-script');
 }
 add_action('wp_enqueue_scripts', 'web_scripts');
-
-// ----------------------------------------------------------
-
-add_action('admin_enqueue_scripts', 'webspeed_color_picker');
-function webspeed_color_picker() {
-	wp_enqueue_style('wp-color-picker');
-}
 
 // ----------------------------------------------------------
 
