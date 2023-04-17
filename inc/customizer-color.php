@@ -5,7 +5,7 @@ function webspeed_customizer_color($wp_customize) {
 	$wp_customize->add_section('webspeed_section_color', array(
 
 		'title' => 'Webspeed color',
-		'priority' => 100,
+		'priority' => 10,
 		'description' => 'WebSpeed color options',
 	));
 
