@@ -18,6 +18,13 @@ add_action('wp_enqueue_scripts', 'web_scripts');
 
 // ----------------------------------------------------------
 
+add_action('admin_enqueue_scripts', 'webspeed_color_picker');
+function webspeed_color_picker() {
+	wp_enqueue_style('wp-color-picker');
+}
+
+// ----------------------------------------------------------
+
 if (get_theme_mod('google_font')) {
 
 	function atu_gfonts_prefetch() {

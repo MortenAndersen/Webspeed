@@ -1086,3 +1086,10 @@ p.price {
         margin-left: 1ch;
     }
 }
+.wc-block-components-price-slider--is-input-inline .wc-block-components-price-slider__controls .wc-block-components-price-slider__amount {
+    max-width: fit-content;
+}
+.woocommerce-shipping-fields__field-wrapper {
+    background: var(--woo-color-2);
+    padding: 1rem;
+}
