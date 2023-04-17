@@ -665,6 +665,25 @@ form.cart {
 .cart-collaterals {
     tr {
         display: flex;
+        &.woocommerce-shipping-totals {
+            display: block;
+            th {
+                display: none;
+            }
+            ul {
+                margin: 0;
+                padding: 0;
+                li {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                }
+                label {
+                    display: inline-block;
+                    margin-left: 1ch;
+                }
+            }
+        }
     }
 }
 
@@ -764,7 +783,8 @@ form.cart {
     font-weight: bold;
 }
 
-.woocommerce-variation-description {
+.woocommerce-variation-description,
+.woocommerce-shipping-destination {
     font-style: var(--woo-small-font);
     margin-bottom: 1rem;
 }
@@ -1049,4 +1069,20 @@ p.price {
 
 .wc-block-mini-cart__amount {
     display: none;
+}
+#ship-to-different-address {
+    clear: both;
+}
+#shipping_method {
+    margin: 0;
+    padding: 0;
+    li {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+    label {
+        display: inline-block;
+        margin-left: 1ch;
+    }
 }
