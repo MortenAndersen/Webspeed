@@ -289,12 +289,21 @@ ul.wc-block-grid__products {
 }
 
 .wp-block-woocommerce-product-categories ul {
-    width: 100%;
+  
     padding-left: 0;
     margin-bottom: 0;
+    ul {
+        margin-left: .5rem;
+        li {
+            &::before {
+                content: '\27BE';
+            }
+        }
+    }
 
     li {
-        display: flex;
+        list-style-type: none;
+        margin: .5rem 0;
     }
 
     a {
