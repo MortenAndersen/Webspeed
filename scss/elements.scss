@@ -382,7 +382,6 @@ article>.post-img {
     background: var(--fokus-bg);
     color: var(--fokus-color);
     font-size: s.$font-l;
-    margin-bottom: s.$gap-n;
     p {
         &:last-of-type {
             margin: 0;
@@ -396,17 +395,7 @@ article>.post-img {
         padding: s.$gap-n;
     }
 }
-@media (min-width: b.$menu-break) {
-.page-template-page-topimg,
-.page-template-page-aside-left-right-topimg,
-.page-template-page-aside-left-topimg,
-.page-template-page-aside-right-topimg,
-.page-template-page-no-wrap-topimg {
-    .fokus {
-        margin-top: -2rem;
-    }
-}
-}
+
 
 .only-desktop,
 .only-desktop-flex,
