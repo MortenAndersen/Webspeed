@@ -459,7 +459,8 @@ article>.post-img {
     transition: transform .75s ease;
         transform-origin: center left;
     .name {
-        align-self: end;
+        display: flex;
+    flex-flow: column;
     }
 }
 
