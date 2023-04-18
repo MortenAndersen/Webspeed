@@ -931,14 +931,18 @@ tfoot {
 
     #billing_first_name_field,
     #billing_postcode_field,
-    #billing_phone_field {
+    #billing_phone_field,
+    #shipping_first_name_field,
+    #shipping_postcode_field {
         width: 48%;
         float: left;
     }
 
     #billing_last_name_field,
     #billing_city_field,
-    #billing_email_field {
+    #billing_email_field,
+    #shipping_last_name_field,
+    #shipping_city_field {
         width: 48%;
         float: right;
     }
@@ -1096,5 +1100,21 @@ p.price {
 }
 .woocommerce-shipping-fields__field-wrapper {
     background: var(--woo-color-2);
-    padding: 1rem;
+    padding: 1rem 1rem 0 1rem;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+.wc-forward,
+.wp-element-button[type=submit][name=woocommerce_checkout_place_order] {
+    background: var(--woo-green);
+    color: #fff;
+    text-decoration: none;
+    &:hover {
+        background: var(--woo-green);
+        color: #fff;
+        filter: brightness(0.85);
+    }
+}
+.in-stock {
+    margin: 0;
 }

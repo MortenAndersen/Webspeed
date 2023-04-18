@@ -260,3 +260,12 @@ function div_after_pay() {
 
 remove_action('woocommerce_cart_collaterals', 'woocommerce_cross_sell_display', 10);
 add_action('woocommerce_after_cart', 'woocommerce_cross_sell_display', 10);
+
+// remove coupon field on the cart page
+function disable_coupon_field_on_cart($enabled) {
+	if (is_cart()) {
+		$enabled = false;
+	}
+	return $enabled;
+}
+add_filter('woocommerce_coupons_enabled', 'disable_coupon_field_on_cart');
