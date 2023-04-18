@@ -389,3 +389,8 @@ article h1+h2 {
 figcaption {
     font-size: 75%;
 }
+.wp-block-column {
+    .wp-block-heading {
+        margin-bottom: 2rem;
+    }
+}
