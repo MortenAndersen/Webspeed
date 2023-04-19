@@ -330,7 +330,6 @@ article>.post-img {
 @media (min-width: 800px) {
 @supports (backdrop-filter: blur(25px) brightness(170%)) {
   .top-caption {
-    background: hsl(0 0 0 / 50%);
     backdrop-filter: blur(25px) brightness(170%);
   }
 }
