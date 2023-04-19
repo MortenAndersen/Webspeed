@@ -1118,3 +1118,8 @@ p.price {
 .in-stock {
     margin: 0;
 }
+.woocommerce-cart-form__contents {
+    thead {
+        border-bottom: 1px solid var(--woo-color-2);
+    }
+}
