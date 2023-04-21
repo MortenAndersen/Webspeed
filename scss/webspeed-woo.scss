@@ -104,14 +104,23 @@ ul.wc-block-grid__products {
     }
 }
 
-.products .onsale {
+ .onsale {
     position: absolute;
-    border: 1px solid;
+    border: 1px solid var(--woo-green);
+    color: var(--woo-blue);
     border-radius: 13px;
     padding: 5px 10px;
     line-height: 1;
     font-size: 0.875rem;
-    margin: 12px;
+    background: hsl(0deg 0% 0% / .05);
+    right: .5rem;
+    top: .5rem;
+}
+a:hover {
+    .onsale {
+        background: var(--woo-green);
+        color: #fff;
+    }
 }
 
 .woo-title {}
@@ -796,6 +805,8 @@ form.cart {
 
 .woocommerce-variation-price {
     margin-bottom: 1rem;
+    color: var(--woo-green);
+    font-weight: bold;
 }
 
 .cross-sells {
