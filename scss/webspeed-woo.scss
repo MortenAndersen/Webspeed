@@ -114,13 +114,12 @@ ul.wc-block-grid__products {
     padding: 5px 10px;
     line-height: 1;
     font-size: 0.875rem;
-    background: hsl(0deg 0% 0% / .05);
     right: .5rem;
     top: .5rem;
 }
 a:hover {
     .onsale {
-        background: transparent;
+        background: hsl(0deg 0% 0% / .05);
         color: var(--woo-blue);
     }
 }
