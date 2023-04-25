@@ -1,4 +1,20 @@
 <?php
+// Banner på woo cat sider
+if (is_product_category()) {
+	global $wp_query;
+	// get the query object
+	$cat = $wp_query->get_queried_object();
+	// get the thumbnail id user the term_id
+	$thumbnail_id = get_term_meta($cat->term_id, 'thumbnail_id', true);
+	// get the image URL
+	$image = wp_get_attachment_url($thumbnail_id);
+	// print the IMG HTML
+	if ($image) {
+		echo '<div class="top-post-img">';
+		echo '<img src="' . $image . '" />';
+		echo '</div>';
+	}
+}
 
 // Top på woo oversigtsider
 if (!is_product()) {
@@ -10,6 +26,7 @@ if (!is_product()) {
 		dynamic_sidebar('woo-top');
 	}
 	do_action('woocommerce_archive_description_webspeed');
+
 	echo '</div>';
 }
 
