@@ -359,6 +359,7 @@ a:hover {
     flex-flow: column;
     //gap: 1rem; IKKE support
     align-self: center;
+    position: relative;
 }
 
 // HACK - gap i flex ikke supported
@@ -444,7 +445,8 @@ a:hover {
 
 .woocommerce-product-gallery__wrapper {
     img {
-        width: 100%;
+        width: auto;
+        max-height: 50vh
     }
 }
 
