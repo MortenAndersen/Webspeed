@@ -270,8 +270,4 @@ function disable_coupon_field_on_cart($enabled) {
 }
 add_filter('woocommerce_coupons_enabled', 'disable_coupon_field_on_cart');
 
-function woocommerce_template_loop_product_thumbnail() {
-	echo '<figure class="woo-figure">';
-	echo woocommerce_get_product_thumbnail();
-	echo '</figure>';
-}
+// Figure rundt om loop billeder
