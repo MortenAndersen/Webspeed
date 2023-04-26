@@ -19,9 +19,26 @@ if (is_product_category()) {
 // Top på woo oversigtsider
 if (!is_product()) {
 	echo '<div class="wrap">';
-	echo '<h1>';
-	woocommerce_page_title();
-	echo '</h1>';
+
+	if (class_exists('ACF')) {
+		$term_overskrift = get_queried_object();
+		$overskrift = get_field('overskrift', $term_overskrift);
+		if ($overskrift) {
+			echo '<h1>';
+
+			echo $overskrift;
+			echo '</h1>';
+		} else {
+			echo '<h1>';
+			woocommerce_page_title();
+			echo '</h1>';
+		}
+	} else {
+		echo '<h1>';
+		woocommerce_page_title();
+		echo '</h1>';
+	}
+
 	if (is_shop() && !is_search()) {
 		dynamic_sidebar('woo-top');
 	}

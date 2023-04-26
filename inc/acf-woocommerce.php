@@ -1,10 +1,32 @@
 <?php
 if (function_exists('acf_add_local_field_group')):
 
+// Archive
+
 	acf_add_local_field_group(array(
 		'key' => 'group_623c75985c9ed',
 		'title' => 'Woo Archive',
 		'fields' => array(
+			array(
+				'key' => 'field_6448d110b9029',
+				'label' => 'Overskrift (H1)',
+				'name' => 'overskrift',
+				'aria-label' => '',
+				'type' => 'text',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'default_value' => '',
+				'maxlength' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+			),
 			array(
 				'key' => 'field_623c76117f264',
 				'label' => 'Tekst nederst',
