@@ -17,11 +17,6 @@
  * @version 3.6.0
  */
 
-defined('ABSPATH') || exit;
-
-if (!$product_attributes) {
-	return;
-}
 ?>
 <div class="woocommerce-product-attributes shop_attributes">
 	<?php foreach ($product_attributes as $product_attribute_key => $product_attribute): ?>
