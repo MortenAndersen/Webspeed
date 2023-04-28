@@ -58,6 +58,7 @@
                 controls: false,
                 pager: false,
                 speed: 2000,
+                pause: 8000,
                 touchEnabled: false
 
             });
