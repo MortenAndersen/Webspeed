@@ -182,7 +182,7 @@ function single_div_end() {
 }
 
 remove_action('woocommerce_before_single_product_summary', 'woocommerce_show_product_sale_flash', 10);
-add_action('woocommerce_single_product_summary', 'woocommerce_show_product_sale_flash', 2);
+add_action('woo_meta_webspeed', 'woocommerce_show_product_sale_flash', 15);
 
 remove_action('woocommerce_archive_description', 'woocommerce_taxonomy_archive_description', 10);
 add_action('woocommerce_archive_description_webspeed', 'woocommerce_taxonomy_archive_description', 10);
@@ -269,5 +269,3 @@ function disable_coupon_field_on_cart($enabled) {
 	return $enabled;
 }
 add_filter('woocommerce_coupons_enabled', 'disable_coupon_field_on_cart');
-
-// Figure rundt om loop billeder
