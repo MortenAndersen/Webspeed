@@ -137,6 +137,7 @@ a:hover {
     container-name: addtocart;
 }
 
+a.wp-element-button,
 .wp-element-button {
     display: flex;
     flex-wrap: wrap;
@@ -147,20 +148,22 @@ a:hover {
     width: 100%;
     max-width: 350px;
     margin-top: auto;
-
+    background: var(--woo-blue);
+    color: #fff;
     &[type=submit] {
         background: var(--woo-color-3);
-        color: #fff;
         border: none;
 
 
         &:hover {
             background: var(--woo-color-4);
+            color: #fff;
         }
     }
 
     &:hover {
         background: rgba(0,0,0,.1);
+        color: var(--body-color);
     }
 }
 
