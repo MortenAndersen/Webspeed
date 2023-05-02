@@ -427,3 +427,11 @@ function web_header_class() {
 		return ' sticky-header';
 	}
 }
+
+add_filter('comment_form_defaults', 'webspeed_custom_comment_form');
+function webspeed_custom_comment_form($no_fields) {
+	$no_fields['comment_notes_before'] = ''; // Removes comment before notes
+	$no_fields['comment_notes_after'] = ''; // Removes comment after notes
+	$no_fields['title_reply'] = ''; // Remove Title Reply
+	return $no_fields;
+}
