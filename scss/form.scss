@@ -128,6 +128,10 @@ textarea {
 label {
     display: block;
     margin-bottom: .25rem;
+    &[for=wp-comment-cookies-consent] {
+        display: inline;
+        margin-bottom: 0;
+    }
 }
 input {
     &[type=checkbox] {
@@ -148,12 +152,22 @@ textarea:-ms-input-placeholder {
  font-size: .8rem;
 }
 #commentform {
-    max-width: 500px;
+    max-width: 750px;
+    background: var(--border);
+    padding: 2rem;
     #submit {
-            max-width: 160px;
+            width: 200px;
         }
+    .form-submit {
+        margin: 0;
+    }
+    p {
+        max-width: inherit;
+    }
 }
-
+#reply-title {
+    display: none;
+}
 ul.form-grid {
     margin: 0;
     padding: 0;
