@@ -47,6 +47,9 @@ ul.wc-block-grid__products {
     .price {
         margin-bottom: 1rem;
     }
+    .wp-block-columns & {
+        margin: 2rem 0;
+    }
 }
 
 // Grid

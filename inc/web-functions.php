@@ -428,6 +428,8 @@ function web_header_class() {
 	}
 }
 
+// ------------------------------------------------- //
+
 add_filter('comment_form_defaults', 'webspeed_custom_comment_form');
 function webspeed_custom_comment_form($no_fields) {
 	$no_fields['comment_notes_before'] = ''; // Removes comment before notes
