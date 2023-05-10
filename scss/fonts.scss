@@ -225,7 +225,8 @@ main {
 a {
     color: var(--link);
     text-decoration: underline;
-    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 2px;
 
 }
 
