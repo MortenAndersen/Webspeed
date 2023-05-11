@@ -373,9 +373,9 @@ if (!function_exists('web_img_title')) {
 			if (!get_field('skjul_titel')) {
 				echo '<div class="wrap-no-pad">';
 				echo '<div class="top-caption">';
-				echo '<h1>' . strtr(get_the_title(), $arr) . '</h1>';
+				echo '<h1 class="banner-title">' . strtr(get_the_title(), $arr) . '</h1>';
 				if (!empty($caption)) {
-					echo '<h2>' . $caption . '</h2>';
+					echo '<h2 class="banner-sub">' . $caption . '</h2>';
 				}
 				echo '</div>';
 				echo '</div>';
@@ -385,9 +385,9 @@ if (!function_exists('web_img_title')) {
 		if (!class_exists('ACF')) {
 			echo '<div class="wrap-no-pad">';
 			echo '<div class="top-caption">';
-			echo '<h1>' . strtr(get_the_title(), $arr) . '</h1>';
+			echo '<h1 class="banner-title">' . strtr(get_the_title(), $arr) . '</h1>';
 			if (!empty($caption)) {
-				echo '<h2>' . $caption . '</h2>';
+				echo '<h2 class="banner-sub">' . $caption . '</h2>';
 			}
 			echo '</div>';
 			echo '</div>';

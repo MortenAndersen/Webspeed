@@ -309,7 +309,7 @@ article>.post-img {
     }
 }
 .top-post-img {
-    overflow: hidden;
+    //overflow: hidden;
     position: relative;
 
     img {
@@ -320,6 +320,9 @@ article>.post-img {
         transform: none;
         width: 100%;
         max-height: 50vh;
+    }
+    a {
+        text-decoration: none;
     }
 
     .wrap-no-pad {

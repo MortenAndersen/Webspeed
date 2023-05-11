@@ -54,21 +54,22 @@ h2 {
     
 }
 
-.top-caption {
-    h1 {
-        //font-size: var(--xxl);
-
-        
-        margin: 0;
-        font-weight: normal;
+.banner-title {
+    font-size: clamp(1.8rem, 3.8vw, 4rem);
+    line-height: 1.1;
+    letter-spacing: -0.04rem;
+    margin: 0;
+    font-weight: normal;
+    max-width: 50ch;
     }
 
-    h2 {
-        
-        margin: 0;
-        font-weight: normal;
-    }
+.banner-sub {
+    font-size: clamp(1.4rem, 3vw, 1.7rem);  
+    margin: 0;
+    font-weight: normal;
+    max-width: 50ch;
 }
+
 
 
 
