@@ -348,7 +348,7 @@ article>.post-img {
     color: #fff;
     background: var(--top-caption-bg);
     color: var(--top-caption-color);
-    padding: 2rem;
+    padding: s.$gap-n;
 }
 
 @media (min-width: 800px) {
