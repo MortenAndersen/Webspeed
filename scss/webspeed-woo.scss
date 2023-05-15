@@ -6,9 +6,9 @@
     --woo-color-2: #CDD0C9;
     --woo-color-3: #2F4858;
     --woo-color-4: #4D6A70;
+    --woo-color-5: #c58d02;
     --woo-red: darkred;
     --woo-blue: cadetblue;
-    --woo-green: #4f8a01;
     --woo-small-font: 85%;
     --woo-but-height: 1;
 }
@@ -115,15 +115,17 @@ ul.wc-block-grid__products {
 
  .onsale {
     position: absolute;
-    border: 1px solid var(--woo-green);
-    background: var(--woo-green);
+    background: var(--woo-color-5);
     color: #fff;
     border-radius: 13px;
     padding: 5px 10px;
     line-height: 1;
-    font-size: 0.875rem;
+    font-size: .7rem;
+    font-weight: bold;
+    letter-spacing: .04rem;
     right: .5rem;
     top: .5rem;
+    text-transform: uppercase;
     .woocommerce-product-attributes & {
         top: 1rem;
         right: 1rem;
@@ -131,7 +133,7 @@ ul.wc-block-grid__products {
 }
 a:hover {
     .onsale {
-        background: hsl(0deg 0% 0% / .05);
+        background: hsl(0deg 0% 0% / .1);
         color: var(--woo-blue);
     }
 }
