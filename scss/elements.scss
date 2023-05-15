@@ -490,11 +490,6 @@ article>.post-img {
     }
 }
 
-@media (max-width: 800px) {
-    img#logo {
-        max-width: calc(100% - 2rem);
-    }
-}
 
 .logo-name {
     transition: transform .75s ease;
@@ -507,8 +502,9 @@ article>.post-img {
 }
 
 img#logo {
-    max-height: 70px;
+    max-height: 50px;
     width: auto;
+    
 }
 
 .g-t-t {
