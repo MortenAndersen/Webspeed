@@ -7,6 +7,7 @@
     --woo-color-3: #2F4858;
     --woo-color-4: #4D6A70;
     --woo-color-5: #c58d02;
+    --woo-color-6: #ca9a21;
     --woo-red: darkred;
     --woo-blue: cadetblue;
     --woo-small-font: 85%;
@@ -150,34 +151,37 @@ a.wp-element-button,
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    border: 1px solid var(--woo-color-2);
+    border: none;
+    text-decoration: none;
     line-height: var(--woo-but-height);
     border-radius: 50vw;
     width: 100%;
     max-width: 350px;
     margin-top: auto;
-    background: var(--woo-blue);
+    background: var(--woo-color-5);
     align-items: center;
     text-align: center;
     color: #fff;
     padding: .7rem 0;
-    &[type=submit] {
-        background: var(--woo-color-3);
-        border: none;
-
-
-        &:hover {
-            background: var(--woo-color-4);
-            color: #fff;
-        }
-    }
 
     &:hover {
-        background: rgba(0,0,0,.1);
-        color: var(--body-color);
+        background: var(--woo-color-6);
     }
     .summary & {
         margin-top: 0;
+    }
+    &.add_to_cart_button {
+        background: var(--woo-blue);
+        &:hover {
+            background: var(--woo-color-2);
+            color: inherit;
+        }
+    }
+    &.single_add_to_cart_button,
+    &[name=update_cart],
+    &[name=apply_coupon],
+    &[name=woocommerce_checkout_place_order] {
+        background: var(--woo-color-3);
     }
 }
 
@@ -1140,17 +1144,7 @@ p.price {
     overflow: hidden;
     margin-bottom: 2rem;
 }
-.wc-forward,
-.wp-element-button[type=submit][name=woocommerce_checkout_place_order] {
-    background: var(--woo-green);
-    color: #fff;
-    text-decoration: none;
-    &:hover {
-        background: var(--woo-green);
-        color: #fff;
-        filter: brightness(0.85);
-    }
-}
+
 .in-stock {
     margin: 0;
 }
