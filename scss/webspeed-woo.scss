@@ -1157,3 +1157,11 @@ p.price {
     margin: 0;
     margin-bottom: 1rem;
 }
+.woo-tags {
+    margin: 0;
+    padding: 0;
+    li {
+        list-style-type: none;
+        margin: .5rem 0;
+    }
+}
