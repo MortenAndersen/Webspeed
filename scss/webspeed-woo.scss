@@ -1160,6 +1160,7 @@ p.price {
 .woo-tags {
     margin: 0;
     padding: 0;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     li {
         list-style-type: none;
         margin: .5rem 0;
