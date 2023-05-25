@@ -4,7 +4,6 @@ function web_post($atts) {
 	global $post;
 	ob_start();
 
-	// define attributes and their defaults
 	extract(shortcode_atts(
 		array(
 			'number' => '3',
