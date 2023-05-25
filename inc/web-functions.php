@@ -108,7 +108,7 @@ function web_go_back() {
 // Read More
 
 function web_read_more() {
-	echo '<p class="read-more"><a href="' . get_the_permalink() . '">' . esc_html__('Read More', 'webspeed-domain') . '</a></p>';
+	echo '<p class="read-more"><a href="' . get_the_permalink() . '" aria-label="' . get_the_title() . '">' . esc_html__('Read More', 'webspeed-domain') . '</a></p>';
 }
 
 // Edit link
@@ -136,7 +136,7 @@ function web_foto() {
 function web_blog_thumbnail() {
 	if (has_post_thumbnail()) {
 		echo '<div class="img-zoom oversigt-post-img">';
-		echo '<a href="' . get_the_permalink() . '">';
+		echo '<a href="' . get_the_permalink() . '" aria-label="' . get_the_title() . '">';
 		the_post_thumbnail('webspeed-post');
 		echo '</a>';
 		echo '</div>';
@@ -149,7 +149,7 @@ function web_thumbnail_link() {
 
 		if (has_post_thumbnail()) {
 			echo '<div class="img-zoom">';
-			echo '<a href="' . get_the_permalink() . '">';
+			echo '<a href="' . get_the_permalink() . '" aria-label="' . get_the_title() . '">';
 			the_post_thumbnail('webspeed-post');
 			echo '</a>';
 			echo '</div>';
@@ -161,7 +161,7 @@ function web_thumbnail_link() {
 		if ($image) {
 
 			echo '<div class="img-zoom">';
-			echo '<a href="' . get_the_permalink() . '">';
+			echo '<a href="' . get_the_permalink() . '" aria-label="' . get_the_title() . '">';
 			echo wp_get_attachment_image($image, $size);
 			echo '</a>';
 			echo '</div>';
@@ -170,7 +170,7 @@ function web_thumbnail_link() {
 
 			if (has_post_thumbnail()) {
 				echo '<div class="img-zoom">';
-				echo '<a href="' . get_the_permalink() . '">';
+				echo '<a href="' . get_the_permalink() . '" aria-label="' . get_the_title() . '">';
 				the_post_thumbnail('webspeed-post', );
 				echo '</a>';
 				echo '</div>';
@@ -187,7 +187,7 @@ function web_thumbnail_link_no_lazy() {
 
 		if (has_post_thumbnail()) {
 			echo '<div class="img-zoom">';
-			echo '<a href="' . get_the_permalink() . '">';
+			echo '<a href="' . get_the_permalink() . '" aria-label="' . get_the_title() . '">';
 			the_post_thumbnail('webspeed-post', ['loading' => false]);
 			echo '</a>';
 			echo '</div>';
@@ -199,7 +199,7 @@ function web_thumbnail_link_no_lazy() {
 		if ($image) {
 
 			echo '<div class="img-zoom">';
-			echo '<a href="' . get_the_permalink() . '">';
+			echo '<a href="' . get_the_permalink() . '" aria-label="' . get_the_title() . '">';
 			echo wp_get_attachment_image($image, $size);
 			echo '</a>';
 			echo '</div>';
@@ -208,7 +208,7 @@ function web_thumbnail_link_no_lazy() {
 
 			if (has_post_thumbnail()) {
 				echo '<div class="img-zoom">';
-				echo '<a href="' . get_the_permalink() . '">';
+				echo '<a href="' . get_the_permalink() . '" aria-label="' . get_the_title() . '">';
 				the_post_thumbnail('webspeed-post', ['loading' => false]);
 				echo '</a>';
 				echo '</div>';
