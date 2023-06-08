@@ -23,6 +23,5 @@ if (class_exists('ACF')) {
 	}
 	echo '</ul></div>';
 }
-
 echo '</div>';
 echo '</aside>';
