@@ -234,13 +234,18 @@ a {
     text-decoration: underline;
     text-underline-offset: 2px;
     text-decoration-thickness: 2px;
-
+    .page-footer & {
+        color: inherit;
+    }
 }
 
 a:focus,
 a:hover {
     color: var(--link-hover);
     text-decoration: none;
+    .page-footer & {
+        color: inherit;
+    }
 }
 
 @media (min-width: 800px) {

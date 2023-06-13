@@ -18,6 +18,7 @@ if (is_product_category()) {
 
 // Top på woo oversigtsider
 if (!is_product()) {
+	echo '<div class="woo-cat">';
 	echo '<div class="wrap">';
 
 	if (class_exists('ACF')) {
@@ -44,6 +45,7 @@ if (!is_product()) {
 	}
 	do_action('woocommerce_archive_description_webspeed');
 
+	echo '</div>';
 	echo '</div>';
 }
 
