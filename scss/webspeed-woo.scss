@@ -39,7 +39,7 @@ ul.wc-block-grid__products {
         position: relative;
         display: flex;
         flex-flow: column;
-        border-radius: 1rem;
+        border-radius: .5rem;
         border: 1px solid rgba(0, 0, 0, .04);
     }
 
@@ -1119,8 +1119,12 @@ label[for=order_comments] {
         }
     }
 
-    button[type=submit].has-icon svg {
+    button[type=submit].has-icon {
+        display: flex;
+        align-items: center;
+     svg {
         fill: var(--woo-green) !important;
+    }
     }
 
     .scroll & {
@@ -1143,6 +1147,7 @@ label[for=order_comments] {
             color: #fff;
         }
     }
+    
 
 }
 
