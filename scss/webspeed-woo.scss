@@ -164,8 +164,9 @@ a:hover {
     container-name: addtocart;
 }
 
+a.button,
 a.wp-element-button,
-.wp-element-button {
+button.button {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
