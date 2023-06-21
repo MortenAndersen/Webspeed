@@ -1268,3 +1268,6 @@ p.price {
     overflow: hidden;
     border-bottom: 1px solid var(--border);
 }
+tr.woocommerce-shipping-totals {
+    display: grid;
+}
