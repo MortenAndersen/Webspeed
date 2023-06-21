@@ -791,8 +791,12 @@ form.cart {
 .woocommerce-form-coupon-toggle {
     margin-bottom: 1rem;
     text-align: right;
+    font-size: .85rem;
+    font-style: italic;
     a {
         display: block;
+        font-size: 1rem;
+        font-style: normal;
     }
 }
 
