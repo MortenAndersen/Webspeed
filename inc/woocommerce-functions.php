@@ -269,3 +269,11 @@ function disable_coupon_field_on_cart($enabled) {
 	return $enabled;
 }
 add_filter('woocommerce_coupons_enabled', 'disable_coupon_field_on_cart');
+
+function disable_shipping_calc_on_cart($show_shipping) {
+	if (is_cart()) {
+		return false;
+	}
+	return $show_shipping;
+}
+add_filter('woocommerce_cart_ready_to_calc_shipping', 'disable_shipping_calc_on_cart', 99);
