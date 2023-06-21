@@ -790,6 +790,7 @@ form.cart {
 
 .woocommerce-form-coupon-toggle {
     margin-bottom: 1rem;
+    text-align: right;
     a {
         display: block;
     }
@@ -802,15 +803,15 @@ form.cart {
 
     p {
         max-width: none;
+        margin: 0 0 1rem 0;
+        font-size: 1rem;
     }
 
     h3 {
-        margin: 0 0 2rem 0;
-    border-bottom: 1px solid var(--border);
-    padding-bottom: 0.5rem;
+        margin: 0 0 1rem 0;
     font-weight: normal;
     text-transform: uppercase;
-    font-size: .9rem;
+    font-size: .85rem;
     max-width: inherit;
 
     }
@@ -974,7 +975,7 @@ textarea[name=order_comments] {
     background: #fff;
     border: 1px solid #bbb;
     &:focus {
-            border: solid 1px rgba(0,125,187,.85) !important;
+            border: solid 1px rgba(0,125,187,.85);
             background-color: rgba(0,125,187,.03);
         }
 }
@@ -1053,8 +1054,10 @@ tfoot {
 }
 
 .betaling {
-    background: var(--woo-color-2);
+    border: solid 1px rgba(0,125,187,.85) !important;
+            background-color: rgba(0,125,187,.03);
     padding: 1rem;
+    border-radius: 3px;
 
     .product-quantity {
         font-weight: normal;
@@ -1086,9 +1089,9 @@ label[for=order_comments] {
 
     li {
         list-style-type: none;
-        border-bottom: 1px solid #fff;
+
         margin: 0 0 1rem 0;
-        padding-bottom: 1rem;
+        padding: 0;
         max-width: inherit;
         width: 100%;
 
@@ -1130,6 +1133,8 @@ label[for=order_comments] {
         width: fit-content;
     padding-inline: 1rem;
     float: right;
+    font-size: .85rem;
+    text-transform: uppercase;
 
     }
     p:not(.form-row){
@@ -1270,4 +1275,9 @@ p.price {
 }
 tr.woocommerce-shipping-totals {
     display: grid;
+}
+.woocommerce-billing-fields {
+    h3 {
+        display: none;
+    }
 }
