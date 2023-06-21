@@ -447,6 +447,14 @@
 		"oAP": "/inc/shortcode-child-menu.php",
 		"oF": 0
 		},
+	"/inc/shortcode-mailchimp.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/inc/shortcode-mailchimp.php",
+		"oF": 0
+		},
 	"/inc/shortcode-page.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -569,6 +577,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/languages/da_DK.po",
+		"oF": 0
+		},
+	"/mailchimp.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/mailchimp.php",
 		"oF": 0
 		},
 	"/page-aside-left-right-topimg.php": {
