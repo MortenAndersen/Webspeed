@@ -1089,6 +1089,11 @@ label[for=order_comments] {
     display: none;
 }
 
+p.mailchimp-newsletter {
+    overflow: hidden;
+    width: 100%;
+    font-weight: bold;
+}
 .wc_payment_methods {
     display: flex;
     margin: 1rem 0;
