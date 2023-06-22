@@ -437,3 +437,10 @@ function webspeed_custom_comment_form($no_fields) {
 	$no_fields['title_reply'] = ''; // Remove Title Reply
 	return $no_fields;
 }
+
+// ------------------------------------------------- //
+if (!function_exists('mailchimp')) {
+	function mailchimp() {
+		echo '<p>MailChimp kode mangler!</p>';
+	}
+}
