@@ -676,7 +676,7 @@ form.cart {
     display: grid;
 
     border-bottom: 1px solid var(--woo-color-2);
-    padding: .2rem 0;
+    padding: .5rem 0;
 
     &:last-of-type {
         border: none;
@@ -724,6 +724,7 @@ form.cart {
     .woocommerce-cart-form .woocommerce-cart-form__contents tr {
         align-items: center;
         grid-template-columns: 20px 60px 5fr 2fr 70px 2fr;
+        gap: 1ch;
     }
 }
 
