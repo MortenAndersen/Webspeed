@@ -89,10 +89,7 @@ button.pbSubmit {
     box-shadow: inset 0 -0.6em 1em -0.35em rgba(0, 0, 0, 0.17), inset 0 0.6em 2em -0.3em rgba(255, 255, 255, 0.15), inset 0 0 0em 0.05em rgba(255, 255, 255, 0.12);
 }
 
-.wp-block-search .wp-block-search__button {
-    display: flex;
-    align-content: center;
-}
+
 
 button:hover,
 input[type="button"]:hover,
@@ -129,7 +126,8 @@ input[type="color"],
 textarea,
 .wp-block-search .wp-block-search__input {
     padding: 0 5px;
-    border: 1px solid var(--border);
+    border: 1px solid #bbb;
+    background: #fff;
     outline: none;
     width: 100%;
     height: 2.5rem;
@@ -161,7 +159,8 @@ input[type="datetime"]:focus,
 input[type="datetime-local"]:focus,
 input[type="color"]:focus,
 textarea:focus {
-    background: rgba(0, 0, 0, 0.1);
+    background: var(--woo-pay-bg);
+    border-color: var(--woo-pay-border);
     color: inherit;
 }
 

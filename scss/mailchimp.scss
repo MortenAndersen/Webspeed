@@ -1,0 +1,28 @@
+#mc_embed_signup {
+	max-width: 300px;
+    background: rgba(0,0,0,.05);
+    padding: 1rem;
+    overflow: hidden;
+    border-radius: 3px;
+    border: 1px solid #bbb;
+    input {
+    	height: 2rem;
+    }
+}
+.asterisk {
+	color: red;
+}
+.mc-field-group {
+	margin-bottom: .5rem;
+	label {
+		font-size: .85rem;
+	}
+}
+.optionalParent {
+	margin: 1.5rem 0 0 0;
+}
+.brandingLogo {
+	float: right;
+    margin: .5rem 0 0 0 !important;
+    max-width: 120px;
+}

@@ -168,6 +168,7 @@ article {
     }
 }
 
+.page-content
 p {
     margin: 0 0 2rem 0;
     max-width: 70ch;
@@ -203,11 +204,9 @@ p {
         margin: 0;
     }
 
-    .page-footer & {
-        margin: 0 0 1rem 0;
-        font-size: 90%;
-    }
+    
 }
+
 
 .bred {
     max-width: inherit;

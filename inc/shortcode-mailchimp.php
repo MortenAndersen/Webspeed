@@ -6,6 +6,8 @@ function web_mailchimp($atts) {
 
 	if (function_exists('mailchimp')) {
 		return mailchimp();
+	} else {
+		return '<p>MailChimp HTML formularen mangler!</p>';
 	}
 
 	$myvariable = ob_get_clean();

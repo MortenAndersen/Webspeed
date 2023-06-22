@@ -12,8 +12,6 @@
     --woo-blue: cadetblue;
     --woo-small-font: 85%;
     --woo-but-height: 1;
-    --woo-pay-border: rgba(0,125,187,.85);
-    --woo-pay-bg: rgba(0,125,187,.03);
 }
 
 .woo-menu {
@@ -977,14 +975,7 @@ ul.order_details {
 
 .woocommerce-billing-fields,
 .shipping_address {
-    input {
-        background: #fff;
-        border: 1px solid #bbb;
-        &:focus {
-            border: solid 1px var(--woo-pay-border);
-            background-color: var(--woo-pay-bg);
-        }
-    }
+    
 
     label {
         font-size: var(--woo-small-font);
@@ -997,15 +988,6 @@ ul.order_details {
     font-style: italic;
 }
 
-textarea[name=order_comments] {
-    border: none;
-    background: #fff;
-    border: 1px solid #bbb;
-    &:focus {
-            border: solid 1px var(--woo-pay-border);
-            background-color: var(--woo-pay-bg);
-        }
-}
 
 .woo-menu {
     align-items: center;
@@ -1190,8 +1172,8 @@ button#place_order {
     border-radius: 100vh;
     transition: 1s background;
 
-    input {
-        background: transparent;
+    input.wp-block-search__input {
+        background: var(--woo-color-1);
         border: none !important;
 
         &:focus {
@@ -1210,7 +1192,9 @@ button#place_order {
     .scroll & {
         background: var(--woo-blue);
         color: #fff;
-
+        input {
+            background: transparent;
+        }
         button[type=submit].has-icon svg {
             fill: #fff !important;
         }
