@@ -223,3 +223,8 @@ span.wpcf7-form-control-wrap {
 .wpcf7-list-item-label {
     padding-left: 1ch;
 }
+
+[type=checkbox],
+[type=radio] {
+    accent-color: var(--woo-pay-border);
+}
