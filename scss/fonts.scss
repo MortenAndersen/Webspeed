@@ -399,3 +399,16 @@ figcaption {
         margin-bottom: 2rem;
     }
 }
+.page-footer {
+    .wp-block-heading,
+    .widget-title-footer,
+    .widgettitle {
+        font-weight: normal;
+    font-size: 1rem;
+    padding-block: 0 0.5rem;
+    margin-block: 0 1rem;
+    border-bottom: 1px solid;
+    border-color: color-mix(in srgb, currentcolor 35%, transparent);
+    text-transform: uppercase;
+    }
+}

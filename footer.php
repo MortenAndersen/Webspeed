@@ -41,7 +41,13 @@ if (is_active_sidebar('footer') || is_active_sidebar('pre-footer') || is_active_
 
 	if (is_active_sidebar('footer')) {
 		$the_sidebars = wp_get_sidebars_widgets();
-		echo '<div class="grid g-d-' . count($the_sidebars['footer']) . ' gap-2">';
+		$antal_widgte = count($the_sidebars['footer']);
+		if ($antal_widgte < 5) {
+			$antal_widgte = $antal_widgte;
+		} else {
+			$antal_widgte = 4;
+		}
+		echo '<div class="grid g-d-' . $antal_widgte . ' gap-2">';
 
 		dynamic_sidebar('footer');
 		echo '</div>';

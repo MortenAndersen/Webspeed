@@ -18,10 +18,12 @@
     .menu {
         flex-flow: column;
         line-height: 1.2;
-        border-top: 1px solid var(--border);
+        
 
         li {
-            border-bottom: 1px solid var(--border);
+            border-bottom: 1px solid;
+                border-color: color-mix(in srgb, currentcolor 25%, transparent);
+
             padding: s.$gap-xs 0;
         }
 
