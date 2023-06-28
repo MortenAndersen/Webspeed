@@ -207,6 +207,15 @@ p {
     
 }
 
+.woo-decs {
+    p {
+        margin: 0 0 2rem 0;
+    max-width: 70ch;
+    text-wrap: balance;
+    font-size: clamp(1rem, 1.2vw, 1.2rem);
+    }
+
+}
 
 .bred {
     max-width: inherit;
