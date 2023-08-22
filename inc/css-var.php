@@ -31,7 +31,7 @@ function root_css() {
 	if (get_theme_mod('link')) {
 		echo '--link:' . get_theme_mod('link') . '; ';
 	} else {
-		echo '--link:#0073e5;';
+		echo '--link:#065099;';
 	}
 
 	if (get_theme_mod('link_hover')) {
