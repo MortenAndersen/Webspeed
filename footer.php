@@ -78,5 +78,6 @@ echo '<a class="g-t-t" href="#top">
 wp_footer();
 do_action('webspeed_before_body_end');
 ?>
+
 </body>
 </html>

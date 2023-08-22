@@ -666,6 +666,7 @@ form.cart {
         border: none;
         padding: 0;
         line-height: 1.8;
+
     }
     th {
         font-size: .9rem;
@@ -673,12 +674,17 @@ form.cart {
         font-weight: normal;
     }
 }
+td.product-name {
+    font-weight: bold;
+}
 
 .woocommerce-cart-form .woocommerce-cart-form__contents tr {
     display: grid;
-
+    grid-template-columns: (60px auto);
+    gap: .5rem;
     border-bottom: 1px solid var(--woo-color-2);
     padding: .5rem 0;
+
 
     &:last-of-type {
         border: none;
