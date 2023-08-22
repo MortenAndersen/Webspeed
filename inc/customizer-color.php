@@ -67,7 +67,7 @@ function webspeed_customizer_color($wp_customize) {
 	/* ---------------------------------------------------------- */
 
 	$wp_customize->add_setting('link', array(
-		'default' => '#0073e5',
+		'default' => '#014b94',
 		'transport' => 'refresh',
 	));
 
