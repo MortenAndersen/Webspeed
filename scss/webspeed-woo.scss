@@ -15,7 +15,11 @@
 }
 
 .woo-menu {
-    grid-template-columns: 1fr 50px 40px;
+    grid-template-columns: 1fr 40px 40px;
+
+}
+.logo-search-menu {
+
 }
 
 @media (min-width: b.$menu-break) {
@@ -1002,9 +1006,6 @@ ul.order_details {
     gap: 1rem;
 }
 
-.cart-con {
-    margin-left: auto;
-}
 
 .menu-inner {
     gap: 1rem 3rem;
@@ -1180,12 +1181,8 @@ button#place_order {
     transition: 1s background;
 
     input.wp-block-search__input {
-        background: var(--woo-color-1);
+        background: transparent;
         border: none !important;
-
-        &:focus {
-            background: transparent !important;
-        }
     }
 
     button[type=submit].has-icon {
