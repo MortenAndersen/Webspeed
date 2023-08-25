@@ -136,8 +136,9 @@ ul.wc-block-grid__products {
 
 .onsale {
     position: absolute;
-    background: var(--woo-color-5);
-    color: #000;
+    background: hsl(0deg 0% 0% / .6);
+    
+    color: #fff;
     border-radius: 13px;
     padding: 5px 10px;
     line-height: 1;
@@ -156,8 +157,8 @@ ul.wc-block-grid__products {
 
 a:hover {
     .onsale {
-        background: hsl(0deg 0% 0% / .1);
-        color: var(--woo-blue);
+        background: var(--woo-color-5);
+        color: #fff;
     }
 }
 
@@ -184,12 +185,13 @@ button.button {
     background: var(--woo-color-5);
     align-items: center;
     text-align: center;
-    color: #fff;
+    color: #000;
     padding: .7rem 0;
     transition: box-shadow .5s;
 
     &:hover {
         background: var(--woo-color-6);
+        color: #fff;
     }
 
     .summary & {
