@@ -213,6 +213,8 @@ button.button {
     &[name=apply_coupon],
     &[name=woocommerce_checkout_place_order] {
         background: var(--woo-color-3);
+        color: #fff;
+        cursor: pointer;
     }
 }
 
