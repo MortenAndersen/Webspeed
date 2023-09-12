@@ -11,6 +11,8 @@ add_action('init', function () {
 // Theme jQuery fil
 
 function web_scripts() {
+	wp_register_script('lightbox', get_template_directory_uri() . '/js/lightbox.js', array('jquery'));
+	// Lightbox script skal aktiveres i child-theme!
 	wp_register_script('theme-script', get_template_directory_uri() . '/js/starter-min.js', array('jquery'));
 	wp_enqueue_script('theme-script');
 }

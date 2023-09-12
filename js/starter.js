@@ -1,4 +1,4 @@
-// @codekit-prepend "bx-slider.js", "lightbox.js" quiet;
+// @codekit-prepend "bx-slider.js" quiet;
 
 /*global jQuery*/
 (function ($) {
@@ -172,6 +172,6 @@ $('.zoom-in .img-zoom').each(function () {
         $('.woo-aside-con').toggleClass('active');
     });
 
-});
+}); 
 
 }(jQuery));
