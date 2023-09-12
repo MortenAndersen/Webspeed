@@ -103,7 +103,7 @@ function root_css() {
 	if (get_theme_mod('submit_bg')) {
 		echo '--submit-bg:' . get_theme_mod('submit_bg') . '; ';
 	} else {
-		echo '--submit-bg:rgba(0,125,187,.85);';
+		echo '--submit-bg:#072f42d9;';
 	}
 
 	if (get_theme_mod('submit_color')) {

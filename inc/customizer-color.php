@@ -223,7 +223,7 @@ function webspeed_customizer_color($wp_customize) {
 	/* ---------------------------------------------------------- */
 
 	$wp_customize->add_setting('submit_bg', array(
-		'default' => '#0073e5',
+		'default' => '#072f42d9',
 		'transport' => 'refresh',
 	));
 
