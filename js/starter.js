@@ -27,7 +27,7 @@
         });
 
         // Sub menu trigger
-        $('.mobile-menu ul').parent('li').append('<span class="menu-trigger" aria-label="Åben undermenu"></span>');
+        $('.mobile-menu ul').parent('li').append('<span class="menu-trigger"></span>');
 
         // Sub menu toggle
         $('.current_page_ancestor > .menu-trigger').addClass('active-trigger');
