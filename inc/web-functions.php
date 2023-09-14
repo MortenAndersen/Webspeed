@@ -108,8 +108,10 @@ function web_go_back() {
 // Read More
 
 function web_read_more() {
-	echo '<p class="read-more"><a href="' . get_the_permalink() . '" aria-label="' . get_the_title() . '">' . esc_html__('Read More', 'webspeed-domain') . '</a></p>';
+	echo '<p class="read-more"><a href="' . get_the_permalink() . '">' . esc_html__('Read More', 'webspeed-domain') . '</a></p>';
 }
+
+// aria-label="' . get_the_title() . '
 
 // Edit link
 function web_edit_link() {
