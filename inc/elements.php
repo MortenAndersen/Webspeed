@@ -2,8 +2,6 @@
 
 // Posttype Elements
 
-add_action('init', 'create_posttype_webspeed_elements');
-
 function create_posttype_webspeed_elements() {
 	register_post_type(
 		'elements',
@@ -33,6 +31,4 @@ function create_posttype_webspeed_elements() {
 	);
 }
 
-function posttype_function_webspeed_elements() {
-	create_posttype_webspeed_elements();
-}
+add_action('init', 'create_posttype_webspeed_elements');
