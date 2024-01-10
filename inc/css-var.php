@@ -253,7 +253,7 @@ function root_css() {
 	if (get_theme_mod('google_font_family')) {
 		echo '--font-family:' . get_theme_mod('google_font_family') . '; ';
 	} else {
-		echo '--font-family:arial,x-locale-body,sans-serif;';
+		echo '--font-family:system-ui,sans-serif;';
 	}
 
 	echo '}';
