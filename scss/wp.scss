@@ -367,3 +367,9 @@ label.wp-block-search__label.screen-reader-text {
         }
     }
 }
+.wp-block-embed iframe {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16/9;
+}
