@@ -37,7 +37,7 @@ ul.wc-block-grid__products {
 
     li {
         margin: 0;
-        padding: 1rem;
+        padding: .5rem;
         background: rgba(0, 0, 0, .025);
         list-style-type: none;
         position: relative;
@@ -139,7 +139,7 @@ ul.wc-block-grid__products {
     background: hsl(0deg 0% 0% / .6);
     
     color: #fff;
-    border-radius: 13px;
+    border-radius: .5rem;
     padding: 5px 10px;
     line-height: 1;
     font-size: .7rem;
@@ -148,11 +148,6 @@ ul.wc-block-grid__products {
     right: .5rem;
     top: .5rem;
     text-transform: uppercase;
-
-    .woocommerce-product-attributes & {
-        top: 1rem;
-        right: 1rem;
-    }
 }
 
 a:hover {
@@ -201,7 +196,8 @@ button.button {
     &.add_to_cart_button {
         background: var(--woo-blue);
         color: #000;
-
+        font-size: 14px;
+        font-weight: 500;
         &:hover {
             box-shadow: inset 0 0px 50px #00000057;
             color: #fff;
@@ -415,8 +411,8 @@ button[name=update_cart] {
 // single
 .woo-img-sum {
     background: var(--woo-color-1);
-    padding: 2rem;
-    border-radius: 2rem;
+    padding: 1rem 1rem 0 1rem;
+    border-radius: .5rem;
 }
 
 .summary.entry-summary {
@@ -536,8 +532,8 @@ button[name=update_cart] {
 .woocommerce-product-attributes {
     font-size: var(--woo-small-font);
     background: var(--woo-color-1);
-    padding: 2rem;
-    border-radius: 2rem;
+    padding: 1rem;
+    border-radius: .5rem;
     position: relative;
 
     p {
