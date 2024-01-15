@@ -998,13 +998,14 @@ ul.order_details {
     padding: .5rem 0;
     font-style: italic;
 }
-
-
 .woo-menu {
-    align-items: center;
     gap: 1rem;
 }
-
+@media (min-width: 700px) {
+.woo-menu {
+    align-items: center;
+}
+}
 
 .menu-inner {
     gap: 1rem 3rem;
