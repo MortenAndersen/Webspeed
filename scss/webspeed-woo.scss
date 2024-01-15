@@ -490,9 +490,10 @@ button[name=update_cart] {
     margin-top: auto;
 
     >div {
-        border-top: 1px solid var(--woo-color-2);
-        padding-top: 1rem;
-        margin-top: 1rem;
+        background: var(--woo-color-1);
+        padding: 1rem;
+        border-radius: .5rem;
+        margin: 1rem 0;
         text-align: center;
         font-style: italic;
 
