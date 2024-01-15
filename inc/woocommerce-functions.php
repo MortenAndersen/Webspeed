@@ -40,13 +40,7 @@ function webspeed_disable_woocommerce_block_editor_styles() {
 	wp_deregister_style('wc-block-editor');
 	wp_deregister_style('wc-blocks-style');
 }
-
-function webspeed_disable_woocommerce_block_styles() {
-	wp_dequeue_style('wc-blocks-style');
-}
-add_action('wp_enqueue_scripts', 'webspeed_disable_woocommerce_block_styles');
-
-//add_action('enqueue_block_assets', 'webspeed_disable_woocommerce_block_editor_styles', 1, 1);
+add_action('enqueue_block_assets', 'webspeed_disable_woocommerce_block_editor_styles', 1, 1);
 
 // Remove the sorting dropdown from Woocommerce
 remove_action('woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30);
