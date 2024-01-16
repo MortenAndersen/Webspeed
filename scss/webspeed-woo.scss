@@ -1310,3 +1310,21 @@ tr.woocommerce-shipping-totals {
     max-width: 350px;
     border-radius: 3px;
 }
+#webcart {
+    fill: var(--menu-icon);
+}
+.itemsInCart #webcart .cir {
+    animation: filter-animation 1s infinite; 
+}
+.woocommerce-cart #webcart,
+.woocommerce-cart #webcart .cir,
+.woocommerce-checkout #webcart,
+.woocommerce-checkout #webcart .cir {
+    fill: #ddd;
+    animation: none;
+}
+@keyframes filter-animation {
+  0% {fill: #fff; }
+  75% { fill: var(--menu-icon); }
+  100% {fill: #fff; }
+}

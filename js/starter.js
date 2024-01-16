@@ -172,6 +172,15 @@ $('.zoom-in .img-zoom').each(function () {
         $('.woo-aside-con').toggleClass('active');
     });
 
+});
+
+$(document).on("click", ".ajax_add_to_cart", function(){
+    if( ! $('body').hasClass('itemsInCart') ){
+          $('body').addClass('itemsInCart');
+        }
 }); 
 
+
 }(jQuery));
+
+

@@ -39,6 +39,7 @@ add_filter('woocommerce_enqueue_styles', '__return_empty_array');
 function webspeed_disable_woocommerce_block_editor_styles() {
 	wp_deregister_style('wc-block-editor');
 	wp_deregister_style('wc-blocks-style');
+
 }
 add_action('enqueue_block_assets', 'webspeed_disable_woocommerce_block_editor_styles', 1, 1);
 
@@ -278,3 +279,12 @@ function disable_shipping_calc_on_cart($show_shipping) {
 	return $show_shipping;
 }
 add_filter('woocommerce_cart_ready_to_calc_shipping', 'disable_shipping_calc_on_cart', 99);
+
+// Add class to BODY if cart has items
+function webspeed_cart_has_items($classes) {
+	if (WC()->cart->get_cart_contents_count() >= 1) {
+		$classes[] = 'itemsInCart';
+	}
+	return $classes;
+}
+add_filter('body_class', 'webspeed_cart_has_items');
