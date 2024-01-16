@@ -1328,3 +1328,8 @@ tr.woocommerce-shipping-totals {
   75% { fill: var(--menu-icon); }
   100% {fill: #fff; }
 }
+.is-success {
+    svg {
+        fill: green;
+    }
+}
