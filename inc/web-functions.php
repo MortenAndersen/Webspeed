@@ -446,3 +446,6 @@ if (!function_exists('mailchimp')) {
 		echo '<p>MailChimp kode mangler!</p>';
 	}
 }
+
+// ACF nye
+add_filter('acf/the_field/escape_html_optin', '__return_true');
