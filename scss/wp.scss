@@ -373,3 +373,9 @@ label.wp-block-search__label.screen-reader-text {
     height: 100%;
     aspect-ratio: 16/9;
 }
+
+.page-footer {
+    .current_page_item {
+        font-weight: bold;
+    }
+}
