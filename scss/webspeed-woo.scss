@@ -170,7 +170,7 @@ button.button {
     justify-content: center;
     border: none;
     text-decoration: none;
-    line-height: var(--woo-but-height);
+    //line-height: var(--woo-but-height);
     border-radius: 50vw;
     width: 100%;
     max-width: 350px;
@@ -179,7 +179,7 @@ button.button {
     align-items: center;
     text-align: center;
     color: #000;
-    padding: .7rem 0;
+    padding-block: .7rem;
     transition: box-shadow .5s;
 
     &:hover {
@@ -209,6 +209,12 @@ button.button {
         background: var(--woo-color-3);
         color: #fff;
         cursor: pointer;
+    }
+}
+.single-post {
+    a.wp-element-button {
+        max-width: none;
+        margin-block:1rem;
     }
 }
 
