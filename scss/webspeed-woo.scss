@@ -1189,6 +1189,8 @@ button#place_order {
     button[type=submit].has-icon {
         display: flex;
         align-items: center;
+        height: 48px;
+        width: 48px;
      svg {
         fill: var(--woo-green) !important;
     }
