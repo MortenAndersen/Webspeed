@@ -400,7 +400,7 @@ if (!function_exists('web_img_title')) {
 // Icons
 function svg_url($type_key) {
 	$svg_type = ['calendar', 'phone', 'mail', 'instagram', 'globe', 'map', 'linkedin', 'facebook'];
-	$svg_url = '<svg class="icon meeting"><use href="' . get_template_directory_uri() . '/img/contact/sprite-sheet.svg#' . $svg_type[$type_key] . '" /></svg>';
+	$svg_url = '<svg class="icon meeting" alt="' . $svg_type[$type_key] . '"><use href="' . get_template_directory_uri() . '/img/contact/sprite-sheet.svg#' . $svg_type[$type_key] . '" /></svg>';
 
 	return $svg_url;
 }
