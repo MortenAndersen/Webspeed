@@ -23,6 +23,14 @@ if (get_field('telefon_2')) {
 	echo svg_url(1);
 	echo '</span><span class="k-info"><a href="tel:' . str_replace(' ', '', get_field('telefon_2')) . '">' . get_field('telefon_2') . '</a></span></li>';
 }
+
+$map = get_field('google_map');
+if ($map) {
+	echo '<li class="k-loca"><span class="k-label">';
+	echo svg_url(5);
+	echo '</span><span class="k-info"><a href="' . wp_kses_post($map) . '" target="_blank" title="Google Map">Google Map</a></span></li>';
+}
+
 if (get_field('info')) {
 	echo '<li class="k-info"><span class="k-label"></span><span class="k-info">' . get_field('info') . '</span></li>';
 }
