@@ -13,14 +13,6 @@ if (get_post_meta(get_the_ID(), 'google-map', true)) {
 	echo '</div>';
 }
 
-if (class_exists('ACF')) {
-	if (get_field('google_map')) {
-		echo '<div class="google-map-meta-field ACF-field">';
-		the_field('google_map');
-		echo '</div>';
-	}
-}
-
 if (is_active_sidebar('post-content')) {
 	dynamic_sidebar('post-content');
 }
