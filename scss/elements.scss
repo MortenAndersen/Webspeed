@@ -371,21 +371,6 @@ article>.post-img {
     margin-bottom: s.$gap-n;
 }
 
-.google-map-meta-field {
-    position: relative;
-    height: 400px;
-    width: 100%;
-    margin-bottom: s.$gap-n;
-
-    iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100% !important;
-        height: 100% !important;
-    }
-}
-
 .related-post {
     margin: 0 0 s.$gap-n 0;
     padding: 0;

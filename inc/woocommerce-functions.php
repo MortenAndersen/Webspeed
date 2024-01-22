@@ -210,6 +210,9 @@ function woo_remove_product_tabs($tabs) {
 	return $tabs;
 }
 
+// fjerner "In stock" og antal
+add_filter('woocommerce_get_stock_html', '__return_empty_string', 10, 2);
+
 // Tabs callback function after single content.
 add_action('woocommerce_after_single_product_summary', 'woocommerce_product_description_tab', 10);
 add_action('woocommerce_after_single_product_summary', 'woocommerce_product_additional_information_tab', 13);
