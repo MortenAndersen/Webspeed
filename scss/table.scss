@@ -4,7 +4,11 @@ table {
 thead {
 	text-align: left;
 }
-td, th {
-	padding: 5px;
-	border: 1px solid #e8e8e8;
+td, th,
+.wp-block-table td, .wp-block-table th {
+	padding: 10px;
+	border: 1px solid var(--border);
+}
+tr:nth-child(even) {
+	background: aliceblue;
 }
