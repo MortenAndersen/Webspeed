@@ -282,12 +282,3 @@ function disable_shipping_calc_on_cart($show_shipping) {
 	return $show_shipping;
 }
 add_filter('woocommerce_cart_ready_to_calc_shipping', 'disable_shipping_calc_on_cart', 99);
-
-// Add class to BODY if cart has items
-function webspeed_cart_has_items($classes) {
-	if (WC()->cart->get_cart_contents_count() >= 1) {
-		$classes[] = 'itemsInCart';
-	}
-	return $classes;
-}
-add_filter('body_class', 'webspeed_cart_has_items');
