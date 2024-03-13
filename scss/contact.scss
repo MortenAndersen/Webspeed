@@ -1,80 +1,79 @@
-@use 'elements/size'as s;
-@use 'elements/breakpoints'as b;
+@use 'elements/size' as s;
+@use 'elements/breakpoints' as b;
 
 ul.kontakt-con {
-    margin: 0;
+  margin: 0;
+  padding: 0;
+  article & {
+    margin-bottom: 2rem;
+  }
+
+  li {
+    margin: 0 0 0.5rem 0;
     padding: 0;
-    article & {
-        margin-bottom: 2rem
+    list-style-type: none;
+    display: flex;
+    flex-flow: row;
+    &:last-of-type {
+      margin-bottom: 0;
     }
+  }
 
-    li {
-        margin: 0 0 .5rem 0;
-        padding: 0;
-        list-style-type: none;
-        display: flex;
-        flex-flow: row;
-        &:last-of-type {
-            margin-bottom: 0;
-        }
-    }
+  .k-label {
+    width: 22px;
+    text-align: center;
+    margin-right: 0.5rem;
+  }
 
-    .k-label {
-        width: 22px;
-        text-align: center;
-        margin-right: .5rem;
-    }
-
+  svg {
+    height: 22px;
+    width: 22px;
+    transition: 0.5s all;
+    fill: var(--icon-color);
+  }
+  .k-some {
+    display: flex;
+    flex-flow: row;
+    gap: 1rem;
+    margin: 2rem 0 0 0;
     svg {
-        height: 22px;
-        width: 22px;
-        transition: .5s all;
-        fill: var(--icon-color);
+      height: 30px;
+      width: 30px;
+      &:hover {
+        transform: scale(1.5);
+      }
     }
-    .k-some {
-        display: flex;
-        flex-flow: row;
-        gap: 1rem;
-        margin: 2rem  0 0 0;
+
+    a:hover {
+      &.fb {
         svg {
-            height: 30px;
-            width: 30px;
-            &:hover {
-                transform: scale(1.5);
-            }
+          fill: #1b74e4;
         }
-
-        a:hover {
-            &.fb {
-                svg {
-                    fill: #1b74e4;
-                }
-            }
-            &.in {
-                svg {
-                    fill: #fd0968;
-                }
-            }
-            &.li {
-                svg {
-                    fill: #0077b5;
-                }
-            }
+      }
+      &.in {
+        svg {
+          fill: #fd0968;
         }
-
+      }
+      &.li {
+        svg {
+          fill: #0077b5;
+        }
+      }
     }
+  }
 
-    &.meeting {
-        .contact-label {
-            padding-top: 0;
-        }
+  &.meeting {
+    .contact-label {
+      padding-top: 0;
     }
+  }
 
-    &.personer {
-        margin: 0;
+  &.personer {
+    margin: 0;
 
-        .title {
-            margin-bottom: s.$gap-s;
-        }
+    .title {
+      margin-bottom: s.$gap-s;
     }
+  }
 }

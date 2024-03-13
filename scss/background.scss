@@ -1,67 +1,68 @@
-@use 'elements/breakpoints'as b;
-@use 'elements/size'as s;
+@use "elements/breakpoints" as b;
+@use "elements/size" as s;
 
 @media (min-width: b.$menu-break) {
-    .wp-block-columns {
+  .wp-block-columns {
     padding: 0;
     .page-template-page-no-wrap .has-background &,
-    .page-template-page-no-wrap-topimg .has-background &{
-        padding: 4rem s.$gap-n;
+    .page-template-page-no-wrap-topimg .has-background & {
+      padding: 4rem s.$gap-n;
     }
-}
-
+  }
 }
 .has-background:not(div) {
-    margin: s.$gap-n 0;
-    padding: s.$gap-n;
+  margin: s.$gap-n 0;
+  padding: s.$gap-n;
 }
 .wp-block-column {
-    .has-background:not(div):first-of-type {
-        margin-top: 0;
-    }
+  .has-background:not(div):first-of-type {
+    margin-top: 0;
+  }
 }
 
-body:not(.page-template-page-no-wrap, .page-template-page-no-wrap-topimg)
- {
-    .wp-block-group.has-background {
-        padding: s.$gap-n;
-    }
+body:not(.page-template-page-no-wrap, .page-template-page-no-wrap-topimg) {
+  .wp-block-group.has-background {
+    padding: s.$gap-n;
+  }
 }
 
 .wp-block-column.has-background {
-    padding: s.$gap-n;
+  padding: s.$gap-n;
 }
 
 .wp-block-group__inner-container {
-    h2,h3,h4,h5,h6 {
-        margin-top: 0;
-    }
-    p:last-of-type {
-        margin-bottom: 0;
-    }
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 0;
+  }
+  p:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 ul.has-background {
-    li {
-        margin-left: 1rem
-    }
+  li {
+    margin-left: 1rem;
+  }
 }
 .spalter {
-    .wp-block-columns {
-        padding-top: 0 !important;
-        padding-bottom: s.$gap-n !important;
-    }
-    .wp-block-group__inner-container {
-        padding-top: s.$gap-n;
-        padding-bottom: 0;
-    }
+  .wp-block-columns {
+    padding-top: 0 !important;
+    padding-bottom: s.$gap-n !important;
+  }
+  .wp-block-group__inner-container {
+    padding-top: s.$gap-n;
+    padding-bottom: 0;
+  }
 }
 @media (min-width: b.$menu-break) {
-    .spalter {
-    
+  .spalter {
     .wp-block-group__inner-container {
-        padding: s.$gap-n;
-        padding-bottom: 0;
+      padding: s.$gap-n;
+      padding-bottom: 0;
     }
-}
+  }
 }

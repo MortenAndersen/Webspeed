@@ -4,7 +4,7 @@
 <meta charset="<?php bloginfo('charset');?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <?php wp_head();?>
-<?php root_css();?>
+<?php //root_css();?>
 <link href="<?php bloginfo('stylesheet_url');?>" rel="stylesheet" />
 
 </head>
@@ -20,6 +20,7 @@ if (is_active_sidebar('pre-header')) {
 	echo '</div>';
 	echo '</div>';
 }
+
 
 echo '<header class="page-header' . web_header_class() . '">';
 

@@ -111,7 +111,15 @@ function web_read_more() {
 	echo '<p class="read-more"><a href="' . get_the_permalink() . '">' . esc_html__('Read More', 'webspeed-domain') . '</a></p>';
 }
 
-// aria-label="' . get_the_title() . '
+// Edit link taget _blank
+add_filter('edit_post_link', function ($link, $post_id, $text) {
+	// Add the target attribute
+	if (false === strpos($link, 'target=')) {
+		$link = str_replace('<a ', '<a target="_blank" ', $link);
+	}
+
+	return $link;
+}, 10, 3);
 
 // Edit link
 function web_edit_link() {

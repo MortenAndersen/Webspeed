@@ -327,60 +327,12 @@
 		"oAP": "/inc/contact-acf.php",
 		"oF": 0
 		},
-	"/inc/css-var.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/inc/css-var.php",
-		"oF": 0
-		},
-	"/inc/customizer-color.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/inc/customizer-color.php",
-		"oF": 0
-		},
-	"/inc/customizer-fonts.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/inc/customizer-fonts.php",
-		"oF": 0
-		},
 	"/inc/customizer-header.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/inc/customizer-header.php",
-		"oF": 0
-		},
-	"/inc/customizer-menu-mobile.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/inc/customizer-menu-mobile.php",
-		"oF": 0
-		},
-	"/inc/customizer-menu.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/inc/customizer-menu.php",
-		"oF": 0
-		},
-	"/inc/customizer-numbers.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/inc/customizer-numbers.php",
 		"oF": 0
 		},
 	"/inc/design-list.php": {
@@ -1333,20 +1285,7 @@
 		"oS": 2,
 		"sct": 0
 		},
-	"/scss/woo.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 1,
-		"oA": 0,
-		"oAP": "/woo.css",
-		"oF": 0,
-		"oS": 2,
-		"sct": 0
-		},
-	"/scss/wp-plugins.scss": {
+	"/scss/wp-plugin.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -1354,7 +1293,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/wp-plugins.css",
+		"oAP": "/wp-plugin.css",
 		"oF": 0,
 		"oS": 2,
 		"sct": 0
