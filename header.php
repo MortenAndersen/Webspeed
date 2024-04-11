@@ -75,11 +75,3 @@ if (is_active_sidebar('pre-content')) {
 }
 
 ?>
-<div style="position:relative">
-<div style="position: absolute; bottom:50%; font-size:3rem;">Her er en overskrift</div>
-
-<video style="display:none" id="background-video" autoplay="" loop="" muted="" poster="/wp-content/themes/ringsted-lilleskole/img/ringsted-parallax.webp">
-
-  <source src="https://ringsted-lilleskole.dk/wp-content/themes/ringsted-lilleskole/video/ringsted.mp4" type="video/mp4">
-</video>
-</div>
