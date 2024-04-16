@@ -26,7 +26,8 @@ if ( is_page_template( 'single-topimg.php' ) ) {
 				web_date_cat_author();
 				web_title();
 				the_content();
-				comment_form();
+				//comment_form();
+				comments_template();
 				web_go_back();
 			endwhile;
 }
