@@ -545,3 +545,12 @@ g#pil-op {
     line-height: 1;
   }
 }
+.comments {
+  display: grid;
+  gap: 2rem;
+  margin-block: 2rem;
+}
+.comment_body {
+  max-width: 65ch;
+  margin-top: 0.5rem;
+}

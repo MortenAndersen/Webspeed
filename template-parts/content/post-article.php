@@ -20,13 +20,10 @@ if ( is_page_template( 'single-topimg.php' ) ) {
 		echo '<article>';
 		
 			while (have_posts()) : the_post();
-				
 				web_img();
-
 				web_date_cat_author();
 				web_title();
 				the_content();
-				//comment_form();
 				comments_template();
 				web_go_back();
 			endwhile;
