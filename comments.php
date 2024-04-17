@@ -8,6 +8,6 @@ foreach ( $comments as $comment ) :
         echo '<div class="comment_body">' . $comment->comment_content . '</div>';
     echo '</div>';
 endforeach;
-}
 echo '</div>';
+}
 comment_form();
