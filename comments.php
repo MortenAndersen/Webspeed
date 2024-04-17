@@ -1,4 +1,5 @@
 <?php 
+if ( have_comments() ) {
 echo '<div class="comments">';
 foreach ( $comments as $comment ) :
     echo '<div classs="comment">';
@@ -7,5 +8,6 @@ foreach ( $comments as $comment ) :
         echo '<div class="comment_body">' . $comment->comment_content . '</div>';
     echo '</div>';
 endforeach;
+}
 echo '</div>';
 comment_form();
