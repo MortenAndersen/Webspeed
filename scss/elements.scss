@@ -549,6 +549,8 @@ g#pil-op {
   display: grid;
   gap: 2rem;
   margin-block: 2rem;
+  border-top: 1px solid var(--border);
+  padding-top: 1rem;
 }
 .comment_body {
   max-width: 65ch;
