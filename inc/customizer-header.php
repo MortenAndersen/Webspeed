@@ -41,6 +41,20 @@ function webspeed_customizer_header($wp_customize) {
 	/* ---------------------------------------------------------- */
 
 	//add setting
+	$wp_customize->add_setting('webspeed_woo_card', array(
+		'default' => '',
+	));
+
+	$wp_customize->add_control('woo_card_checkbox_control', array(
+		'label' => 'Woo Card',
+		'type' => 'checkbox',
+		'section' => 'webspeed_section_header',
+		'settings' => 'webspeed_woo_card',
+	));
+
+	/* ---------------------------------------------------------- */
+
+	//add setting
 	$wp_customize->add_setting('webspeed_menu_left_checkbox', array(
 		'default' => '',
 	));

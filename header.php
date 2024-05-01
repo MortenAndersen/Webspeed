@@ -25,7 +25,9 @@ if (is_active_sidebar('pre-header')) {
 
 echo '<header class="page-header' . web_header_class() . '">';
 
-if (class_exists('WooCommerce')) {
+
+$woo_cart = get_theme_mod('webspeed_woo_card');
+if ($woo_cart == true && class_exists('WooCommerce')) {
 	echo '<div class="grid wrap-no-pad woo-menu">';
 	echo '<div class="logo-search-menu">';
 	echo '<div class="flex menu-inner">';
