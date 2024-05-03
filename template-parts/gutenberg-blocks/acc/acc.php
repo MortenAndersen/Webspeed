@@ -1,37 +1,7 @@
 <?php
-$id = 'acc-' . $block['id'];
-if( !empty($block['anchor']) ) {
-    $id = $block['anchor'];
-}
-
-
-$classes = [ 'acc-con' ];
-$block_style = '';
-if ( ! empty( $block['className'] ) ) {
-    $classes = array_merge( $classes, explode( ' ', $block['className'] ) );
-}
-if ( ! empty( $block['backgroundColor'] ) ) {
-    $classes[] = 'has-' . $block['backgroundColor'] . '-background-color';
-}
-if ( ! empty( $block['textColor'] ) ) {
-    $classes[] = 'has-' . $block['textColor'] . '-color';
-}
-/*
-if ( ! empty( $block['fontSize'] ) ) {
-    $classes[] = 'xx-' . $block['fontSize'] . '-yy';
-}
-*/
-
-
-
-
 if( have_rows('accordion') ):
 	$i = 1;
-
-printf(    '<div id="' . $id . '"' . 'class="%s">',
-    esc_attr( join( ' ', $classes ) ),
-    ! empty( $block['anchor'] ) ? ' id="' . esc_attr( sanitize_title( $block['anchor'] ) ) . '"' : '',
-);
+    echo '<div class="details">';
 
     while( have_rows('accordion') ) : the_row();
         $sub_title = get_sub_field('title');
@@ -45,19 +15,15 @@ printf(    '<div id="' . $id . '"' . 'class="%s">',
                 $sub_class = '';
         }
 
-        echo '<div class="acc-' . $i . '' . $sub_class .'">';
-            echo '<div class="acc-head">';
-                echo '<p class="acc-title">' . $sub_title . '</p>';
-                echo '<i class="arrow"></i>';
-            echo '</div>';
-            echo '<div class="acc-content">';
+        echo '<details  class="acc-' . $i . '' . $sub_class .'">';
+            echo '<summary>';
+                echo $sub_title;
+            echo '</summary>';
                 echo $sub_body;
                 echo $sub_chortcode;
-            echo '</div>';
-        echo '</div>';
+        echo '</details>';
         
     ++$i;
     endwhile;
-
-echo '</div>';  
+    echo '</div>';
 endif;

@@ -556,3 +556,26 @@ g#pil-op {
   max-width: 65ch;
   margin-top: 0.5rem;
 }
+.details {
+  margin-block: 2rem;
+}
+summary {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  border-bottom: 1px solid var(--border);
+  line-height: 1.1;
+  padding-block: 0.5rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  &:hover {
+    &::marker {
+      color: orangered;
+    }
+  }
+}
+details summary::marker {
+  color: var(--link);
+}
+details[open] summary::marker {
+}

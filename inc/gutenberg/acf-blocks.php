@@ -16,20 +16,7 @@ function acc_block() {
             'icon'              => 'admin-comments',
             'mode'              => 'edit',
             'keywords'          => array( 'acc', 'quote' ),
-            'supports'        => [
-                'anchor' => true,
-                'color'           => [
-                    'background' => true,
-                    'text'       => true,
-                    'jsx'        => true,
-                ],
-                /*
-                'typography' => [
-                    'fontSize' => true,
-                    'lineHeight' => true,
-                ],
-                */
-            ],
+
         ));
     }
 }

@@ -7,7 +7,7 @@ function webspeed_elements($atts) {
 	ob_start();
 
 	// define attributes and their defaults
-	extract(shortcode_atts(array('grid' => '1', 'gap' => '0', 'type' => 'none', 'class' => 'no-class'), $atts));
+	extract(shortcode_atts(array('grid' => '1', 'gap' => '0', 'type' => 'none', 'class' => 'no-class', 'visning' => 'normal'), $atts));
 
 	require get_parent_theme_file_path('/inc/grid-gap.php');
 
@@ -31,6 +31,18 @@ function webspeed_elements($atts) {
 /* -------------------------------------- */
 
 	if ($loop->have_posts()) {
+		if ($visning == 'details') {
+			echo '<div class="details">';
+				while ($loop->have_posts()): $loop->the_post();
+					echo '<details>';
+						echo '<summary>' . get_the_title() . '</summary>';
+						web_thumbnail();
+						the_content();
+						web_edit_link();
+					echo '</details>';
+				endwhile;
+			echo '</div>';
+		} else {
 
 		echo '<div class="grid' . $grid_class . $gap_class . $type . ' ' . $class . '">';
 
@@ -42,8 +54,10 @@ function webspeed_elements($atts) {
 			echo '</div>';
 
 		endwhile;
-		wp_reset_query();
+		
 		echo '</div>';
+	}
+	wp_reset_query();
 	}
 
 	$myvariable = ob_get_clean();
