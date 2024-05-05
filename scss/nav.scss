@@ -1,34 +1,40 @@
-@use 'elements/breakpoints'as b;
-@use 'elements/size'as s;
+@use "elements/breakpoints" as b;
+@use "elements/size" as s;
 .menu {
-	margin: 0;
-	padding: 0;
-	li {
-		margin: 0 0 .5rem 0;
-		padding: 0;
-		list-style-type: none;
-	}
+  margin: 0;
+  padding: 0;
+  li {
+    margin: 0 0 0.5rem 0;
+    padding: 0;
+    list-style-type: none;
+  }
 }
 
 .m-head > {
-    	a {
-    		text-transform: uppercase;
-    		font-weight: bold;
-    		color:var(--body-font);
-    		&:hover {
-    			cursor: inherit;
-    		}
-    	}
+  a {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--body-font);
+    &:hover {
+      cursor: inherit;
     }
+  }
+}
 
 @media (min-width: b.$menu-break) {
-	.page-header nav {
-
-    }
+  .page-header nav {
+  }
 }
 .single-post {
-    .current_page_parent > a {
-        border-bottom: 1px solid var(--menu-desktop-current-font);
-        margin-bottom: -1px;
-    }
+  .current_page_parent > a {
+    border-bottom: 1px solid var(--menu-desktop-current-font);
+    margin-bottom: -1px;
+  }
+}
+#nav {
+  border-block: 1px solid var(--border);
+  padding-block: 2rem;
+}
+.scroll-margin {
+  scroll-margin-top: 100px;
 }
