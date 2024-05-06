@@ -1,14 +1,13 @@
 #breadcrumbs {
-	background: var(--main-bg);
-	line-height: 1;
-	padding: 0 0 .5rem 0;
-	margin: 1rem 0;
-	font-size: .85rem;
-	a {
-		color: var(--body-font);
-		text-decoration: none;
-	}
-	.breadcrumb_last {
-		opacity: .5;
-	}
+  background: var(--main-bg);
+  line-height: 1;
+  padding-block: 1rem;
+  font-size: 0.85rem;
+  a {
+    color: var(--body-font);
+    text-decoration: none;
+  }
+  .breadcrumb_last {
+    opacity: 0.5;
+  }
 }
