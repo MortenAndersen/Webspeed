@@ -36,9 +36,11 @@ function webspeed_elements($atts) {
 				while ($loop->have_posts()): $loop->the_post();
 					echo '<details>';
 						echo '<summary>' . get_the_title() . '</summary>';
-						web_thumbnail();
-						the_content();
-						web_edit_link();
+						echo '<div class="details-content">';
+							web_thumbnail();
+							the_content();
+							web_edit_link();
+						echo '</div>';
 					echo '</details>';
 				endwhile;
 			echo '</div>';

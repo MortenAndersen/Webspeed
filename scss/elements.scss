@@ -559,6 +559,11 @@ g#pil-op {
 .details {
   margin-block: 2rem;
 }
+.details-content {
+  padding: 2rem;
+  background: var(--border);
+  margin-block: 2rem;
+}
 summary {
   font-weight: 600;
   text-transform: uppercase;
