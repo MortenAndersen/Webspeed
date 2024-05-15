@@ -1,209 +1,214 @@
 .person-img-con {
-    background: #7b756d;
-    color: #fff;
-    background: #083a59;
-    margin-bottom: 2em;
+  background: #7b756d;
+  color: #fff;
+  background: #083a59;
+  margin-bottom: 2em;
 
-    a {
-        color: inherit;
-    }
+  a {
+    color: inherit;
+  }
 }
 .person-item {
-    display: flex;
-    flex-flow: column;
+  display: flex;
+  flex-flow: column;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background: rgba(0, 0, 0, 0.05);
 }
 .person-info {
+  a {
+    text-decoration: none;
 
-    a {
-        text-decoration: none;
-
-        &:hover {
-            text-decoration: underline;
-        }
+    &:hover {
+      text-decoration: underline;
     }
-
+  }
 }
-
+.person-body {
+  padding: 1rem;
+}
 .person-data {
-    margin: 0 0 1em 0;
+  margin: 0 0 1em 0;
+  padding: 0;
+
+  li {
+    margin: 0;
     padding: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: baseline;
 
-    li {
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-        display: flex;
-        align-items: baseline;
-
-        &.title {
-            margin-bottom: 1em;
-        }
-
-        span.icon {
-            width: 30px;
-            display: flex;
-        }
+    &.title {
+      margin-bottom: 1em;
     }
 
-    a {
-        text-decoration: none;
-
-        &:hover {
-            text-decoration: underline;
-        }
+    span.icon {
+      width: 30px;
+      display: flex;
     }
+  }
 
-    svg {
-        max-width: 20px;
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
     }
+  }
+
+  svg {
+    max-width: 20px;
+  }
 }
 
 .single {
-    .person-data {
-        margin: 0;
-        padding: 0;
-    }
+  .person-data {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .person-img-con {
-    display: flex;
-    flex-flow: row wrap;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .person-img,
 .person-info {
-    flex: 1 100%;
-
+  flex: 1 100%;
 }
 
 .person-img {
-    position: relative;
-    margin: 0;
+  position: relative;
+  margin: 0;
 
-    .img-caption {
-        position: absolute;
-        bottom: 2em;
-        padding: 1em;
-        left: 0;
-        right: 0;
-        background: rgba(7, 52, 80, .7);
-        text-align: left;
-    }
+  .img-caption {
+    position: absolute;
+    bottom: 2em;
+    padding: 1em;
+    left: 0;
+    right: 0;
+    background: rgba(7, 52, 80, 0.7);
+    text-align: left;
+  }
 }
 
 @media (min-width: 700px) {
-    .person-img {
-        flex: 1 60%;
-        max-width: 60%;
+  .person-img {
+    flex: 1 60%;
+    max-width: 60%;
 
-        img {
-            float: left;
-        }
+    img {
+      float: left;
     }
+  }
 
-    .person-info {
-        flex: 1 40%;
-        max-width: 40%;
-    }
+  .person-info {
+    flex: 1 40%;
+    max-width: 40%;
+  }
 }
 
 .person--data {
-    .title {
-        font-weight: bold;
-        font-size: 110%;
+  .title {
+    font-weight: bold;
+    font-size: 110%;
 
-        .personer-shortcode & {
-            font-weight: normal;
-        }
+    .personer-shortcode & {
+      font-weight: normal;
     }
+  }
 
-    li {
-        overflow: hidden;
-        margin: 5px 0;
+  li {
+    overflow: hidden;
+    margin: 5px 0;
 
-        &.title {
-            margin-bottom: 1em;
-        }
+    &.title {
+      margin-bottom: 1em;
     }
+  }
 
-    a {
-        text-decoration: none;
-    }
+  a {
+    text-decoration: none;
+  }
 }
 
 .type-person {
-    padding-top: 1em;
+  padding-top: 1em;
 }
 
 .person-info-inner {
-    background: rgba(0, 0, 0, .1);
-    height: calc(100% - 2vw);
-    margin: 1vw;
-    padding: 2vw;
+  background: rgba(0, 0, 0, 0.1);
+  height: calc(100% - 2vw);
+  margin: 1vw;
+  padding: 2vw;
 }
 
 .personer-shortcode {
+  article & {
+    margin: 1em 0;
+  }
 
-    
-
-    article & {
-        margin: 1em 0;
-    }
-
-    p.read-more {
-        padding-right: .5rem;
-    }
+  p.read-more {
+    padding-right: 0.5rem;
+  }
 }
 
 .person-titel {
-    margin: 0;
-
-    
+  margin: 0 !important;
+  text-transform: uppercase;
+  font-weight: 600;
+  a {
+    text-decoration: none;
+    color: var(--body-color);
+  }
 }
 
 .shortcode-person-img {
-    overflow: hidden;
-    margin-bottom: 1rem;
+  overflow: hidden;
 
-    img {
-        float: left;
-        width: 100%;
-    }
+  img {
+    float: left;
+    width: 100%;
+    outline: 1rem solid #ffffff8f;
+    outline-offset: -1rem;
+  }
 }
 
 .person-excerpt {
-    padding: 1rem 0;
-    border-top: 1px solid;
-    margin-top: 1rem;
+  padding: 1rem 0;
+  border-top: 1px solid;
+  margin-top: 1rem;
 
-    p {
-        margin: 0;
-    }
+  p {
+    margin: 0;
+  }
 }
 
 @media (min-width: 700px) {
-    .personer-shortcode {
-        &.g1 {
-            margin: 0;
-        }
+  .personer-shortcode {
+    &.g1 {
+      margin: 0;
     }
+  }
 }
 
 @media (min-width: 700px) {
-    article .personer-shortcode.person.left {
-        max-width: 300px;
-        float: left;
-        margin: 1em 2em 2em 0;
-    }
+  article .personer-shortcode.person.left {
+    max-width: 300px;
+    float: left;
+    margin: 1em 2em 2em 0;
+  }
 
-    article .personer-shortcode.person.right {
-        max-width: 300px;
-        float: right;
-        margin: 1em 0 2em 2em;
-    }
+  article .personer-shortcode.person.right {
+    max-width: 300px;
+    float: right;
+    margin: 1em 0 2em 2em;
+  }
 
-    article .personer-shortcode.person.none {
-        max-width: 300px;
-        margin: 1em 0;
-    }
+  article .personer-shortcode.person.none {
+    max-width: 300px;
+    margin: 1em 0;
+  }
 }
