@@ -1,49 +1,51 @@
 .slide-in-content {
-	position: fixed;
-	top: 164px;
-	z-index: 101;
-	background: var(--slider-bg);
-	color: var(--slider-color);
-	border-radius: 0 3px 3px 0;
-	padding: 1rem;
-	left: -250px;
-    width: 250px;
-    animation: slide 0.5s forwards;
-    animation-delay: 3s;
-    display: none;
-    overflow: hidden;
+  position: fixed;
+  top: 164px;
+  z-index: 101;
+  background: crimson;
+  color: #fff;
+  border-radius: 0 3px 3px 0;
+  padding: 1rem;
+  left: -250px;
+  width: 250px;
+  animation: slide 0.5s forwards;
+  animation-delay: 3s;
+  display: none;
+  overflow: hidden;
+  a {
+    color: #fff;
+    opacity: 0.9;
+    &:hover {
+      color: #fff;
+      opacity: 1;
+    }
+  }
+  .menu {
+    li {
+      border-bottom: 1px solid #ffffff3d;
+    }
     a {
-    	color: #fff;
-    	opacity: .9;
-    	&:hover {
-    		color: #fff;
-    		opacity: 1;
-    	}
+      text-decoration: none;
     }
-    .menu {
-    	li {
-    		border-bottom: 1px solid #ffffff3d;
-    	}
-    	a {
-    		text-decoration: none;
-    	}
-    }
-    p {
-    	margin: 0 0 .5rem 0;
-    }
-    ul.kontakt-con svg {
-    	fill: var(--slider-color);
-    }
+  }
+  p {
+    margin: 0 0 0.5rem 0;
+  }
+  ul.kontakt-con svg {
+    fill: #fff;
+  }
 }
 
 @keyframes slide {
-    100% { left: 0; }
+  100% {
+    left: 0;
+  }
 }
 @media (min-width: 1550px) {
-	.slide-in-content {
-		display: block;
-	}
+  .slide-in-content {
+    display: block;
+  }
 }
 .widget-slide-in:nth-child(even) {
-	margin-top: 2rem;
+  margin-top: 2rem;
 }

@@ -3,7 +3,7 @@
   --wp--style--global--content-size: 1440px;
   --body-bg: #f6f6f6;
   --body-color: rgb(59, 67, 67);
-  --font-family: system-ui,sans-serif;
+  --font-family: system-ui, sans-serif;
   --body-font-size: 1rem;
   --body-line-height: 1.6;
   --header-bg: #fff;
@@ -12,18 +12,18 @@
   --footer-color: #333;
   --link: #0073e5;
   --link-hover: #0073e5;
-  --title-highlight :#e56101;
+  --title-highlight: #e56101;
   --article-font-size: 1.06rem;
   --article-line-height: 1.4;
   --border: #eee;
   --title-border: #e56101;
-  --blockquote: rgba(0,0,0,.1);
+  --blockquote: rgba(0, 0, 0, 0.1);
   --sticky-scroll-bg: #f7f7f7;
   --menu-desktop-pad: 0;
   --menu-desktop-color: #222;
   --menu-desktop-hover-color: #333;
   --menu-desktop-current-color: #0073e5;
-  --menu-desktop-sub-pad: .25rem;
+  --menu-desktop-sub-pad: 0.25rem;
   --menu-desktop-sub-color: #444;
   --menu-desktop-sub-hover-color: #333;
   --menu-desktop-sub-bg: #fff;
@@ -34,7 +34,7 @@
   --menu-desktop-sub-current-color: #fff;
   --menu-mobile-bg: #262626;
   --menu-mobile-color: #ffffff;
-  --menu-mobile-sub-bg: rgba(255,255,255,.1);
+  --menu-mobile-sub-bg: rgba(255, 255, 255, 0.1);
   --menu-mobile-border: #b2b2b2;
   --menu-mobile-trigger-bg: transparent;
   --menu-mobile-trigger-active-bg: #0052cd52;
@@ -64,8 +64,8 @@
   --eve-svg: #fff;
 
   --icon-color: rgb(59, 67, 67);
-  
-  --top-caption-bg: rgba(0,0,0,.8);
+
+  --top-caption-bg: rgba(0, 0, 0, 0.8);
   --top-caption-color: #fff;
   --link-box-bg: #2a3443;
   --link-box-color: #fff;
@@ -75,35 +75,20 @@
   --submit-bg: #0073e5;
   --submit-color: #fff;
   --search-icon: #0073e5;
-  --pil-op: #c60202
-  --slider-bg: #0073e5;
-  --slider-color: #fff;
+  --pil-op: #c60202;
 
   --acc-head-bg: #f9f9f9;
-
-  --font-xl: 2rem;
-  --font-l: 1.8rem;
-  --xxl: 1.7rem;
-  --xl: 1.1rem;
 
   --aside-left: 24%;
   --aside-right: 24%;
   --gap: 2rem;
 
-
-  --woo-pay-border: rgba(0,125,187,.85);
-    --woo-pay-bg: rgba(0,125,187,.03);
-}
-
-@media (min-width: 700px) {
-  :root {
-    --xxl: 3rem;
-    --xl: 2rem;
-  }
+  --woo-pay-border: rgba(0, 125, 187, 0.85);
+  --woo-pay-bg: rgba(0, 125, 187, 0.03);
 }
 
 @media (min-width: 1000px) {
   :root {
-    --gap: 3rem
+    --gap: 3rem;
   }
 }
