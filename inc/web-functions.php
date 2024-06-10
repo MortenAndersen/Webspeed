@@ -334,7 +334,7 @@ function web_front_fokus() {
 
 add_action('webspeed_before_body_end', 'web_reference', 10);
 function web_reference() {
-	echo '<div class="reference"><a href="https://www.web.dk" target="_blank" rel="nofollow noreferrer">Made by Web.dK</a></div>';
+	echo '<div class="reference"><a href="https://www.hjemmesider.dk" target="_blank" rel="nofollow noreferrer">Made by Hjemmesider.DK</a></div>';
 }
 
 // Post date

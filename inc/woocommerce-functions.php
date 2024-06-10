@@ -199,7 +199,7 @@ add_action('woo_meta_webspeed', 'woocommerce_template_single_meta', 10);
 /**
  * Remove product data tabs
  */
-add_filter('woocommerce_product_tabs', 'woo_remove_product_tabs', 98);
+//add_filter('woocommerce_product_tabs', 'woo_remove_product_tabs', 98);
 
 function woo_remove_product_tabs($tabs) {
 
@@ -209,6 +209,8 @@ function woo_remove_product_tabs($tabs) {
 
 	return $tabs;
 }
+
+
 
 // fjerner "In stock" og antal
 add_filter('woocommerce_get_stock_html', '__return_empty_string', 10, 2);
