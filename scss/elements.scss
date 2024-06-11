@@ -469,11 +469,6 @@ article > .post-img {
   transform-origin: center left;
   align-items: center;
   gap: 1rem;
-
-  .name {
-    display: none;
-    flex-flow: column;
-  }
 }
 
 @media (width > 800px) {
