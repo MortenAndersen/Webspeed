@@ -1,5 +1,5 @@
-@use 'elements/breakpoints' as b;
-@use 'elements/size' as s;
+@use "elements/breakpoints" as b;
+@use "elements/size" as s;
 
 :root {
   --woo-color-1: #f6f5f2;
@@ -120,7 +120,7 @@ ul.wc-block-grid__products {
       text-transform: uppercase;
       font-size: 75%;
       &:before {
-        content: '\2192';
+        content: "\2192";
         margin-right: 1ch;
       }
     }
@@ -195,9 +195,9 @@ button.button {
   }
 
   &.single_add_to_cart_button,
-  &[name='update_cart'],
-  &[name='apply_coupon'],
-  &[name='woocommerce_checkout_place_order'] {
+  &[name="update_cart"],
+  &[name="apply_coupon"],
+  &[name="woocommerce_checkout_place_order"] {
     background: var(--woo-color-3);
     color: #fff;
     cursor: pointer;
@@ -211,12 +211,12 @@ button.button {
 }
 
 @media (max-width: 500px) {
-  button[type='submit'] {
+  button[type="submit"] {
     width: 100%;
   }
 }
 
-button[name='update_cart'] {
+button[name="update_cart"] {
   margin-top: 1rem;
   max-width: 200px;
 }
@@ -337,7 +337,7 @@ button[name='update_cart'] {
 }
 
 .wc-block-components-checkbox
-  .wc-block-components-checkbox__input[type='checkbox'] {
+  .wc-block-components-checkbox__input[type="checkbox"] {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -362,7 +362,7 @@ button[name='update_cart'] {
 
     li {
       &::before {
-        content: '\27BE';
+        content: "\27BE";
       }
     }
   }
@@ -519,11 +519,7 @@ button[name='update_cart'] {
 
 .woocommerce-product-attributes {
   font-size: var(--woo-small-font);
-  background: var(--woo-color-1);
-  padding: 1rem;
-  border-radius: 0.5rem;
-  position: relative;
-
+  text-align: right;
   p {
     margin: 0;
     display: inline-block;
@@ -551,7 +547,6 @@ button[name='update_cart'] {
 
 @media (min-width: 800px) {
   .woo-body {
-    grid-template-columns: 3fr 1fr;
     gap: 2rem;
   }
 }
@@ -596,7 +591,7 @@ table.variations {
   }
 }
 
-input[name='quantity'] {
+input[name="quantity"] {
   width: 70px;
   border-radius: 20px;
   padding-left: 2ch;
@@ -869,8 +864,8 @@ td.product-name {
   border-color: #bbb;
 }
 
-.select2-container--default .select2-results__option[aria-selected='true'],
-.select2-container--default .select2-results__option[data-selected='true'] {
+.select2-container--default .select2-results__option[aria-selected="true"],
+.select2-container--default .select2-results__option[data-selected="true"] {
   background-color: rgba(0, 125, 187, 0.08);
 }
 .select2-container--default
@@ -1071,7 +1066,7 @@ tfoot {
   max-width: inherit;
 }
 
-label[for='order_comments'] {
+label[for="order_comments"] {
   display: none;
 }
 
@@ -1160,7 +1155,7 @@ button#place_order {
     border: none !important;
   }
 
-  button[type='submit'].has-icon {
+  button[type="submit"].has-icon {
     display: flex;
     align-items: center;
     height: 48px;
@@ -1176,7 +1171,7 @@ button#place_order {
     input {
       background: transparent;
     }
-    button[type='submit'].has-icon svg {
+    button[type="submit"].has-icon svg {
       fill: #fff !important;
     }
 
