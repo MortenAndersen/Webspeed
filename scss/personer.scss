@@ -28,6 +28,8 @@
 .person-body {
   padding: 1rem;
   line-height: 1.3;
+  display: flex;
+  flex-flow: column;
 }
 .person-data {
   margin: 0 0 1em 0;
@@ -152,7 +154,7 @@
   }
 
   p.read-more {
-    padding-right: 0.5rem;
+    padding-top: 1rem !important;
   }
 }
 
