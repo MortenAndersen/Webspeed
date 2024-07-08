@@ -121,11 +121,11 @@
       }
 
       if (scroll > 150) {
-        $(".g-t-t").addClass("ggt-active");
+        $(".to-top").addClass("active");
       }
 
       if (scroll < 100) {
-        $(".g-t-t").removeClass("ggt-active");
+        $(".to-top").removeClass("active");
       }
     });
 

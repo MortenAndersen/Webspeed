@@ -480,28 +480,29 @@ img#logo {
   width: auto;
 }
 
-.g-t-t {
+.to-top {
   position: fixed;
   right: 10px;
   bottom: 100px;
   display: none;
-
-  &.ggt-active {
-    display: block;
-  }
 
   svg {
     width: 20px;
     height: 20px;
   }
 }
+@media (width > 500px) {
+  .to-top.active {
+    display: block;
+  }
+}
 
-g#pil-op {
+.to-top svg {
   fill: var(--pil-op);
 }
 
 @media (min-width: b.$menu-break) {
-  .g-t-t {
+  .to-top {
     right: 20px;
   }
 }
