@@ -1,7 +1,7 @@
 $gap-xs: 0.5rem;
-$gap-s: 1vw;
-$gap-n: 2vw;
-$gap-x: 3vw;
+$gap-s: clamp(5px, 2vw, 1rem);
+$gap-n: clamp(5px, 2vw, 2rem);
+$gap-x: clamp(5px, 2vw, 3rem);
 
 $aside-width-small: 200px;
 $aside-width: 250px;

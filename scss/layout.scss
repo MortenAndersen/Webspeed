@@ -49,7 +49,7 @@
 @media (min-width: b.$phone) {
   .wrap {
     &.pad-4 {
-      padding: s.$gap-n * 2 s.$gap-n;
+      padding: s.$gap-n;
     }
   }
 }

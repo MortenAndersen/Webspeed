@@ -89,6 +89,6 @@
 
 @media (min-width: 1000px) {
   :root {
-    --gap: 3rem;
+    --gap: clamp(5px, 2vw, 3rem);
   }
 }
