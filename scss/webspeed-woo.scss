@@ -137,8 +137,8 @@ ul.wc-block-grid__products {
   line-height: 1.2;
   font-size: 0.8rem;
   font-weight: 300;
-  right: 0.5rem;
-  top: 0.5rem;
+  right: 1rem;
+  top: 1rem;
   text-transform: uppercase;
 }
 
@@ -512,6 +512,10 @@ button[name="update_cart"] {
 
     a {
       font-weight: normal;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
