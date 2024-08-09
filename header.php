@@ -73,6 +73,7 @@ if ($woo_cart == true && class_exists('WooCommerce')) {
 echo '</header>';
 
 do_action('webspeed_after_header');
+
 if (is_front_page()) {
 	do_action('webspeed_after_header_front');
 }
