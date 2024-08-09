@@ -7,7 +7,7 @@ if (has_nav_menu('main-menu')):
 	);
 
 	$woo_cart = get_theme_mod('webspeed_woo_card');
-if ($woo_cart == true && class_exists('WooCommerce')) {
+	if ($woo_cart == true && class_exists('WooCommerce')) {
 		echo '<nav class="site-menu woo-site-menu mobile-menu js-nav-toggle">';
 		get_template_part('img/menu', 'icon-close');
 		wp_nav_menu($main_nav);
@@ -30,4 +30,5 @@ if ($woo_cart == true && class_exists('WooCommerce')) {
 		}
 		echo '</nav>';
 	}
+	
 endif;
