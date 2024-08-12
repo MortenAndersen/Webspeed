@@ -1,0 +1,23 @@
+.widget_polylang {
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1ch;
+  }
+  li {
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+  }
+  &.widget-menu {
+    padding: 1rem;
+    background: #636317;
+    a {
+      border: none;
+    }
+  }
+}
+.current-lang {
+  opacity: 0.5;
+}
