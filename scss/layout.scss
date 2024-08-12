@@ -241,4 +241,9 @@ aside {
   .lr-top {
     grid-template-columns: 1fr 1fr;
   }
+  .lt-top__first {
+    display: flex;
+    flex-flow: column;
+    align-self: center;
+  }
 }
