@@ -237,6 +237,11 @@ aside {
 .lt-top__sec > * {
   margin-bottom: 0;
 }
+.lt-top__sec {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
 @media (min-width: 800px) {
   .lr-top {
     grid-template-columns: 1fr 1fr;
