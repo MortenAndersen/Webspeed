@@ -447,7 +447,7 @@ article > .post-img {
     top: 0;
     z-index: 100;
     transition: all 0.3s ease-in-out 0s;
-    box-shadow: 0 12px 15px 0 rgb(0 0 0 / 0%);
+    box-shadow: 0 12px 15px 0 rgb(0, 0, 0, 0);
     border-bottom: 1px solid var(--border);
     .admin-bar & {
       top: 32px;
@@ -456,7 +456,7 @@ article > .post-img {
 
   .sticky-header.scroll {
     background: var(--sticky-scroll-bg);
-    box-shadow: 0 12px 15px 0 rgb(0 0 0 / 21%);
+    box-shadow: 0 12px 15px 0 rgb(0, 0, 0, 0.2);
     border-bottom: none;
     .logo-name {
       max-height: 55px;

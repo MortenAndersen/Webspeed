@@ -228,3 +228,18 @@ aside {
 .left-woo-aside {
   order: 1;
 }
+.lr-top-main {
+  background: var(--body-bg);
+}
+.lr-top {
+  gap: var(--gap);
+}
+.lt-top__first > *,
+.lt-top__sec > * {
+  margin-bottom: 0;
+}
+@media (min-width: 800px) {
+  .lr-top {
+    grid-template-columns: 1fr 1fr;
+  }
+}
