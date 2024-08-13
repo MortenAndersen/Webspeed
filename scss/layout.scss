@@ -234,10 +234,10 @@ aside {
 .lr-top {
   gap: var(--gap);
 }
-.lt-top__sec > * {
+.lr-top__sec > * {
   margin-bottom: 0;
 }
-.lt-top__sec {
+.lr-top__sec {
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -249,7 +249,7 @@ aside {
   .lr-top {
     grid-template-columns: 1fr 1fr;
   }
-  .lt-top__first {
+  .lr-top__first {
     display: flex;
     flex-flow: column;
     align-self: center;

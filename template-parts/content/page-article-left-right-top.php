@@ -7,11 +7,11 @@ echo '<main class="page-content">';
 
     echo '<div class="lr-top-main">';
     echo '<div class="wrap lr-top grid">';
-      echo '<div class="lt-top__first">';
+      echo '<div class="lr-top__first">';
           web_title();
           the_field('top');
       echo '</div>';
-      echo '<div class="lt-top__sec">';
+      echo '<div class="lr-top__sec">';
         web_img();
       echo '</div>';
     echo '</div>';
