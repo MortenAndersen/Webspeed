@@ -1,5 +1,5 @@
-@use 'elements/size' as s;
-@use 'elements/breakpoints' as b;
+@use "elements/size" as s;
+@use "elements/breakpoints" as b;
 
 ul.kontakt-con {
   margin: 0;
@@ -23,6 +23,8 @@ ul.kontakt-con {
     width: 22px;
     text-align: center;
     margin-right: 0.5rem;
+    display: flex;
+    align-items: center;
   }
 
   svg {
