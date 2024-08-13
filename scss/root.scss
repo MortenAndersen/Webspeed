@@ -81,14 +81,8 @@
 
   --aside-left: 24%;
   --aside-right: 24%;
-  --gap: 2rem;
+  --gap: clamp(5px, 2vw, 3rem);
 
   --woo-pay-border: rgba(0, 125, 187, 0.85);
   --woo-pay-bg: rgba(0, 125, 187, 0.03);
-}
-
-@media (min-width: 1000px) {
-  :root {
-    --gap: clamp(5px, 2vw, 3rem);
-  }
 }

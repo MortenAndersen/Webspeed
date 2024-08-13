@@ -70,10 +70,10 @@ section {
 main {
   background: var(--main-bg);
   .wrap {
-    padding: s.$gap-n;
+    padding: var(--gap);
   }
   .wrap-pad {
-    padding: s.$gap-n;
+    padding: var(--gap);
   }
 }
 
@@ -241,6 +241,9 @@ aside {
   display: flex;
   flex-flow: column;
   align-items: center;
+  background: #8d93984f;
+  border-radius: clamp(5px, 2vw, 2rem);
+  overflow: hidden;
 }
 @media (min-width: 800px) {
   .lr-top {
