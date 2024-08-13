@@ -116,8 +116,7 @@ article {
   font-size: var(--article-font-size);
 
   h2 {
-    margin-top: 3rem;
-    margin-bottom: 1.5rem;
+    margin-block: var(--gap);
 
     &.loop-title {
       margin-top: 0;
