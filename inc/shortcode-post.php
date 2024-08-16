@@ -55,17 +55,23 @@ function web_post($atts) {
 			echo '<div class="post-loop">';
 
 			// thumbnail
-			if (has_post_thumbnail() && $img == 'yes') {
-				echo '<div class="loop-post-img">';
-				if ($link == 'yes') {
-					if ($slider != 'no-slider') {
-						web_thumbnail_link_no_lazy();
+			if (!has_category('no-link')) {
+				if (has_post_thumbnail() && $img == 'yes') {
+					echo '<div class="loop-post-img">';
+					if ($link == 'yes') {
+						if ($slider != 'no-slider') {
+							web_thumbnail_link_no_lazy();
+						} else {
+							web_thumbnail_link();
+						}
 					} else {
-						web_thumbnail_link();
+						the_post_thumbnail('webspeed-post');
 					}
-				} else {
-					the_post_thumbnail('webspeed-post');
+					echo '</div>';
 				}
+			} else {
+				echo '<div class="loop-post-img">';
+					the_post_thumbnail('webspeed-post');
 				echo '</div>';
 			}
 
@@ -79,20 +85,30 @@ function web_post($atts) {
 			}
 
 			// Title
-			if ($link == 'yes') {
-				echo '<h2 class="loop-title"><a href="' . get_the_permalink() . '">' . get_web_title() . '</a></h2>';
+			if (!has_category('no-link')) {
+				if ($link == 'yes') {
+					echo '<h2 class="loop-title"><a href="' . get_the_permalink() . '">' . get_web_title() . '</a></h2>';
+				} else {
+					echo '<h2 class="loop-title">' . get_web_title() . '</h2>';
+				}
 			} else {
 				echo '<h2 class="loop-title">' . get_web_title() . '</h2>';
 			}
 
 			// the_excerpt
-			if ($excerpt == 'yes') {
-				web_excerpt();
+			if (!has_category('no-link')) {
+				if ($excerpt == 'yes') {
+					web_excerpt();
+				}
+			} else {
+				the_content();
 			}
 
 			// Read more
-			if ($read_more == 'yes' && $link != 'no') {
-				web_read_more();
+			if (!has_category('no-link')) {
+				if ($read_more == 'yes' && $link != 'no') {
+					web_read_more();
+				}
 			}
 
 			echo '</div>';

@@ -331,8 +331,14 @@ strong,
 .caption {
   text-align: right;
   font-style: italic;
-  font-size: s.$font-xs;
-  margin-top: s.$gap-xs;
+  font-size: var(--font-small);
+  margin-top: 0.5rem;
+  line-height: 1.2;
+  .lr-top-main & {
+    padding: 1rem;
+    margin: 0;
+    text-align: left;
+  }
 }
 
 .textwidget {
