@@ -14,8 +14,8 @@
 .wrap-no-pad {
   margin: 0 auto;
   max-width: var(--page-width);
-  padding-left: s.$gap-n;
-  padding-right: s.$gap-n;
+  padding-left: var(--gap);
+  padding-right: var(--gap);
 }
 
 .wrap-pad-top-small {
@@ -33,7 +33,7 @@
   padding: 0;
   .page-template-page-no-wrap &,
   .page-template-page-no-wrap-topimg & {
-    padding: s.$gap-n;
+    padding: var(--gap);
   }
 }
 
