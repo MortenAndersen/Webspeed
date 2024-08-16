@@ -6,7 +6,7 @@
 .wrap-pad {
   margin: 0 auto;
   max-width: var(--page-width);
-  padding: s.$gap-n s.$gap-n 0 s.$gap-n;
+  padding: var(--gap);
   &.pad-4 {
     padding: s.$gap-n;
   }
