@@ -348,7 +348,8 @@ function web_date_cat() {
 	$post_date = get_the_date('j. F - Y');
 	echo '<div class="post-date-cat post-date">';
 	echo $post_date . ' <span class="cat">| ';
-	the_category(', ') . '</span>';
+	the_category(', ');
+	echo '</span>';
 	echo '</div>';
 }
 
@@ -356,7 +357,8 @@ function web_date_cat() {
 function web_date_cat_author() {
 	$post_date = get_the_date('j. F - Y');
 	echo '<div class="post-date-cat post-date">' . $post_date . ' <span class="cat">| ';
-	the_category(', ') . '</span>';
+	the_category(', ');
+	echo '</span>';
 	echo '<div class="author"><span>Forfatter:</span> <strong>' . get_the_author_meta('display_name') . '</strong></div>';
 	echo '</div>';
 }
