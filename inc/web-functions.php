@@ -355,8 +355,8 @@ function web_date_cat() {
 // Post date + List cat + Author
 function web_date_cat_author() {
 	$post_date = get_the_date('j. F - Y');
-	echo '<div class="post-date-cat post-date">' . $post_date . ' / ';
-	the_category(', ');
+	echo '<div class="post-date-cat post-date">' . $post_date . ' <span class="cat">| ';
+	the_category(', ') . '</span>';
 	echo '<div class="author"><span>Forfatter:</span> <strong>' . get_the_author_meta('display_name') . '</strong></div>';
 	echo '</div>';
 }
