@@ -347,8 +347,8 @@ function web_post_date() {
 function web_date_cat() {
 	$post_date = get_the_date('j. F - Y');
 	echo '<div class="post-date-cat post-date">';
-	echo $post_date . ' | ';
-	the_category(', ');
+	echo $post_date . ' <span class="cat">| ';
+	the_category(', ') . '</span>';
 	echo '</div>';
 }
 
