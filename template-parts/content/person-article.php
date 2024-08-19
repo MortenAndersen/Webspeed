@@ -1,6 +1,4 @@
 <?php 
-
-
 echo '<main class="page-content">';
 echo '<div class="wrap article-aside">';
 echo '<article>';

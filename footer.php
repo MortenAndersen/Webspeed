@@ -52,6 +52,6 @@ echo '<a class="to-top" href="#top">
 wp_footer();
 do_action('webspeed_before_body_end');
 ?>
-
+<script type="text/javascript" charset="UTF-8" src="//cdn.cookie-script.com/s/e7b5b19a39f080590b6bfc8077d4abf0.js"></script>
 </body>
 </html>
