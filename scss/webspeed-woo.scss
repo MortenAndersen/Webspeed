@@ -1248,16 +1248,6 @@ p.price {
   margin-bottom: 1rem;
 }
 
-.woo-tags {
-  margin: 0;
-  padding: 0;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-
-  li {
-    list-style-type: none;
-    margin: 0.5rem 0;
-  }
-}
 .woo-cat {
   background-color: var(--main-bg);
   overflow: hidden;
