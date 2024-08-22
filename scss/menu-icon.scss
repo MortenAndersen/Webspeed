@@ -1,41 +1,45 @@
-@use 'elements/breakpoints'as b;
-@use 'elements/size'as s;
+@use "elements/breakpoints" as b;
+@use "elements/size" as s;
 
 .menu-icon {
-    margin-top: auto;
-    margin-bottom: auto;
-    min-width: 40px;
-    cursor: pointer;
+  margin-top: auto;
+  margin-bottom: auto;
+  min-width: 40px;
+  cursor: pointer;
 
-    .a-center & {
-        margin: 0 0 0 auto;
-    }
+  .a-center & {
+    margin: 0 0 0 auto;
+  }
 
-    svg {
-        fill: var(--menu-icon);
-        transition: .5s all;
-    }
+  svg {
+    fill: var(--menu-icon);
+    transition: 0.5s all;
+  }
 
-    margin-left: auto;
+  margin-left: auto;
 }
 
 .menu-close {
-    display: none;
-    cursor: pointer;
-    fill: var(--menu-icon-close);
+  width: 38px;
+  height: 38px;
+  background: rgb(255 255 255 / 40%);
+  text-align: center;
+  line-height: 38px;
+  margin-bottom: var(--gap);
+  border-radius: 50vw;
 
-    .open-mobile-menu & {
-        display: block;
-    }
+  .open-mobile-menu & {
+    display: block;
+  }
 }
 @media (max-width: 700px) {
-    .woo-menu .menu-icon {
-        margin-top: .6rem;
-    }
+  .woo-menu .menu-icon {
+    margin-top: 0.6rem;
+  }
 }
 
-@media(min-width: b.$menu-break) {
-    .menu-icon {
-        display: none;
-    }
+@media (min-width: b.$menu-break) {
+  .menu-icon {
+    display: none;
+  }
 }
