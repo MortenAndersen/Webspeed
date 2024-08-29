@@ -52,18 +52,22 @@ function webspeed_elements($atts) {
 			} else {
 				$scroll_margin = 'none';
 			}
-	
-		echo '<ul id="nav" class="' . $scroll_margin . ' anchor">';
+
+	// Ancher menu
+	echo '<nav class="ancher">';
+		echo '<ul id="nav" class="' . $scroll_margin . '">';
 			while ($loop->have_posts()): $loop->the_post();
 			$id = get_the_ID();
-			
 				echo '<li id="id-' . $id . '">';
-				echo '<a href="#' . $id . '">' . get_the_title() . '</a>';
+					echo '<a href="#' . $id . '">' . get_the_title() . '</a>';
 				echo '</li>';
-			
 			endwhile;
-        echo '</ul>';
-        wp_reset_query();
+			wp_reset_query();
+    echo '</ul>';
+	echo '</nav>';
+        
+	// Ancher menu end
+
 				echo '<div class="grid' . $grid_class . $gap_class . $type . ' ' . $class . '">';
         while ($loop->have_posts()): $loop->the_post();
 			$id = get_the_ID();
