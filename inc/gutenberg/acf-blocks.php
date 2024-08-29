@@ -9,13 +9,13 @@ function acc_block() {
         // register a Spalter block.
         acf_register_block_type(array(
             'name'              => 'acc',
-            'title'             => __('Accordion WEB'),
+            'title'             => __('Accordion HJEMMESIDER'),
             'description'       => __('Accordion'),
             'render_template'   => 'template-parts/gutenberg-blocks/acc/acc.php',
             'category'          => 'formatting',
             'icon'              => 'admin-comments',
             'mode'              => 'edit',
-            'keywords'          => array( 'acc', 'quote' ),
+            'keywords'          => array( 'acc', 'Hjemmesider' ),
 
         ));
     }
@@ -32,13 +32,13 @@ function contact_block() {
         // register a Spalter block.
         acf_register_block_type(array(
             'name'              => 'contact',
-            'title'             => __('Contact WEB'),
+            'title'             => __('Contact HJEMMESIDER'),
             'description'       => __('Contact Information'),
             'render_template'   => 'template-parts/gutenberg-blocks/contact/contact.php',
             'category'          => 'formatting',
             'icon'              => 'admin-comments',
             'mode'              => 'edit',
-            'keywords'          => array( 'contact', 'quote' ),
+            'keywords'          => array( 'Kontakt', 'Hjemmesider' ),
         ));
     }
 }
@@ -54,13 +54,13 @@ function meeting_block() {
         // register a Spalter block.
         acf_register_block_type(array(
             'name'              => 'meeting',
-            'title'             => __('Meeting WEB'),
+            'title'             => __('Meeting HJEMMESIDER'),
             'description'       => __('Meeting Information'),
             'render_template'   => 'template-parts/gutenberg-blocks/meeting/meeting.php',
             'category'          => 'formatting',
             'icon'              => 'admin-comments',
             'mode'              => 'edit',
-            'keywords'          => array( 'meeting', 'quote' ),
+            'keywords'          => array( 'meeting', 'Hjemmesider' ),
         ));
     }
 }
@@ -76,13 +76,13 @@ function fullwidth_block() {
         // register a Spalter block.
         acf_register_block_type(array(
             'name'              => 'fullwidth',
-            'title'             => __('Full Width WEB'),
+            'title'             => __('Full Width HJEMMESIDER'),
             'description'       => __('Image and Text Information'),
             'render_template'   => 'template-parts/gutenberg-blocks/fullwidth/fullwidth.php',
             'category'          => 'formatting',
             'icon'              => 'admin-comments',
             'mode'              => 'edit',
-            'keywords'          => array( 'WEB', 'Design' ),
+            'keywords'          => array( 'Design', 'Hjemmesider' ),
         ));
     }
 }
@@ -98,13 +98,13 @@ function designlist_block() {
         // register a Spalter block.
         acf_register_block_type(array(
             'name'              => 'designlist',
-            'title'             => __('Design list WEB'),
+            'title'             => __('Design list HJEMMESIDER'),
             'description'       => __('List amd Icon'),
             'render_template'   => 'template-parts/gutenberg-blocks/designlist/designlist.php',
             'category'          => 'formatting',
             'icon'              => 'admin-comments',
             'mode'              => 'edit',
-            'keywords'          => array( 'WEB', 'List' ),
+            'keywords'          => array( 'WEB', 'Hjemmesider' ),
         ));
     }
 }
