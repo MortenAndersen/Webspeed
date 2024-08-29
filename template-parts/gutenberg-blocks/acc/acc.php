@@ -26,5 +26,4 @@ if( have_rows('accordion') ):
     ++$i;
     endwhile;
     echo '</div>';
-    wp_reset_query();
 endif;
