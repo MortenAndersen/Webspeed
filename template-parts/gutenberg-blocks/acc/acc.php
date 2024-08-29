@@ -21,9 +21,12 @@ if( have_rows('accordion') ):
             echo '</summary>';
                 echo $sub_body;
                 echo $sub_chortcode;
+
         echo '</details>';
         
     ++$i;
+  
     endwhile;
     echo '</div>';
 endif;
+
