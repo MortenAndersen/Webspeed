@@ -68,6 +68,7 @@ function webspeed_elements($atts) {
 			$id = get_the_ID();
 			echo '<div id="' . $id . '" class="' . $scroll_margin . '">';
 				the_title('<h2>', '</h2>');
+				web_thumbnail();
 				the_content();
 				web_edit_link();
 				echo '<p><a href="#nav" title="Scroll op til menuen"><svg style="width:20px" width="100%" height="100%" viewBox="0 0 70 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
