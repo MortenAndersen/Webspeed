@@ -54,7 +54,7 @@ function webspeed_elements($atts) {
 			}
 
 	// Ancher menu
-	echo '<nav class="ancher">';
+	echo '<nav class="anchor">';
 		echo '<ul id="nav" class="' . $scroll_margin . '">';
 			while ($loop->have_posts()): $loop->the_post();
 			$id = get_the_ID();
