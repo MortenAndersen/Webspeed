@@ -123,9 +123,9 @@
     padding-left: 0.15rem;
   }
 
-  .mobile-menu a.active {
-    opacity: 1;
-  }
+  // .mobile-menu a.active {
+  //   opacity: 1;
+  // }
 
   .mobile-menu li li a {
     padding-left: 1rem;
@@ -148,6 +148,7 @@
     .current-menu-item {
       > a {
         opacity: 1;
+        font-weight: 600;
       }
     }
 
