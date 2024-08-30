@@ -9,7 +9,7 @@
     cursor: pointer;
     width: 60px;
     height: 60px;
-    line-height: 60px;
+
     text-align: center;
     border-right: 1px solid;
     border-left: 1px solid;
@@ -97,7 +97,7 @@
     }
 
     > ul {
-      line-height: 60px;
+      line-height: 1.4rem;
       border-top: 1px solid var(--menu-mobile-border);
     }
   }
@@ -114,8 +114,10 @@
 
   .mobile-menu a {
     color: var(--menu-mobile-color);
-    opacity: 0.8;
-    display: block;
+    opacity: 0.9;
+    display: flex;
+    min-height: 60px;
+    align-items: center;
     transition: 0.3s all;
     border-bottom: 1px solid var(--menu-mobile-border);
     padding-left: 0.15rem;
