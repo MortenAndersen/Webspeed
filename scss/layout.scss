@@ -131,6 +131,9 @@ aside {
       top: 32px;
     }
   }
+  .scroll-pad {
+    scroll-padding: var(--scroll-pad);
+  }
 }
 
 @media (min-width: b.$phone) {

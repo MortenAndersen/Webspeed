@@ -46,16 +46,11 @@ function webspeed_elements($atts) {
 				wp_reset_query();
 			echo '</div>';
 		} elseif ($visning == 'menu') {
-			$sticky_nav = get_theme_mod('webspeed_sticky_checkbox');
-			if ($sticky_nav) {
-				$scroll_margin = 'scroll-margin';
-			} else {
-				$scroll_margin = 'none';
-			}
+			
 
 	// Ancher menu
 	echo '<nav class="anchor">';
-		echo '<ul id="nav" class="' . $scroll_margin . '">';
+		echo '<ul id="nav">';
 			while ($loop->have_posts()): $loop->the_post();
 			$id = get_the_ID();
 				echo '<li id="id-' . $id . '">';

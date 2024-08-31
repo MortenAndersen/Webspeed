@@ -440,6 +440,15 @@ function web_header_class() {
 		return ' sticky-header';
 	}
 }
+// ------------------------------------------------- //
+
+function web_html_class() {
+	$sticky_menu = get_theme_mod('webspeed_sticky_checkbox');
+	if ($sticky_menu == true) {
+		echo 'class="scroll-pad">';
+	}
+}
+
 
 // ------------------------------------------------- //
 
