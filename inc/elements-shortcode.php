@@ -66,7 +66,7 @@ function webspeed_elements($atts) {
 				echo '<div class="grid' . $grid_class . $gap_class . $type . ' ' . $class . '">';
         while ($loop->have_posts()): $loop->the_post();
 			$id = get_the_ID();
-			echo '<div id="' . $id . '" class="' . $scroll_margin . '">';
+			echo '<div id="' . $id . '">';
 				
 				web_thumbnail();
 				the_title('<h2>', '</h2>');
