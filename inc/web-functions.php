@@ -445,7 +445,7 @@ function web_header_class() {
 function web_html_class() {
 	$sticky_menu = get_theme_mod('webspeed_sticky_checkbox');
 	if ($sticky_menu == true) {
-		echo 'class="scroll-pad">';
+		echo 'class="scroll-pad"';
 	}
 }
 
