@@ -72,6 +72,25 @@ function webspeed_customizer_header($wp_customize) {
 
 	/* ---------------------------------------------------------- */
 
+	 //add setting
+	 $wp_customize->add_setting( 'webspeed_menu_pos_dropdown', array(
+		'default' => '',
+));
+
+$wp_customize->add_control( 'menu_vertical_control', array(
+		'label' => 'Menu - Vertical',
+		'type'  => 'select',
+		'section' => 'webspeed_section_header',
+		'settings' => 'webspeed_menu_pos_dropdown',
+		'choices' => array(
+				'top' => 'Top',
+				'center' => 'Center',
+				'bottom' => 'Bottom',
+		)
+));
+
+	/* ---------------------------------------------------------- */
+	
 	//add setting
 	$wp_customize->add_setting('webspeed_h1', array(
 		'default' => '',
