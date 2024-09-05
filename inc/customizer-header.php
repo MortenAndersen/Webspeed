@@ -14,6 +14,7 @@ function webspeed_customizer_header($wp_customize) {
 	//add setting
 	$wp_customize->add_setting('webspeed_logo_checkbox', array(
 		'default' => '',
+		//'sanitize_callback' => 'webspeed_sanitize_check',
 	));
 
 	//add control
@@ -29,6 +30,7 @@ function webspeed_customizer_header($wp_customize) {
 	//add setting
 	$wp_customize->add_setting('webspeed_sticky_checkbox', array(
 		'default' => '',
+		//'sanitize_callback' => 'webspeed_sanitize_check',
 	));
 
 	$wp_customize->add_control('sticky_checkbox_control', array(
@@ -43,6 +45,7 @@ function webspeed_customizer_header($wp_customize) {
 	//add setting
 	$wp_customize->add_setting('webspeed_woo_card', array(
 		'default' => '',
+		//'sanitize_callback' => 'webspeed_sanitize_check',
 	));
 
 	$wp_customize->add_control('woo_card_checkbox_control', array(
@@ -57,6 +60,7 @@ function webspeed_customizer_header($wp_customize) {
 	//add setting
 	$wp_customize->add_setting('webspeed_menu_left_checkbox', array(
 		'default' => '',
+		//'sanitize_callback' => 'webspeed_sanitize_check',
 	));
 
 	$wp_customize->add_control('menu_left_checkbox_control', array(
@@ -71,6 +75,7 @@ function webspeed_customizer_header($wp_customize) {
 	//add setting
 	$wp_customize->add_setting('webspeed_h1', array(
 		'default' => '',
+		//'sanitize_callback' => 'webspeed_sanitize_check',
 	));
 
 	$wp_customize->add_control('h1_control', array(
@@ -79,7 +84,13 @@ function webspeed_customizer_header($wp_customize) {
 		'section' => 'webspeed_section_header',
 		'settings' => 'webspeed_h1',
 	));
+	
 
 }
 
 add_action('customize_register', 'webspeed_customizer_header');
+
+// function webspeed_sanitize_check( $values ) {
+// 	$multi_values = !is_array( $values ) ? explode( ',', $values ) : $values;
+// 	return !empty( $multi_values ) ? array_map( 'sanitize_text_field', $multi_values ) : array();
+// }

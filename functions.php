@@ -143,14 +143,6 @@ require get_parent_theme_file_path('/inc/web-functions.php');
 require get_parent_theme_file_path('/inc/customizer-header.php');
 
 
-// For at Theme Adjuster virker med farver
-add_action('admin_enqueue_scripts', 'webspeed_backend_scripts');
-if (!function_exists('webspeed_backend_scripts')) {
-	function webspeed_backend_scripts($hook) {
-		wp_enqueue_style('wp-color-picker');
-		wp_enqueue_script('wp-color-picker');
-	}
-}
 
 // Theme shortcode
 require get_parent_theme_file_path('/inc/shortcode-child-grid.php');
