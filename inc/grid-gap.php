@@ -10,7 +10,10 @@ if( $grid == 2 ) {
     $grid_class = ' g-d-1 ';
 }
 
-if( $gap == 1 ) {
+if( $gap == 0 ) {
+    $gap_class = 'normal-gap ';
+}
+elseif( $gap == 1 ) {
     $gap_class = 'gap-1 ';
 } elseif( $gap == 2 ) {
     $gap_class = 'gap-2 ';
