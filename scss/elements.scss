@@ -578,3 +578,11 @@ details summary::marker {
 }
 details[open] summary::marker {
 }
+
+.testimonial-excerpt_item {
+  display: flex;
+  flex-flow: column;
+  a {
+    margin-top: auto;
+  }
+}
