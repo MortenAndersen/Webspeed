@@ -243,10 +243,6 @@ aside {
 .lr-top__sec {
   display: flex;
   flex-flow: column;
-  align-items: center;
-  background: #8d93984f;
-  border-radius: clamp(5px, 2vw, 2rem);
-  overflow: hidden;
 }
 @media (min-width: 800px) {
   .lr-top {
