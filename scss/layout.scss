@@ -83,7 +83,6 @@ aside {
 }
 
 .page-footer {
-  border-top: 1px solid var(--border);
   font-size: s.$font-s;
   line-height: s.$line-s;
   padding-block: s.$gap-n;
@@ -101,7 +100,6 @@ aside {
   }
 }
 .post-footer {
-  border-top: 1px solid var(--border);
   font-size: s.$font-xs;
   line-height: s.$line-xs;
   padding-bottom: s.$gap-n;
