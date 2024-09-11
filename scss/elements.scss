@@ -493,6 +493,10 @@ img#logo {
 @media (width > 500px) {
   .to-top.active {
     display: block;
+    padding: 1rem;
+    border-radius: 50vw;
+    background: #fff;
+    mix-blend-mode: difference;
   }
 }
 
