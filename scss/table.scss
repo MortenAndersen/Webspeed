@@ -1,14 +1,21 @@
 table {
-	border-collapse: collapse !important;
+  border-collapse: collapse !important;
 }
 thead {
-	text-align: left;
+  text-align: left;
 }
-td, th,
-.wp-block-table td, .wp-block-table th {
-	padding: 10px;
-	border: 1px solid var(--border);
+td,
+th,
+.wp-block-table td,
+.wp-block-table th {
+  padding: 10px;
+  border: 1px solid var(--border);
 }
 tr:nth-child(even) {
-	background: aliceblue;
+  background: aliceblue;
+}
+.shop_table {
+  tr:nth-child(even) {
+    background: none;
+  }
 }
