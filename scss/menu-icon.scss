@@ -2,9 +2,10 @@
 @use "elements/size" as s;
 
 .menu-icon {
-  margin-top: auto;
-  margin-bottom: auto;
-  min-width: 40px;
+  align-self: center;
+  height: 40px;
+  width: 40px;
+  display: flex;
   cursor: pointer;
 
   .a-center & {
