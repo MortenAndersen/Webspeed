@@ -1,7 +1,10 @@
-<?php 
-if( function_exists('acf_add_local_field_group') ):
+<?php
+add_action( 'acf/include_fields', function() {
+	if ( ! function_exists( 'acf_add_local_field_group' ) ) {
+		return;
+	}
 
-acf_add_local_field_group(array(
+	acf_add_local_field_group( array(
 	'key' => 'group_61dda70c369dd',
 	'title' => 'Accordion',
 	'fields' => array(
@@ -9,6 +12,7 @@ acf_add_local_field_group(array(
 			'key' => 'field_61ddab18f3cd8',
 			'label' => 'Accordion',
 			'name' => 'accordion',
+			'aria-label' => '',
 			'type' => 'repeater',
 			'instructions' => '',
 			'required' => 0,
@@ -28,6 +32,7 @@ acf_add_local_field_group(array(
 					'key' => 'field_61ddab55f3cd9',
 					'label' => 'Overskrift',
 					'name' => 'title',
+					'aria-label' => '',
 					'type' => 'text',
 					'instructions' => '',
 					'required' => 0,
@@ -42,11 +47,13 @@ acf_add_local_field_group(array(
 					'prepend' => '',
 					'append' => '',
 					'maxlength' => '',
+					'parent_repeater' => 'field_61ddab18f3cd8',
 				),
 				array(
 					'key' => 'field_61ddab5bf3cda',
 					'label' => 'Indhold',
 					'name' => 'body',
+					'aria-label' => '',
 					'type' => 'wysiwyg',
 					'instructions' => '',
 					'required' => 0,
@@ -61,11 +68,40 @@ acf_add_local_field_group(array(
 					'toolbar' => 'basic',
 					'media_upload' => 1,
 					'delay' => 0,
+					'parent_repeater' => 'field_61ddab18f3cd8',
+				),
+				array(
+					'key' => 'field_66e2d183f19e3',
+					'label' => 'Billede',
+					'name' => 'billede',
+					'aria-label' => '',
+					'type' => 'image',
+					'instructions' => '',
+					'required' => 0,
+					'conditional_logic' => 0,
+					'wrapper' => array(
+						'width' => '',
+						'class' => '',
+						'id' => '',
+					),
+					'return_format' => 'array',
+					'library' => 'all',
+					'min_width' => '',
+					'min_height' => '',
+					'min_size' => '',
+					'max_width' => '',
+					'max_height' => '',
+					'max_size' => '',
+					'mime_types' => '',
+					'allow_in_bindings' => 0,
+					'preview_size' => 'medium',
+					'parent_repeater' => 'field_61ddab18f3cd8',
 				),
 				array(
 					'key' => 'field_63088ca363d06',
 					'label' => 'Shortcode',
 					'name' => 'shortcode',
+					'aria-label' => '',
 					'type' => 'text',
 					'instructions' => '',
 					'required' => 0,
@@ -80,11 +116,13 @@ acf_add_local_field_group(array(
 					'prepend' => '',
 					'append' => '',
 					'maxlength' => '',
+					'parent_repeater' => 'field_61ddab18f3cd8',
 				),
 				array(
 					'key' => 'field_62fba03c06d95',
 					'label' => 'Class',
 					'name' => 'class',
+					'aria-label' => '',
 					'type' => 'text',
 					'instructions' => '',
 					'required' => 0,
@@ -99,8 +137,10 @@ acf_add_local_field_group(array(
 					'prepend' => '',
 					'append' => '',
 					'maxlength' => '',
+					'parent_repeater' => 'field_61ddab18f3cd8',
 				),
 			),
+			'rows_per_page' => 20,
 		),
 	),
 	'location' => array(
@@ -121,6 +161,5 @@ acf_add_local_field_group(array(
 	'active' => true,
 	'description' => '',
 	'show_in_rest' => 0,
-));
-
-endif;		
+) );
+} );
