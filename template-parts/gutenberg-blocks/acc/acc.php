@@ -5,6 +5,7 @@ if( have_rows('accordion') ):
 
     while( have_rows('accordion') ) : the_row();
         $sub_title = get_sub_field('title');
+        $sub_deloverskrift = get_sub_field('deloverskrift');
         $sub_body = get_sub_field('body');
         $sub_billede = get_sub_field('billede');
         $sub_class_master = get_sub_field('class');
@@ -18,7 +19,11 @@ if( have_rows('accordion') ):
 
         echo '<details  class="acc-' . $i . '' . $sub_class .'">';
             echo '<summary>';
-                echo $sub_title;
+                echo '<strong>' . $sub_title . '</strong>';
+                if ( $sub_deloverskrift ) {
+                    echo '<br /><em>' . $sub_deloverskrift . '</em>';
+                }
+                
             echo '</summary>';
                 
                 if( !empty( $sub_billede ) ) {

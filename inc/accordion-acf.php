@@ -50,6 +50,28 @@ add_action( 'acf/include_fields', function() {
 					'parent_repeater' => 'field_61ddab18f3cd8',
 				),
 				array(
+					'key' => 'field_66e809d72a55f',
+					'label' => 'Deloverskrift',
+					'name' => 'deloverskrift',
+					'aria-label' => '',
+					'type' => 'text',
+					'instructions' => '',
+					'required' => 0,
+					'conditional_logic' => 0,
+					'wrapper' => array(
+						'width' => '',
+						'class' => '',
+						'id' => '',
+					),
+					'default_value' => '',
+					'maxlength' => '',
+					'allow_in_bindings' => 0,
+					'placeholder' => '',
+					'prepend' => '',
+					'append' => '',
+					'parent_repeater' => 'field_61ddab18f3cd8',
+				),
+				array(
 					'key' => 'field_61ddab5bf3cda',
 					'label' => 'Indhold',
 					'name' => 'body',
@@ -64,9 +86,10 @@ add_action( 'acf/include_fields', function() {
 						'id' => '',
 					),
 					'default_value' => '',
+					'allow_in_bindings' => 1,
 					'tabs' => 'all',
 					'toolbar' => 'basic',
-					'media_upload' => 1,
+					'media_upload' => 0,
 					'delay' => 0,
 					'parent_repeater' => 'field_61ddab18f3cd8',
 				),
@@ -163,3 +186,4 @@ add_action( 'acf/include_fields', function() {
 	'show_in_rest' => 0,
 ) );
 } );
+
