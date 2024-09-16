@@ -466,8 +466,7 @@ article > .post-img {
 .logo-name {
   transition: transform 0.75s ease;
   transform-origin: center left;
-  align-items: center;
-  gap: 1rem;
+  align-self: center;
   .name {
     display: flex;
     flex-flow: column;
