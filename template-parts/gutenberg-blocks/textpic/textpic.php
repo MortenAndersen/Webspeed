@@ -6,9 +6,14 @@ $layout = '1fr';
 $txtorder = '1';
 $picorder = '2';
 
+if (get_field('layout') == '100') {
+  $layout = '1fr';
+  $txtorder = '1';
+  $picorder = '2';
+}
 
 if (get_field('layout') == '50') {
-  $layout = '1fr';
+  $layout = '1fr 1fr';
   $txtorder = '1';
   $picorder = '2';
 }
@@ -22,8 +27,13 @@ if (get_field('layout') == '25') {
   $txtorder = '1';
   $picorder = '2';
 }
-if (get_field('layout') == '50p') {
+if (get_field('layout') == '100p') {
   $layout = '1fr';
+  $txtorder = '2';
+  $picorder = '1';
+}
+if (get_field('layout') == '50p') {
+  $layout = '1fr 1fr';
   $txtorder = '2';
   $picorder = '1';
 }
