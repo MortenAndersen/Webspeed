@@ -25,7 +25,9 @@
   .style1,
   .style2,
   .style3,
-  .style4 {
+  .style4,
+  .style5,
+  .style6 {
     display: grid;
     gap: var(--gap);
   }
@@ -41,6 +43,12 @@
   .style4 {
     grid-template-columns: 3fr 1fr;
   }
+  .style5 {
+    grid-template-columns: 1fr 2fr;
+  }
+  .style6 {
+    grid-template-columns: 1fr 3fr;
+  }
   .pic-text.textpic .pic {
     order: 1;
   }
@@ -54,7 +62,9 @@
 .editor-styles-wrapper .style1,
 .editor-styles-wrapper .style2,
 .editor-styles-wrapper .style3,
-.editor-styles-wrapper .style4 {
+.editor-styles-wrapper .style4,
+.editor-styles-wrapper .style5,
+.editor-styles-wrapper .style6 {
   gap: 1rem;
 }
 .editor-styles-wrapper .textpic .pic img:not(:first-of-type) {

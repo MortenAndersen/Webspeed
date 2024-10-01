@@ -12,6 +12,12 @@ if (get_field('layout') == '33') {
 if (get_field('layout') == '25') {
   $styleClass = 'style4';
 }
+if (get_field('layout') == '330') {
+  $styleClass = 'style5';
+}
+if (get_field('layout') == '250') {
+  $styleClass = 'style6';
+}
 
 // Tekst før billede
 
