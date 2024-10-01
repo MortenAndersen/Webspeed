@@ -109,26 +109,4 @@ function designlist_block() {
     }
 }
 
-// ---------------------------------------------------
 
-add_action('acf/init', 'textpic_block');
-function textpic_block() {
-
-    // Check function exists.
-    if( function_exists('acf_register_block_type') ) {
-
-        // register a Spalter block.
-        acf_register_block_type(array(
-            'name'              => 'textpic',
-            'title'             => __('Design med tekst og billede HJEMMESIDER'),
-            'description'       => __('Tekst og billede'),
-            'render_template'   => 'template-parts/gutenberg-blocks/textpic/textpic.php',
-            'category'          => 'formatting',
-            'icon'              => 'admin-comments',
-            'mode'              => 'edit',
-            'keywords'          => array( 'Tekst', 'Billede', 'Hjemmesider' ),
-        ));
-    }
-}
-
-// ---------------------------------------------------

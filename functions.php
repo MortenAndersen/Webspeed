@@ -155,12 +155,12 @@ if (class_exists('ACF')) {
 	// ACF
 	require get_parent_theme_file_path('/inc/design-list.php');
 	require get_parent_theme_file_path('/inc/acf.php');
-	require get_parent_theme_file_path('/inc/textpic-acf.php');
 	require get_parent_theme_file_path('/inc/acf-left-right-top.php');
 	require get_parent_theme_file_path('/inc/fullwidth-acf.php');
 	require get_parent_theme_file_path('/inc/accordion-acf.php');
 	require get_parent_theme_file_path('/inc/contact-acf.php');
 	require get_parent_theme_file_path('/inc/gutenberg/acf-blocks.php');
+	require get_parent_theme_file_path('/blocks/textpic/acf-textpic.php');
 }
 
 if (class_exists('WooCommerce')) {
@@ -170,4 +170,12 @@ if (class_exists('WooCommerce')) {
 
 if (class_exists('WooCommerce') && class_exists('ACF')) {
 	require get_parent_theme_file_path('/inc/acf-woocommerce.php');
+}
+
+
+
+
+add_action( 'init', 'register_acf_blocks' );
+function register_acf_blocks() {
+    register_block_type( __DIR__ . '/blocks/textpic' );
 }

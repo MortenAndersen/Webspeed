@@ -1,0 +1,61 @@
+.textpic img {
+  width: 100%;
+}
+.textpic .pic img:not(:first-of-type) {
+  margin-top: var(--gap);
+}
+.textpic .pic p {
+  font-size: 0.9rem;
+  margin: 1rem 0 0 0;
+}
+.add-padding.textpic {
+  padding: var(--gap);
+}
+.wrap .textpic:not(:last-of-type) {
+  margin-bottom: var(--gap);
+}
+@media (min-width: 800px) {
+  .textpic.center .tekst {
+    align-self: center;
+  }
+  .textpic.bottom .tekst {
+    align-self: end;
+  }
+  .style1,
+  .style2,
+  .style3,
+  .style4 {
+    display: grid;
+    gap: var(--gap);
+  }
+  .style1 {
+    grid-template-columns: 1fr;
+  }
+  .style2 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .style3 {
+    grid-template-columns: 2fr 1fr;
+  }
+  .style4 {
+    grid-template-columns: 3fr 1fr;
+  }
+  .pic-text.textpic .pic {
+    order: 1;
+  }
+  .pic-text.textpic .tekst {
+    order: 2;
+  }
+}
+.editor-styles-wrapper .style1,
+.editor-styles-wrapper .style2,
+.editor-styles-wrapper .style3,
+.editor-styles-wrapper .style4 {
+  gap: 1rem;
+}
+.editor-styles-wrapper .textpic .pic img:not(:first-of-type) {
+  margin-top: 1rem;
+}
+.editor-styles-wrapper .add-padding.textpic {
+  padding: 1rem;
+}

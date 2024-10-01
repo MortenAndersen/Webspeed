@@ -48,7 +48,15 @@ if (get_field('layout') == '25p') {
   $picorder = '1';
 }
 
-echo '<div class="textpic grid" style="grid-template-columns: ' . $layout . '">';
+// Class name til Gutenberg block
+$className = 'textpic grid';
+if( !empty($block['className']) ) {
+    $className .= ' ' . $block['className'];
+}
+
+
+
+echo '<div class="' . esc_attr($className) . '" style="grid-template-columns: ' . $layout . '">';
 
 echo '<div class="tekst" style="order: ' . $txtorder . '">';
   the_field('tekst');

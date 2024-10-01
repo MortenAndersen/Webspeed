@@ -585,22 +585,3 @@ details[open] summary::marker {
     margin-top: auto;
   }
 }
-
-@media (max-width: 800px) {
-  .textpic {
-    grid-template-columns: 1fr !important;
-  }
-}
-.textpic {
-  gap: var(--gap);
-  margin-bottom: var(--gap);
-}
-.page-content .pic {
-  p {
-    margin: 1rem 0 0 0;
-    font-size: 0.9rem;
-  }
-  img:not(:first-of-type) {
-    margin-top: var(--gap);
-  }
-}

@@ -1,0 +1,16 @@
+{
+  "name": "textpic",
+  "title": "Tekst og Billede",
+  "description": "Vis tekst og billeder ved siden af hinanden",
+  "style": ["file:./textpic.css"],
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["Hjemmesider", "tekst", "billede"],
+  "acf": {
+    "mode": "auto",
+    "renderTemplate": "textpic.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

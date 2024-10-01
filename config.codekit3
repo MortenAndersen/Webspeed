@@ -51,6 +51,54 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/blocks\/textpic\/acf-textpic.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/textpic\/acf-textpic.php",
+      "oF" : 0
+    },
+    "\/blocks\/textpic\/block.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/blocks\/textpic\/block-min.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/blocks\/textpic\/textpic-min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/textpic\/textpic-min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/blocks\/textpic\/textpic.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/textpic\/textpic-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/blocks\/textpic\/textpic.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/textpic\/textpic.php",
+      "oF" : 0
+    },
     "\/comments.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -467,14 +515,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/inc\/taxonomy.php",
-      "oF" : 0
-    },
-    "\/inc\/textpic-acf.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/inc\/textpic-acf.php",
       "oF" : 0
     },
     "\/inc\/web-functions.php" : {
