@@ -4,6 +4,9 @@
 .textpic .pic img:not(:first-of-type) {
   margin-top: var(--gap);
 }
+.textpic p:last-of-type {
+  margin-bottom: 0;
+}
 .textpic .pic p {
   font-size: 0.9rem;
   margin: 1rem 0 0 0;
