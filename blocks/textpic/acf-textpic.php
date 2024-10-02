@@ -27,6 +27,8 @@ add_action( 'acf/include_fields', function() {
 				50 => '1/1',
 				33 => '2/1',
 				25 => '3/1',
+				330 => '1/2',
+				250 => '3/1',
 			),
 			'default_value' => false,
 			'return_format' => 'value',
