@@ -23,13 +23,20 @@ if (get_field('layout') == '250') {
 
 if (!get_field('tekst_forst')){
   $order = 'pic-text';
-
 } else {
   $order = 'text-pic';
-
 }
 
-$align = get_field('textalign');
+// Tekst spalter
+
+if (!get_field('spalter')){
+  $spalter = 'no-spalter';
+} else {
+  $spalter = 'spalter';
+}
+
+$txtalign = 'txt-' . get_field('textalign');
+$imgalign = 'img-' . get_field('imagealign');
 
 // Padding
 $padding = 'no-padding';
@@ -38,7 +45,7 @@ if (get_field('baggrund')){
 }
 
 // Class name til Gutenberg block
-$className = 'textpic ' . $styleClass . ' ' . $order . ' ' . $align . ' ' . $padding;
+$className = 'textpic ' . $styleClass . ' ' . $order . ' ' . $txtalign . ' ' . $imgalign . ' ' . $padding;
 if( !empty($block['className']) ) {
     $className .= ' ' . $block['className'];
 }
@@ -70,8 +77,15 @@ if ($background || $textfarve) {
 
 echo '<div' . $id . ' class="' . esc_attr($className) . '"' . $bgStyle . '>';
 
+
+
 echo '<div class="tekst">';
-  the_field('tekst');
+if (get_field('overskrift')) {
+  echo '<h3>' . get_field('overskrift') . '</h3>';
+}
+echo '<div class="text_body ' . $spalter . '">';
+    the_field('tekst');
+  echo '</div>';
 echo '</div>';
 
 

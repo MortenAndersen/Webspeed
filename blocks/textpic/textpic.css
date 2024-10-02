@@ -7,7 +7,8 @@
 
 .textpic .pic p {
   font-size: 0.9rem;
-  margin: 1rem 0 0 0;
+  margin: 0.5rem 0 0 0;
+  font-style: italic;
 }
 .add-padding.textpic {
   padding: var(--gap);
@@ -16,10 +17,16 @@
   margin-bottom: var(--gap);
 }
 @media (min-width: 800px) {
-  .textpic.center .tekst {
+  .textpic.txt-center .tekst {
     align-self: center;
   }
-  .textpic.end .tekst {
+  .textpic.txt-end .tekst {
+    align-self: end;
+  }
+  .textpic.img-center .pic {
+    align-self: center;
+  }
+  .textpic.img-end .pic {
     align-self: end;
   }
   .style1,
@@ -58,6 +65,10 @@
   .textpic p:last-of-type {
     margin-bottom: 0;
   }
+  .text_body.spalter {
+    display: flex;
+    gap: var(--gap);
+  }
 }
 .editor-styles-wrapper .style1,
 .editor-styles-wrapper .style2,
@@ -72,4 +83,7 @@
 }
 .editor-styles-wrapper .add-padding.textpic {
   padding: 1rem;
+}
+.editor-styles-wrapper .text_body.spalter {
+  gap: 1rem;
 }

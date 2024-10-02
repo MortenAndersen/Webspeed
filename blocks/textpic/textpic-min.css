@@ -7,7 +7,8 @@
 
 .textpic .pic p {
   font-size: 0.9rem;
-  margin: 1rem 0 0 0;
+  margin: 0.5rem 0 0 0;
+  font-style: italic;
 }
 .add-padding.textpic {
   padding: var(--gap);
@@ -16,16 +17,24 @@
   margin-bottom: var(--gap);
 }
 @media (min-width: 800px) {
-  .textpic.center .tekst {
+  .textpic.txt-center .tekst {
     align-self: center;
   }
-  .textpic.end .tekst {
+  .textpic.txt-end .tekst {
+    align-self: end;
+  }
+  .textpic.img-center .pic {
+    align-self: center;
+  }
+  .textpic.img-end .pic {
     align-self: end;
   }
   .style1,
   .style2,
   .style3,
-  .style4 {
+  .style4,
+  .style5,
+  .style6 {
     display: grid;
     gap: var(--gap);
   }
@@ -41,6 +50,12 @@
   .style4 {
     grid-template-columns: 3fr 1fr;
   }
+  .style5 {
+    grid-template-columns: 1fr 2fr;
+  }
+  .style6 {
+    grid-template-columns: 1fr 3fr;
+  }
   .pic-text.textpic .pic {
     order: 1;
   }
@@ -50,11 +65,17 @@
   .textpic p:last-of-type {
     margin-bottom: 0;
   }
+  .text_body.spalter {
+    display: flex;
+    gap: var(--gap);
+  }
 }
 .editor-styles-wrapper .style1,
 .editor-styles-wrapper .style2,
 .editor-styles-wrapper .style3,
-.editor-styles-wrapper .style4 {
+.editor-styles-wrapper .style4,
+.editor-styles-wrapper .style5,
+.editor-styles-wrapper .style6 {
   gap: 1rem;
 }
 .editor-styles-wrapper .textpic .pic img:not(:first-of-type) {
@@ -62,4 +83,7 @@
 }
 .editor-styles-wrapper .add-padding.textpic {
   padding: 1rem;
+}
+.editor-styles-wrapper .text_body.spalter {
+  gap: 1rem;
 }
