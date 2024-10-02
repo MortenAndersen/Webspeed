@@ -67,46 +67,6 @@ function meeting_block() {
 
 // ---------------------------------------------------
 
-add_action('acf/init', 'fullwidth_block');
-function fullwidth_block() {
 
-    // Check function exists.
-    if( function_exists('acf_register_block_type') ) {
-
-        // register a Spalter block.
-        acf_register_block_type(array(
-            'name'              => 'fullwidth',
-            'title'             => __('Full Width HJEMMESIDER'),
-            'description'       => __('Image and Text Information'),
-            'render_template'   => 'template-parts/gutenberg-blocks/fullwidth/fullwidth.php',
-            'category'          => 'formatting',
-            'icon'              => 'admin-comments',
-            'mode'              => 'edit',
-            'keywords'          => array( 'Design', 'Hjemmesider' ),
-        ));
-    }
-}
-
-// ---------------------------------------------------
-
-add_action('acf/init', 'designlist_block');
-function designlist_block() {
-
-    // Check function exists.
-    if( function_exists('acf_register_block_type') ) {
-
-        // register a Spalter block.
-        acf_register_block_type(array(
-            'name'              => 'designlist',
-            'title'             => __('Design list HJEMMESIDER'),
-            'description'       => __('List amd Icon'),
-            'render_template'   => 'template-parts/gutenberg-blocks/designlist/designlist.php',
-            'category'          => 'formatting',
-            'icon'              => 'admin-comments',
-            'mode'              => 'edit',
-            'keywords'          => array( 'WEB', 'Hjemmesider' ),
-        ));
-    }
-}
 
 
