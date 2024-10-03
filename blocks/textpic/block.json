@@ -2,7 +2,7 @@
   "name": "textpic",
   "title": "Tekst og Billede",
   "description": "Vis tekst og billeder ved siden af hinanden",
-  "style": ["file:./textpic.css"],
+  "style": ["file:./textpic-min.css"],
   "category": "formatting",
   "icon": "admin-comments",
   "keywords": ["Hjemmesider", "tekst", "billede"],

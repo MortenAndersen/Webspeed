@@ -20,7 +20,6 @@ if (get_field('layout') == '250') {
 }
 
 // Tekst før billede
-
 if (!get_field('tekst_forst')){
   $order = 'pic-text';
 } else {
@@ -28,13 +27,13 @@ if (!get_field('tekst_forst')){
 }
 
 // Tekst spalter
-
 if (!get_field('spalter')){
   $spalter = 'no-spalter';
 } else {
   $spalter = 'spalter';
 }
 
+// Align tekst og billede
 $txtalign = 'txt-' . get_field('textalign');
 $imgalign = 'img-' . get_field('imagealign');
 
@@ -44,7 +43,7 @@ if (get_field('baggrund')){
   $padding = 'add-padding';
 }
 
-// Class name til Gutenberg block
+// Class 
 $className = 'textpic ' . $styleClass . ' ' . $order . ' ' . $txtalign . ' ' . $imgalign . ' ' . $padding;
 if( !empty($block['className']) ) {
     $className .= ' ' . $block['className'];
@@ -58,53 +57,46 @@ $id = ' id="' . $block['anchor'] . '"';
 }
 
 // Baggrund og tekstfarve
-
 $background = null;
 if (get_field('baggrund')) {
   $background = 'background:' . get_field('baggrund') . ';';
 }
-
 $textfarve = null;
 if (get_field('tekst_farve')) {
   $textfarve = 'color:' . get_field('tekst_farve') . ';';
 }
-
 $bgStyle = null;
 if ($background || $textfarve) {
   $bgStyle = 'style="' . $background . $textfarve . '"';
 }
 
-
+// Container
 echo '<div' . $id . ' class="' . esc_attr($className) . '"' . $bgStyle . '>';
 
-
-
+// Tekst
 echo '<div class="tekst">';
-if (get_field('overskrift')) {
-  echo '<h3>' . get_field('overskrift') . '</h3>';
-}
-echo '<div class="text_body ' . $spalter . '">';
+  if (get_field('overskrift')) {
+    echo '<h' . get_field('heading') . '>' . get_field('overskrift') . '</h' . get_field('heading') . '>';
+  }
+  echo '<div class="text_body ' . $spalter . '">';
     the_field('tekst');
   echo '</div>';
 echo '</div>';
 
-
+// Billeder
 $images = get_field('billeder');
 $size = 'large';
 
-
 if( $images ): 
   echo '<div class="pic">';
-  foreach( $images as $image ):
-    $img_caption = get_the_excerpt( $image );
-      
-    echo wp_get_attachment_image( $image, $size );     
-    if ( $img_caption){
+    foreach( $images as $image ):
+      $img_caption = get_the_excerpt( $image );
+      echo wp_get_attachment_image( $image, $size );     
+      if ( $img_caption){
         echo '<p>' . $img_caption . '</p>';
-    }
-
-  endforeach; 
+      }
+    endforeach; 
   echo '</div>';
- endif; 
+endif; 
 
- echo '</div>';
+echo '</div>';

@@ -4,7 +4,6 @@
 .textpic .pic img:not(:first-of-type) {
   margin-top: var(--gap);
 }
-
 .textpic .pic p {
   font-size: 0.9rem;
   margin: 0.5rem 0 0 0;
@@ -61,6 +60,14 @@
   }
   .pic-text.textpic .tekst {
     order: 2;
+  }
+  .textpic h1,
+  .textpic h2,
+  .textpic h3,
+  .textpic h4,
+  .textpic h5,
+  .textpic h6 {
+    margin: 0 0 0.5rem 0;
   }
   .textpic p:last-of-type {
     margin-bottom: 0;
