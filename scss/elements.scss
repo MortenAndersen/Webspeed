@@ -464,12 +464,14 @@ article > .post-img {
 }
 
 .logo-name {
-  transition: transform 0.75s ease;
-  transform-origin: center left;
-  align-self: center;
+  gap: 1rem;
+  .logo {
+    align-self: center;
+  }
   .name {
     display: flex;
     flex-flow: column;
+    align-self: center;
   }
 }
 
