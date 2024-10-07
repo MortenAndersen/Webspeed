@@ -11,9 +11,8 @@
 .person-item {
   display: flex;
   flex-flow: column;
-  border-radius: 0.5rem;
+  border-radius: 3px;
   overflow: hidden;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   background: rgba(0, 0, 0, 0.05);
 }
 .person-info {
@@ -171,10 +170,7 @@
   overflow: hidden;
 
   img {
-    float: left;
     width: 100%;
-    outline: 1rem solid #ffffff8f;
-    outline-offset: -1rem;
   }
 }
 
