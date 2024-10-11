@@ -64,6 +64,7 @@ if (!function_exists('web_setup')):
 		// Images
 		add_theme_support('post-thumbnails');
 		add_image_size('webspeed-post', 705, 395, true);
+		add_image_size('webspeed-gallery', 300, 300, true);
 
 		// Menu
 		register_nav_menus(array(
@@ -161,6 +162,7 @@ if (class_exists('ACF')) {
 	require get_parent_theme_file_path('/inc/contact-acf.php');
 	require get_parent_theme_file_path('/inc/gutenberg/acf-blocks.php');
 	require get_parent_theme_file_path('/blocks/textpic/acf-textpic.php');
+	require get_parent_theme_file_path('/blocks/gallery/acf-gallery.php');
 }
 
 if (class_exists('WooCommerce')) {
@@ -178,4 +180,5 @@ if (class_exists('WooCommerce') && class_exists('ACF')) {
 add_action( 'init', 'register_acf_blocks' );
 function register_acf_blocks() {
     register_block_type( __DIR__ . '/blocks/textpic' );
+		register_block_type( __DIR__ . '/blocks/gallery' );
 }

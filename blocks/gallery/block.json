@@ -1,0 +1,16 @@
+{
+  "name": "gallery",
+  "title": "Billedgalleri",
+  "description": "Vis billeder i en billedgalleri",
+  "style": ["file:./gallery-min.css"],
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["Hjemmesider", "billedgalleri", "billede"],
+  "acf": {
+    "mode": "auto",
+    "renderTemplate": "gallery.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

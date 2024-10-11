@@ -51,6 +51,42 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/blocks\/gallery\/acf-gallery.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/gallery\/acf-gallery.php",
+      "oF" : 0
+    },
+    "\/blocks\/gallery\/block.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/blocks\/gallery\/block-min.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/blocks\/gallery\/gallery.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 1,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/gallery\/gallery-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/blocks\/gallery\/gallery.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/gallery\/gallery.php",
+      "oF" : 0
+    },
     "\/blocks\/textpic\/acf-textpic.php" : {
       "cB" : 0,
       "ft" : 8192,
