@@ -371,10 +371,7 @@ function get_web_title() {
 	$title = get_the_title();
 	return $title;
 }
-function get_clean_web_title() {
-	$title = get_the_title();
-	return $title;
-}
+
 // Title til TopImg
 if (!function_exists('web_img_title')) {
 	function web_img_title() {
@@ -461,11 +458,6 @@ function webspeed_custom_comment_form($no_fields) {
 }
 
 // ------------------------------------------------- //
-if (!function_exists('mailchimp')) {
-	function mailchimp() {
-		echo '<p>MailChimp kode mangler!</p>';
-	}
-}
 
 // ACF nye
 add_filter('acf/the_field/escape_html_optin', '__return_true');

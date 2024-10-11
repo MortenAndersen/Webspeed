@@ -8,8 +8,8 @@ function webspeed_widgets_init() {
 			'description' => __('Widget før header', 'webspeed-domain'),
 			'before_widget' => '<div id="%1$s" class="widget pre-header-col %2$s">',
 			'after_widget' => '</div>',
-			'before_title' => '<h4 class="widget-title widget-title-pre-header">',
-			'after_title' => '</h4>',
+			'before_title' => '<p class="wp-block-heading">',
+			'after_title' => '</p>',
 		)
 	);
 
@@ -21,8 +21,8 @@ function webspeed_widgets_init() {
 			'description' => __('Venstre sidebar', 'webspeed-domain'),
 			'before_widget' => '<div id="%1$s" class="widget aside-widget aside-left-widget %2$s">',
 			'after_widget' => '</div>',
-			'before_title' => '<h4 class="widget-title widget-title-aside">',
-			'after_title' => '</h4>',
+			'before_title' => '<p class="wp-block-heading">',
+			'after_title' => '</p>',
 		)
 	);
 
@@ -33,8 +33,8 @@ function webspeed_widgets_init() {
 			'description' => __('Sidebar på Indlæg', 'webspeed-domain'),
 			'before_widget' => '<div id="%1$s" class="widget aside-widget aside-single-widget %2$s">',
 			'after_widget' => '</div>',
-			'before_title' => '<h4 class="widget-title widget-title-aside">',
-			'after_title' => '</h4>',
+			'before_title' => '<p class="wp-block-heading">',
+			'after_title' => '</p>',
 		)
 	);
 
@@ -45,8 +45,8 @@ function webspeed_widgets_init() {
 			'description' => __('Højre sidebar', 'webspeed-domain'),
 			'before_widget' => '<div id="%1$s" class="widget aside-widget aside-right-widget %2$s">',
 			'after_widget' => '</div>',
-			'before_title' => '<h4 class="widget-title widget-title-aside">',
-			'after_title' => '</h4>',
+			'before_title' => '<p class="wp-block-heading">',
+			'after_title' => '</p>',
 		)
 	);
 
@@ -58,8 +58,8 @@ function webspeed_widgets_init() {
 			'description' => __('Widget før indhold', 'webspeed-domain'),
 			'before_widget' => '<div id="%1$s" class="widget pre-content-col %2$s">',
 			'after_widget' => '</div>',
-			'before_title' => '<h4 class="widget-title widget-title-pre-content">',
-			'after_title' => '</h4>',
+			'before_title' => '<p class="wp-block-heading">',
+			'after_title' => '</p>',
 		)
 	);
 
@@ -71,8 +71,8 @@ function webspeed_widgets_init() {
 			'description' => __('Widget efter indhold', 'webspeed-domain'),
 			'before_widget' => '<div id="%1$s" class="widget post-content-col %2$s">',
 			'after_widget' => '</div>',
-			'before_title' => '<h4 class="widget-title widget-title-post-content">',
-			'after_title' => '</h4>',
+			'before_title' => '<p class="wp-block-heading">',
+			'after_title' => '</p>',
 		)
 	);
 
@@ -84,8 +84,8 @@ function webspeed_widgets_init() {
 			'description' => __('Widget efter indhold på forsiden', 'webspeed-domain'),
 			'before_widget' => '<div id="%1$s" class="widget post-content-col %2$s">',
 			'after_widget' => '</div>',
-			'before_title' => '<h4 class="widget-title widget-title-post-content">',
-			'after_title' => '</h4>',
+			'before_title' => '<p class="wp-block-heading">',
+			'after_title' => '</p>',
 		)
 	);
 
@@ -97,8 +97,8 @@ function webspeed_widgets_init() {
 			'description' => __('Widget til forsiden fokus indhold', 'webspeed-domain'),
 			'before_widget' => '<div id="%1$s" class="widget fokus-frontpage %2$s">',
 			'after_widget' => '</div>',
-			'before_title' => '<h4 class="widget-title widget-title-fokus-frontpage">',
-			'after_title' => '</h4>',
+			'before_title' => '<p class="wp-block-heading">',
+			'after_title' => '</p>',
 		)
 	);
 
@@ -110,7 +110,7 @@ function webspeed_widgets_init() {
 			'description' => __('Før sidefod', 'webspeed-domain'),
 			'before_widget' => '<div id="%1$s" class="widget widget-post-footer %2$s">',
 			'after_widget' => '</div>',
-			'before_title' => '<p class="widget-title widget-title-pre-footer">',
+			'before_title' => '<p class="wp-block-heading">',
 			'after_title' => '</p>',
 		)
 	);
@@ -123,7 +123,7 @@ function webspeed_widgets_init() {
 			'description' => __('Sidefod', 'webspeed-domain'),
 			'before_widget' => '<div id="%1$s" class="widget footer-col %2$s">',
 			'after_widget' => '</div>',
-			'before_title' => '<p class="widget-title-footer">',
+			'before_title' => '<p class="wp-block-heading">',
 			'after_title' => '</p>',
 		)
 	);
@@ -136,7 +136,7 @@ function webspeed_widgets_init() {
 			'description' => __('Efter sidefod', 'webspeed-domain'),
 			'before_widget' => '<div id="%1$s" class="widget widget-post-footer %2$s">',
 			'after_widget' => '</div>',
-			'before_title' => '<p class="widget-title widget-title-post-footer">',
+			'before_title' => '<p class="wp-block-heading">',
 			'after_title' => '</p>',
 		)
 	);
@@ -149,7 +149,7 @@ function webspeed_widgets_init() {
 			'description' => __('Vises KUN i mobilmenu!', 'webspeed-domain'),
 			'before_widget' => '<div id="%1$s" class="widget widget-menu %2$s">',
 			'after_widget' => '</div>',
-			'before_title' => '<p class="widget-title widget-title-menu-widget">',
+			'before_title' => '<p class="wp-block-heading">',
 			'after_title' => '</p>',
 		)
 	);
@@ -162,7 +162,7 @@ function webspeed_widgets_init() {
 			'description' => __('Vises KUN på forsiden!', 'webspeed-domain'),
 			'before_widget' => '<div id="%1$s" class="widget widget-slide-in %2$s">',
 			'after_widget' => '</div>',
-			'before_title' => '<h5 class="widget-title widget-title-slide-in-widget">',
+			'before_title' => '<h5 class="wp-block-heading">',
 			'after_title' => '</h5>',
 		)
 	);
@@ -175,7 +175,7 @@ function webspeed_widgets_init() {
 			'description' => __('404 siden', 'webspeed-domain'),
 			'before_widget' => '<div id="%1$s" class="widget widget-pmenu %2$s">',
 			'after_widget' => '</div>',
-			'before_title' => '<h5 class="widget-title widget-title-404-widget">',
+			'before_title' => '<h5 class="wp-block-heading">',
 			'after_title' => '</h5>',
 		)
 	);

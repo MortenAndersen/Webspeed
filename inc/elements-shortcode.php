@@ -47,7 +47,6 @@ function webspeed_elements($atts) {
 			echo '</div>';
 		} elseif ($visning == 'menu') {
 			
-
 	// Ancher menu
 	echo '<nav class="anchor">';
 		echo '<ul id="nav">';

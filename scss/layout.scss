@@ -90,7 +90,7 @@ aside {
 }
 
 .footer-col {
-  > *:last-of-type:not(.widget-title-footer) {
+  > *:last-of-type:not(.wp-block-heading) {
     margin-bottom: 0;
   }
 }

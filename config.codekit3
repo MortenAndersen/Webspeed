@@ -601,14 +601,6 @@
       "oAP" : "\/languages\/da_DK.po",
       "oF" : 0
     },
-    "\/mailchimp.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/mailchimp.php",
-      "oF" : 0
-    },
     "\/page-aside-left-right-topimg.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1119,21 +1111,6 @@
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/list.css",
-      "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/scss\/mailchimp.scss" : {
-      "aP" : 1,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 1,
-      "oA" : 1,
-      "oAP" : "\/mailchimp.css",
       "oF" : 0,
       "oS" : 2,
       "pg" : 0,
@@ -1885,22 +1862,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/tribe\/events\/v2\/widgets\/widget-events-list\/event.php",
-      "oF" : 0
-    },
-    "\/webspeed.sublime-project" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/webspeed.sublime-project",
-      "oF" : 0
-    },
-    "\/webspeed.sublime-workspace" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/webspeed.sublime-workspace",
       "oF" : 0
     },
     "\/woo.css" : {

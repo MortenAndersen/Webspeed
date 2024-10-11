@@ -58,7 +58,7 @@ function child_grid($atts) {
 		}
 		echo '<div class="loop-post-txt">';
 		if ($title == 'yes') {
-			echo '<h3><a href="' . get_the_permalink() . '" title="' . get_clean_web_title() . '" aria-label="' . get_clean_web_title() . '">' . get_web_title() . '</a></h3>';
+			echo '<h3><a href="' . get_the_permalink() . '" title="' . get_web_title() . '" aria-label="' . get_web_title() . '">' . get_web_title() . '</a></h3>';
 		}
 
 		// the_excerpt

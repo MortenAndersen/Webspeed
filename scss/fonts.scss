@@ -137,7 +137,7 @@ article {
   }
 }
 
-.widget-title {
+.wp-block-heading {
   font-weight: 600;
   font-size: s.$font-n;
   padding-bottom: 0.25rem;
@@ -402,7 +402,6 @@ figcaption {
 }
 .page-footer {
   .wp-block-heading,
-  .widget-title-footer,
   .widgettitle {
     font-weight: normal;
     font-size: 1rem;

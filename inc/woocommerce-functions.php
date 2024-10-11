@@ -117,8 +117,8 @@ function webspeed_woo_widgets_init() {
 			'description' => __('Widget til venstre i Woo', 'webspeed-domain'),
 			'before_widget' => '<div id="%1$s" class="widget woo-aside-col %2$s">',
 			'after_widget' => '</div>',
-			'before_title' => '<h4 class="widget-title widget-title-woo-aside">',
-			'after_title' => '</h4>',
+			'before_title' => '<p class="wp-block-heading">',
+			'after_title' => '</p>',
 		)
 	);
 	register_sidebar(
@@ -128,8 +128,8 @@ function webspeed_woo_widgets_init() {
 			'description' => __('Widget i toppen af shop-forsiden', 'webspeed-domain'),
 			'before_widget' => '<div id="%1$s" class="widget woo-top-col %2$s">',
 			'after_widget' => '</div>',
-			'before_title' => '<h4 class="widget-title widget-title-woo-top">',
-			'after_title' => '</h4>',
+			'before_title' => '<p class="wp-block-heading">',
+			'after_title' => '</p>',
 		)
 	);
 	register_sidebar(
@@ -139,8 +139,8 @@ function webspeed_woo_widgets_init() {
 			'description' => __('Widget i buden af shop-forsiden', 'webspeed-domain'),
 			'before_widget' => '<div id="%1$s" class="widget woo-bund-col %2$s">',
 			'after_widget' => '</div>',
-			'before_title' => '<h4 class="widget-title widget-title-woo-bund">',
-			'after_title' => '</h4>',
+			'before_title' => '<p class="wp-block-heading">',
+			'after_title' => '</p>',
 		)
 	);
 	register_sidebar(
