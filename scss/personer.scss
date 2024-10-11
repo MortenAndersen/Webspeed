@@ -2,7 +2,7 @@
   background: #7b756d;
   color: #fff;
   background: #083a59;
-  margin-bottom: 2em;
+  margin-bottom: var(--gap);
 
   a {
     color: inherit;
@@ -149,7 +149,7 @@
 
 .personer-shortcode {
   article & {
-    margin: 1em 0;
+    margin-block: var(--gap);
   }
 
   p.read-more {
