@@ -137,7 +137,8 @@ article {
   }
 }
 
-.wp-block-heading {
+aside .wp-block-heading,
+.page-footer .wp-block-heading {
   font-weight: 600;
   font-size: s.$font-n;
   padding-bottom: 0.25rem;
