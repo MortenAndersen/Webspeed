@@ -15,11 +15,13 @@ echo '<div class="billedgalleri' . $class . '">';
         $images = get_field( 'billedgalleri' );
 
         if ( $images ) :
+            $i = 1;
+            $alt_title = 'image-' . $i;
             // Grab each image.
             foreach ( $images as $image ) :
                 $image_id      = $image['ID'];
                 $image_src     = $image['url'];
-                $image_caption = $image['caption'];
+                $image_caption = $image['caption'] ? $image['caption'] : $alt_title;
                 ?>
 
                     <a href="<?php echo esc_url( $image_src ); ?>" title="<?php echo esc_html( $image_caption ); ?>" class="lightbox-link">
@@ -27,6 +29,7 @@ echo '<div class="billedgalleri' . $class . '">';
                     </a>
 
                     <?php
+                    $i++;
             endforeach;
         endif;
         ?>
