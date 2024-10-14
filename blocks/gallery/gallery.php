@@ -16,11 +16,12 @@ echo '<div class="billedgalleri' . $class . '">';
 
         if ( $images ) :
             $i = 1;
-            $alt_title = 'image-' . $i;
+            
             // Grab each image.
             foreach ( $images as $image ) :
                 $image_id      = $image['ID'];
                 $image_src     = $image['url'];
+                $alt_title = 'image-' . $i;
                 $image_caption = $image['caption'] ? $image['caption'] : $alt_title;
                 ?>
 
