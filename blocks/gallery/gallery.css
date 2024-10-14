@@ -1,18 +1,27 @@
-.billedgalleri {
+.billedgalleri.kvadratisk {
+  display: grid;
   margin-block: var(--gap);
-  gap: var(--gap);
+  gap: 1rem;
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 @media (min-width: 700px) {
-  .billedgalleri {
+  .billedgalleri.kvadratisk {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
+
+.billedgalleri.masonry {
+  columns: 300px;
+  column-gap: 1rem;
+}
 .billedgalleri img {
   width: 100%;
-  aspect-ratio: 1/1;
+  height: 100%;
 }
-
+.billedgalleri.masonry img {
+  margin: 0 0 0.5rem 0;
+  display: inline;
+}
 .acf-block-preview .billedgalleri {
   display: grid;
   gap: 1rem;

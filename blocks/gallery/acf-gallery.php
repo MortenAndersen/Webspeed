@@ -9,6 +9,33 @@ add_action( 'acf/include_fields', function() {
 	'title' => 'Webspeed Gallery',
 	'fields' => array(
 		array(
+			'key' => 'field_670d033bf0152',
+			'label' => 'Type',
+			'name' => 'type',
+			'aria-label' => '',
+			'type' => 'select',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'choices' => array(
+				'Kvadratisk' => 'Kvadratisk',
+				'Masonry' => 'Masonry',
+			),
+			'default_value' => 'Kvadratisk',
+			'return_format' => 'value',
+			'multiple' => 0,
+			'allow_null' => 0,
+			'allow_in_bindings' => 0,
+			'ui' => 0,
+			'ajax' => 0,
+			'placeholder' => '',
+		),
+		array(
 			'key' => 'field_670908912c49a',
 			'label' => 'Billedgalleri',
 			'name' => 'billedgalleri',
