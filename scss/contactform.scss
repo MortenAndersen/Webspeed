@@ -1,5 +1,5 @@
 .screen-reader-response {
-	border: 0;
+  border: 0;
   clip: rect(1px, 1px, 1px, 1px);
   clip-path: inset(50%);
   height: 1px;
@@ -11,13 +11,14 @@
   word-wrap: normal !important;
 }
 .wpcf7-not-valid-tip {
-	display: block;
-	padding: .5rem 0;
-	color: red;
+  display: block;
+  padding: 0.5rem 0;
+  color: red;
+  font-size: 0.8rem;
 }
 span.wpcf7-list-item {
-    label {
-        display: flex;
-        align-items: baseline;
-    }
+  label {
+    display: flex;
+    align-items: baseline;
+  }
 }
