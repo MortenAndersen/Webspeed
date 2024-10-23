@@ -155,12 +155,13 @@ require get_parent_theme_file_path('/inc/shortcode-page.php');
 if (class_exists('ACF')) {
 	// ACF
 	
-	require get_parent_theme_file_path('/inc/acf.php');
+	// require get_parent_theme_file_path('/inc/acf.php');
 	require get_parent_theme_file_path('/inc/acf-left-right-top.php');
 	require get_parent_theme_file_path('/inc/fullwidth-acf.php');
-	require get_parent_theme_file_path('/inc/accordion-acf.php');
+	// require get_parent_theme_file_path('/inc/accordion-acf.php');
 	require get_parent_theme_file_path('/inc/contact-acf.php');
 	require get_parent_theme_file_path('/inc/gutenberg/acf-blocks.php');
+	require get_parent_theme_file_path('/blocks/acc/acf-acc.php');
 	require get_parent_theme_file_path('/blocks/textpic/acf-textpic.php');
 	require get_parent_theme_file_path('/blocks/gallery/acf-gallery.php');
 }
@@ -181,4 +182,5 @@ add_action( 'init', 'register_acf_blocks' );
 function register_acf_blocks() {
     register_block_type( __DIR__ . '/blocks/textpic' );
 		register_block_type( __DIR__ . '/blocks/gallery' );
+		register_block_type( __DIR__ . '/blocks/acc' );
 }
