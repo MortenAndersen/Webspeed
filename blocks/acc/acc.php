@@ -10,7 +10,8 @@ if( have_rows('accordion') ):
         $sub_class_master = get_sub_field('class');
         $sub_chortcode = get_sub_field('shortcode');
 
-        $accId = strtolower(preg_replace('/[^a-z]/i', '', $sub_title));
+        $accId = strtolower(preg_replace('/[^a-z ]/i', '', $sub_title));
+        $accIdUrl = str_replace( " ", "-", $accId );
 
         if ($sub_class_master) {
             $sub_class = ' ' . get_sub_field('class');
@@ -18,7 +19,7 @@ if( have_rows('accordion') ):
                 $sub_class = '';
         }
 
-        echo '<details  id="' . $accId . '" class="acc ' . $sub_class .'">';
+        echo '<details id="' . $accIdUrl . '" class="acc' . $sub_class .'">';
             echo '<summary>';
                 echo '<strong>' . $sub_title . '</strong>';
                 if ( $sub_deloverskrift ) {
