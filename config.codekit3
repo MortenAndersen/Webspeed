@@ -51,6 +51,30 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/blocks\/acc\/acc.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/acc\/acc.php",
+      "oF" : 0
+    },
+    "\/blocks\/acc\/acf-acc.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/acc\/acf-acc.php",
+      "oF" : 0
+    },
+    "\/blocks\/acc\/block.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/blocks\/acc\/block-min.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
     "\/blocks\/gallery\/acf-gallery.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -420,14 +444,6 @@
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
-    },
-    "\/inc\/accordion-acf.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/inc\/accordion-acf.php",
-      "oF" : 0
     },
     "\/inc\/acf-left-right-top.php" : {
       "cB" : 0,
@@ -1830,14 +1846,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/template-parts\/gutenberg-blocks\/meeting\/meeting.php",
-      "oF" : 0
-    },
-    "\/template-parts\/gutenberg-blocks\/textpic\/textpic.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/template-parts\/gutenberg-blocks\/textpic\/textpic.php",
       "oF" : 0
     },
     "\/template-parts\/nav\/main-menu.php" : {

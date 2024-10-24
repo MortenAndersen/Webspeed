@@ -2,7 +2,7 @@
 @use "elements/breakpoints" as b;
 
 body {
-  background-color: var(--body-bg);
+  background: var(--body-bg);
   color: var(--body-color);
   line-height: var(--body-line-height);
   font-size: var(--body-font-size);
