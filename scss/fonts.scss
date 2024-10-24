@@ -369,11 +369,6 @@ strong,
   }
 }
 
-article p + ul:not(.info),
-article p + ol {
-  margin-top: -1rem;
-}
-
 article h1 + h2 {
   margin-top: -0.5rem;
 }
