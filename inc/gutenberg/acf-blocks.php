@@ -2,27 +2,7 @@
 
 
 
-// ---------------------------------------------------
 
-add_action('acf/init', 'contact_block');
-function contact_block() {
-
-    // Check function exists.
-    if( function_exists('acf_register_block_type') ) {
-
-        // register a Spalter block.
-        acf_register_block_type(array(
-            'name'              => 'contact',
-            'title'             => __('Contact HJEMMESIDER'),
-            'description'       => __('Contact Information'),
-            'render_template'   => 'template-parts/gutenberg-blocks/contact/contact.php',
-            'category'          => 'formatting',
-            'icon'              => 'admin-comments',
-            'mode'              => 'edit',
-            'keywords'          => array( 'Kontakt', 'Hjemmesider' ),
-        ));
-    }
-}
 
 // ---------------------------------------------------
 

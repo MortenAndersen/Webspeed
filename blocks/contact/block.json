@@ -1,0 +1,13 @@
+{
+  "name": "contact",
+  "title": "Kontakt INFO",
+  "description": "Vis kontakt INFO",
+  "style": ["file:./contact-min.css"],
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["Hjemmesider", "kontakt"],
+  "acf": {
+    "mode": "auto",
+    "renderTemplate": "contact.php"
+  }
+}

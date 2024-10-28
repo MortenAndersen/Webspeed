@@ -75,6 +75,42 @@
       "oO" : 0,
       "oS" : 1
     },
+    "\/blocks\/contact\/acf-contact.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/contact\/acf-contact.php",
+      "oF" : 0
+    },
+    "\/blocks\/contact\/block.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/blocks\/contact\/block-min.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/blocks\/contact\/contact.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 1,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/contact\/contact-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/blocks\/contact\/contact.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/contact\/contact.php",
+      "oF" : 0
+    },
     "\/blocks\/gallery\/acf-gallery.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -177,6 +213,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/comments.php",
+      "oF" : 0
+    },
+    "\/contact.css.map" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/contact.css.map",
       "oF" : 0
     },
     "\/cookiescript.css" : {
@@ -777,19 +821,6 @@
       "oAP" : "\/page.php",
       "oF" : 0
     },
-    "\/screenshot.png" : {
-      "ft" : 32768,
-      "iS" : 1305984,
-      "oA" : 0,
-      "oAP" : "\/screenshot.png",
-      "oF" : 0,
-      "oIPL" : 1,
-      "opt" : 1,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
     "\/scss\/acc-kopi.scss" : {
       "aP" : 1,
       "bl" : 0,
@@ -888,7 +919,7 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/contact.css",
       "oF" : 0,
       "oS" : 2,
@@ -1790,22 +1821,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/template-parts\/gutenberg-blocks\/acc\/acc.php",
-      "oF" : 0
-    },
-    "\/template-parts\/gutenberg-blocks\/contact\/contact-kopi.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/template-parts\/gutenberg-blocks\/contact\/contact-kopi.php",
-      "oF" : 0
-    },
-    "\/template-parts\/gutenberg-blocks\/contact\/contact.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/template-parts\/gutenberg-blocks\/contact\/contact.php",
       "oF" : 0
     },
     "\/template-parts\/gutenberg-blocks\/designlist\/designlist.php" : {
