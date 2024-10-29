@@ -4,6 +4,7 @@ ul.kontakt-con {
   display: flex;
   flex-flow: column;
   gap: 0.8rem;
+  max-width: 500px;
 }
 
 ul.kontakt-con li {
@@ -32,11 +33,15 @@ ul.kontakt-con svg {
 ul.kontakt-con li.k-some {
   gap: 1rem;
   margin: 1rem 0 0 0;
+  align-items: center;
+  padding: 0.6rem;
+  border-block: 1px dotted;
 }
-.k-some svg {
+ul.kontakt-con .k-some svg {
   height: 30px;
   width: 30px;
 }
+
 .k-some svg:hover {
   transform: scale(1.5);
 }

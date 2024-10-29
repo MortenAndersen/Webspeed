@@ -91,6 +91,18 @@
       "oO" : 0,
       "oS" : 1
     },
+    "\/blocks\/contact\/contact-min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 1,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/contact\/contact-min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/blocks\/contact\/contact.css" : {
       "aP" : 1,
       "bl" : 0,

@@ -37,17 +37,18 @@ if (get_field('info')) {
 
 if (get_field('facebook') || get_field('linkedin') || get_field('instagram')) {
 	echo '<li class="k-some">';
-	if (get_field('facebook')) {
-		echo '<a href="' . get_field('facebook') . '" class="fb" target="_blank" title="facebook">' . svg_url(7) . '</a>';
-	}
+		echo '<span>Følg os på:</span>';
+		if (get_field('facebook')) {
+			echo '<a href="' . get_field('facebook') . '" class="fb" target="_blank" title="facebook">' . svg_url(7) . '</a>';
+		}
 
-	if (get_field('linkedin')) {
-		echo '<a href="' . get_field('linkedin') . '" class="li" target="_blank" title="linkedin">' . svg_url(6) . '</a>';
-	}
+		if (get_field('linkedin')) {
+			echo '<a href="' . get_field('linkedin') . '" class="li" target="_blank" title="linkedin">' . svg_url(6) . '</a>';
+		}
 
-	if (get_field('instagram')) {
-		echo '<a href="' . get_field('instagram') . '" class="in" target="_blank" title="instagram">' . svg_url(3) . '</a>';
-	}
+		if (get_field('instagram')) {
+			echo '<a href="' . get_field('instagram') . '" class="in" target="_blank" title="instagram">' . svg_url(3) . '</a>';
+		}
 	echo '</li>';
 }
 
