@@ -577,7 +577,8 @@ summary {
 details summary::marker {
   color: var(--link);
 }
-details[open] summary::marker {
+details[open] {
+  padding-bottom: var(--gap);
 }
 
 .testimonial-excerpt_item {
