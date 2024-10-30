@@ -589,3 +589,27 @@ details[open] {
     margin-top: auto;
   }
 }
+
+.cal-title {
+  font-weight: bold;
+}
+.cal-flow {
+  max-width: fit-content;
+  margin-bottom: var(--gap);
+  .time {
+    &::before {
+      content: " - ";
+    }
+  }
+}
+.cal-item {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+.cal-txt {
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+.cal-type {
+  font-size: 0.9rem;
+}
