@@ -165,6 +165,16 @@ if (class_exists('ACF')) {
 	require get_parent_theme_file_path('/blocks/textpic/acf-textpic.php');
 	require get_parent_theme_file_path('/blocks/gallery/acf-gallery.php');
 	require get_parent_theme_file_path('/blocks/contact/acf-contact.php');
+
+
+	add_action( 'init', 'register_acf_blocks' );
+	function register_acf_blocks() {
+			register_block_type( __DIR__ . '/blocks/textpic' );
+			register_block_type( __DIR__ . '/blocks/gallery' );
+			register_block_type( __DIR__ . '/blocks/acc' );
+			register_block_type( __DIR__ . '/blocks/contact' );
+	}
+	// end ACF check
 }
 
 if (class_exists('WooCommerce')) {
@@ -178,11 +188,3 @@ if (class_exists('WooCommerce') && class_exists('ACF')) {
 
 
 
-
-add_action( 'init', 'register_acf_blocks' );
-function register_acf_blocks() {
-    register_block_type( __DIR__ . '/blocks/textpic' );
-		register_block_type( __DIR__ . '/blocks/gallery' );
-		register_block_type( __DIR__ . '/blocks/acc' );
-		register_block_type( __DIR__ . '/blocks/contact' );
-}
