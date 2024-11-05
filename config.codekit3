@@ -1607,6 +1607,14 @@
       "oAP" : "\/single-event.php",
       "oF" : 0
     },
+    "\/single-galleri.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/single-galleri.php",
+      "oF" : 0
+    },
     "\/single-no-wrap.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1825,6 +1833,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/template-parts\/content\/post-article.php",
+      "oF" : 0
+    },
+    "\/template-parts\/content\/post-galleri.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/content\/post-galleri.php",
       "oF" : 0
     },
     "\/template-parts\/gutenberg-blocks\/acc\/acc.php" : {
