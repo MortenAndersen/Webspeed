@@ -112,19 +112,6 @@ h2 {
   font-size: inherit;
 }
 
-article {
-  line-height: var(--article-line-height);
-  font-size: var(--article-font-size);
-
-  h2 {
-    margin-block: var(--gap);
-
-    &.loop-title {
-      margin-top: 0;
-    }
-  }
-}
-
 .page-template-page-aside-left-right-topimg,
 .page-template-page-aside-right-topimg,
 .page-template-page-topimg,
