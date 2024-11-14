@@ -163,7 +163,6 @@ aside .wp-block-heading,
 .page-content p {
   margin: 0 0 2rem 0;
   max-width: 70ch;
-  font-size: clamp(1rem, 1.2vw, 1.2rem);
 
   &.read-more {
     margin: auto 0 0 0;
@@ -198,7 +197,6 @@ aside .wp-block-heading,
     margin: 0 0 2rem 0;
     max-width: 70ch;
     text-wrap: balance;
-    font-size: clamp(1rem, 1.2vw, 1.2rem);
   }
 }
 
@@ -389,11 +387,7 @@ article h1 + h2 {
 figcaption {
   font-size: 75%;
 }
-.wp-block-column {
-  .wp-block-heading {
-    margin-bottom: 2rem;
-  }
-}
+
 .page-footer {
   .wp-block-heading {
     font-weight: normal;
