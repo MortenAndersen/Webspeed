@@ -15,6 +15,10 @@ ul.kontakt-con li {
   flex-flow: row;
   max-width: none;
 }
+ul.kontakt-con li.title {
+  font-size: 0.85rem;
+  font-style: italic;
+}
 
 .k-label {
   width: 22px;

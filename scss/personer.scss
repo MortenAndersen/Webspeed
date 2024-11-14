@@ -111,30 +111,6 @@
   }
 }
 
-.person--data {
-  .title {
-    font-weight: bold;
-    font-size: 110%;
-
-    .personer-shortcode & {
-      font-weight: normal;
-    }
-  }
-
-  li {
-    overflow: hidden;
-    margin: 5px 0;
-
-    &.title {
-      margin-bottom: 1em;
-    }
-  }
-
-  a {
-    text-decoration: none;
-  }
-}
-
 .type-person {
   padding-top: 1em;
 }
@@ -208,4 +184,7 @@
     max-width: 300px;
     margin: 1em 0;
   }
+}
+ul.kontakt-con.personer {
+  margin: 0.5rem 0;
 }
