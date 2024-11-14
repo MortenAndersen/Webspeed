@@ -17,6 +17,10 @@ ul.kontakt-con li {
 }
 ul.kontakt-con li.title {
   font-size: 0.85rem;
+  text-transform: uppercase;
+}
+ul.kontakt-con li.initialer {
+  font-size: 0.85rem;
   font-style: italic;
 }
 
