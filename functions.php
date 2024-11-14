@@ -188,3 +188,11 @@ if (class_exists('WooCommerce') && class_exists('ACF')) {
 
 
 
+function be_header_menu_desc( $item_output, $item, $depth, $args ) {
+	
+	if( 'header' == $args->theme_location && ! $depth && $item->description )
+		$item_output = str_replace( '</a>', '<span class="description">' . $item->description . '</span></a>', $item_output );
+		
+	return $item_output;
+}
+add_filter( 'walker_nav_menu_start_el', 'be_header_menu_desc', 10, 4 );

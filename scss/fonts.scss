@@ -11,8 +11,6 @@ body {
 
   font-family: var(--font-family);
   letter-spacing: -0.0027777778rem;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 p {
   text-wrap: pretty;
@@ -27,7 +25,7 @@ h6 {
   //font-size: s.$font-l;
   font-size: clamp(1.1rem, 2.5vw, 1.4rem);
   margin: 0 0 1rem 0;
-  font-weight: 600;
+  font-weight: 500;
   text-wrap: balance;
   max-width: 60ch;
   a {
@@ -50,7 +48,7 @@ h1 {
   margin: 0 0 0.625rem 0;
   text-wrap: balance;
   max-width: 50ch;
-  font-weight: 300;
+  font-weight: 200;
 }
 h2 {
   font-size: clamp(1.4rem, 3vw, 1.7rem);

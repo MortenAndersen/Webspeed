@@ -249,8 +249,8 @@ article > .post-img {
 }
 
 .name {
-  font-weight: 600;
-  font-size: 1.8rem;
+  font-weight: 500;
+  font-size: 1.7rem;
 
   a {
     text-decoration: none;
@@ -467,6 +467,7 @@ article > .post-img {
     display: flex;
     flex-flow: column;
     align-self: center;
+    width: max-content;
   }
 }
 

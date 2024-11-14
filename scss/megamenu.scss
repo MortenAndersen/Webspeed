@@ -2,63 +2,62 @@
 @use "elements/size" as s;
 
 @media (min-width: b.$menu-break) {
-  .megamenu {
-    margin-left: auto;
-
-    .first-lvl {
-      display: flex;
-      gap: 2rem;
-      height: 100%;
-      line-height: 4rem;
-
-      > li:hover > .sub-menu {
-        display: grid;
-      }
-
-      > li > a {
-        display: flex;
-        height: 100%;
+  .page-header {
+    > div {
+      position: relative;
+    }
+  }
+  .site-menu {
+    // position: relative;
+    margin-top: auto;
+    width: 100%;
+  }
+  .first-lvl {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    > li {
+      a {
       }
     }
-
+  }
+  .sub-menu {
+    display: none;
+    position: absolute;
+    left: var(--gap);
+    right: var(--gap);
+    background-color: #f8f8f8;
+    border-bottom: 1px solid var(--border);
+    padding: 2rem;
+    border-top: 1rem solid var(--header-bg);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    z-index: 100;
+    // column-gap: 1rem;
+    // columns: 200px;
+    li {
+      a {
+        display: inline;
+      }
+    }
     .sub-menu {
-      display: none;
-      position: absolute;
+      border: none;
+      position: relative;
+      grid-template-columns: 1fr;
+      display: grid;
+      padding: 0;
+      top: 1rem;
       left: 0;
       right: 0;
-      grid-template-columns: repeat(4, 1fr);
-      padding: 2rem;
-      z-index: 100;
-      line-height: 24px;
-      gap: 1rem;
-      background: #fff;
-      border-top: 1px solid var(--border);
-      box-shadow: 0 7px 7px rgb(0, 0, 0, 0.1);
-      max-width: 1100px;
-      margin: 0 auto;
-
-      .sub-menu {
-        display: block;
-        border: none;
-        padding: 0;
-        box-shadow: none;
-        position: relative;
-        padding-top: 0.5rem;
-
-        .sub-menu {
-          padding: 0;
-          padding-left: 1rem;
+    }
+  }
+  .first-lvl {
+    > li {
+      &:hover {
+        > .sub-menu {
+          display: grid;
         }
       }
     }
-
-    .m-head > a {
-      border-bottom: 1px solid var(--border);
-      font-size: 0.9rem;
-    }
-  }
-
-  #menu-item-42 > .sub-menu {
-    //display: grid;
   }
 }
