@@ -467,6 +467,11 @@ article > .post-img {
     display: flex;
     flex-flow: column;
     align-self: center;
+  }
+}
+
+@media (min-width: b.$menu-break) {
+  .name {
     width: max-content;
   }
 }
