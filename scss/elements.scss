@@ -577,6 +577,9 @@ details summary::marker {
 }
 details[open] {
   padding-bottom: var(--gap);
+  &::marker {
+    color: orangered;
+  }
 }
 
 .testimonial-excerpt_item {
