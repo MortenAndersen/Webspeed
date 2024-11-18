@@ -577,7 +577,7 @@ details summary::marker {
 }
 details[open] {
   padding-bottom: var(--gap);
-  ::marker {
+  summary::marker {
     color: orangered;
   }
 }
