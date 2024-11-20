@@ -626,3 +626,10 @@ details[open] {
 .galleri-item_txt {
   padding-inline: 1rem;
 }
+.page-footer {
+  ul.kontakt-con {
+    svg {
+      fill: var(--footer-color);
+    }
+  }
+}
