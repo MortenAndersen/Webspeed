@@ -100,7 +100,7 @@ function web_menu_pos() {
 
 function web_go_back() {
 	echo '<div class="go-back-con">';
-	echo '<button onclick="goBack()" class="go-back"><svg height="20" width="20"><path d="M7.938 17.812.125 10l7.813-7.812L9.271 3.5l-6.5 6.5 6.5 6.479Z"/></svg>' . esc_html__('Go Back', 'webspeed-domain') . '</button>';
+	echo '<button onclick="goBack()" class="go-back"><svg height="20" width="20"><path d="M7.938 17.812.125 10l7.813-7.812L9.271 3.5l-6.5 6.5 6.5 6.479Z"/></svg>' . esc_html__('Tilbage', 'webspeed-domain') . '</button>';
 	echo '<script>function goBack() {window.history.back();}</script>';
 	echo '</div>';
 }
