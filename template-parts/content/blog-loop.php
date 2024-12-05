@@ -6,7 +6,7 @@ $post = get_queried_object();
 setup_postdata( $post );
 $blogBody = get_the_content();
 if ($blogBody) {
-	echo '<div class="wrap">';
+	echo '<div class="wrap blog-heading">';
 		the_content();
 	echo '</div>';
 }

@@ -633,3 +633,9 @@ details[open] {
     }
   }
 }
+
+.blog-heading {
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
