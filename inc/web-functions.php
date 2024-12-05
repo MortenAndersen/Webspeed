@@ -271,6 +271,7 @@ function web_topimg_blog() {
 
 	// Get the ID of the page set to Display Posts in Settings > Reading
 	$page_for_posts = get_option('page_for_posts');
+	$show_h1 = get_theme_mod('webspeed_h1');
 
 	// If that page ID exists, and that page has a Featured Image....
 	if ($page_for_posts && has_post_thumbnail($page_for_posts)) {
@@ -284,20 +285,18 @@ function web_topimg_blog() {
 		echo wp_get_attachment_image($thumb_id, 'full');
 
 		echo '<div class="wrap-no-pad">';
-		echo '<div class="top-caption">';
-		echo '<h1>';
-		single_post_title();
-		echo '</h1>';
-		echo '</div>';
+		if (!$show_h1) {
+			echo '<div class="top-caption">';
+				echo '<h1>';
+					single_post_title();
+				echo '</h1>';
+			echo '</div>';
+		}
 		echo '</div>';
 		echo '</div>';
 	} else {
 		echo '<main class="page-content page-blog">';
-		echo '<div class="wrap">';
-		echo '<h1>';
-		single_post_title();
-		echo '</h1>';
-		echo '</div>';
+
 	}
 
 }
