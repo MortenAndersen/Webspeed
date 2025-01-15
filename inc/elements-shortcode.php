@@ -42,7 +42,7 @@ function webspeed_elements($atts) {
 		if ($visning == 'details') {
 			echo '<div class="details">';
 				while ($loop->have_posts()): $loop->the_post();
-					echo '<details>';
+					echo '<details name="det">';
 						echo '<summary>' . get_the_title() . '</summary>';
 						echo '<div class="details-content">';
 							web_thumbnail();
