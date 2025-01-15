@@ -19,7 +19,7 @@ if( have_rows('accordion') ):
                 $sub_class = '';
         }
 
-        echo '<details id="' . $accIdUrl . '" class="acc' . $sub_class .'">';
+        echo '<details name="det" id="' . $accIdUrl . '" class="acc' . $sub_class .'">';
             echo '<summary>';
                 echo '<strong>' . $sub_title . '</strong>';
                 if ( $sub_deloverskrift ) {
