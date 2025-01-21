@@ -387,7 +387,6 @@ figcaption {
     margin: 0 0 1rem 0;
   }
 }
-
 .tlf::before {
   content: "\260E";
   margin-right: 0.5ch;
@@ -399,6 +398,12 @@ figcaption {
 .whitestar::before {
   content: "\2606";
   margin-right: 0.5ch;
+}
+a.email {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 .email::before {
   content: "\0040";
