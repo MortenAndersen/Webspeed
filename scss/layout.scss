@@ -1,6 +1,10 @@
 @use "elements/breakpoints" as b;
 @use "elements/size" as s;
 
+@view-transition {
+  navigation: auto;
+}
+
 .wrap,
 .wp-block-columns,
 .wrap-pad {
