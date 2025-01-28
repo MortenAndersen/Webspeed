@@ -151,6 +151,7 @@ require get_parent_theme_file_path('/inc/shortcode-child-menu.php');
 require get_parent_theme_file_path('/inc/shortcode-post.php');
 require get_parent_theme_file_path('/inc/shortcode-post-related.php');
 require get_parent_theme_file_path('/inc/shortcode-page.php');
+require get_parent_theme_file_path('/inc/shortcode-back.php');
 
 if (class_exists('ACF')) {
 	// ACF
