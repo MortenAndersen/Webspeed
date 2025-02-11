@@ -87,8 +87,9 @@ aside {
 }
 
 .page-footer {
-  font-size: s.$font-s;
-  line-height: s.$line-s;
+  font-size: var(--footer-font-size);
+  line-height: var(--footer-line-height);
+  font-weight: var(--footer-font-weight);
   padding-block: s.$gap-n;
   color: var(--footer-color);
 }
