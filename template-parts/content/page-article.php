@@ -42,6 +42,7 @@ if (is_page_template('page-topimg.php')) {
 	echo '<div class="wrap">';
 	echo '<article>';
 	while (have_posts()): the_post();
+	web_img();
 		if (class_exists('WooCommerce')) {
 			if (!is_checkout() && !is_cart()) {
 				web_title();
@@ -49,7 +50,7 @@ if (is_page_template('page-topimg.php')) {
 		} else {
 			web_title();
 		}
-		web_img();
+		
 		the_content();
 	endwhile;
 

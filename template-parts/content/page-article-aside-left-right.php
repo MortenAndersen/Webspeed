@@ -22,8 +22,9 @@ echo '<main class="page-content">';
 	echo '<div class="wrap aside-article-aside">';
 		echo '<article>';
 			while (have_posts()) : the_post();
+			web_img();
 				web_title();
-				web_img();
+				
 				the_content();
 			endwhile; 
 	}

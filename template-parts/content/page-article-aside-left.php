@@ -31,8 +31,9 @@ else {
 	echo '<div class="wrap aside-article">';
 		echo '<article>';
 			while (have_posts()) : the_post();
-				web_title();
+				
 				web_img();
+				web_title();
 				the_content();
 			endwhile; 
 }
