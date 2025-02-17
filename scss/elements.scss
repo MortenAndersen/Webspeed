@@ -577,6 +577,7 @@ summary {
 details summary::marker {
   content: "\2193 ";
   color: #ff2d2d;
+  font-size: 1.2rem;
 }
 details[open] {
   padding-bottom: var(--gap);
