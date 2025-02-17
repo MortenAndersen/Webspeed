@@ -559,25 +559,30 @@ img#logo {
 }
 
 summary {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   border-bottom: 1px solid var(--border);
-  padding-block: 0.5rem;
+  position: relative;
+  strong {
+    padding-left: 1ch;
+    font-weight: 300;
+  }
   cursor: pointer;
-  margin-bottom: 1rem;
-  font-weight: 500;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
   &:hover {
     &::marker {
-      color: orangered;
     }
   }
 }
 details summary::marker {
-  color: var(--link);
+  content: "\2193 ";
+  color: #ff2d2d;
 }
 details[open] {
   padding-bottom: var(--gap);
   summary::marker {
     color: orangered;
+    content: "\2191";
   }
 }
 
@@ -586,6 +591,23 @@ details[open] {
   flex-flow: column;
   a {
     margin-top: auto;
+  }
+}
+summary:hover:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  border-bottom: solid 1px #ff2d2d;
+  animation: border_anim 1s linear forwards;
+}
+@keyframes border_anim {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
   }
 }
 
