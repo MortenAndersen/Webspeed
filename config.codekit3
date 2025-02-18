@@ -7,7 +7,7 @@
       "uuidString" : "01A97FF5-D24F-4BC3-970A-18AF7E915BFA"
     }
   ],
-  "creatorBuild" : "34576",
+  "creatorBuild" : "34680",
   "files" : {
     "\/.gitattributes" : {
       "cB" : 0,
@@ -857,751 +857,651 @@
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
       "oA" : 0,
       "oAP" : "\/acc-kopi.css",
       "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
-      "sct" : 0
+      "oS" : 3,
+      "pg" : 0
     },
     "\/scss\/animate.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/animate.css",
       "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
-      "sct" : 0
+      "oS" : 3,
+      "pg" : 0
     },
     "\/scss\/background.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/background.css",
       "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
-      "sct" : 0
+      "oS" : 3,
+      "pg" : 0
     },
     "\/scss\/breadcrumbs.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/breadcrumbs.css",
       "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
-      "sct" : 0
+      "oS" : 3,
+      "pg" : 0
     },
     "\/scss\/button.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
       "oA" : 0,
       "oAP" : "\/button.css",
       "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
-      "sct" : 0
+      "oS" : 3,
+      "pg" : 0
     },
     "\/scss\/bx-slider.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/bx-slider.css",
       "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
-      "sct" : 0
+      "oS" : 3,
+      "pg" : 0
     },
     "\/scss\/contact.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
       "oA" : 0,
       "oAP" : "\/contact.css",
       "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
-      "sct" : 0
+      "oS" : 3,
+      "pg" : 0
     },
     "\/scss\/contactform.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/contactform.css",
       "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
-      "sct" : 0
+      "oS" : 3,
+      "pg" : 0
     },
     "\/scss\/cookiescript.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/cookiescript.css",
       "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
-      "sct" : 0
+      "oS" : 3,
+      "pg" : 0
     },
     "\/scss\/elements.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/elements.css",
       "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
-      "sct" : 0
+      "oS" : 3,
+      "pg" : 0
     },
     "\/scss\/elements\/breakpoints.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/breakpoints.css",
       "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
-      "sct" : 0
+      "oS" : 3,
+      "pg" : 0
     },
     "\/scss\/elements\/size.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/size.css",
       "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
-      "sct" : 0
+      "oS" : 3,
+      "pg" : 0
     },
     "\/scss\/event.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/event.css",
       "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
-      "sct" : 0
+      "oS" : 3,
+      "pg" : 0
     },
     "\/scss\/filer.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/filer.css",
       "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
-      "sct" : 0
+      "oS" : 3,
+      "pg" : 0
     },
     "\/scss\/flex.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/flex.css",
       "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
-      "sct" : 0
+      "oS" : 3,
+      "pg" : 0
     },
     "\/scss\/fonts.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/fonts.css",
       "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
-      "sct" : 0
+      "oS" : 3,
+      "pg" : 0
     },
     "\/scss\/footer.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/footer.css",
       "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
-      "sct" : 0
+      "oS" : 3,
+      "pg" : 0
     },
     "\/scss\/form.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/form.css",
       "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
-      "sct" : 0
+      "oS" : 3,
+      "pg" : 0
     },
     "\/scss\/fullwidth.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/fullwidth.css",
       "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
-      "sct" : 0
+      "oS" : 3,
+      "pg" : 0
     },
     "\/scss\/grid.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/grid.css",
       "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
-      "sct" : 0
+      "oS" : 3,
+      "pg" : 0
     },
     "\/scss\/header.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/header.css",
       "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
-      "sct" : 0
+      "oS" : 3,
+      "pg" : 0
     },
     "\/scss\/hour-booking.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/hour-booking.css",
       "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
-      "sct" : 0
+      "oS" : 3,
+      "pg" : 0
     },
     "\/scss\/keyframe.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/keyframe.css",
       "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
-      "sct" : 0
+      "oS" : 3,
+      "pg" : 0
     },
     "\/scss\/layout.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/layout.css",
       "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
-      "sct" : 0
+      "oS" : 3,
+      "pg" : 0
     },
     "\/scss\/lightbox.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/lightbox.css",
       "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
-      "sct" : 0
+      "oS" : 3,
+      "pg" : 0
     },
     "\/scss\/list.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/list.css",
       "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
-      "sct" : 0
+      "oS" : 3,
+      "pg" : 0
     },
     "\/scss\/megamenu.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
       "oA" : 0,
       "oAP" : "\/megamenu.css",
       "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
-      "sct" : 0
+      "oS" : 3,
+      "pg" : 0
     },
     "\/scss\/menu-child.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/menu-child.css",
       "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
-      "sct" : 0
+      "oS" : 3,
+      "pg" : 0
     },
     "\/scss\/menu-desktop-aside.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/menu-desktop-aside.css",
       "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
-      "sct" : 0
+      "oS" : 3,
+      "pg" : 0
     },
     "\/scss\/menu-desktop.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/menu-desktop.css",
       "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
-      "sct" : 0
+      "oS" : 3,
+      "pg" : 0
     },
     "\/scss\/menu-icon.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/menu-icon.css",
       "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
-      "sct" : 0
+      "oS" : 3,
+      "pg" : 0
     },
     "\/scss\/menu-mobile.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/menu-mobile.css",
       "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
-      "sct" : 0
+      "oS" : 3,
+      "pg" : 0
     },
     "\/scss\/nav.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/nav.css",
       "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
-      "sct" : 0
+      "oS" : 3,
+      "pg" : 0
     },
     "\/scss\/normalize.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/normalize.css",
       "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
-      "sct" : 0
+      "oS" : 3,
+      "pg" : 0
     },
     "\/scss\/personer.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/personer.css",
       "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
-      "sct" : 0
+      "oS" : 3,
+      "pg" : 0
     },
     "\/scss\/polylang.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/polylang.css",
       "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
-      "sct" : 0
+      "oS" : 3,
+      "pg" : 0
     },
     "\/scss\/posttypes.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/posttypes.css",
       "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
-      "sct" : 0
+      "oS" : 3,
+      "pg" : 0
     },
     "\/scss\/pre-header.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/pre-header.css",
       "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
-      "sct" : 0
+      "oS" : 3,
+      "pg" : 0
     },
     "\/scss\/reset.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/reset.css",
       "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
-      "sct" : 0
+      "oS" : 3,
+      "pg" : 0
     },
     "\/scss\/root.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/root.css",
       "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
-      "sct" : 0
+      "oS" : 3,
+      "pg" : 0
     },
     "\/scss\/size.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/size.css",
       "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
-      "sct" : 0
+      "oS" : 3,
+      "pg" : 0
     },
     "\/scss\/slide-in.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/slide-in.css",
       "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
-      "sct" : 0
+      "oS" : 3,
+      "pg" : 0
     },
     "\/scss\/social.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
       "oA" : 0,
       "oAP" : "\/social.css",
       "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
-      "sct" : 0
+      "oS" : 3,
+      "pg" : 0
     },
     "\/scss\/style.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
       "oA" : 0,
       "oAP" : "\/style.css",
       "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
-      "sct" : 0
+      "oS" : 3,
+      "pg" : 0
     },
     "\/scss\/supports.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
       "oA" : 0,
       "oAP" : "\/supports.css",
       "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
-      "sct" : 0
+      "oS" : 3,
+      "pg" : 0
     },
     "\/scss\/table.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/table.css",
       "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
-      "sct" : 0
+      "oS" : 3,
+      "pg" : 0
     },
     "\/scss\/tribe-events.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/tribe-events.css",
       "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
-      "sct" : 0
+      "oS" : 3,
+      "pg" : 0
     },
     "\/scss\/webspeed-woo.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/webspeed-woo.css",
       "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
-      "sct" : 0
+      "oS" : 3,
+      "pg" : 0
     },
     "\/scss\/wp-plugin.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/wp-plugin.css",
       "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
-      "sct" : 0
+      "oS" : 3,
+      "pg" : 0
     },
     "\/scss\/wp.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
-      "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/wp.css",
       "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
-      "sct" : 0
+      "oS" : 3,
+      "pg" : 0
     },
     "\/search.php" : {
       "cB" : 0,
@@ -2552,10 +2452,6 @@
         "active" : 0,
         "optionString" : "{'before': true, 'after': true, 'overrides': {}}"
       },
-      "line-comment-position" : {
-        "active" : 0,
-        "optionString" : "{'position': 'above'}"
-      },
       "linebreak-style" : {
         "active" : 0,
         "optionString" : "'unix'"
@@ -2607,10 +2503,6 @@
       "max-statements-per-line" : {
         "active" : 0,
         "optionString" : "{'max': 1}"
-      },
-      "multiline-comment-style" : {
-        "active" : 0,
-        "optionString" : "'starred-block'"
       },
       "multiline-ternary" : {
         "active" : 0,
@@ -2753,7 +2645,8 @@
         "active" : 0
       },
       "no-extra-boolean-cast" : {
-        "active" : 1
+        "active" : 1,
+        "optionString" : "{'enforceForInnerExpressions': false}"
       },
       "no-extra-label" : {
         "active" : 0
@@ -2838,7 +2731,8 @@
         "optionString" : "{'ignore': [], 'ignoreArrayIndexes': true, 'ignoreDefaultValues': false, 'enforceConst': false, 'detectObjects': false}"
       },
       "no-misleading-character-class" : {
-        "active" : 0
+        "active" : 0,
+        "optionString" : "{'allowEscape': false}"
       },
       "no-mixed-operators" : {
         "active" : 0,
@@ -3206,7 +3100,8 @@
         "active" : 0
       },
       "require-unicode-regexp" : {
-        "active" : 0
+        "active" : 0,
+        "optionString" : "{'requireFlag': 'u'}"
       },
       "require-yield" : {
         "active" : 1
@@ -3497,11 +3392,9 @@
       "autoOutputPathReplace1" : "sass",
       "autoOutputPathReplace2" : "css",
       "autoOutputPathStyle" : 1,
-      "compilerType" : 0,
       "cssoStyle" : 0,
-      "decimalPrecision" : 10,
       "emitCharset" : 1,
-      "outputStyle" : 2,
+      "outputStyle" : 3,
       "purgeCSSStyle" : 0,
       "shouldRunAutoprefixer" : 1,
       "shouldRunBless" : 0,
@@ -3616,6 +3509,7 @@
     ],
     "rollupTreeshakingEnabled" : 1,
     "rollupTreeshakingModuleSideEffects" : 1,
+    "sassWarningStyle" : 1,
     "skippedFoldersString" : "log, _logs, logs, _cache, cache, .idea, \/storage\/framework\/sessions, node_modules",
     "sourceFolderName" : "source",
     "susyVersion" : 3,
@@ -3636,6 +3530,7 @@
     "tsImportHelpers" : 0,
     "tsIsolatedModules" : 0,
     "tsJSXFactory" : "React.createElement",
+    "tsJSXFragmentFactory" : "Fragment",
     "tsNoEmitHelpers" : 0,
     "tsNoFallthroughCasesInSwitch" : 0,
     "tsNoImplicitAny" : 0,
