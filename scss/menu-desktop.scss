@@ -5,12 +5,15 @@
   .site-menu {
     display: flex;
     font-size: s.$font-s;
+
     &.center {
       align-items: center;
     }
+
     &.bottom {
       align-items: flex-end;
     }
+
     a {
       color: var(--menu-desktop-color);
       padding: var(--menu-desktop-pad);
@@ -26,16 +29,18 @@
       }
     }
 
-    > .current-menu-parent,
+    >.current-menu-parent,
     .current-menu-ancestor {
-      > a {
+      >a {
         border-bottom: 1px solid var(--menu-desktop-current-color);
         margin-bottom: -1px;
       }
+
       .current-menu-ancestor {
-        > a {
+        >a {
           border-bottom: none;
           margin-bottom: 0;
+
           &::before {
             content: "-";
             padding-right: 1ch;
@@ -50,6 +55,7 @@
         color: var(--menu-desktop-sub-color);
         padding: var(--menu-desktop-sub-pad);
         border-bottom: none;
+
         &:hover {
           color: var(--menu-desktop-sub-hover-color);
         }
@@ -72,14 +78,17 @@
       margin-left: auto;
       flex: inherit;
     }
+
     ul.first-lvl {
-      > li {
+      >li {
         // margin-left: 1rem;
       }
     }
+
     ul {
       display: flex;
       gap: 1rem;
+
       a {
         line-height: 2rem;
       }
@@ -123,6 +132,7 @@
 
       li {
         position: relative;
+
         &:last-of-type {
           a:after {
             display: none;
@@ -130,16 +140,16 @@
         }
 
         &:hover {
-          > ul {
+          >ul {
             display: block;
           }
         }
       }
     }
 
-    > ul {
-      > li {
-        &:last-of-type {
+    >ul {
+      >li {
+        &:nth-last-child(-n + 2) {
           ul {
             left: auto;
             right: 0;
@@ -167,7 +177,7 @@
 
   // Right-align menu
   .menu.right-align {
-    > ul > li:last-of-type ul {
+    >ul>li:last-of-type ul {
       left: auto;
       right: 0;
 
