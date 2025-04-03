@@ -460,3 +460,39 @@ function webspeed_custom_comment_form($no_fields) {
 
 // ACF nye
 add_filter('acf/the_field/escape_html_optin', '__return_true');
+
+// ------------------------------------------------- //
+
+// Hjemmesider Admin besked
+function hjemmesider_admin_side() {
+    add_menu_page(
+        'Support - Hjemmesider.dk',    // Sidetitel
+        'Hjemmesider.DK',       // Menu-titel
+        'manage_options',     // Hvem kan se den
+        'hjemmesider',    // Slug
+        'hjemmesider_dk', // Callback-funktion
+        'dashicons-editor-help', // Ikon
+        1                     // Placering i menuen
+    );
+}
+add_action('admin_menu', 'hjemmesider_admin_side');
+
+function hjemmesider_dk() {
+    ?>
+    <div class="wrap">
+        <h1>Support - Hjemmesider.DK</h1>
+				<h2 style="margin:0;">Har du brug for hjælp?</h2>
+        <p>Du er altid meget velkommen til at skrive eller ringe til Morten Andersen fra <a href="https://www.hjemmesider.dk" target="_blank">Hjemmesider.DK</a>.</p>
+				<p>Måske har du spørgsmål angående:</p>
+				<ul style="border-block: 1px solid; padding: 1rem;max-width: 525px;">
+					<li>- Den nuværende hjemmeside?</li>
+					<li>- Opdateringer?</li>
+					<li>- SEO?</li>
+					<li>- Ny funktionalitet?</li>
+					<li>- Nyt design?</li>
+				</ul>
+				<p>... eller noget helt andet?<br>Tøv ikke med at tage kontakt til mig :-)</p>
+				<p><strong>Hjemmesider.DK</strong><br>Morten Andersen<br><a href="mailto:morten@hjemmesider.dk">morten@hjemmesider.dk</a><br>Tlf. 51948012</p>
+    </div>
+    <?php
+}
