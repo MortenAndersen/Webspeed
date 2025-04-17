@@ -467,7 +467,7 @@ add_filter('acf/the_field/escape_html_optin', '__return_true');
 function hjemmesider_admin_side() {
     add_menu_page(
         'Support - Hjemmesider.dk',    // Sidetitel
-        'Hjemmesider.DK',       // Menu-titel
+        'Support',       // Menu-titel
         'manage_options',     // Hvem kan se den
         'hjemmesider',    // Slug
         'hjemmesider_dk', // Callback-funktion
