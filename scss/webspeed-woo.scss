@@ -59,6 +59,11 @@ span.price {
   font-size: .85rem;
 }
 
+.woocommerce-product-details__short-description {
+  p {
+    max-width: 40ch;
+  }
+}
 
 // Grid
 
