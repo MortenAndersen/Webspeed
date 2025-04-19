@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const width = window.innerWidth;
             if (width >= 1200) return 4;
             if (width >= 900) return 3;
-            if (width >= 370) return 2;
+            if (width >= 320) return 2;
             return 1;
         }
 
