@@ -1,1 +1,78 @@
-document.addEventListener("DOMContentLoaded",(()=>{document.querySelectorAll(".carousel").forEach((e=>{let t=e.querySelector(".carousel-track"),n=Array.from(t.querySelectorAll(".carousel-item")),r=e.querySelector(".prev"),a=e.querySelector(".next"),o=0,l=0,d=0,i=1,c=!1;function s(){let e=window.innerWidth;return e>=1200?4:e>=900?3:e>=370?2:1}function u(){i=s();let e=window.getComputedStyle(t);d=parseFloat(e.gap)||0,l=t.querySelector(".carousel-item").getBoundingClientRect().width}function $(e,n=!0){let r=-e*(l+d);t.style.transition=n?"transform 0.5s ease":"none",t.style.transform=`translateX(${r}px)`}function v(e){c||(c=!0,$(o=e))}window.addEventListener("load",(function(){i=s(),u(),$(o,!1),a.addEventListener("click",(()=>v(o+1))),r.addEventListener("click",(()=>v(o-1))),t.addEventListener("transitionend",(()=>function(e){let t=e.length;o>=t-i?$(o=0,!1):o<0&&$(o=t-i,!1),c=!1}(n))),window.addEventListener("resize",(()=>{u(),$(o,!1)}));let e=setInterval((()=>{o<n.length-i&&v(o+1)}),3e3);[t,a,r].forEach((t=>{t.addEventListener("mouseenter",(()=>clearInterval(e))),t.addEventListener("touchstart",(()=>clearInterval(e)))}));let l=0;t.addEventListener("touchstart",(e=>{l=e.touches[0].clientX})),t.addEventListener("touchend",(e=>{let t=l-e.changedTouches[0].clientX;Math.abs(t)>50&&v(t>0?o+1:o-1)})),t.addEventListener("dragstart",(e=>e.preventDefault()))}))}))}));
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".carousel").forEach((carousel) => {
+        const track = carousel.querySelector(".carousel-track");
+        const items = Array.from(track.querySelectorAll(".carousel-item"));
+        const prevButton = carousel.querySelector(".prev");
+        const nextButton = carousel.querySelector(".next");
+
+        let currentIndex = 0;
+        let itemWidth = 0;
+        let gap = 0;
+        let visibleItems = 1;
+        let isSliding = false;
+
+        function getVisibleItems() {
+            const width = window.innerWidth;
+            if (width >= 1200) return 4;
+            if (width >= 900) return 3;
+            if (width >= 370) return 2;
+            return 1;
+        }
+
+        function updateMeasurements() {
+            visibleItems = getVisibleItems();
+            const style = window.getComputedStyle(track);
+            gap = parseFloat(style.gap) || 0;
+            itemWidth = track.querySelector(".carousel-item").getBoundingClientRect().width;
+        }
+
+        function slideTo(index, animate = true) {
+            const offset = -index * (itemWidth + gap);
+            track.style.transition = animate ? "transform 0.5s ease" : "none";
+            track.style.transform = `translateX(${offset}px)`;
+        }
+
+        function handleSlide(newIndex) {
+            if (isSliding) return;
+            isSliding = true;
+            currentIndex = newIndex;
+            slideTo(currentIndex);
+        }
+
+        window.addEventListener("load", () => {
+            updateMeasurements();
+            slideTo(currentIndex, false);
+
+            nextButton.addEventListener("click", () => handleSlide(currentIndex + 1));
+            prevButton.addEventListener("click", () => handleSlide(currentIndex - 1));
+
+            track.addEventListener("transitionend", () => {
+                const maxIndex = items.length - visibleItems;
+                if (currentIndex > maxIndex) {
+                    currentIndex = 0;
+                    slideTo(currentIndex, false);
+                } else if (currentIndex < 0) {
+                    currentIndex = items.length - visibleItems;
+                    slideTo(currentIndex, false);
+                }
+                isSliding = false;
+            });
+
+            window.addEventListener("resize", () => {
+                updateMeasurements();
+                slideTo(currentIndex, false);
+            });
+
+            const autoSlide = setInterval(() => {
+                if (currentIndex < items.length - visibleItems) {
+                    handleSlide(currentIndex + 1);
+                }
+            }, 3000);
+
+            [track, nextButton, prevButton].forEach((el) => {
+                el.addEventListener("mouseenter", () => clearInterval(autoSlide));
+                el.addEventListener("touchstart", () => clearInterval(autoSlide));
+            });
+        });
+    });
+});
