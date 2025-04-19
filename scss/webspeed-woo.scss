@@ -10,7 +10,7 @@
   --woo-color-6: #ca9a21;
   --woo-red: darkred;
   --woo-blue: cadetblue;
-  --woo-small-font: 85%;
+  --woo-small-font: .85rem;
   --woo-but-height: 1;
 }
 
@@ -183,6 +183,7 @@ button.button {
   text-align: center;
   color: #000;
   padding-block: 0.4rem;
+  font-size: .85rem;
   transition: box-shadow 0.5s;
 
   &:hover {
