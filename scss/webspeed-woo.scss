@@ -31,7 +31,7 @@ ul.wc-block-grid__products {
   margin: 0;
   padding: 0;
   display: grid;
-  gap: clamp(.5rem, 2vw, 2rem);
+  gap: clamp(.5rem, 2vw, 1rem);
 
   li {
     margin: 0;
