@@ -47,13 +47,13 @@ ul.wc-block-grid__products.carousel-track,
   }
 }
 
-@media (min-width: 370px) and (max-width: 899px) {
+@media (min-width: 320px) and (max-width: 899px) {
   .carousel-item {
     width: calc((100% - 16px) / 2);
   }
 }
 
-@media (max-width: 369px) {
+@media (max-width: 319px) {
   .carousel-item {
     width: 100%;
   }
