@@ -219,6 +219,76 @@
       "oAP" : "\/blocks\/textpic\/textpic.php",
       "oF" : 0
     },
+    "\/blocks\/wooslider\/acf-wooslider.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/wooslider\/acf-wooslider.php",
+      "oF" : 0
+    },
+    "\/blocks\/wooslider\/block.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/blocks\/wooslider\/block-min.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/blocks\/wooslider\/wooslider-min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 1,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/wooslider\/wooslider-min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/blocks\/wooslider\/wooslider-min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/blocks\/wooslider\/wooslider-min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/blocks\/wooslider\/wooslider.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 1,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/wooslider\/wooslider-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/blocks\/wooslider\/wooslider.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/blocks\/wooslider\/wooslider-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/blocks\/wooslider\/wooslider.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/wooslider\/wooslider.php",
+      "oF" : 0
+    },
     "\/comments.php" : {
       "cB" : 0,
       "ft" : 8192,

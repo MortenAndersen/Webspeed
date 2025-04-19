@@ -1,0 +1,15 @@
+{
+  "name": "wooslider",
+  "title": "WooSlider",
+  "description": "Produktslider",
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["Hjemmesider", "Woo"],
+  "acf": {
+    "mode": "auto",
+    "renderTemplate": "wooslider.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

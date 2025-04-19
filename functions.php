@@ -166,6 +166,7 @@ if (class_exists('ACF')) {
 	require get_parent_theme_file_path('/blocks/textpic/acf-textpic.php');
 	require get_parent_theme_file_path('/blocks/gallery/acf-gallery.php');
 	require get_parent_theme_file_path('/blocks/contact/acf-contact.php');
+	require get_parent_theme_file_path('/blocks/wooslider/acf-wooslider.php');
 
 
 	add_action( 'init', 'register_acf_blocks' );
@@ -174,6 +175,7 @@ if (class_exists('ACF')) {
 			register_block_type( __DIR__ . '/blocks/gallery' );
 			register_block_type( __DIR__ . '/blocks/acc' );
 			register_block_type( __DIR__ . '/blocks/contact' );
+			register_block_type( __DIR__ . '/blocks/wooslider' );
 	}
 	// end ACF check
 }
@@ -198,3 +200,46 @@ function be_header_menu_desc( $item_output, $item, $depth, $args ) {
 }
 add_filter( 'walker_nav_menu_start_el', 'be_header_menu_desc', 10, 4 );
 
+function wooslider_enqueue_assets() {
+    if (is_singular() && has_block('acf/wooslider')) {
+        wp_enqueue_style(
+            'wooslider-style',
+            get_template_directory_uri() . '/blocks/wooslider/wooslider.css'
+        );
+        wp_enqueue_script(
+            'wooslider-script',
+            get_template_directory_uri() . '/blocks/wooslider/wooslider.js',
+            [],
+            false,
+            true
+        );
+    }
+}
+add_action('wp_enqueue_scripts', 'wooslider_enqueue_assets');
+
+// WooSlider
+if (class_exists('ACF')) {
+	function wooslider_check_block() {
+			// Tjek om 'wooslider' er til stede på den aktuelle side
+			if (is_singular() && has_block('acf/wooslider')) {
+					// Sæt en global variabel, hvis blokken findes
+					global $is_wooslider_page;
+					$is_wooslider_page = true;
+			} else {
+					global $is_wooslider_page;
+					$is_wooslider_page = false;
+			}
+	}
+	add_action('wp', 'wooslider_check_block');
+
+	add_filter('post_class', function($classes, $class, $product_id) {
+			global $is_wooslider_page;
+
+			// Hvis vi er på en side med 'wooslider'-blokken, tilføj 'carousel-item'
+			if ($is_wooslider_page) {
+					$classes = array_merge(['carousel-item'], $classes);
+			}
+
+			return $classes;
+	}, 10, 3);
+}
