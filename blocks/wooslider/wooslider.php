@@ -5,29 +5,24 @@
     // Antal
     $number = get_field('antal');
 
-    if( get_field('filter_woo') == 'tilbud' ) {
-		$args = array(
-			'post_type' => 'product',
-			'posts_per_page' => $number,
-            'orderby' => 'date',
-            'order' => 'DESC',
-            'meta_query' => array(
-                'relation' => 'AND',
-                array( 
-                    'key' => '_sale_price',
-                    'value' => 0,
-                    'compare' => '>',
-                    'type' => 'numeric'
-                ),
-                array(
-                    'key' => '_stock_status',
-                    'value' => 'instock',
-                    'compare' => '=',
-                ),
+if( get_field('filter_woo') == 'tilbud' ) {
+    $sale_products = wc_get_product_ids_on_sale();
+
+    $args = array(
+        'post_type' => 'product',
+        'posts_per_page' => $number,
+        'orderby' => 'date',
+        'order' => 'DESC',
+        'post__in' => $sale_products,
+        'meta_query' => array(
+            array(
+                'key' => '_stock_status',
+                'value' => 'instock',
+                'compare' => '=',
             ),
-               
-		);
-    }
+        ),
+    );
+}
     if( get_field('filter_woo') == 'nyhed' ) {
 		$args = array(
 			'post_type' => 'product',
