@@ -219,6 +219,7 @@ add_action('wp_enqueue_scripts', 'wooslider_enqueue_assets');
 
 // WooSlider
 if (class_exists('ACF')) {
+	// ny class på <li class="carousel-item">...</li>
 	function wooslider_check_block() {
 			// Tjek om 'wooslider' er til stede på den aktuelle side
 			if (is_singular() && has_block('acf/wooslider')) {
@@ -242,4 +243,30 @@ if (class_exists('ACF')) {
 
 			return $classes;
 	}, 10, 3);
+
+
+	// Angiver Woo kategorier i select options på wooslider block
+	add_filter('acf/load_field/name=product_filter', function($field) {
+			$field['choices'] = [];
+
+			// Tilføj statiske valg først
+			$field['choices']['nyhed'] = 'Nyheder';
+			$field['choices']['tilbud'] = 'Tilbud';
+
+			// Hent og tilføj produktkategorier
+			$terms = get_terms([
+					'taxonomy' => 'product_cat',
+					'hide_empty' => false,
+					'orderby' => 'name',
+					'order' => 'ASC',
+			]);
+
+			if (!is_wp_error($terms)) {
+					foreach ($terms as $term) {
+							$field['choices'][$term->term_id] = 'Kategori: ' . $term->name;
+					}
+			}
+
+			return $field;
+	});
 }

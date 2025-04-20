@@ -1,0 +1,40 @@
+.carousel {
+  background: #f9f9f9;
+  padding: 1rem;
+
+  button,
+  .add_to_cart_button {
+    display: none;
+  }
+
+  ul {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-size: .85rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: #222;
+    pointer-events: none;
+  }
+
+  .onsale {
+    display: none;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 1rem;
+  }
+}

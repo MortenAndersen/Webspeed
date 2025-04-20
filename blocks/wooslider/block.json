@@ -11,5 +11,6 @@
   },
   "supports": {
     "anchor": true
-  }
+  },
+  "editorStyle": "file:./editor.css"
 }
