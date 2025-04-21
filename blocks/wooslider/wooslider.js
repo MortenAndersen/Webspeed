@@ -1,9 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".carousel").forEach((carousel) => {
         const track = carousel.querySelector(".carousel-track");
-        const items = Array.from(track.querySelectorAll(".carousel-item"));
+        const items = Array.from(carousel.querySelectorAll(".carousel-item"));
         const prevButton = carousel.querySelector(".prev");
         const nextButton = carousel.querySelector(".next");
+
+        // Stop hvis noget mangler
+        if (!track || items.length === 0 || !prevButton || !nextButton) return;
 
         let currentIndex = 0;
         let itemWidth = 0;
@@ -23,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
             visibleItems = getVisibleItems();
             const style = window.getComputedStyle(track);
             gap = parseFloat(style.gap) || 0;
-            itemWidth = track.querySelector(".carousel-item").getBoundingClientRect().width;
+            itemWidth = items[0].getBoundingClientRect().width;
         }
 
         function slideTo(index, animate = true) {
@@ -35,44 +38,47 @@ document.addEventListener("DOMContentLoaded", () => {
         function handleSlide(newIndex) {
             if (isSliding) return;
             isSliding = true;
-            currentIndex = newIndex;
+
+            const maxIndex = Math.max(0, items.length - visibleItems);
+
+            if (newIndex > maxIndex) {
+                currentIndex = 0;
+            } else if (newIndex < 0) {
+                currentIndex = maxIndex;
+            } else {
+                currentIndex = newIndex;
+            }
+
             slideTo(currentIndex);
         }
 
-        window.addEventListener("load", () => {
+        function checkButtonVisibility() {
+            if (items.length <= visibleItems) {
+                nextButton.disabled = true;
+                prevButton.disabled = true;
+            } else {
+                nextButton.disabled = false;
+                prevButton.disabled = false;
+            }
+        }
+
+        // Initial setup
+        updateMeasurements();
+        slideTo(currentIndex, false);
+        checkButtonVisibility();
+
+        // Event listeners
+        nextButton.addEventListener("click", () => handleSlide(currentIndex + visibleItems));
+        prevButton.addEventListener("click", () => handleSlide(currentIndex - visibleItems));
+
+        track.addEventListener("transitionend", () => {
+            isSliding = false;
+        });
+
+        window.addEventListener("resize", () => {
             updateMeasurements();
             slideTo(currentIndex, false);
-
-            nextButton.addEventListener("click", () => handleSlide(currentIndex + 1));
-            prevButton.addEventListener("click", () => handleSlide(currentIndex - 1));
-
-            track.addEventListener("transitionend", () => {
-                const maxIndex = items.length - visibleItems;
-                if (currentIndex > maxIndex) {
-                    currentIndex = 0;
-                    slideTo(currentIndex, false);
-                } else if (currentIndex < 0) {
-                    currentIndex = items.length - visibleItems;
-                    slideTo(currentIndex, false);
-                }
-                isSliding = false;
-            });
-
-            window.addEventListener("resize", () => {
-                updateMeasurements();
-                slideTo(currentIndex, false);
-            });
-
-            const autoSlide = setInterval(() => {
-                if (currentIndex < items.length - visibleItems) {
-                    handleSlide(currentIndex + 1);
-                }
-            }, 3000);
-
-            [track, nextButton, prevButton].forEach((el) => {
-                el.addEventListener("mouseenter", () => clearInterval(autoSlide));
-                el.addEventListener("touchstart", () => clearInterval(autoSlide));
-            });
+            checkButtonVisibility();
         });
     });
 });
