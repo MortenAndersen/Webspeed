@@ -1,11 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".carousel").forEach((carousel) => {
         const track = carousel.querySelector(".carousel-track");
-        const items = Array.from(carousel.querySelectorAll(".carousel-item"));
+        const items = Array.from(track.querySelectorAll(".carousel-item"));
         const prevButton = carousel.querySelector(".prev");
         const nextButton = carousel.querySelector(".next");
 
-        // Stop hvis noget mangler
         if (!track || items.length === 0 || !prevButton || !nextButton) return;
 
         let currentIndex = 0;
@@ -13,13 +12,14 @@ document.addEventListener("DOMContentLoaded", () => {
         let gap = 0;
         let visibleItems = 1;
         let isSliding = false;
+        let maxIndex = 0;
 
         function getVisibleItems() {
             const width = window.innerWidth;
-            if (width >= 1200) return 4;
-            if (width >= 900) return 3;
-            if (width >= 320) return 2;
-            return 1;
+            if (width >= 1200) return 4; // 4 items visible on large screens
+            if (width >= 900) return 3; // 3 items visible on medium screens
+            if (width >= 320) return 2; // 2 items visible on smaller screens
+            return 1; // 1 item visible on mobile
         }
 
         function updateMeasurements() {
@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const style = window.getComputedStyle(track);
             gap = parseFloat(style.gap) || 0;
             itemWidth = items[0].getBoundingClientRect().width;
+            maxIndex = Math.max(0, items.length - visibleItems);
         }
 
         function slideTo(index, animate = true) {
@@ -39,12 +40,13 @@ document.addEventListener("DOMContentLoaded", () => {
             if (isSliding) return;
             isSliding = true;
 
-            const maxIndex = Math.max(0, items.length - visibleItems);
+            // Hvis der er 8 eller flere items, ryk med visibleItems
+            const slideAmount = items.length >= 8 ? visibleItems : 1;
 
             if (newIndex > maxIndex) {
-                currentIndex = 0;
+                currentIndex = 0; // Loop tilbage til start
             } else if (newIndex < 0) {
-                currentIndex = maxIndex;
+                currentIndex = maxIndex; // Loop til slutningen
             } else {
                 currentIndex = newIndex;
             }
@@ -53,23 +55,30 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         function checkButtonVisibility() {
+            // Skjul knapper hvis der ikke er nok items
             if (items.length <= visibleItems) {
-                nextButton.disabled = true;
-                prevButton.disabled = true;
+                prevButton.style.display = "none";
+                nextButton.style.display = "none";
             } else {
-                nextButton.disabled = false;
-                prevButton.disabled = false;
+                prevButton.style.display = "";
+                nextButton.style.display = "";
+            }
+
+            // Hvis currentIndex er uden for grænserne, opdater det
+            if (currentIndex > maxIndex) {
+                currentIndex = maxIndex;
+                slideTo(currentIndex, false);
             }
         }
 
-        // Initial setup
+        // Init slider
         updateMeasurements();
-        slideTo(currentIndex, false);
         checkButtonVisibility();
+        slideTo(currentIndex, false);
 
-        // Event listeners
-        nextButton.addEventListener("click", () => handleSlide(currentIndex + visibleItems));
-        prevButton.addEventListener("click", () => handleSlide(currentIndex - visibleItems));
+        // Håndter knapklik for at slide 1 item eller flere afhængig af antal items
+        nextButton.addEventListener("click", () => handleSlide(currentIndex + (items.length >= 8 ? visibleItems : 1))); 
+        prevButton.addEventListener("click", () => handleSlide(currentIndex - (items.length >= 8 ? visibleItems : 1))); 
 
         track.addEventListener("transitionend", () => {
             isSliding = false;
@@ -77,8 +86,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         window.addEventListener("resize", () => {
             updateMeasurements();
-            slideTo(currentIndex, false);
             checkButtonVisibility();
+            slideTo(currentIndex, false);
         });
     });
 });
