@@ -70,7 +70,7 @@ input[type="reset"],
 input[type="submit"],
 .wp-block-search .wp-block-search__button,
 button.pbSubmit {
-    
+
     height: 2.5rem;
     padding: 0;
     margin: 0;
@@ -177,6 +177,7 @@ textarea {
 }
 
 .pre-header {
+
     input[type="search"],
     button[type="submit"] {
         height: 1.8rem;
@@ -367,6 +368,7 @@ label.wp-block-search__label.screen-reader-text {
         }
     }
 }
+
 .wp-block-embed iframe {
     max-width: 100%;
     width: 100%;
@@ -378,4 +380,27 @@ label.wp-block-search__label.screen-reader-text {
     .current_page_item {
         font-weight: bold;
     }
+}
+
+.banner {
+    position: relative;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out;
+}
+
+.banner-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease-in-out;
+}
+
+.banner-item.active {
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+    z-index: 2;
 }

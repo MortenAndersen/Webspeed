@@ -1,4 +1,4 @@
-// @codekit-prepend "bx-slider.js" quiet;
+
 
 /*global jQuery*/
 (function ($) {
@@ -52,62 +52,62 @@
 
     // Slider
 
-    $(function () {
-      $(".banner").bxSlider({
-        mode: "fade",
-        auto: true,
-        controls: false,
-        pager: false,
-        speed: 2000,
-        pause: 8000,
-        touchEnabled: false,
-      });
-    });
+    // $(function () {
+    //   $(".banner").bxSlider({
+    //     mode: "fade",
+    //     auto: true,
+    //     controls: false,
+    //     pager: false,
+    //     speed: 2000,
+    //     pause: 8000,
+    //     touchEnabled: false,
+    //   });
+    // });
 
-    $(function () {
-      $(".slider-2").bxSlider({
-        maxSlides: 2,
-        minSlides: 2,
-        slideWidth: 502,
-        slideMargin: 32,
-        controls: false,
-        auto: true,
-        speed: 2000,
-        pause: 6000,
-        autoHover: true,
-        touchEnabled: false,
-      });
-    });
+    // $(function () {
+    //   $(".slider-2").bxSlider({
+    //     maxSlides: 2,
+    //     minSlides: 2,
+    //     slideWidth: 502,
+    //     slideMargin: 32,
+    //     controls: false,
+    //     auto: true,
+    //     speed: 2000,
+    //     pause: 6000,
+    //     autoHover: true,
+    //     touchEnabled: false,
+    //   });
+    // });
 
-    $(function () {
-      $(".slider-3").bxSlider({
-        maxSlides: 3,
-        minSlides: 2,
-        slideWidth: 326,
-        slideMargin: 32,
-        controls: false,
-        auto: true,
-        speed: 2000,
-        pause: 6000,
-        autoHover: true,
-        touchEnabled: false,
-      });
-    });
+    // $(function () {
+    //   $(".slider-3").bxSlider({
+    //     maxSlides: 3,
+    //     minSlides: 2,
+    //     slideWidth: 326,
+    //     slideMargin: 32,
+    //     controls: false,
+    //     auto: true,
+    //     speed: 2000,
+    //     pause: 6000,
+    //     autoHover: true,
+    //     touchEnabled: false,
+    //   });
+    // });
 
-    $(function () {
-      $(".slider-4").bxSlider({
-        maxSlides: 4,
-        minSlides: 2,
-        slideWidth: 235,
-        slideMargin: 32,
-        controls: false,
-        auto: true,
-        speed: 2000,
-        pause: 6000,
-        autoHover: true,
-        touchEnabled: false,
-      });
-    });
+    // $(function () {
+    //   $(".slider-4").bxSlider({
+    //     maxSlides: 4,
+    //     minSlides: 2,
+    //     slideWidth: 235,
+    //     slideMargin: 32,
+    //     controls: false,
+    //     auto: true,
+    //     speed: 2000,
+    //     pause: 6000,
+    //     autoHover: true,
+    //     touchEnabled: false,
+    //   });
+    // });
 
     // Detect scroll
     $(window).scroll(function () {
@@ -171,3 +171,64 @@
     }
   });
 })(jQuery);
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const container = document.querySelector(".banner");
+    const slides = document.querySelectorAll(".banner-item");
+    let current = 0;
+    const duration = 5000;
+
+    // Skab et skjult måle-element
+    const measurer = document.createElement("div");
+    measurer.style.visibility = "hidden";
+    measurer.style.position = "absolute";
+    measurer.style.top = "-9999px";
+    measurer.style.left = "0";
+    measurer.style.width = "100%";
+    container.appendChild(measurer);
+
+    function getAccurateHeight(slide) {
+      // Clone indholdet ind i measurer
+      measurer.innerHTML = "";
+      const clone = slide.cloneNode(true);
+      clone.style.position = "relative";
+      clone.style.opacity = "1";
+      clone.style.visibility = "visible";
+      clone.style.zIndex = "0";
+      measurer.appendChild(clone);
+      return clone.scrollHeight;
+    }
+
+    function setActiveSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle("active", i === index);
+      });
+
+      requestAnimationFrame(() => {
+        setTimeout(() => {
+          const activeSlide = slides[index];
+          const height = getAccurateHeight(activeSlide);
+          container.style.height = height + "px";
+        }, 30);
+      });
+    }
+
+    function nextSlide() {
+      current = (current + 1) % slides.length;
+      setActiveSlide(current);
+    }
+
+    slides.forEach(slide => {
+      slide.querySelectorAll("img").forEach(img => {
+        if (!img.complete) {
+          img.addEventListener("load", () => setActiveSlide(current));
+        }
+      });
+    });
+
+    window.addEventListener("resize", () => setActiveSlide(current));
+
+    setActiveSlide(current);
+    setInterval(nextSlide, duration);
+  });
