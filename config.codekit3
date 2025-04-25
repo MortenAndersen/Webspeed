@@ -235,6 +235,18 @@
       "oO" : 0,
       "oS" : 1
     },
+    "\/blocks\/wooslider\/editor.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 1,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/wooslider\/editor-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/blocks\/wooslider\/wooslider-min.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -1635,6 +1647,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/single.php",
+      "oF" : 0
+    },
+    "\/slider-test.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/slider-test.php",
       "oF" : 0
     },
     "\/style.css" : {
