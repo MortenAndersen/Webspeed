@@ -11,6 +11,7 @@ body {
 
   font-family: var(--font-family);
 }
+
 p {
   text-wrap: pretty;
 }
@@ -23,10 +24,11 @@ h6 {
   line-height: 1.2;
   //font-size: s.$font-l;
   font-size: clamp(1.1rem, 2.5vw, 1.4rem);
-  margin: 0 0 1rem 0;
+  margin: 0 0 .5lh 0;
   font-weight: 500;
   text-wrap: pretty;
   max-width: 55ch;
+
   a {
     color: inherit;
 
@@ -49,6 +51,7 @@ h1 {
   max-width: 50ch;
   font-weight: 200;
 }
+
 h2 {
   font-size: clamp(1.4rem, 3vw, 1.6rem);
 }
@@ -78,6 +81,7 @@ h6 {
     text-decoration: none;
   }
 }
+
 h2 {
   a {
     text-decoration: none;
@@ -116,7 +120,7 @@ h2 {
 .page-template-page-topimg,
 .page-template-page-aside-left-topimg,
 .page-template-page-no-wrap-topimg {
-  article > h2:first-of-type {
+  article>h2:first-of-type {
     margin-top: 0;
   }
 }
@@ -147,7 +151,7 @@ aside .wp-block-heading,
 }
 
 .page-content p {
-  margin: 0 0 2rem 0;
+  margin: 0 0 1lh 0;
   max-width: 70ch;
 
   &.read-more {
@@ -180,7 +184,7 @@ aside .wp-block-heading,
 
 .woo-decs {
   p {
-    margin: 0 0 2rem 0;
+    margin: 0 0 1lh 0;
     max-width: 70ch;
     text-wrap: balance;
   }
@@ -195,9 +199,11 @@ article .bx-wrapper p {
 }
 
 main {
+
   ul,
   ol {
     padding-inline-start: 1.5rem;
+
     li {
       margin-bottom: 0.5rem;
       max-width: 70ch;
@@ -208,6 +214,7 @@ main {
 a {
   color: var(--link);
   text-decoration: underline;
+
   .page-footer & {
     color: inherit;
   }
@@ -217,6 +224,7 @@ a:focus,
 a:hover {
   color: var(--link-hover);
   text-decoration: none;
+
   .page-footer & {
     color: inherit;
   }
@@ -252,6 +260,7 @@ blockquote {
   margin: s.$gap-n 0;
   font-size: 1.3rem;
   font-style: italic;
+
   p {
     &:last-of-type {
       margin-bottom: 0;
@@ -319,6 +328,7 @@ strong,
   font-size: var(--font-small);
   margin-top: 0.5rem;
   line-height: 1.2;
+
   .lr-top-main & {
     padding: 1rem;
     margin: 0;
@@ -346,7 +356,7 @@ strong,
   }
 }
 
-article h1 + h2 {
+article h1+h2 {
   margin-top: -0.5rem;
 }
 
@@ -359,6 +369,7 @@ article h1 + h2 {
 }
 
 .wp-block-column {
+
   ul,
   ol {
     padding-left: 1.1rem;
@@ -382,29 +393,36 @@ figcaption {
     max-width: none;
   }
 }
+
 .page-footer {
   p {
     margin: 0 0 1rem 0;
   }
 }
+
 .tlf::before {
   content: "\260E";
   margin-right: 0.5ch;
 }
+
 .blackstar::before {
   content: "\2605";
   margin-right: 0.5ch;
 }
+
 .whitestar::before {
   content: "\2606";
   margin-right: 0.5ch;
 }
+
 a.email {
   text-decoration: none;
+
   &:hover {
     text-decoration: underline;
   }
 }
+
 .email::before {
   content: "\0040";
   margin-right: 0.5ch;

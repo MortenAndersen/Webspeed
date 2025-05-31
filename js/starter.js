@@ -1,5 +1,3 @@
-
-
 /*global jQuery*/
 (function ($) {
   "use strict";
@@ -50,65 +48,7 @@
     // Lightbox
     $(".lightbox-link, .overlay a").attr("data-lightbox", "content-image");
 
-    // Slider
-
-    // $(function () {
-    //   $(".banner").bxSlider({
-    //     mode: "fade",
-    //     auto: true,
-    //     controls: false,
-    //     pager: false,
-    //     speed: 2000,
-    //     pause: 8000,
-    //     touchEnabled: false,
-    //   });
-    // });
-
-    // $(function () {
-    //   $(".slider-2").bxSlider({
-    //     maxSlides: 2,
-    //     minSlides: 2,
-    //     slideWidth: 502,
-    //     slideMargin: 32,
-    //     controls: false,
-    //     auto: true,
-    //     speed: 2000,
-    //     pause: 6000,
-    //     autoHover: true,
-    //     touchEnabled: false,
-    //   });
-    // });
-
-    // $(function () {
-    //   $(".slider-3").bxSlider({
-    //     maxSlides: 3,
-    //     minSlides: 2,
-    //     slideWidth: 326,
-    //     slideMargin: 32,
-    //     controls: false,
-    //     auto: true,
-    //     speed: 2000,
-    //     pause: 6000,
-    //     autoHover: true,
-    //     touchEnabled: false,
-    //   });
-    // });
-
-    // $(function () {
-    //   $(".slider-4").bxSlider({
-    //     maxSlides: 4,
-    //     minSlides: 2,
-    //     slideWidth: 235,
-    //     slideMargin: 32,
-    //     controls: false,
-    //     auto: true,
-    //     speed: 2000,
-    //     pause: 6000,
-    //     autoHover: true,
-    //     touchEnabled: false,
-    //   });
-    // });
-
+    
     // Detect scroll
     $(window).scroll(function () {
       var scroll = $(window).scrollTop();
@@ -172,45 +112,25 @@
   });
 })(jQuery);
 
-
+// Slider i vanilla js
 document.addEventListener("DOMContentLoaded", function () {
     const container = document.querySelector(".banner");
     const slides = document.querySelectorAll(".banner-item");
     let current = 0;
     const duration = 5000;
 
-    // Skab et skjult måle-element
-    const measurer = document.createElement("div");
-    measurer.style.visibility = "hidden";
-    measurer.style.position = "absolute";
-    measurer.style.top = "-9999px";
-    measurer.style.left = "0";
-    measurer.style.width = "100%";
-    container.appendChild(measurer);
-
-    function getAccurateHeight(slide) {
-      // Clone indholdet ind i measurer
-      measurer.innerHTML = "";
-      const clone = slide.cloneNode(true);
-      clone.style.position = "relative";
-      clone.style.opacity = "1";
-      clone.style.visibility = "visible";
-      clone.style.zIndex = "0";
-      measurer.appendChild(clone);
-      return clone.scrollHeight;
-    }
-
     function setActiveSlide(index) {
       slides.forEach((slide, i) => {
         slide.classList.toggle("active", i === index);
       });
 
+      // Vent på, at layoutet opdateres, før vi måler højden
       requestAnimationFrame(() => {
         setTimeout(() => {
           const activeSlide = slides[index];
-          const height = getAccurateHeight(activeSlide);
+          const height = activeSlide.scrollHeight;
           container.style.height = height + "px";
-        }, 30);
+        }, 50); // Lidt forsinkelse for at sikre korrekt måling
       });
     }
 
@@ -219,6 +139,7 @@ document.addEventListener("DOMContentLoaded", function () {
       setActiveSlide(current);
     }
 
+    // Opdater højden, når billederne er indlæst
     slides.forEach(slide => {
       slide.querySelectorAll("img").forEach(img => {
         if (!img.complete) {
@@ -227,8 +148,9 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
 
+    // Opdater højden ved vinduets størrelse ændres
     window.addEventListener("resize", () => setActiveSlide(current));
 
-    setActiveSlide(current);
+    setActiveSlide(current); // Initial visning
     setInterval(nextSlide, duration);
   });

@@ -763,17 +763,6 @@
       "oAP" : "\/index.php",
       "oF" : 0
     },
-    "\/js\/bx-slider.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/js\/bx-slider.js",
-      "oF" : 2,
-      "sC" : 3,
-      "tS" : 0
-    },
     "\/js\/lightbox.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -996,19 +985,6 @@
       "ma" : 1,
       "oA" : 0,
       "oAP" : "\/button.css",
-      "oF" : 0,
-      "oS" : 3,
-      "pg" : 0
-    },
-    "\/scss\/bx-slider.scss" : {
-      "aP" : 1,
-      "bl" : 0,
-      "co" : 0,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 1,
-      "oA" : 0,
-      "oAP" : "\/bx-slider.css",
       "oF" : 0,
       "oS" : 3,
       "pg" : 0
@@ -1647,14 +1623,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/single.php",
-      "oF" : 0
-    },
-    "\/slider-test.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/slider-test.php",
       "oF" : 0
     },
     "\/style.css" : {
